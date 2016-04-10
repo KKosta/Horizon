@@ -1,0 +1,32 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+.main-container, .bg-primary {
+  height: 100vh !important;
+}
+
+#plane {
+  width: 45%;
+}
+.bg-primary {
+  background: url(../img/plane_runway.png) no-repeat center 60% !important;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.bg-primary input[type="submit"], .bg-primary button[type="submit"] {
+  color: #393848;
+  border: 1px solid #393848;
+  font-size: 1em
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.bg-primary input[type="submit"]:hover, .bg-primary button[type="submit"]:hover {
+  background: #393848;
+  color: white;
+  border: 1px solid #393848;
+  font-size: 1em
+}
