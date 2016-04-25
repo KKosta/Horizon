@@ -545,7 +545,7 @@ ul.lead li {
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #47b475 !important;
+  background: #f8f8f8 !important;
 }
 .bg-secondary {
   background: #f8f8f8;
@@ -560,10 +560,10 @@ ul.lead li {
   color: #666;
 }
 .color-primary {
-  color: #47b475 !important;
+  color: #1495ED !important;
 }
 .color-red {
-  color: #e31d3b !important;
+  color: #E64A19 !important;
 }
 .color-white {
   color: #fff;
@@ -724,7 +724,7 @@ footer.bg-dark li,
 /*!---------- 6. BUTTONS ----------*/
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #47b475;
+  border: 2px solid #666;
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -734,7 +734,7 @@ footer.bg-dark li,
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 0;
-  color: #47b475;
+  color: #1495ED;
   text-align: center;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -785,7 +785,7 @@ footer.bg-dark li,
   min-width: 0;
 }
 .btn-filled {
-  background: #47b475;
+  background: #E64A19;
   color: #fff;
 }
 .btn-white,
@@ -802,7 +802,7 @@ footer.bg-dark li,
 }
 .image-bg .btn.btn-filled,
 .image-bg .btn-filled:visited {
-  border-color: #47b475;
+  border-color: #E64A19;
 }
 .image-bg .btn-filled:hover {
   border-color: #fff;
@@ -814,7 +814,7 @@ body.btn-rounded .btn {
   border-radius: 25px !important;
 }
 .bg-light .btn {
-  border-color: #222;
+  border-color: black;
   color: #222;
 }
 .bg-light .btn:visited,
@@ -830,10 +830,10 @@ body.btn-rounded .btn {
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #fff;
+  color: #E64A19;
 }
 .btn-white:visited:hover {
-  color: #222;
+  color: #E64A19;
 }
 .btn-filled:visited {
   color: #fff;
@@ -846,7 +846,7 @@ body.btn-rounded .btn {
   background: #434343;
 }
 .bg-primary .btn {
-  color: #fff;
+  color: #E64A19;
   border-color: #fff;
 }
 .bg-primary .btn:hover {
