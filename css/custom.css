@@ -84,6 +84,30 @@ form.halves ::-webkit-input-placeholder {
 	background-position: center 200px;);
 }*/
 
+/* --------- Media Queries ----------*/
+
+@media (max-width: 768px) {
+	.AboutHorizon h1, .AboutHorizon h5  {
+		text-align: center;
+	}
+	.LDN, .NYC, .HK {
+		margin-bottom: 40px;
+	}
+	.LDN.col-sm-4.text-center {
+		background-size: 50% auto;
+	}
+	form.halves input {
+		margin-bottom: 20px;
+		border: 2px solid #E64A19;
+	}
+	form.halves ::-webkit-input-placeholder {
+		text-align: center;
+	}
+	footer .social-list {
+		margin-top: 20px;
+	}
+}
+
 
 
 
