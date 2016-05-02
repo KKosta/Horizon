@@ -39,12 +39,20 @@ form.halves ::-webkit-input-placeholder {
 	font-size: 12px
 }	
 
+.close-nav {
+	cursor: pointer;
+}
+
 .feature-1 i {
 	color: #1495ED;
 }
 
 .feature.boxed {
 	background: rgba(255, 255, 255, 0.85);
+}
+
+.WhyTravel .feature.feature-1.boxed {
+	height: 350px;
 }
 
 .NYC.col-sm-4.text-center {
@@ -66,27 +74,103 @@ form.halves ::-webkit-input-placeholder {
 	background-position: center bottom;
 }
 
-#WhyTravel {
-	background: url(../img/cover9.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
+.background-image-holder {
+	z-index:0;
 }
 
-#WhyTravel h2 {
-	color: #fff;
+.WhyTravel h2.uppercase.bold {
+	color: #fff !important;
 }
 
-/*.AboutHorizon {
+.WhyTravelIcons, .WhyThisIcons {
+	width: 120px;
+	padding-bottom: 20px;
+}
+
+.partners {
+	text-align: center;
+}
+
+.partner_logo {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.partner_logo img {
+	max-height: 120px;
+	padding: 15px;
+	 -webkit-filter: grayscale(1);
+  	filter: grayscale(1);
+}
+
+.partner_logo img:hover {
+	 -webkit-filter: grayscale(0);
+  	filter: grayscale(0);
+}
+
+#startupshk {
+	max-height: 100px;
+}
+
+.AboutHorizon {
 	background: url(../img/map.png);
 	background-size: 80% auto;
 	background-repeat: no-repeat;
-	background-position: center 200px;);
-}*/
+	background-position: center 115px;
+}
+
+.TeamPhoto {
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	-webkit-filter: grayscale(1);
+  	filter: grayscale(1);
+}
+
+.Team h4 {
+	line-height: 25px;
+}
+
+.Team h4 span {
+	font-size: 14px;
+	color: #E64A19;
+}
+
+#TeamSection {
+	padding-bottom: 48px;
+}
+
+.btn.btn-lg.btn-filled {
+	border: none;
+	padding: 3px;
+    -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+
+.GetInTouch .btn.btn-lg.btn-filled:hover {
+	background: #1495ED;
+}
 
 /* --------- Media Queries ----------*/
 
+@media (max-width: 990px) {
+	.AboutHorizon {
+		background-position: center 200px;
+	}
+	.WhyThis .feature.feature-1.boxed {
+		height: 480px;
+	}
+	.WhyTravel .feature.feature-1.boxed {
+		height: 390px;
+	}
+}
+
 @media (max-width: 768px) {
+	.AboutHorizon {
+		background: none;
+	}	
 	.AboutHorizon h1, .AboutHorizon h5  {
 		text-align: center;
 	}
@@ -95,6 +179,15 @@ form.halves ::-webkit-input-placeholder {
 	}
 	.LDN.col-sm-4.text-center {
 		background-size: 50% auto;
+	}
+	.feature.feature-1.boxed {
+		height: 300px;
+	}
+	.WhyTravel .feature p:last-child {
+		font-size: 1.1em;
+	}
+	.WhyThis .feature.feature-1.boxed {
+		height: 350px;
 	}
 	form.halves input {
 		margin-bottom: 20px;
