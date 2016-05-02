@@ -3,7 +3,7 @@
 /*orange = #E64A19*/
 /*blue = #1495ED*/
 #title_logo {
-	max-width: 60%;
+	max-width: 55%;
     padding-bottom: 25px;
 }
 .bg-primary button[type="submit"]{
@@ -27,11 +27,28 @@
 
 .fade-half.lead.mb0 {
 	color: #333;
+	font-size: 20px;
+	padding-bottom: 100px
+}
+
+p.fade-half {
+	font-size: 16px;
+	color: #fff;
+	opacity: 1;
 }
 
 form.halves input {
+	color: #333;
+	font-family: "Roboto";
+	/*text-align: center;*/
+	font-size: 12px;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
 	color: #333 !important;
 	border-bottom: 2px solid #E64A19;
+}
+form.halves input:focus {
+	border: 2px solid #1495ED;
 }
 
 form.halves ::-webkit-input-placeholder {
@@ -153,6 +170,11 @@ form.halves ::-webkit-input-placeholder {
 	background: #1495ED;
 }
 
+.ti-facebook {
+	font-size: 1.9em;
+	vertical-align: 3px;
+}
+
 /* --------- Media Queries ----------*/
 
 @media (max-width: 990px) {
@@ -198,6 +220,10 @@ form.halves ::-webkit-input-placeholder {
 	}
 	footer .social-list {
 		margin-top: 20px;
+	}
+	.ti-facebook {
+		font-size: 1.2em;
+		vertical-align: 1px;
 	}
 }
 
