@@ -151,6 +151,7 @@ form.halves ::-webkit-input-placeholder {
 }
 
 .Team h4 span {
+	text-transform: uppercase;
 	font-size: 14px;
 	color: #E64A19;
 }
@@ -159,11 +160,18 @@ form.halves ::-webkit-input-placeholder {
 	padding-bottom: 48px;
 }
 
+.Team p {
+	margin-bottom: 0px;
+}
+
 .btn.btn-lg.btn-filled {
 	border: none;
 	padding: 3px;
     -webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
+}
+.GetInTouch .btn.btn-lg.btn-filled {
+	margin-top: 24px;
 }
 
 .GetInTouch .btn.btn-lg.btn-filled:hover {
