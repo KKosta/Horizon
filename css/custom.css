@@ -37,6 +37,10 @@ p.fade-half {
 	opacity: 1;
 }
 
+.fade-half.lead.mb0 {
+	padding-bottom: 48px;
+}
+
 form.halves input {
 	color: #333;
 	font-family: "Roboto";
@@ -80,7 +84,7 @@ form.halves ::-webkit-input-placeholder {
 }
 .LDN.col-sm-4.text-center {
 	background-image: url(../img/LDN.png);
-	background-size: 100% auto;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -102,6 +106,11 @@ form.halves ::-webkit-input-placeholder {
 .WhyTravelIcons, .WhyThisIcons {
 	width: 120px;
 	padding-bottom: 20px;
+}
+
+p {
+	color: #292929;
+	/*font-size: 1.1em*/
 }
 
 .partners {
@@ -176,12 +185,57 @@ form.halves ::-webkit-input-placeholder {
 
 .GetInTouch .btn.btn-lg.btn-filled:hover {
 	background: #1495ED;
+	color: #fff
 }
 
 .ti-facebook {
 	font-size: 1.9em;
 	vertical-align: 3px;
 }
+
+.foundry_modal {
+	padding:0px;
+}
+
+.foundry_modal .close-modal {
+	z-index: 10;
+}
+
+.modal_left, .modal_right {
+	padding-top: 48px;
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.modal_right {
+	background: #f8f8f8;
+}
+
+.foundry_modal img {
+	width: 25%
+}
+
+.foundry_modal h4 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.foundry_modal p {
+	padding: 30px;
+}
+
+.foundry_modal .btn {
+	border: 2px solid #E64A19;
+	color: #292929
+}
+.foundry_modal .btn:hover {
+	background:  #1495ED;
+	border: 2px solid #1495ED;
+	color: #fff
+}
+
 
 /* --------- Media Queries ----------*/
 
@@ -190,7 +244,7 @@ form.halves ::-webkit-input-placeholder {
 		background-position: center 200px;
 	}
 	.WhyThis .feature.feature-1.boxed {
-		height: 480px;
+		height: 560px;
 	}
 	.WhyTravel .feature.feature-1.boxed {
 		height: 390px;
@@ -206,9 +260,6 @@ form.halves ::-webkit-input-placeholder {
 	}
 	.LDN, .NYC, .HK {
 		margin-bottom: 40px;
-	}
-	.LDN.col-sm-4.text-center {
-		background-size: 50% auto;
 	}
 	.feature.feature-1.boxed {
 		height: 300px;
@@ -232,6 +283,10 @@ form.halves ::-webkit-input-placeholder {
 	.ti-facebook {
 		font-size: 1.2em;
 		vertical-align: 1px;
+	}
+	.modal_left, .modal_right {
+		float: none;
+	    width: 100%;
 	}
 }
 
