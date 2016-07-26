@@ -43,10 +43,10 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 13px;
+  /*font-size: 13px;
   line-height: 24px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #666;
+  color: #666;*/
   overflow-x: hidden;
 }
 body.boxed-layout {
@@ -461,9 +461,9 @@ a {
   color: #47b475;
   opacity: 1;
 }
-a:hover {
+/*a:hover {
   color: #398f5d;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 .label {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -569,12 +569,12 @@ ul.lead li {
   color: #fff;
 }
 /*!---------- 5. SECTIONS ----------*/
-section,
+/*section,
 footer {
   padding: 96px 0;
   position: relative;
   overflow: hidden;
-}
+}*/
 footer {
   padding: 72px 0;
 }
@@ -724,7 +724,7 @@ footer.bg-dark li,
 /*!---------- 6. BUTTONS ----------*/
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #666;
+  /*border: 2px solid #666;*/
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -746,9 +746,9 @@ footer.bg-dark li,
 .btn:last-of-type {
   margin-right: 0;
 }
-.btn:hover {
+/*.btn:hover {
   background: #47b475;
-  color: #fff;
+  color: #fff;*/
 }
 .btn-icon {
   width: 40px;
@@ -797,8 +797,8 @@ footer.bg-dark li,
 .btn-white:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
-  background: #fff;
-  color: #222;
+ /* background: #fff;
+  color: #222;*/
 }
 .image-bg .btn.btn-filled,
 .image-bg .btn-filled:visited {
@@ -828,10 +828,10 @@ body.btn-rounded .btn {
 .btn:visited {
   color: #47b475;
 }
-.btn-white:visited,
+/*.btn-white:visited,
 .btn:visited:hover {
   color: #E64A19;
-}
+}*/
 .btn-white:visited:hover {
   color: #E64A19;
 }
@@ -850,8 +850,8 @@ body.btn-rounded .btn {
   border-color: #fff;
 }
 .bg-primary .btn:hover {
-  background: #fff;
-  color: #47b475;
+/*  background: #fff;
+  color: #47b475;*/
 }
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
@@ -1437,7 +1437,7 @@ nav .cart-overview a {
     top: 18px;
   }
   .mobile-toggle {
-    border-left: 1px solid #ccc !important;
+    /*border-left: 1px solid #ccc !important;*/
     border-bottom: none !important;
   }
   .mobile-toggle i {
@@ -1468,11 +1468,11 @@ nav.outOfSight {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-nav.scrolled {
+/*nav.scrolled {
   transform: translate3d(0, 0px, 0);
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
-}
+}*/
 nav.fixed,
 nav.absolute {
   top: 0;
@@ -1492,10 +1492,10 @@ nav.fixed {
 nav.fixed .nav-utility {
   display: none;
 }
-nav.fixed.scrolled {
+/*nav.fixed.scrolled {
   visibility: visible;
   opacity: 1;
-}
+}*/
 nav.transparent {
   background: none;
 }
@@ -1724,8 +1724,7 @@ input[type="password"] {
   background: #f5f5f5;
   border: none;
   width: 100%;
-  height: 50px;
-  padding-left: 20px;
+  height: 64px;
   font-weight: 500;
   margin-bottom: 24px;
   border-radius: 0;
@@ -1736,17 +1735,17 @@ input[type="password"] {
 }
 .image-bg.bg-light input.transparent,
 .image-bg.bg-light button.transparent {
-  border-color: #292929;
+ /* border-color: #292929;*/
 }
 input.transparent,
 button.transparent {
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+ /* border: 1px solid rgba(255, 255, 255, 0.5);*/
   color: #fff !important	;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
-  outline: 1px solid #ccc;
+  /*outline: 1px solid #ccc;*/
 }
 textarea {
   width: 100%;
@@ -1757,9 +1756,9 @@ textarea {
   padding: 16px 20px;
 }
 textarea:focus {
-  outline: 1px solid #ccc;
+/*  outline: 1px solid #ccc;*/
 }
-::-webkit-input-placeholder {
+/*::-webkit-input-placeholder {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1786,7 +1785,7 @@ textarea:focus {
   letter-spacing: 1px;
   color: #777;
   font-size: 11px;
-}
+}*/
 input.transparent::-webkit-input-placeholder,
 button.transparent::-webkit-input-placeholder {
   color: #fff;
@@ -1805,11 +1804,11 @@ button.transparent:-ms-input-placeholder {
 }
 input[type="submit"],
 button[type="submit"] {
-  height: 50px;
-  line-height: 48px;
-  border: 2px solid #47b475;
-  background: #47b475;
-  color: #fff;
+  height: 64px;
+  line-height: 64px;
+  /*border: 2px solid #47b475;*/
+/*  background: #47b475;
+  color: #fff;*/
   width: 100%;
   font-size: 11px;
   text-transform: uppercase;
@@ -1829,7 +1828,7 @@ button[type="submit"]:focus {
 input[type="submit"].hollow,
 button[type="submit"].hollow {
   background: none;
-  border: 2px solid #47b475;
+  /*border: 2px solid #47b475;*/
   color: #47b475;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;

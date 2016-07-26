@@ -1,295 +1,511 @@
-/****** PLACE YOUR CUSTOM STYLES HERE ******/
-
-/*orange = #E64A19*/
-/*blue = #1495ED*/
+/****** PLACE YOUR CUSTOM STYLES HERE ***** */
+#plane {
+  animation: plane 2s both; }
+@keyframes plane {
+  0% {
+    margin-top: 100vh;
+    opacity: 0;
+    width: 150%; }
+  100% {
+    margin-top: 20vh;
+    opacity: 1;
+    width: 40%; } }
 #title_logo {
-	max-width: 55%;
-    padding-bottom: 25px;
-}
-.bg-primary button[type="submit"]{
-	font-size: 12px;
-	color: #fff;
-	background: #E64A19;
-	border: 2px solid #E64A19;
-	transition: all 0.3s ease;
-	  -webkit-transition: all 0.3s ease;
-	  -moz-transition: all 0.3s ease;
-}
-.bg-primary button[type="submit"]:hover{
-	color: #fff;
-	background: #1495ED;
-	border: 2px solid #1495ED;
-}
+  animation: title_logo 1s 2s both; }
+@keyframes title_logo {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#tagline {
+  animation: tagline 1s 3s both; }
+@keyframes tagline {
+  0% {
+    opacity: 0;
+    padding-top: 10px; }
+  100% {
+    opacity: 1;
+    padding-top: 0; } }
+.cover_links {
+  animation: cover_links 1s 5.5s both; }
+@keyframes cover_links {
+  0% {
+    opacity: 0;
+    padding-top: 10px; }
+  100% {
+    opacity: 1;
+    padding-top: 0; } }
+header {
+  animation: header_transition 1s 6s both; }
+@keyframes header_transition {
+  0% {
+    top: -70px; }
+  100% {
+    top: 0; } }
+body {
+  height: 500vh;
+  background: white;
+  z-index: 100; }
 
-.CTA.uppercase.bold {
-	color: #333; 
-}
+h1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 4.725em;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px; }
 
-.fade-half.lead.mb0 {
-	color: #333;
-	font-size: 20px;
-	padding-bottom: 100px
-}
-
-p.fade-half {
-	font-size: 16px;
-	color: #fff;
-	opacity: 1;
-}
-
-.fade-half.lead.mb0 {
-	padding-bottom: 48px;
-}
-
-form.halves input {
-	color: #333;
-	font-family: "Roboto";
-	/*text-align: center;*/
-	font-size: 12px;
-	font-weight: bold;
-	/*text-transform: uppercase;*/
-	color: #333 !important;
-	border-bottom: 2px solid #E64A19;
-}
-form.halves input:focus {
-	border: 2px solid #1495ED;
-}
-
-form.halves ::-webkit-input-placeholder {
-	color: black;
-	font-size: 12px
-}	
-
-.close-nav {
-	cursor: pointer;
-}
-
-.feature-1 i {
-	color: #1495ED;
-}
-
-.feature.boxed {
-	background: rgba(255, 255, 255, 0.85);
-}
-
-.WhyTravel .feature.feature-1.boxed {
-	height: 350px;
-}
-
-.NYC.col-sm-4.text-center {
-	background-image: url(../img/NYC.png);
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-.LDN.col-sm-4.text-center {
-	background-image: url(../img/LDN.png);
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-.HK.col-sm-4.text-center {
-	background-image: url(../img/HK.png);
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-
-.background-image-holder {
-	z-index:0;
-}
-
-.WhyTravel h2.uppercase.bold {
-	color: #fff !important;
-}
-
-.WhyTravelIcons, .WhyThisIcons {
-	width: 120px;
-	padding-bottom: 20px;
-}
+h2, #CTA #sign_up_form input[type="text"] {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 2.1em;
+  margin: 0; }
 
 p {
-	color: #292929;
-	/*font-size: 1.1em*/
-}
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 1.4em;
+  line-height: 1.7em;
+  margin: 0; }
 
-.partners {
-	text-align: center;
-}
+.section_padding {
+  padding: 96px 0 120px 0; }
 
-.partner_logo {
-	height: 150px;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-}
+header.show {
+  background: white;
+  box-shadow: 0px 0px 6px 0px #212121; }
 
-.partner_logo img {
-	max-height: 120px;
-	padding: 15px;
-	 -webkit-filter: grayscale(1);
-  	filter: grayscale(1);
-}
+header {
+  height: auto;
+  position: fixed;
+  background: none;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 1s ease; }
+  header .nav-bar {
+    height: 70px;
+    max-height: 70px;
+    line-height: 70px;
+    border: none; }
+    header .nav-bar #plane_logo {
+      max-height: 45px;
+      display: none; }
+    header .nav-bar .menu li a {
+      color: white;
+      opacity: 1;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1.4em; }
+    header .nav-bar .menu li a:hover {
+      color: #FF4081;
+      border-bottom: 1px solid #FF4081; }
+    header .nav-bar .menu li a.link_to_grey {
+      color: #616161; }
+    header .nav-bar .menu li a.link_to_grey:hover {
+      color: #212121; }
+  header nav {
+    background: none; }
 
-.partner_logo img:hover {
-	 -webkit-filter: grayscale(0);
-  	filter: grayscale(0);
-}
+.parallax-window {
+  min-height: 400px;
+  background: transparent; }
 
-#startupshk {
-	max-height: 100px;
-}
+.cover {
+  background-attachment: fixed;
+  background: url(../img/plane_runway_dark.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -1000; }
 
-/*.AboutHorizon {
-	background: url(../img/map.png);
-	background-size: 80% auto;
-	background-repeat: no-repeat;
-	background-position: center 115px;
-}*/
+.diagonal_up, #passenger_divider .diagonal_down .diagonal_up {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/diagonal_up.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .diagonal_up .logo_cover, #passenger_divider .diagonal_down .diagonal_up .logo_cover {
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .diagonal_up .logo_cover #title_logo {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      width: 40%;
+      margin-top: 20vh; }
+  .diagonal_up h2, #passenger_divider .diagonal_down .diagonal_up h2, .diagonal_up #CTA #sign_up_form input[type="text"], #CTA #sign_up_form .diagonal_up input[type="text"] {
+    padding: 0;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    color: white;
+    text-align: center;
+    line-height: 1.3em; }
 
-.TeamPhoto {
-	width: 200px;
-	height: 200px;
-	border-radius: 200px;
-	-webkit-filter: grayscale(1);
-  	filter: grayscale(1);
-}
-
-.Team h4 {
-	line-height: 25px;
-}
-
-.Team h4 span {
-	text-transform: uppercase;
-	font-size: 14px;
-	color: #E64A19;
-}
-
-#TeamSection {
-	padding-bottom: 48px;
-}
-
-.Team p {
-	margin-bottom: 0px;
-}
-
-.btn.btn-lg.btn-filled {
-	border: none;
-	padding: 3px;
+.cover_links {
+  z-index: 100;
+  text-align: center;
+  margin-top: 15vh; }
+  .cover_links .bg-primary button[type="submit"] {
+    font-size: 20px;
+    color: #fff;
+    background: #FF4081;
+    border: 2px solid #FF4081;
+    transition: all 0.3s ease; }
+  .cover_links .bg-primary button[type="submit"]:hover {
+    color: #fff;
+    background: #1DB9FF;
+    border: 2px solid #1DB9FF; }
+  .cover_links .btn-lg {
+    height: 50px;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: white;
+    font-size: 1.4em;
+    border: 2px solid #FF4081;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-}
-.GetInTouch .btn.btn-lg.btn-filled {
-	margin-top: 24px;
-}
+    -moz-transition: all 0.3s ease; }
+  .cover_links .btn-lg:hover {
+    border: 2px solid #FF4081 !important;
+    background: #FF4081; }
 
-.GetInTouch .btn.btn-lg.btn-filled:hover {
-	background: #1495ED;
-	color: #fff
-}
+#about {
+  padding-top: 96px;
+  background: white; }
+  #about #verticals {
+    padding-left: 50px;
+    padding-bottom: 96px;
+    margin-left: 0; }
+  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
+    color: #FF4081;
+    font-weight: 500;
+    padding: 40px 0 120px 0; }
 
-.ti-facebook {
-	font-size: 1.9em;
-	vertical-align: 3px;
-}
+#wingtip_divider, #passenger_divider, #airport_divider {
+  display: block;
+  height: 700px;
+  width: 100%;
+  background-image: url(../img/wingtip.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #wingtip_divider .diagonal_down, #passenger_divider .diagonal_down, #airport_divider .diagonal_down {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/diagonal_down.png);
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat; }
+  #wingtip_divider .diagonal_up, #passenger_divider .diagonal_up, #airport_divider .diagonal_up, #passenger_divider .diagonal_down .diagonal_up {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/diagonal_up.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat; }
+
+#the_hack {
+  background: white; }
+  #the_hack #HK_LDN {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 36px; }
+  #the_hack #journey {
+    padding: 80px; }
+  #the_hack h2, #the_hack #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #the_hack input[type="text"] {
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 24px;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #FF4081; }
+  #the_hack p {
+    text-align: center;
+    padding-top: 20px; }
+
+#passenger_divider {
+  background-image: url(../img/passenger.jpg); }
+  #passenger_divider .diagonal_down {
+    background-image: url(../img/diagonal_down_reverse.png); }
+    #passenger_divider .diagonal_down .diagonal_up {
+      background-image: url(../img/diagonal_up_reverse.png); }
+
+#apply {
+  background: white;
+  background-image: url(../img/arrow_down.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  #apply #the_process {
+    text-align: left; }
+    #apply #the_process .process_image {
+      height: 600px;
+      padding-top: 100px;
+      display: block;
+      margin: 0 auto; }
+    #apply #the_process .process_image_horizontal {
+      display: none; }
+    #apply #the_process .process_copy {
+      height: 200px;
+      padding-top: 50px; }
+      #apply #the_process .process_copy h2, #apply #the_process .process_copy #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #apply #the_process .process_copy input[type="text"] {
+        font-size: 1.7em;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 30%;
+        border-bottom: 2px solid #FF4081; }
+      #apply #the_process .process_copy p {
+        padding-top: 20px; }
+  #apply #the_numbers {
+    text-align: center;
+    height: auto;
+    padding-top: 96px;
+    padding-bottom: 156px; }
+    #apply #the_numbers h1 {
+      margin: 0;
+      letter-spacing: -2px;
+      font-weight: 500;
+      color: #FF4081; }
+    #apply #the_numbers h5 {
+      color: #212121;
+      font-size: 2.1em;
+      text-transform: lowercase; }
+
+#CTA.section_padding {
+  padding-bottom: 36px; }
+
+#CTA {
+  background: #1DB9FF; }
+  #CTA h1 {
+    color: white;
+    margin-bottom: 0; }
+    #CTA h1 span {
+      font-size: 0.622em; }
+  #CTA p {
+    color: white;
+    padding-top: 12px;
+    font-size: 1.2em; }
+  #CTA #sign_up_form {
+    padding: 120px 0 8px 0; }
+    #CTA #sign_up_form input[type="text"] {
+      width: 65%;
+      background: none;
+      color: white;
+      border-bottom: 2px solid white;
+      font-size: 1.4em; }
+    #CTA #sign_up_form input[type="text"]:focus {
+      outline: none;
+      border-bottom: 2px solid #FF4081;
+      color: white;
+      background: none;
+      font-size: 1.4em; }
+    #CTA #sign_up_form ::-webkit-input-placeholder {
+      text-align: left;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2em; }
+    #CTA #sign_up_form button[type="submit"] {
+      width: 32%;
+      margin-left: 2%;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 500;
+      color: #212121;
+      background: white;
+      border: 2px solid white;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      transition: all 0.3s ease; }
+    #CTA #sign_up_form button[type="submit"]:hover {
+      background: #FF4081;
+      color: white;
+      border: 2px solid #FF4081; }
+
+#partners.arrow_down_reverse {
+  background-image: url(../img/arrow_down_reverse.png);
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+#partners {
+  background: white;
+  text-align: center; }
+  #partners h1 {
+    text-align: center;
+    padding-top: 182px; }
+  #partners .partner_logo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #partners .partner_logo img {
+    max-height: 120px;
+    padding: 15px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+  #partners .partner_logo img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+  #partners #startupshk {
+    max-height: 100px; }
+
+#airport_divider {
+  height: 600px;
+  background-image: url(../img/airport.jpg); }
+  #airport_divider .diagonal_down {
+    background-image: url(../img/divider_arrow_up.png); }
+
+#team {
+  background: white; }
+  #team h1 {
+    text-align: left;
+    padding: 36px; }
+  #team .TeamPhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+  #team .Team h4 span {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FF4081; }
+  #team .Team p {
+    margin-bottom: 0px; }
+
+.footer_cover {
+  background: white; }
+
+footer {
+  text-align: center;
+  padding-top: 0;
+  height: 360px;
+  background: white;
+  background: url(../img/airplane_footer.jpg) no-repeat center bottom;
+  background-size: cover;
+  will-change: transform; }
+  footer .social-list {
+    padding-top: 96px;
+    padding-bottom: 35px; }
+    footer .social-list i {
+      color: #212121; }
+  footer .image-xs {
+    width: 400px;
+    margin-bottom: 8px; }
 
 .foundry_modal {
-	padding:0px;
-}
+  padding: 0px; }
 
 .foundry_modal .close-modal {
-	z-index: 10;
-}
+  z-index: 10; }
 
 .modal_left, .modal_right {
-	padding-top: 48px;
-	float: left;
-	width: 50%;
-	height: 100%;
-	text-align: center;
-}
+  padding-top: 48px;
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center; }
 
 .modal_right {
-	background: #f8f8f8;
-}
+  background: #f8f8f8; }
 
 .foundry_modal img {
-	width: 25%
-}
+  width: 25%; }
 
 .foundry_modal h4 {
-	font-weight: 400;
-	text-transform: uppercase;
-}
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .foundry_modal p {
-	padding: 30px;
-}
+  padding: 30px; }
 
 .foundry_modal .btn {
-	border: 2px solid #E64A19;
-	color: #292929
-}
+  border: 2px solid #FF4081;
+  color: #292929; }
+
 .foundry_modal .btn:hover {
-	background:  #1495ED;
-	border: 2px solid #1495ED;
-	color: #fff
-}
-
-
-/* --------- Media Queries ----------*/
+  background: #1DB9FF;
+  border: 2px solid #1DB9FF;
+  color: #fff; }
 
 @media (max-width: 990px) {
-	.AboutHorizon {
-		background-position: center 200px;
-	}
-	.WhyThis .feature.feature-1.boxed {
-		height: 560px;
-	}
-	.WhyTravel .feature.feature-1.boxed {
-		height: 390px;
-	}
-}
+  .mobile-toggle {
+    border: none; }
 
-@media (max-width: 768px) {
-	.AboutHorizon {
-		background: none;
-	}	
-	.AboutHorizon h1, .AboutHorizon h5  {
-		text-align: center;
-	}
-	.LDN, .NYC, .HK {
-		margin-bottom: 40px;
-	}
-	.feature.feature-1.boxed {
-		height: 300px;
-	}
-	.WhyTravel .feature p:last-child {
-		font-size: 1.1em;
-	}
-	.WhyThis .feature.feature-1.boxed {
-		height: 350px;
-	}
-	form.halves input {
-		margin-bottom: 20px;
-		border: 2px solid #E64A19;
-	}
-	form.halves ::-webkit-input-placeholder {
-		text-align: center;
-	}
-	footer .social-list {
-		margin-top: 20px;
-	}
-	.ti-facebook {
-		font-size: 1.2em;
-		vertical-align: 1px;
-	}
-	.modal_left, .modal_right {
-		float: none;
-	    width: 100%;
-	}
-}
+  .module.widget-handle {
+    min-height: 70px;
+    padding: 10px 20px;
+    border: none; }
 
+  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
+    padding-bottom: 94px; }
+  #about #verticals {
+    margin-top: 0; }
 
+  #apply #the_process .process_image_horizontal {
+    display: block; }
+  #apply #the_process .process_image {
+    display: none; } }
+@media (max-width: 769px) {
+  #tagline {
+    padding: 0 15px; }
 
+  h1 {
+    line-height: 1.2em; }
 
+  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
+    padding: 20px 15px; }
+  #about #verticals {
+    padding: 0 0 0 0; }
+
+  #CTA #sign_up_form {
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+    #CTA #sign_up_form ::-webkit-input-placeholder {
+      text-align: center; }
+    #CTA #sign_up_form button[type="submit"] {
+      width: 65%;
+      margin-left: 0;
+      margin-top: 20px;
+      background: #FF4081;
+      color: white;
+      border: 2px solid #FF4081; } }
+@media (max-width: 376px) {
+  h1 {
+    font-size: 3.15em; }
+
+  #tagline {
+    font-size: 1.4em; }
+
+  .cover_links {
+    margin-top: 20px; }
+    .cover_links .btn-lg {
+      font-size: 0.8em;
+      background: #FF4081; }
+
+  #the_hack #journey {
+    padding: 40px 20px; }
+
+  #apply #the_process .process_copy {
+    height: auto; } }
+
+/*# sourceMappingURL=custom.css.map */
