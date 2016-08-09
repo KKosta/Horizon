@@ -16,17 +16,22 @@ $p: 1.4em
 $p-mob: 0.933
 
 #plane
-	animation: plane 2s both
+	animation: plane 4s both
 
 	@keyframes plane
 		0% 
 			margin-top: 100vh
 			opacity: 0
 			width: 150%				
-		100%
+		50%
 			margin-top: 20vh
 			opacity: 1
 			width: 40%
+		100%
+			margin-top: 20vh
+			opacity: 0
+			width: 40%
+			
 
 #title_logo
 	animation: title_logo 1s 2s both
@@ -254,7 +259,7 @@ header
 	h2
 		color: $pink
 		font-weight: 500
-		padding: 40px 0 120px 0 
+		margin: -56px 0 64px 0 
 
 
 #wingtip_divider
@@ -292,9 +297,9 @@ header
 	background: white
 
 	#HK_LDN
-		text-align: left
+		text-align: center
 		padding-top: 0
-		padding-bottom: 36px
+		padding-bottom: 64px
 
 	#journey 
 		padding: 80px
@@ -338,34 +343,25 @@ header
 	background-repeat: no-repeat
 
 	#the_process
-		text-align: left
 
-		.process_image
-			height: 600px
-			padding-top: 100px
+		.process_image, .process_image_mobile
+			width: 77%
 			display: block
 			margin: 0 auto
 
-		// .process_image
-		// 	height: 200px
-
-		// 	img
-		// 		height: 70%
-		// 		display: block
-		// 		margin: 15% auto
-		.process_image_horizontal
+		.process_image_mobile
 			display: none
 
 		.process_copy
-			height: 200px
+
 			padding-top: 50px 
 
 			h2
 				font-size: 1.7em
-				text-align: left
 				text-transform: uppercase
 				font-weight: 500
-				width: 30%
+				width: 50%
+				margin: 0 auto
 				border-bottom: 2px solid #FF4081
 			p 
 				padding-top: 20px			
@@ -499,13 +495,22 @@ header
 	background: white
 
 	h1
-		text-align: left
+		text-align: center
 		padding: 36px
 
+	h2
+		font-size: 1.7em
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		line-height: inherit
+		margin-bottom: 24px
+
+
 	.TeamPhoto
-		width: 200px
-		height: 200px
-		border-radius: 200px
+		width: 225px
+		height: 225px
+		// border-radius: 200px
 		-webkit-filter: grayscale(1)
 		filter: grayscale(1)
 
@@ -518,9 +523,19 @@ header
 	.Team p
 		margin-bottom: 0px
 
+#advisors
+	
+	img
+		height: 120px
+		width: 120px
+		-webkit-filter: grayscale(1)
+		filter: grayscale(1)
+
+
 .footer_cover
 	background: white
 	z-index
+
 footer
 	text-align: center
 	padding-top: 0
@@ -605,15 +620,21 @@ footer
 		border: none
 
 	#about 
-		h2
-			padding-bottom: 94px
+		p
+			text-align: center
+
 		#verticals
-			margin-top: 0
+			margin-top: 64px 
+
+	#the_numbers
+		h5
+			padding-bottom: 24px
 
 	#apply 
 		#the_process 
-			.process_image_horizontal
+			.process_image_mobile
 				display: block
+				width: 90%
 			.process_image
 				display: none
 
@@ -626,11 +647,12 @@ footer
 		line-height: 1.2em
 	
 	#about
-		h2
-			padding: 20px 15px
+		p
+			text-align: center
 		
 		#verticals
 			padding: 0 0 0 0
+	
 
 	#CTA #sign_up_form 
 		text-align: center

@@ -94,7 +94,7 @@ html(lang='en')
 
     
     .main_container
-        section#top_cover.cover
+        section.cover
             .container.diagonal_up
                 .row
                     .logo_cover.col-md-8
@@ -106,28 +106,30 @@ html(lang='en')
                     .cover_links
                         a#apply_button.btn.btn-lg.inner-link.col-md-3.col-md-offset-2.col-sm-6.col-sm-offset-3.col-xs-6.col-xs-offset-3(href='#CTA') APPLY TO PARTICIPATE
                         a#partner_button.btn.btn-lg.col-md-3.col-md-offset-2.col-sm-6.col-sm-offset-3.col-xs-6.col-xs-offset-3(href='mailto:team@hackhorizon.com?subject=Interested%20In%20Partnering%20With%20Horizon') PARTNER WITH US
-                        .foundry_modal
-                            .modal_left
-                                h4
-                                    | Ecosystem Partners
-                                img(src='img/ecosystems.png')
-                                p
-                                    | We are looking for partners who will help us to connect and engage with the key entrepreneurs, investor and mentors across the startup communities in Hong Kong and London.
-                                a.btn.inner-link(href='mailto:team@hackhorizon.com?subject=Interested%20In%20Partnering%20With%20Horizon') Get In Touch
-                            .modal_right
-                                h4 
-                                    | Sponsors
-                                img(src='img/sponsors.png')
-                                p
-                                    | We are looking to bring on strategic sponsors who are passionate to unlock new innovation in the travel industry and want to play a central part in the Horizon story.
-                                a.btn.inner-link(href='mailto:team@hackhorizon.com?subject=Interested%20In%20Sponsoring%20Horizon') Get In Touch
+                        //- .foundry_modal
+                        //-     .modal_left
+                        //-         h4
+                        //-             | Ecosystem Partners
+                        //-         img(src='img/ecosystems.png')
+                        //-         p
+                        //-             | We are looking for partners who will help us to connect and engage with the key entrepreneurs, investor and mentors across the startup communities in Hong Kong and London.
+                        //-         a.btn.inner-link(href='mailto:team@hackhorizon.com?subject=Interested%20In%20Partnering%20With%20Horizon') Get In Touch
+                        //-     .modal_right
+                        //-         h4 
+                        //-             | Sponsors
+                        //-         img(src='img/sponsors.png')
+                        //-         p
+                        //-             | We are looking to bring on strategic sponsors who are passionate to unlock new innovation in the travel industry and want to play a central part in the Horizon story.
+                        //-         a.btn.inner-link(href='mailto:team@hackhorizon.com?subject=Interested%20In%20Sponsoring%20Horizon') Get In Touch
 
         section#about.in-page-link.section_padding
             .container
                 .row
-                    .col-md-10
+                    .col-md-12.text-center
                         h1
                             | The First of Its Kind
+                        h2
+                            | build. discover. soar
                 .row
                     .col-md-7.col-sm-12 
                         p
@@ -138,8 +140,6 @@ html(lang='en')
                             br
                             br
                             | Horizon will also bring on board a range of technology partners who will work with us across the entire travel industry to give the teams the software, data, API’s and insights they will need to build robust TravelTech prototypes.
-                        h2
-                            | build. discover. soar
                     .col-md-5.col-sm-12
                         img#verticals(alt="The verticals in travel" src="img/verticals.png")
         
@@ -151,9 +151,9 @@ html(lang='en')
         section#the_hack.in-page-link.section_padding
             .container
                 .row
-                    h1.col-md-10 The Journey
+                    h1.col-md-12.text-center The Journey
 
-                    p.col-md-9#HK_LDN 
+                    p.col-md-10.col-md-offset-1#HK_LDN 
                         | Horizon will help unite the Hong Kong and London startup ecosystems, while showcasing Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
                     .clearfix
                    
@@ -191,13 +191,14 @@ html(lang='en')
         section#apply.in-page-link.section_padding
             .container
                 .row
-                    h1.col-md-10 Jump On-board
+                    h1.col-md-12.text-center
+                        | Jump On-board
 
                     
                     #the_process
-                        .col-md-4
+                        .col-md-12
                             img.process_image(alt="The Application Process" src="img/the_process.png")
-                            img.process_image_horizontal(alt="The Application Process" src="img/the_process_horizontal.png")
+                            img.process_image_mobile(alt="The Application Process" src="img/the_process_mobile.png")
 
                             //- .process_image
                             //-     img(alt="hi" src="img/apply.png")
@@ -205,16 +206,16 @@ html(lang='en')
                             //-     img(alt="hi" src="img/interview.png")
                             //- .process_image
                             //-     img(alt="hi" src="img/soar.png")    
-                        .col-md-8
-                            .process_copy
+                        .col-md-12.text-center                            
+                            .process_copy.col-md-4
                                 h2 Apply
                                 p 
                                     |  We are looking for the most creative, talented and driven individuals to join us on this experience. As such, applicants will be put through a rigorous multi-stage application process.
-                            .process_copy
+                            .process_copy.col-md-4
                                 h2 Interview
                                 p 
                                     | In an aim to build a genuine community, interviews will help us go beyond talent and select applicants with the motivation, passion and ambition that will be paramount in order to create our community and an enjoyable onboard experience.
-                            .process_copy
+                            .process_copy.col-md-4
                                 h2 Fly 
                                 p 
                                     | Only the top 32 applicants will be selected to join this one of a kind journey and will form the heart of the Hack Horizon community.               
@@ -322,43 +323,37 @@ html(lang='en')
         section#team.in-page-link.section_padding
             .container
                 .row
-                    .col-md-12
-
-
-                        .col-sm-12.text-center
+                    .col-md-12.text-center
                         h1.uppercase
                             | The Team
-                    .row.Team.clearfix
-                        .text-center.col-md-3.col-sm-6
+                    .row.Team
+                        .text-center.col-md-3.col-sm-6.clearfix
                             a(href='')
                             img.TeamPhoto.mb32(alt='Kristiyana Hart', src='img/kristy.jpg')
                             h2
                                 | Kristiyana 
-                                br
+                                
                                 |  Hart
-                                br
                             p
-                                | An unconventional lawyer and social enterprise enthusiast. Founder of HUB Youth Academy and KickstartLDN.
+                                | An unconventional law student and social enterprise enthusiast. Founder of HUB Youth Academy and KickstartLDN.
                             h4
                                 span - London -
                         .text-center.col-md-3.col-sm-6
                             img.TeamPhoto.mb24(alt='Johannes Jaeger', src='img/Johannes.jpg')
                             h2
                                 | Johannes 
-                                br
+                                
                                 |  Jaeger
-                                br
                             p
                                 | A frequent flyer and underwater robotics champion. Co-founder of Plain Exchange and organiser of HackUST and Junction.
                             h4
                                 span - Hong Kong -                                
-                        .text-center.col-md-3.col-sm-6
+                        .text-center.col-md-3.col-sm-6.cleafix
                             img.TeamPhoto.mb24(alt='Kostadin Kolev', src='img/kosta.jpg')
                             h2
                                 | Kostadin 
-                                br
+                                
                                 | Kolev 
-                                br
                             p
                                 | A serial entrepreneur and backpacker. Organised HackTrain and StartupBus UK. Now Program Director of MIT Kickstart.
                             h4
@@ -367,12 +362,110 @@ html(lang='en')
                             img.TeamPhoto.mb24(alt='George Robson', src='img/george.jpg')
                             h2
                                 | George 
-                                br
+                                
                                 |  Robson
                             p
                                 | An Economist with a passion for Finance & Technology. Co-founder of KarmaWings and KickstartLDN.
                             h4
-                                span - London -       
+                                span - London -
+
+        //- section#advisors.in-page-link.section_padding
+        //-     .container
+        //-         .row
+        //-             .col-md-12.text-center
+        //-                 h1.uppercase
+        //-                     | Our Advisors
+
+        //-         .row.text-center
+        //-             .col-md-6
+        //-                 h2
+        //-                     | HONG KONG                        
+        //-                 .col-md-3.col-sm-3
+        //-                     img.Advisors.mb24(alt='Manav Gupta', src='img/manav.jpg')
+        //-                     h4
+        //-                         | Manav
+        //-                         br
+        //-                         | Gupta
+        //-                     p
+        //-                         | A serial entrepreneur and backpacker. Organised HackTrain and StartupBus UK. Now Program Director of MIT Kickstart.
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb24(alt='Tak Lo', src='img/tak.jpg')
+        //-                     h4
+        //-                         | Tak 
+        //-                         br
+        //-                         | Lo
+        //-                     p
+        //-                         | An Economist with a passion for Finance & Technology. Co-founder of KarmaWings and KickstartLDN.
+        //-                     h4
+        //-                         span - London -
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb32(alt='Kristin Low', src='img/kristin.jpg')
+        //-                     h4
+        //-                         | Kristin
+        //-                         br
+        //-                         |  Low
+
+        //-                     p
+        //-                         | An unconventional lawyer and social enterprise enthusiast. Founder of HUB Youth Academy and KickstartLDN.
+        //-                     h4
+        //-                         span - London -
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
+        //-                     h4
+        //-                         | Jeffrey 
+        //-                         br
+        //-                         | Broer
+        //-                     p
+        //-                         | An unconventional lawyer and social enterprise enthusiast. Founder of HUB Youth Academy and KickstartLDN.
+        //-                     h4
+        //-                         span - London -         
+        //-             .col-md-6.text-center
+        //-                 h2
+        //-                     | LONDON
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb32(alt='Tim Barnes', src='img/tim.jpg')
+        //-                     h4
+        //-                         | Tim
+        //-                         br
+        //-                         |  Barnes
+        //-                     p
+        //-                         | An unconventional lawyer and social enterprise enthusiast. Founder of HUB Youth Academy and KickstartLDN.
+        //-                     h4
+        //-                         span - London -
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb24(alt='Mustafa Khanbhai', src='img/mustafa.jpg')
+        //-                     h4
+        //-                         | Mustafa 
+        //-                         br
+        //-                         | Khanbhai
+        //-                     p
+        //-                         | A frequent flyer and underwater robotics champion. Co-founder of Plain Exchange and organiser of HackUST and Junction.
+        //-                     h4
+        //-                         span - Hong Kong -                                
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb24(alt='Paul Papadimitriou', src='img/paul.jpg')
+        //-                     h4
+        //-                         | Paul
+        //-                         br
+        //-                         | Papadimitriou 
+        //-                     p
+        //-                         | A serial entrepreneur and backpacker. Organised HackTrain and StartupBus UK. Now Program Director of MIT Kickstart.
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                 .col-md-3.col-sm-6
+        //-                     img.Advisors.mb24(alt='Reijo Pold', src='img/reijo.jpg')
+        //-                     h4
+        //-                         | Reijo 
+        //-                         br
+        //-                         | Pold
+        //-                     p
+        //-                         | An Economist with a passion for Finance & Technology. Co-founder of KarmaWings and KickstartLDN.
+        //-                     h4
+        //-                         span - London -                 
+
+
         footer#footer.in-page-link.footer-2
             .container
                 .row

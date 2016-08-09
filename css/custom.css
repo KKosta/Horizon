@@ -1,14 +1,18 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ***** */
 #plane {
-  animation: plane 2s both; }
+  animation: plane 4s both; }
 @keyframes plane {
   0% {
     margin-top: 100vh;
     opacity: 0;
     width: 150%; }
-  100% {
+  50% {
     margin-top: 20vh;
     opacity: 1;
+    width: 40%; }
+  100% {
+    margin-top: 20vh;
+    opacity: 0;
     width: 40%; } }
 #title_logo {
   animation: title_logo 1s 2s both; }
@@ -188,7 +192,7 @@ header {
   #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
     color: #FF4081;
     font-weight: 500;
-    padding: 40px 0 120px 0; }
+    margin: -56px 0 64px 0; }
 
 #wingtip_divider, #passenger_divider, #airport_divider {
   display: block;
@@ -222,9 +226,9 @@ header {
 #the_hack {
   background: white; }
   #the_hack #HK_LDN {
-    text-align: left;
+    text-align: center;
     padding-top: 0;
-    padding-bottom: 36px; }
+    padding-bottom: 64px; }
   #the_hack #journey {
     padding: 80px; }
   #the_hack h2, #the_hack #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #the_hack input[type="text"] {
@@ -253,27 +257,23 @@ header {
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat; }
-  #apply #the_process {
-    text-align: left; }
-    #apply #the_process .process_image {
-      height: 600px;
-      padding-top: 100px;
-      display: block;
-      margin: 0 auto; }
-    #apply #the_process .process_image_horizontal {
-      display: none; }
-    #apply #the_process .process_copy {
-      height: 200px;
-      padding-top: 50px; }
-      #apply #the_process .process_copy h2, #apply #the_process .process_copy #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #apply #the_process .process_copy input[type="text"] {
-        font-size: 1.7em;
-        text-align: left;
-        text-transform: uppercase;
-        font-weight: 500;
-        width: 30%;
-        border-bottom: 2px solid #FF4081; }
-      #apply #the_process .process_copy p {
-        padding-top: 20px; }
+  #apply #the_process .process_image, #apply #the_process .process_image_mobile {
+    width: 77%;
+    display: block;
+    margin: 0 auto; }
+  #apply #the_process .process_image_mobile {
+    display: none; }
+  #apply #the_process .process_copy {
+    padding-top: 50px; }
+    #apply #the_process .process_copy h2, #apply #the_process .process_copy #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #apply #the_process .process_copy input[type="text"] {
+      font-size: 1.7em;
+      text-transform: uppercase;
+      font-weight: 500;
+      width: 50%;
+      margin: 0 auto;
+      border-bottom: 2px solid #FF4081; }
+    #apply #the_process .process_copy p {
+      padding-top: 20px; }
   #apply #the_numbers {
     text-align: center;
     height: auto;
@@ -376,12 +376,18 @@ header {
 #team {
   background: white; }
   #team h1 {
-    text-align: left;
+    text-align: center;
     padding: 36px; }
+  #team h2, #team #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #team input[type="text"] {
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: inherit;
+    margin-bottom: 24px; }
   #team .TeamPhoto {
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
+    width: 225px;
+    height: 225px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1); }
   #team .Team h4 span {
@@ -390,6 +396,12 @@ header {
     color: #FF4081; }
   #team .Team p {
     margin-bottom: 0px; }
+
+#advisors img {
+  height: 120px;
+  width: 120px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
 
 .footer_cover {
   background: white; }
@@ -455,13 +467,17 @@ footer {
     padding: 10px 20px;
     border: none; }
 
-  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
-    padding-bottom: 94px; }
+  #about p {
+    text-align: center; }
   #about #verticals {
-    margin-top: 0; }
+    margin-top: 64px; }
 
-  #apply #the_process .process_image_horizontal {
-    display: block; }
+  #the_numbers h5 {
+    padding-bottom: 24px; }
+
+  #apply #the_process .process_image_mobile {
+    display: block;
+    width: 90%; }
   #apply #the_process .process_image {
     display: none; } }
 @media (max-width: 769px) {
@@ -471,8 +487,8 @@ footer {
   h1 {
     line-height: 1.2em; }
 
-  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
-    padding: 20px 15px; }
+  #about p {
+    text-align: center; }
   #about #verticals {
     padding: 0 0 0 0; }
 
