@@ -98,7 +98,7 @@ h2
 
 p 
 	font-family: $font
-	color: $black
+	color: $grey1
 	font-size: $p
 	line-height: 1.7em
 	margin: 0
@@ -300,16 +300,17 @@ header
 		text-align: center
 		padding-top: 0
 		padding-bottom: 64px
+		color: $black
 
 	#journey 
 		padding: 80px
 	h2
-		font-size: 1.7em
+		font-size: 2.1em
 		text-align: center
 		text-transform: uppercase
 		font-weight: 500
 		padding-top: 24px
-		width: 50%
+		width: 55%
 		margin: 0 auto
 		border-bottom: 2px solid #FF4081
 
@@ -317,6 +318,7 @@ header
 	p 
 		text-align: center
 		padding-top: 20px
+		color: $grey1
 
 #passenger_divider
 	@extend #wingtip_divider
@@ -357,14 +359,15 @@ header
 			padding-top: 50px 
 
 			h2
-				font-size: 1.7em
+				font-size: 2.1em
 				text-transform: uppercase
 				font-weight: 500
 				width: 50%
 				margin: 0 auto
 				border-bottom: 2px solid #FF4081
 			p 
-				padding-top: 20px			
+				padding-top: 20px
+				color: $grey1			
 
 	#the_numbers
 		text-align: center
@@ -492,27 +495,22 @@ header
 		background-image: url(../img/divider_arrow_up.png)		
 
 #team
-	background: white
+	// background: white
 
 	h1
 		text-align: center
-		padding: 36px
 
-	h2
-		font-size: 1.7em
-		text-align: center
-		text-transform: uppercase
+	h4
+		font-size: 2.1em
 		font-weight: 500
-		line-height: inherit
-		margin-bottom: 24px
 
 
 	.TeamPhoto
 		width: 225px
 		height: 225px
 		// border-radius: 200px
-		-webkit-filter: grayscale(1)
-		filter: grayscale(1)
+		-webkit-filter: grayscale(0.2)
+		filter: grayscale(0.2)
 
 
 	.Team h4 span
@@ -522,14 +520,52 @@ header
 
 	.Team p
 		margin-bottom: 0px
+		color: $grey1
 
 #advisors
-	
+
+	h2 
+		font-size: 2.1em
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		line-height: inherit
+		width: 50%
+		margin: 36px auto 64px auto
+		border-bottom: 2px solid #FF4081
+
 	img
-		height: 120px
-		width: 120px
-		-webkit-filter: grayscale(1)
-		filter: grayscale(1)
+		height: 180px
+		width: 180px
+		-webkit-filter: grayscale(0.2)
+		filter: grayscale(0.2)
+
+	h4
+		font-size: 2.1em
+		font-weight: 500
+		margin-bottom: 6px
+	p
+		line-height: 1.4em
+		color: $grey1
+
+	.advisors_social_links
+		padding-top: 1.4em	
+	a
+		font-size: 18px
+		color: $grey2
+	
+	a:hover
+		color: $pink
+
+	.advisors_img_HK
+		text-align: right
+
+	.LDN_Advisors
+		text-align: right
+
+	.advisors_mobile
+		display: none
+
 
 
 .footer_cover
@@ -605,11 +641,6 @@ footer
 
 
 @media (max-width: 990px)
-
-
-// Mobile Nav
-
-@media (max-width: 990px)
 	
 	.mobile-toggle
 		border: none
@@ -637,6 +668,15 @@ footer
 				width: 90%
 			.process_image
 				display: none
+
+	#advisors .col-md-6
+		text-align: center
+
+		.advisors_mobile
+			display: block
+		
+		.advisors
+			display: none		
 
 @media (max-width: 769px)
 

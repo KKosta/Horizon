@@ -1,0 +1,43 @@
+YUI.Env.JSONP.yui_3_16_0_1_1470762061597_3234({
+   "ads" : [
+      {
+         "beacon" : "https://beap.gemini.yahoo.com/mbcsc?bv=1.0.0&es=y6O1cPUGIS974q_CNgM_IFsxbMNLI1afLzrwiIDrvwUEugJwD.qVhGExAtrkP0O1ldxdDqJWE0obLwzos4J2dxNRhYbfM.njJOT0yp5bax3iaxfdYLLta78OqDbwh06tSTznpQMgV0ASu3gsz50vVvsfg6hrn8h4KcoezXcnRx.GwYqjJJfIt7z0oEDLROFbrqyuC2djm3Y_PZ5b1h6VO4TK_pZzP.w8R5lecS7QmQF_Q3oEn9lwP5ovgAOYl0jq1w0ssVztWYfB6ViQGPCOSSTl34F3Sg7yc5niyW0ln6FSuTqN5tE6z3PrHAugOF.1jsjUxxMQEptr0_wpdmhWV1.2fOtkEHJOjn59vr1toXABZU_BClZYCkETDezHLqLcqVezrzIlShhnWgl3TijRiZSYSzIBWm1h1ViKp6cP.kVBzkfo6IZrye07lFc-&ap=$(AD_POSN)",
+         "bidUSD" : 0.44340,
+         "ccCode" : "STRM",
+         "clickProbability" : 0.0,
+         "creativeId" : 31982399969,
+         "displayUrl" : "http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/c33fcb18b268b7568b7531b048958d59.jpeg",
+         "index" : 1,
+         "landingPageUrl" : "https://axagmdhk.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=cl&a.si=2965&a.te=35&a.ra=[RANDOM]&g.lu=",
+         "normalizedEcpm" : 0.44340,
+         "rsc" : 0.0004833774412418279,
+         "sponsoredBy" : "Axa",
+         "tag" : "{\"ad_feedback_beacon\":\"https://us.af.beap.bc.yahoo.com/af?bv=1.0.0&bs=(15ndeu5tt(gid$f56edca8-5e52-11e6-9d41-008cfacc69ec-7f6c8e435700,st$1470762107960000,li$0,cr$31982399969,dmn$c31982399969,srv$3,exp$1470769307960000,ct$27,v$1.0,adv$1373000,pbid$1,seid$4964388))&r=1470762107960&al=$(AD_FEEDBACK)\",\"advertiser_id\":\"1373000\",\"callToAction\":\"Learn More\",\"clickUrl\":\"https://beap.gemini.yahoo.com/mbclk?bv=1.0.0&es=r0dFPscGIS8Uq0uzhntSrcKetCiTUIWZBKmwvDRCBga9DWqf6Fa2occs6N7dzY8cS5jbiCWmgijHzk4cBvcwnoVwVfRh7fgP0o8cve8foUFW0.PEdEdNA4EGTAAOFTn.PTM4dGWlH9HdEtPx9s0qN6eIlYbHxKYfW5zsna.pzKNDvcp5lYpKAXpXjkeqNeKOMoBILryyXhMvsQJyzRJOjS096lb0_KJ0ADNSPYGp2jkYxL0DoJRDJgkDprgkN6UEcMRhepB1PcDybQDGnovVn9tHdPWVPZMjdIFrUqxI5yFeS.sZms6UrjsKEPo7UerbWgRoAbt0xqrWN8z.9pYrJPmciTGSC43QJ9GtwGMsLqoRoVe3wHfbcQ8HlimTgGi_Jyx6g9R52RB5JOQqP4bsD7_WDkBXpEA0_WXCzAFh3qurZO6a10SdoihKCFXlRWnLSVi8k.ZxQMQnAx6YF5HmLnjJW3ZfGmttB0eamrGgJMKvaFVhEN.vXaoHFE.T69tvEuU904dUK4qwCAKb2sCNRVi2UBizDEbBX2k.1bF5061xH_UDXCLy1SuuxCNyuw--%26lp=\",\"headline\":\"How to age-proof your body: facts vs. Fiction ?\",\"hqImage\":\"https://s.yimg.com/av/moneyball/ads/1459937372009-1269.jpg\",\"hqImageHeight\":627,\"hqImageWidth\":1200,\"image\":\"http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/c33fcb18b268b7568b7531b048958d59.jpeg\",\"imageHeight\":82,\"imageWidth\":82,\"imprTrackingUrl\":\"https://axagmdhk.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=im&a.si=2965&a.te=35&a.he=1&a.wi=1&a.hr=p&a.ra=[RANDOM]\",\"imprTrackingUrls\":[\"https://axagmdhk.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=im&a.si=2965&a.te=35&a.he=1&a.wi=1&a.hr=p&a.ra=[RANDOM]\"],\"landingUrl\":\"https://axagmdhk.solution.weborama.fr/fcgi-bin/dispatch.fcgi?a.A=cl&a.si=2965&a.te=35&a.ra=[RANDOM]&g.lu=\",\"objective\":\"PROMOTE_BRAND\",\"origImg\":\"https://s.yimg.com/av/moneyball/ads/1459937373572-4515.jpg\",\"origImgHeight\":627,\"origImgWidth\":627,\"secHqImage\":\"https://s.yimg.com/av/moneyball/ads/1459937372009-1269.jpg\",\"secImage\":\"https://s.yimg.com/av/curveball/ads/pr/RESIZE/82x82/c33fcb18b268b7568b7531b048958d59.jpeg\",\"secOrigImg\":\"https://s.yimg.com/av/moneyball/ads/1459937373572-4515.jpg\",\"source\":\"Axa\",\"sponsoredByLabel\":\"Sponsored\",\"summary\":\"Many of the “anti-aging” tips that circulate are not all they seem. Fact or fiction? Read on to find out more!\",\"uuid\":\"31982399969\"}"
+      },
+      {
+         "beacon" : "https://beap.gemini.yahoo.com/mbcsc?bv=1.0.0&es=QXX1OaYGIS9jooK8IEfwfUHsbZEPOqxaiK_M_om8RnRsPD6hpkte719ZR6bi_irV3NHtj4dDsZwfLmvUNGpJZ_8GgbwehaiM3d61c5GND1E0RwBi_dng191FgUs53uapa7pQ3EPIMveh7u5xRSp_Iid5VgOucBh.LoVLp0TeeL2A3Mheoc3AEZWhQ1rkS8iL7_FmJrq5PgcK6A2F0XKjY6BeNEAs565UwLBnkqw.iXtOMt_SHdh5I4gjNVYf.BqIb0Rwcz3CBvBavPuvyHi9nUnwoXvUuDmMONRQTmcVuhuDNtJAHffC5yE8VTs3XI2ILt.NjKg818_TCOcVxHjwQKYEC.CFdZPJcoPi_M2h7YRkrIyKYd.Uhz6.b7EVKbL2t2.Y4alK4PltdepmVhX1dkg-&ap=$(AD_POSN)",
+         "bidUSD" : 0.030,
+         "ccCode" : "STRM",
+         "clickProbability" : 0.003053862542928164,
+         "creativeId" : 29367637133,
+         "displayUrl" : "http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/7a0564f3dd79a2a29b2b9e4fb3b56f89.png",
+         "index" : 2,
+         "landingPageUrl" : "http://www.facebook.com/campaign/landing.php?campaign_id=1516557358617821&partner_id=yahoo_stream&placement=HongKong&creative=EnglishMail&extra_1=Desktop&extra_2=c&keyword=29367637133",
+         "normalizedEcpm" : 0.05802338831563511,
+         "rsc" : 9.988932424676022e-05,
+         "sponsoredBy" : "Facebook",
+         "tag" : "{\"ad_feedback_beacon\":\"https://us.af.beap.bc.yahoo.com/af?bv=1.0.0&bs=(15gqb6hpc(gid$f56edca8-5e52-11e6-9d41-008cfacc69ec-7f6c8e435700,st$1470762107960000,li$0,cr$29367637133,dmn$m25151,srv$3,exp$1470769307960000,ct$27,v$1.0,adv$958566,pbid$1,seid$4964388))&r=1470762107960&al=$(AD_FEEDBACK)\",\"advertiser_id\":\"958566\",\"callToAction\":\"Learn more\",\"clickUrl\":\"https://beap.gemini.yahoo.com/mbclk?bv=1.0.0&es=pKDGUQ8GIS9Ce3byG8f2CRnTimvWAKqQ8KuWzOFXxAVy57pb_N51UtWifOEa2Mi8q2oCHuXMfbHd.nocPGiMMHoidY5rV7E.ZGDfaQNdJ_ki0G0OzR38zTZJ0q2T96JurSig00HJr0gBJ7WjdixOqOAYGYNF7YHrbxE7Junt.2ZuXrlocZ9wzoZFQ_9qfBNErQCeT7ZpfQMv_DTvqvoTjVmQGsDBJH5kMNo.Tbs8zW6pacAZ_yhNN9Web1u_7ma49lmvQfJBBhNDckVjwmHxeZC3cBjBXZeoVQT2JKcnHZXAcDhyLaoZbmzEgHqnPaqNmOkwV6qt.d8ho0B8rUal5X5oCMsezb5_V1pqNMxs9jc3l.j6RbqEI.TPmqvqkrouOfKPw0AMqACXacscDpzNyM7duzOsqs5zDUieuVJgXBqfgDij.R4jDAqTc_q5vv1yPeShwxPr1.5rKzqxYW3lKsbkoo6VXpSU2pa0GPYU0ip3h6sNlQjIHYBLHPriGwZxnppvQR1sxvj3BXDOeWTlGx8MFHQ9pBzRNYVZZoVVbF_Ptv3QYb5gosIsuUBu9r6GXVUm46ItjDu8Xp1JPunXanSsLtaVNJS1IB9.Z3tjt7GwsxAJjBlhx2FQIuOs5Ck9HFaI94xFpmn1tZE2Jr715.KqtsEFY1li1jQyGHWLE8Uwjn_8%26lp=\",\"headline\":\"Facebook® Account Sign Up. Join for Free Today!\",\"hqImage\":\"https://s.yimg.com/av/moneyball/ads/1412102654349-1050.jpg\",\"hqImageHeight\":627,\"hqImageWidth\":1200,\"image\":\"http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/7a0564f3dd79a2a29b2b9e4fb3b56f89.png\",\"imageHeight\":82,\"imageWidth\":82,\"landingUrl\":\"http://www.facebook.com/campaign/landing.php?campaign_id=1516557358617821&partner_id=yahoo_stream&placement=HongKong&creative=EnglishMail&extra_1=Desktop&extra_2=c&keyword=29367637133\",\"objective\":\"PROMOTE_CONTENT\",\"origImg\":\"\",\"origImgHeight\":-1,\"origImgWidth\":-1,\"secHqImage\":\"https://s.yimg.com/av/moneyball/ads/1412102654349-1050.jpg\",\"secImage\":\"https://s.yimg.com/av/curveball/ads/pr/RESIZE/82x82/7a0564f3dd79a2a29b2b9e4fb3b56f89.png\",\"source\":\"Facebook\",\"sponsoredByLabel\":\"Sponsored\",\"summary\":\"Connect with friends and the world around you on Facebook. Sign up, it’s free and always will be.\",\"uuid\":\"29367637133\"}"
+      }
+   ],
+   "adsRequested" : 8,
+   "adserverLatency" : 1.000000000000000e-05,
+   "section" : {
+      "id" : 4964388
+   },
+   "serverIp" : "fe20.cbs.cb.gq1.yahoo.com",
+   "status" : "0",
+   "totalAds" : 2,
+   "totalLatency" : 0.0237310,
+   "userCountry" : "HK",
+   "version" : "2"
+})

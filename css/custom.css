@@ -68,7 +68,7 @@ h2, #CTA #sign_up_form input[type="text"] {
 
 p {
   font-family: "Roboto", Helvetica, sans-serif;
-  color: #212121;
+  color: #616161;
   font-size: 1.4em;
   line-height: 1.7em;
   margin: 0; }
@@ -228,21 +228,23 @@ header {
   #the_hack #HK_LDN {
     text-align: center;
     padding-top: 0;
-    padding-bottom: 64px; }
+    padding-bottom: 64px;
+    color: #212121; }
   #the_hack #journey {
     padding: 80px; }
   #the_hack h2, #the_hack #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #the_hack input[type="text"] {
-    font-size: 1.7em;
+    font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     padding-top: 24px;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
     border-bottom: 2px solid #FF4081; }
   #the_hack p {
     text-align: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    color: #616161; }
 
 #passenger_divider {
   background-image: url(../img/passenger.jpg); }
@@ -266,14 +268,15 @@ header {
   #apply #the_process .process_copy {
     padding-top: 50px; }
     #apply #the_process .process_copy h2, #apply #the_process .process_copy #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #apply #the_process .process_copy input[type="text"] {
-      font-size: 1.7em;
+      font-size: 2.1em;
       text-transform: uppercase;
       font-weight: 500;
       width: 50%;
       margin: 0 auto;
       border-bottom: 2px solid #FF4081; }
     #apply #the_process .process_copy p {
-      padding-top: 20px; }
+      padding-top: 20px;
+      color: #616161; }
   #apply #the_numbers {
     text-align: center;
     height: auto;
@@ -373,35 +376,58 @@ header {
   #airport_divider .diagonal_down {
     background-image: url(../img/divider_arrow_up.png); }
 
-#team {
-  background: white; }
-  #team h1 {
-    text-align: center;
-    padding: 36px; }
-  #team h2, #team #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #team input[type="text"] {
-    font-size: 1.7em;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: inherit;
-    margin-bottom: 24px; }
-  #team .TeamPhoto {
-    width: 225px;
-    height: 225px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
-  #team .Team h4 span {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #FF4081; }
-  #team .Team p {
-    margin-bottom: 0px; }
+#team h1 {
+  text-align: center; }
+#team h4 {
+  font-size: 2.1em;
+  font-weight: 500; }
+#team .TeamPhoto {
+  width: 225px;
+  height: 225px;
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2); }
+#team .Team h4 span {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FF4081; }
+#team .Team p {
+  margin-bottom: 0px;
+  color: #616161; }
 
+#advisors h2, #advisors #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #advisors input[type="text"] {
+  font-size: 2.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: inherit;
+  width: 50%;
+  margin: 36px auto 64px auto;
+  border-bottom: 2px solid #FF4081; }
 #advisors img {
-  height: 120px;
-  width: 120px;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1); }
+  height: 180px;
+  width: 180px;
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2); }
+#advisors h4 {
+  font-size: 2.1em;
+  font-weight: 500;
+  margin-bottom: 6px; }
+#advisors p {
+  line-height: 1.4em;
+  color: #616161; }
+#advisors .advisors_social_links {
+  padding-top: 1.4em; }
+#advisors a {
+  font-size: 18px;
+  color: #DDDDDD; }
+#advisors a:hover {
+  color: #FF4081; }
+#advisors .advisors_img_HK {
+  text-align: right; }
+#advisors .LDN_Advisors {
+  text-align: right; }
+#advisors .advisors_mobile {
+  display: none; }
 
 .footer_cover {
   background: white; }
@@ -479,7 +505,14 @@ footer {
     display: block;
     width: 90%; }
   #apply #the_process .process_image {
-    display: none; } }
+    display: none; }
+
+  #advisors .col-md-6 {
+    text-align: center; }
+    #advisors .col-md-6 .advisors_mobile {
+      display: block; }
+    #advisors .col-md-6 .advisors {
+      display: none; } }
 @media (max-width: 769px) {
   #tagline {
     padding: 0 15px; }
