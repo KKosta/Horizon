@@ -114,8 +114,7 @@ header {
 
 .cover {
   z-index: -1000;
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
   .cover::before {
     content: " ";
     position: fixed;
