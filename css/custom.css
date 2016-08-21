@@ -565,6 +565,9 @@ footer {
     padding: 40px 20px; }
 
   #apply #the_process .process_copy {
-    height: auto; } }
+    height: auto; }
+
+  .icon-sm {
+    font-size: 28px; } }
 
 /*# sourceMappingURL=custom.css.map */
