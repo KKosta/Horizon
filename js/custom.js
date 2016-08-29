@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
-	$('.parallax-window').parallax({imageSrc: '../img/plane_runway_dark.jpg'});
+	$('.grid').masonry({
+		itemSelector: '.grid-item',
+		isFitWidth: true
+	});
 
 	// $("#mobile_menu").height(h);
 

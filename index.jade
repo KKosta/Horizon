@@ -20,8 +20,17 @@ html(lang='en')
     meta(name='twitter:title', content='Hack Horizon')
     meta(name='twitter:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine travel tech.')
     meta(name='twitter:image', content='http://www.hackhorizon.com/img/plane_runway.jpg')
+
+    // LinkedIn Fix
+    meta(prefix='og: http://ogp.me/ns#', property='og:title', content='Hack Horizon')
+    meta(prefix='og: http://ogp.me/ns#', property='og:type', content='website')
+    meta(prefix='og: http://ogp.me/ns#', property='og:image', content='http://www.hackhorizon.com/img/plane_runway_dark.jpg')
+    meta(prefix='og: http://ogp.me/ns#', property='og:url', content='http://www.hackhorizon.com')    
+
+    // Google  
     meta(name='google-site-verification', content='7b1NR2hkbM8tSikmIyOuY9KomX2mYdEgdR6punOeyzs')
     meta(name='google-site-verification', content='Eo4c7vHQRKVE4sOLhfu-dsiCqSdJgf1WzOLA8rTqN9s')
+
     link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
     link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
     link(rel='apple-touch-icon', sizes='72x72', href='/apple-icon-72x72.png')
@@ -125,7 +134,7 @@ html(lang='en')
                         h1
                             | The First of Its Kind
                         h2
-                            | build. discover. soar
+                            | build. discover. soar.
                 .row
                     .col-md-7.col-sm-12 
                         p
@@ -249,7 +258,7 @@ html(lang='en')
                             span
                                 | - Open This Autumn -
                 .row#sign_up_form
-                    .col-md-8.col-md-offset-2
+                    .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
                         form.form-newsletter(data-success='Thanks for signing up, we will be in touch shortly!', data-error='Please provide a valid email address.')
                             input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
                             button.btn-white.mb0(type='submit') Keep Me Posted
@@ -267,70 +276,173 @@ html(lang='en')
                             | Partners
                 .row
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.reaktor.aero/')
-                            img(alt='Reaktor', src='img/logos/reaktor.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.reaktor.aero/')
+                                img(alt='Reaktor', src='img/logos/reaktor.png')
+                                .title
+                                    h5.uppercase.mb0 - Industry Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://nest.vc/')
-                            img(alt='Nest VC', src='img/logos/nest.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://nest.vc/')
+                                img(alt='Nest VC', src='img/logos/nest.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.hkcocoon.org/en/space.aspx')
-                            img(alt='CoCoon', src='img/logos/cocoon.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.hkcocoon.org/en/space.aspx')
+                                img(alt='CoCoon', src='img/logos/cocoon.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='https://generalassemb.ly/hong-kong')
-                            img(alt='GA', src='img/logos/ga.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='https://generalassemb.ly/hong-kong')
+                                img(alt='GA', src='img/logos/ga.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                 .row
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://brinc.io')
-                            img(alt='Brinc', src='img/logos/brinc.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://brinc.io')
+                                img(alt='Brinc', src='img/logos/brinc.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='https://www.whub.io/')
-                            img(alt='WHub', src='img/logos/whub.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='https://www.whub.io/')
+                                img(alt='WHub', src='img/logos/whub.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.meetup.com/IxDAHK/')
-                            img(alt='IxDA Hong Kong', src='img/logos/IxDA.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.meetup.com/IxDAHK/')
+                                img(alt='IxDA Hong Kong', src='img/logos/IxDA.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.startupshk.com/')
-                            img#startupshk(alt='Startups HK', src='img/logos/hkstartups.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.startupshk.com/')
+                                img#startupshk(alt='Startups HK', src='img/logos/hkstartups.png')
+                                .title    
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                 .row
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://paceventures.co/')
-                            img(alt='Pace Ventures', src='img/logos/pace.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://paceventures.co/')
+                                img(alt='Pace Ventures', src='img/logos/pace.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='https://www.klook.com/')
-                            img(alt='Klook', src='img/logos/klook.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='https://www.klook.com/')
+                                img(alt='Klook', src='img/logos/klook.png')
+                                .title
+                                    h5.uppercase.mb0 - Industry Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://ventriscapital.com/')
-                            img(alt='Ventris', src='img/logos/ventris.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://ventriscapital.com/')
+                                img(alt='Ventris', src='img/logos/ventris.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.traveltechlab.london/')
-                            img(alt='Travel Tech Lab', src='img/logos/traveltechlab.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.traveltechlab.london/')
+                                img(alt='Travel Tech Lab', src='img/logos/traveltechlab.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
+                .row
+                    .col-sm-3.col-xs-6.partner_logo
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://metta.co/')
+                                img(alt='Metta', src='img/logos/metta.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
+                    .col-sm-3.col-xs-6.partner_logo
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.londonandpartners.com/')
+                                img(alt='London & Partners', src='img/logos/lnp.jpg')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
+                    .col-sm-3.col-xs-6.partner_logo
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.design-thinking.asia/')
+                                img(alt='Design Thinking Asia', src='img/logos/dta.jpg')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
+                    .col-sm-3.col-xs-6.partner_logo
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://hk.bsdacademy.com/')
+                                img(alt='BSD Academy', src='img/logos/bsd.png')
+                                .title
+                                    h5.uppercase.mb0 - Ecosystem Partner -
                 .row
                     .col-sm-3.col-sm-offset-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://metta.co/')
-                            img(alt='Metta', src='img/logos/metta.png')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://passportx.co/')
+                                img(alt='PassportX', src='img/logos/passportx.png')
+                                .title
+                                    h5.uppercase.mb0 - Industry Partner -
                     .col-sm-3.col-xs-6.partner_logo
-                        a(target='_blank', href='http://www.londonandpartners.com/')
-                            img(alt='London & Partners', src='img/logos/lnp.jpg')
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='')
+                                i.fa.fa-plus.icon-sm#Partner_With_Us
+                                .title
+                                    h5.uppercase.mb0 - Partner With Us -
 
-        section.divider
+
+        section#community.in-page-link.section_padding.bg-secondary
+            .container
+                .row
+                    .col-sm-12.text-center
+                        h1.uppercase
+                            | Join The Community
+                        h2
+                            | #TravelTechTuesdays
+                .grid
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt6.jpg')
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt3.jpg')
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt7.jpg')       
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt4.jpg')
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt_logo.png') 
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt2.jpg')
+                    .grid-item
+                        img(alt='Pic', src='img/ttt/ttt1.jpg')
+
+                .row.text-center#ttt
+                     .col-md-10.col-md-offset-1.col-sm-12
+                        p
+                            | TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystem in Hong Kong and encourage new connections, opportunities and collaborations in the space.
+                            br
+                            br
+                            | In our third event we will be exploring "The Data Behind Travel," discussing the latest trends and exploring the newest technologies with two of the biggest players in industry: Skyscanner and Amadeus.  
+                    .col-md-8.col-md-offset-2.col-sm-12#ttt_details
+                        a#ttt_button.btn.btn-lg.inner-link(href='https://www.eventbrite.co.uk/e/traveltech-tuesdays-3-tickets-27371829880') Join The Event
+                   
+                    
+
+        section.divider#airport
             #airport_divider
                 .diagonal_down
 
-        section#advisors.in-page-link.section_padding
+        //- section#advisors.in-page-link.section_padding
             .container
                 .row
                     .col-md-12.text-center
                         h1.uppercase
                             | Our Advisors
                         p
-                            | We have brought together inspiring influencers across the start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Horizon .
+                            | We have brought together inspiring influencers across the start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Horizon.
 
                 .row
                     .col-md-6.col-sm-12.HK_Advisors
                         h2
                             | HONG KONG                        
-                        .col-md-12
-                            .col-md-6.advisors_img_HK
+                        .col-md-13
                                 img.mb24(alt='Manav Gupta', src='img/manav.jpg')
                             .col-md-6
                                 h4
@@ -386,10 +498,8 @@ html(lang='en')
                     .col-md-6.col-sm-12
                         h2
                             | LONDON
-                        .col-md-12
-                            .col-md-6.advisors_mobile
+                        .col-md-3
                                 img.mb32(alt='Tim Barnes', src='img/tim.jpg')
-                            .col-md-6.LDN_Advisors
                                 h4
                                     | Tim Barnes
                                 p
@@ -401,10 +511,8 @@ html(lang='en')
                                         i.ti-twitter-alt
                             .col-md-6.advisors
                                 img.advisors.mb32(alt='Tim Barnes', src='img/tim.jpg')
-                        .col-md-12
-                            .col-md-6.advisors_mobile
+                        .col-md-3
                                 img.mb24(alt='Mustafa Khanbhai', src='img/mustafa.jpg')
-                            .col-md-6.LDN_Advisors
                                 h4
                                     | Mustafa Khanbhai
                                 p
@@ -414,10 +522,8 @@ html(lang='en')
                                         i.ti.ti-linkedin                            
                             .col-md-6.advisors
                                 img.advisors.mb24(alt='Mustafa Khanbhai', src='img/mustafa.jpg')
-                        .col-md-12
-                            .col-md-6.advisors_mobile
+                        .col-md-3
                                 img.mb24(alt='Paul Papadimitriou', src='img/paul.jpg')
-                            .col-md-6.LDN_Advisors
                                 h4
                                     | Paul Papadimitriou 
                                 p
@@ -429,10 +535,8 @@ html(lang='en')
                                         i.ti-twitter-alt
                             .col-md-6.advisors
                                 img.advisors.mb24(alt='Paul Papadimitriou', src='img/paul.jpg')
-                        .col-md-12
-                            .col-md-6.advisors_mobile
+                        .col-md-3
                                 img.mb24(alt='Reijo Pold', src='img/reijo.jpg')
-                            .col-md-6.LDN_Advisors
                                 h4
                                     | Reijo Pold
                                 p
@@ -444,6 +548,144 @@ html(lang='en')
                                         i.ti-twitter-alt
                             .col-md-6.advisors
                                 img.advisors.mb24(alt='Reijo Pold', src='img/reijo.jpg')
+
+
+        section#advisors.in-page-link.section_padding
+            .container
+                .row
+                    .col-md-12.text-center
+                        h1.uppercase
+                            | Our Advisors
+                        p#advisors_description
+                            | We have brought together inspiring influencers across the start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Horizon.
+
+                .row.text-center                      
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Manav Gupta', src='img/manav.jpg')
+                            h4
+                                | Manav Gupta
+                            p
+                                | Founder & CEO at Brinc.io
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://www.linkedin.com/in/manavg')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/manavg')
+                                    i.ti-twitter-alt
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Will Ross', src='img/will.jpg')
+                            h4
+                                | Will Ross
+                            p
+                                | Partner at Nest VC
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/william-ross-a9923294')
+                                    i.ti.ti-linkedin  
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Kristin Low', src='img/kristin.jpg')
+                            h4
+                                | Kristin Low
+
+                            p
+                                | Founder at Design Thinking Asia
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/kristindlow')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/kristinlow')
+                                    i.ti-twitter-alt
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
+                            h4
+                                | Jeffrey Broer
+                            p
+                                | Co-Director at Founders Institute
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Karena Belin', src='img/karena.jpg')
+                            h4
+                                | Karena Belin
+                            p
+                                | Co-Founder at WHub
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/karenabelin')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/BelinKarena')
+                                    i.ti-twitter-alt
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Bennett Chen', src='img/bennett.jpg')
+                            h4
+                                | Bennet Chen
+                            p
+                                | Co-Founder at Travolor
+                            h4
+                                span - Hong Kong -
+                            .advisors_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/bennettchen')
+                                    i.ti.ti-linkedin  
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Tim Barnes', src='img/tim.jpg')
+                            h4
+                                | Tim Barnes
+                            p
+                                | Advisory Board Member at LCIF
+                            h4
+                                span - London -
+                            .advisors_social_links
+                                a(target='_blank', href='https://uk.linkedin.com/in/timothyplbarnes')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/timothy_barnes')
+                                    i.ti-twitter-alt
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Mustafa Khanbhai', src='img/mustafa.jpg')
+                            h4
+                                | Mustafa Khanbhai
+                            p
+                                | General Manager at Uber
+                            h4
+                                span - London -
+                            .advisors_social_links
+                                a(target='_blank', href='https://uk.linkedin.com/in/mustafakhanbhai')
+                                    i.ti.ti-linkedin                            
+                    .col-md-3.col-md-offset-3.col-sm-6
+                            img.mb32(alt='Paul Papadimitriou', src='img/paul.jpg')
+                            h4
+                                | Paul Papadimitriou 
+                            p
+                                | Founder & Innovation Strategy at Intelligencr
+
+                            h4
+                                span - London -
+                            .advisors_social_links
+                                a(target='_blank', href='https://uk.linkedin.com/in/paulpapadimitriou')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/papadimitriou')
+                                    i.ti-twitter-alt                                
+                    .col-md-3.col-sm-6
+                            img.mb32(alt='Reijo Pold', src='img/reijo.jpg')
+                            h4
+                                | Reijo Pold
+                            p
+                                | Partner & Innovation Architect at Silk Ventures
+                            h4
+                                span - London -
+                            .advisors_social_links
+                                a(target='_blank', href='https://uk.linkedin.com/in/reijo-pold-彭-瑞-3b342b15')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/reiopold')
+                                    i.ti-twitter-alt
 
 
         section#team.in-page-link.section_padding.bg-secondary
@@ -495,7 +737,7 @@ html(lang='en')
                             h4
                                 span - London -
                         .col-md-4.col-sm-6
-                            img.TeamPhoto.mb32(alt='Evan Tate', src='img/evan.png')
+                            img.TeamPhoto.mb32(alt='Evan Tate', src='img/evan.jpg')
                             h4
                                 | Evan
                                 
@@ -547,6 +789,7 @@ html(lang='en')
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
     script(src='js/flexslider.min.js')
+    script(src='js/masonry.min.js')    
     script(src='js/smooth-scroll.min.js')
     script(src='js/parallax.min.js')
     script(src='js/scripts.js')

@@ -1302,9 +1302,6 @@ nav .cart-overview a {
     transform: translate3d(0, 0px, 0) !important;
     -webkit-transform: translate3d(0, 0px, 0) !important;
     -moz-transform: translate3d(0, 0px, 0) !important;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
   }
   .nav-bar,
   .nav-bar .module-group,
@@ -1464,14 +1461,14 @@ nav.outOfSight {
   transform: translate3d(0, -200px, 0);
   -webkit-transform: translate3d(0, -200px, 0);
   -moz-transform: translate3d(0, -200px, 0);
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
 }
 nav.scrolled {
   transform: translate3d(0, 0px, 0);
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
 }
 nav.fixed,
 nav.absolute {
@@ -1495,9 +1492,6 @@ nav.fixed .nav-utility {
 nav.fixed.scrolled {
   visibility: visible;
   opacity: 1;
-}
-nav.transparent {
-  background: none;
 }
 nav.transparent .menu > li > a,
 nav.transparent .module.widget-handle i,
@@ -1523,6 +1517,14 @@ nav.transparent .logo-dark {
 }
 nav.transparent .logo-light {
   display: inline;
+}
+nav.transparent {
+  background: none;
+}
+.has-offscreen-nav > nav.fixed {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 @media all and (max-width: 990px) {
   nav.transparent .nav-open {
@@ -3492,6 +3494,9 @@ img {
 .instafeed.grid-gallery.gapless li img {
   width: 100%;
 }
+.instafeed li img {
+  height: auto;
+}
 @media all and (max-width: 990px) {
   .instafeed.grid-gallery li {
     width: 33.333333%;
@@ -3859,6 +3864,12 @@ iframe {
   .vid-bg .player {
     display: none;
   }
+  .vid-bg .container.fadeOut {
+    opacity: 1;
+  }
+  .vid-bg .masonry-loader {
+    display: none;
+  }
 }
 video {
   max-width: 100%;
@@ -4113,7 +4124,7 @@ video {
   opacity: 0.5;
   z-index: 2;
 }
-@media all and (max-width: 990px) {
+@media all and (max-width: 1024px) {
   .fs-vid-background {
     display: none;
   }
