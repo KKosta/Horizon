@@ -129,8 +129,11 @@ header
 		#plane_logo
 			max-height: 45px
 			display: none
+			opacity: 0.7
+			max-height: 70%
 
 		.menu li a
+			cursor: pointer
 			color: white
 			opacity: 1
 			font-family: $font
@@ -146,6 +149,10 @@ header
 		
 		.menu li a.link_to_grey:hover
 			color: $black
+
+		#social_nav
+			display: none
+
 
 	nav
 		background: none
@@ -629,7 +636,6 @@ header
 
 .footer_cover
 	background: white
-	z-index
 
 footer
 	text-align: center
@@ -658,48 +664,57 @@ footer
 .foundry_modal
 	padding: 0px
 
-.foundry_modal .close-modal
-	z-index: 10
+	.foundry_modal .close-modal
+		z-index: 10
 
 
-.modal_left, .modal_right
-	padding-top: 48px
-	float: left
-	width: 50%
-	height: 100%
-	text-align: center
+	.modal_description
+		padding-top: 48px
+		text-align: center
 
 
-.modal_right
-	background: #f8f8f8
+	img
+		width: 40%
+		padding-top: 32px
+
+	h2
+		font-size: 2.1em
+		text-transform: uppercase
+		font-weight: 500
+		line-height: normal
+		width: 80%
+		margin: 0 auto
+		border-bottom: 2px solid #FF4081
 
 
-.foundry_modal img
-	width: 25%
-
-
-.foundry_modal h4
-	font-weight: 400
-	text-transform: uppercase
-
-
-.foundry_modal p
-	padding: 30px
-
-
-.foundry_modal .btn
-	border: 2px solid $pink
-	color: #292929
-
-.foundry_modal .btn:hover
-	background:  $blue
-	border: 2px solid $blue
-	color: #fff
+	p
+		padding: 30px 15px
 
 
 
 @media (max-width: 990px)
-	
+	.nav-bar
+		background: white
+
+		.nav_bar_open
+			padding: 0
+
+		.menu li a
+			width: 100%
+			padding: 16px
+
+		#top_link
+			border-top: 2px solid $pink
+		
+		#social_nav
+			display: block !important
+
+		#social_nav	li
+			padding: 24px 10px
+
+		#social_nav li	i
+			color: $grey1
+
 	.mobile-toggle
 		border: none
 	
@@ -737,6 +752,26 @@ footer
 			display: none		
 
 @media (max-width: 769px)
+	
+	#plane
+		animation: plane 4s both
+
+		@keyframes plane
+			0% 
+				margin-top: 100vh
+				opacity: 0
+				width: 150%				
+			50%
+				margin-top: 20vh
+				opacity: 1
+				width: 60%
+			100%
+				margin-top: 20vh
+				opacity: 0
+				width: 60%
+
+	.diagonal_up .logo_cover #title_logo
+		width: 60%
 
 	#tagline
 		padding: 0 15px
@@ -770,6 +805,8 @@ footer
 			background: $pink
 			color: white
 			border: 2px solid $pink
+	footer
+		background-size: cover
 
 
 @media (max-width: 376px)
@@ -793,269 +830,11 @@ footer
 	.icon-sm
 		font-size: 28px
 
-// .fade-half.lead.mb0
-// 	color: #333
-// 	font-size: 20px
-// 	padding-bottom: 100px
 
 
-// p.fade-half
-// 	font-size: 16px
-// 	color: #fff
-// 	opacity: 1
 
 
-// .fade-half.lead.mb0
-// 	padding-bottom: 48px
 
-
-// form.halves input
-// 	color: #333
-// 	font-family: "Roboto"
-// 	/*text-align: center*/
-// 	font-size: 12px
-// 	font-weight: bold
-// 	/*text-transform: uppercase*/
-// 	color: #333 !important
-// 	border-bottom: 2px solid $orange
-
-// form.halves input:focus
-// 	border: 2px solid $blue
-
-
-// form.halves ::-webkit-input-placeholder
-// 	color: black
-// 	font-size: 12px
-	
-
-// .close-nav
-// 	cursor: pointer
-
-
-// .feature-1 i
-// 	color: $blue
-
-
-// .feature.boxed
-// 	background: rgba(255, 255, 255, 0.85)
-
-
-// .WhyTravel .feature.feature-1.boxed
-// 	height: 350px
-
-
-// .NYC.col-sm-4.text-center
-// 	background-image: url(../img/NYC.png)
-// 	background-size: auto 100%
-// 	background-repeat: no-repeat
-// 	background-position: center bottom
-
-// .LDN.col-sm-4.text-center
-// 	background-image: url(../img/LDN.png)
-// 	background-size: auto 100%
-// 	background-repeat: no-repeat
-// 	background-position: center bottom
-
-// .HK.col-sm-4.text-center
-// 	background-image: url(../img/HK.png)
-// 	background-size: auto 100%
-// 	background-repeat: no-repeat
-// 	background-position: center bottom
-
-
-// .background-image-holder
-// 	z-index:0
-
-
-// .WhyTravel h2.uppercase.bold
-// 	color: #fff !important
-
-
-// .WhyTravelIcons, .WhyThisIcons
-// 	width: 120px
-// 	padding-bottom: 20px
-
-
-// p
-// 	color: #292929
-// 	/*font-size: 1.1em*/
-
-
-// .partners
-// 	text-align: center
-
-
-// .partner_logo
-// 	height: 150px
-// 	display: flex
-// 	justify-content: center
-//     align-items: center
-
-
-// .partner_logo img
-// 	max-height: 120px
-// 	padding: 15px
-// 	 -webkit-filter: grayscale(1)
-//   	filter: grayscale(1)
-
-
-// .partner_logo img:hover
-// 	 -webkit-filter: grayscale(0)
-//   	filter: grayscale(0)
-
-
-// #startupshk
-// 	max-height: 100px
-
-
-// /*.AboutHorizon
-// 	background: url(../img/map.png)
-// 	background-size: 80% auto
-// 	background-repeat: no-repeat
-// 	background-position: center 115px
-// */
-
-// .TeamPhoto
-// 	width: 200px
-// 	height: 200px
-// 	border-radius: 200px
-// 	-webkit-filter: grayscale(1)
-//   	filter: grayscale(1)
-
-
-// .Team h4
-// 	line-height: 25px
-
-
-// .Team h4 span
-// 	text-transform: uppercase
-// 	font-size: 14px
-// 	color: $orange
-
-
-// #TeamSection
-// 	padding-bottom: 48px
-
-
-// .Team p
-// 	margin-bottom: 0px
-
-
-// .btn.btn-lg.btn-filled
-// 	border: none
-// 	padding: 3px
-//     -webkit-transition: all 0.3s ease
-// 	-moz-transition: all 0.3s ease
-
-// .GetInTouch .btn.btn-lg.btn-filled
-// 	margin-top: 24px
-
-
-// .GetInTouch .btn.btn-lg.btn-filled:hover
-// 	background: $blue
-// 	color: #fff
-
-
-// .ti-facebook
-// 	font-size: 1.9em
-// 	vertical-align: 3px
-
-
-// .foundry_modal
-// 	padding:0px
-
-
-// .foundry_modal .close-modal
-// 	z-index: 10
-
-
-// .modal_left, .modal_right
-// 	padding-top: 48px
-// 	float: left
-// 	width: 50%
-// 	height: 100%
-// 	text-align: center
-
-
-// .modal_right
-// 	background: #f8f8f8
-
-
-// .foundry_modal img
-// 	width: 25%
-
-
-// .foundry_modal h4
-// 	font-weight: 400
-// 	text-transform: uppercase
-
-
-// .foundry_modal p
-// 	padding: 30px
-
-
-// .foundry_modal .btn
-// 	border: 2px solid $orange
-// 	color: #292929
-
-// .foundry_modal .btn:hover
-// 	background:  $blue
-// 	border: 2px solid $blue
-// 	color: #fff
-
-
-
-// /* --------- Media Queries ----------*/
-
-// @media (max-width: 990px)
-// 	.AboutHorizon
-// 		background-position: center 200px
-	
-// 	.WhyThis .feature.feature-1.boxed
-// 		height: 560px
-	
-// 	.WhyTravel .feature.feature-1.boxed
-// 		height: 390px
-	
-
-
-// @media (max-width: 768px)
-// 	.AboutHorizon
-// 		background: none
-		
-// 	.AboutHorizon h1, .AboutHorizon h5 
-// 		text-align: center
-	
-// 	.LDN, .NYC, .HK
-// 		margin-bottom: 40px
-	
-// 	.feature.feature-1.boxed
-// 		height: 300px
-	
-// 	.WhyTravel .feature p:last-child
-// 		font-size: 1.1em
-	
-// 	.WhyThis .feature.feature-1.boxed
-// 		height: 350px
-	
-// 	form.halves input
-// 		margin-bottom: 20px
-// 		border: 2px solid $orange
-	
-// 	form.halves ::-webkit-input-placeholder
-// 		text-align: center
-	
-// 	footer .social-list
-// 		margin-top: 20px
-	
-// 	.ti-facebook
-// 		font-size: 1.2em
-// 		vertical-align: 1px
-	
-// 	.modal_left, .modal_right
-// 		float: none
-// 	    width: 100%
-	
 
 
 
