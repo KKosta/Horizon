@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-	$('.grid').masonry({
-		itemSelector: '.grid-item',
-		isFitWidth: true
-	});
-
 	// $("#mobile_menu").height(h);
 
 	// $("#mm_open_button").click(function() {

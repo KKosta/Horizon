@@ -4233,7 +4233,7 @@ video {
   max-width: 100%;
 }
 .container .masonry-item {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .masonry-item blockquote:hover {
   background: #47b475;
