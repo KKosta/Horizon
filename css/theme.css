@@ -4334,9 +4334,9 @@ video {
 .image-small {
   max-height: 80px;
 }
-.image-xs {
+/*.image-xs {
   max-height: 50px;
-}
+}*/
 .image-xxs {
   max-height: 30px;
 }
