@@ -492,10 +492,12 @@ blockquote {
   font-weight: 300;
 }
 .bg-secondary blockquote {
- background: #dddddd; 
+ background: #FF4081; 
  border: 5px solid #f8f8f8;
- margin-bottom: 0px
+ margin-bottom: 0px;
+ color: white;
 }
+
 blockquote .author {
   font-size: 12px;
   display: block;
@@ -4237,9 +4239,9 @@ video {
 .container .masonry-item {
   margin-bottom: 10px;
 }
-.masonry-item blockquote:hover {
+/*.masonry-item blockquote:hover {
   background: #f8f8f8;
-  border: 5px solid #f8f8f8;
+  border: 5px solid #f8f8f8;*/
 /*  transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;*/

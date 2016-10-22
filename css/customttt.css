@@ -248,7 +248,9 @@ header {
     line-height: 1.2em;
     font-size: 1.8em; }
   #speakers p {
-    line-height: 1.2em; }
+    margin-bottom: 36px; }
+  #speakers .feature p {
+    line-height: 1.3em; }
   #speakers .speaker_image {
     margin-top: 32px;
     border-radius: 150px; }
@@ -287,13 +289,15 @@ header {
     font-style: italic; }
     #photo_media blockquote a {
       font-style: italic;
-      color: #616161;
+      color: white;
       display: none; }
+    #photo_media blockquote a:hover {
+      text-decoration: underline; }
     #photo_media blockquote p {
-      color: #212121; }
+      color: white; }
       #photo_media blockquote p a {
         cursor: pointer;
-        color: #FF4081;
+        color: white;
         display: inline-block; }
 
 footer {
