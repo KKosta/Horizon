@@ -7,6 +7,7 @@ $black: #212121
 $grey1: #616161
 $grey2: #DDDDDD
 $grey3: #F5F5F5
+$background: #f8f8f8
 
 $font: "Roboto", Helvetica, sans-serif
 $h1: 4.725em
@@ -306,6 +307,8 @@ header
 		padding: 24px 0 12px 0
 		line-height: 1.2em
 		font-size: 1.8em
+	p
+		line-height: 1.2em
 
 	.speaker_image
 		margin-top: 32px
@@ -313,6 +316,7 @@ header
 
 	#svg
 		width: 300px
+		padding: 30px
 		max-width: 100%
 		background: $grey3
 		border-radius: 150px
@@ -327,6 +331,7 @@ header
 		
 	#speaker_contact:hover	
 		color: $black
+		text-decoration: underline
 
 
 #photos
@@ -335,15 +340,37 @@ header
 		margin-top: 64px
 		margin-bottom: 32px
 
-	span
+	span a
 		color: $pink
 		font-weight: 600
+
+	span a:hover
+		text-decoration: underline
 
 	p
 		margin-bottom: 48px
 
+
 #photo_media
 	padding-bottom: 36px
+	margin: 0 10px
+
+	blockquote
+		font-family: $font		
+		font-style: italic
+
+		a
+			font-style: italic
+			color: $grey1
+			display: none
+
+		p
+			color: $black
+
+			a
+				cursor: pointer
+				color: $pink
+				display: inline-block
 
 footer
 	padding-bottom: 36px

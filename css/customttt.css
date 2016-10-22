@@ -247,11 +247,14 @@ header {
     padding: 24px 0 12px 0;
     line-height: 1.2em;
     font-size: 1.8em; }
+  #speakers p {
+    line-height: 1.2em; }
   #speakers .speaker_image {
     margin-top: 32px;
     border-radius: 150px; }
   #speakers #svg {
     width: 300px;
+    padding: 30px;
     max-width: 100%;
     background: #F5F5F5;
     border-radius: 150px;
@@ -262,19 +265,36 @@ header {
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif; }
   #speakers #speaker_contact:hover {
-    color: #212121; }
+    color: #212121;
+    text-decoration: underline; }
 
 #photos h1 {
   margin-top: 64px;
   margin-bottom: 32px; }
-#photos span {
+#photos span a {
   color: #FF4081;
   font-weight: 600; }
+#photos span a:hover {
+  text-decoration: underline; }
 #photos p {
   margin-bottom: 48px; }
 
 #photo_media {
-  padding-bottom: 36px; }
+  padding-bottom: 36px;
+  margin: 0 10px; }
+  #photo_media blockquote {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-style: italic; }
+    #photo_media blockquote a {
+      font-style: italic;
+      color: #616161;
+      display: none; }
+    #photo_media blockquote p {
+      color: #212121; }
+      #photo_media blockquote p a {
+        cursor: pointer;
+        color: #FF4081;
+        display: inline-block; }
 
 footer {
   padding-bottom: 36px;

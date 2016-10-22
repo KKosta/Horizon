@@ -492,8 +492,9 @@ blockquote {
   font-weight: 300;
 }
 .bg-secondary blockquote {
-  background: #fff;
-  border-color: #47b475;
+ background: #dddddd; 
+ border: 5px solid #f8f8f8;
+ margin-bottom: 0px
 }
 blockquote .author {
   font-size: 12px;
@@ -4216,9 +4217,9 @@ video {
   float: right;
 }
 .masonry {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  transition: background 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
   opacity: 0;
   transform: translate3d(0, 100px, 0);
   -webkit-transform: translate3d(0, 100px, 0);
@@ -4237,11 +4238,12 @@ video {
   margin-bottom: 10px;
 }
 .masonry-item blockquote:hover {
-  background: #47b475;
-  transition: all 0.3s ease;
+  background: #f8f8f8;
+  border: 5px solid #f8f8f8;
+/*  transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  color: #fff;
+  -moz-transition: all 0.3s ease;*/
+  /*color: #dddddd;*/
 }
 .masonryFlyIn .masonry-item {
   opacity: 0;
