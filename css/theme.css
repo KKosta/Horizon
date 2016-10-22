@@ -374,9 +374,9 @@ h6,
   font-weight: 400;
   text-transform: uppercase;
 }
-h1.uppercase {
+/*h1.uppercase {
   letter-spacing: 17px;
-  margin-right: -17px;
+  margin-right: -17px;*/
 }
 h2.uppercase {
   letter-spacing: 10px;
@@ -439,7 +439,7 @@ a:hover {
 }
 a {
   font-weight: 600;
-  color: #47b475;
+  /*color: #47b475;*/
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -792,7 +792,7 @@ footer.bg-dark li,
 .image-bg .btn,
 .image-bg .btn:visited {
   color: #fff;
-  border-color: #fff;
+  /*border-color: #fff;*/
 }
 .btn-white:hover,
 .image-bg .btn:hover,
@@ -1744,7 +1744,7 @@ input.transparent,
 button.transparent {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff !important	;
+  /*color: #fff !important	;*/
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -1809,7 +1809,7 @@ input[type="submit"],
 button[type="submit"] {
   height: 50px;
   line-height: 48px;
-  border: 2px solid #47b475;
+  /*border: 2px solid #47b475;*/
   background: #47b475;
   color: #fff;
   width: 100%;
@@ -3071,6 +3071,7 @@ img {
 .image-tile img {
  /* width: 100%;*/
   display: inline-block;
+  padding: 5px
 }
 .image-tile .label {
   position: absolute;
@@ -4284,7 +4285,7 @@ video {
   height: 50px;
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #47b475;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #FF4081;
   -moz-animation: spin 0.7s linear infinite;
   -webkit-animation: spin 0.7s linear infinite;
   animation: spin 0.7s linear infinite;

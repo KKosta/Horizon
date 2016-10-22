@@ -79,7 +79,7 @@ header
 			top: 0
 
 body
-	height: 500vh
+	// height: 500vh
 	background: white
 	z-index: 100
 
@@ -87,7 +87,7 @@ h1
 	font-family: $font
 	color: $black
 	font-size: $h1
-	margin-bottom: 60px
+	margin-bottom: 32px
 	text-transform: uppercase
 	font-weight: 400
 	letter-spacing: 5px
@@ -108,7 +108,11 @@ p
 	margin: 0
 
 .section_padding
-	padding: 96px 0 120px 0
+	padding: 96px 0 96px 0
+
+#about_border
+	margin-bottom: 32px
+	border-bottom: 2px solid $pink
 
 header.show
 	background: white
@@ -233,6 +237,7 @@ header
 		font-weight: 600
 		font-family: $font
 		color: white
+		background: $pink
 		font-size: 1.4em		
 		border: 2px solid $pink
 		transition: all 0.3s ease
@@ -242,11 +247,15 @@ header
 
 	.btn-lg:hover			
 		border: 2px solid $pink !important
-		background: $pink
+		background: white
+		color: $black
 
 #about
 	padding-top: 96px
 	background: white
+
+	h1
+		margin-bottom: 64px
 
 
 	#verticals
@@ -341,6 +350,12 @@ header
 	background-position: bottom
 	background-repeat: no-repeat
 
+	h1
+		margin-bottom: 64px
+
+	#about_border
+		margin-bottom: 48px
+
 	#the_process
 
 		.process_image, .process_image_mobile
@@ -370,7 +385,7 @@ header
 		text-align: center
 		height: auto
 		padding-top: 96px
-		padding-bottom: 156px
+		padding-bottom: 196px
 
 		h1 
 			margin: 0
@@ -388,6 +403,9 @@ header
 #CTA
 	background: $blue
 
+	#about_border
+		padding-top: 36px
+
 	h1 
 		color: white
 		margin-bottom: 0
@@ -396,53 +414,53 @@ header
 			font-size: 0.622em
 
 	p
-		color: white
 		padding-top: 12px
-		font-size: 1.2em
+		color: white
+		font-size: 1.7em
 	
 	#sign_up_form
-		padding: 120px 0 8px 0
+		padding: 64px 0 0px 0
 
 		input[type="text"]
-			@extend h2
-
-			width: 65%
-			background: none
-			color: white
-			border-bottom: 2px solid white
-			font-size: 1.4em
+			width: 60%
+			font-family: $font
+			color: $black
+			font-weight: 600
+			border: 2px solid $pink
+			font-size: 20px
+			background: white
 
 		input[type="text"]:focus
 			outline: none
-			border-bottom: 2px solid $pink
-			color: white
-			background: none
-			font-size: 1.4em
+			font-family: $font
+			color: $black
+			font-weight: 600
+			font-size: 20px
 
 		::-webkit-input-placeholder
 			text-align: left
 			font-family: $font
-			color: white
+			color: $black
 			text-transform: uppercase
-			font-size: 1.2em
-			font-weight: normal
+			font-weight: 600
+			font-size: 20px
 
 		button[type="submit"]
-			width: 32%
+			cursor: pointer
+			width: 35%
 			margin-left: 2%
 			font-family: $font
-			font-weight: 500
-			color: $black
-			background: white
-			border: 2px solid white
+			font-weight: 600
+			color: white
+			background: $pink
+			border: 2px solid $pink
 			text-transform: uppercase
-			font-size: 1.4em
+			font-size: 20px
 			transition: all 0.3s ease
 
 
 		button[type="submit"]:hover
-			background: $pink
-			color: white
+			color: $black
 			border: 2px solid $pink
 
 #partners.arrow_down_reverse
@@ -454,11 +472,14 @@ header
 #partners
 	background: white
 	text-align: center
-	padding-bottom: 120px
+	padding-bottom: 96px
 
 	h1
 		text-align: center
 		padding-top: 182px
+
+	p
+		margin-bottom: 64px
 
 	.partner_logo
 		height: 150px
@@ -491,21 +512,34 @@ header
 
 	#Partner_With_Us
 		font-size: 24px
-		font-size: 32px
+		text-transform: uppercase
+		font-weight: 500
+		font-family: $font
 		padding-top: 9px
+		padding-bottom: 6px
 		width: 100%
 		height: 50px
-		border-bottom: 2px solid $pink
-		color: $black
+		border-bottom: 2px solid $black
+		color: $pink
 		-webkit-transition: all 0.3s ease
 		-moz-transition: all 0.3s ease
 	
 	#Partner_With_Us:hover
-		color: $pink	
-		border-bottom: 2px solid $black
+		color: $black	
+		border-bottom: 2px solid $pink
+
+	#partner_plus
+		font-size: 16px
+		color: $black
+		font-weight: 600
+		padding-top: 12px
+
 
 
 #community
+	h1
+		margin-bottom: 62px
+
 	h2
 		color: $pink
 		font-weight: 500
@@ -525,7 +559,8 @@ header
 		height: 50px
 		font-weight: 600
 		font-family: $font
-		color: $pink
+		color: white
+		background: $pink
 		font-size: 1.4em		
 		border: 2px solid $pink
 		transition: all 0.3s ease
@@ -533,8 +568,9 @@ header
 		-moz-transition: all 0.3s ease
 
 	#ttt_button:hover
-		background: $pink
-		color: white
+		border: 2px solid $pink
+		background: white
+		color: $black
 
 #airport
 	padding: 0
@@ -559,6 +595,10 @@ header
 	h4
 		font-size: 2.1em
 		font-weight: 500
+	p
+		margin-bottom: 64px
+		padding-left: 5%
+		padding-right: 5%
 
 
 	.TeamPhoto
@@ -592,8 +632,7 @@ header
 		border-bottom: 2px solid #FF4081
 
 	img
-		height: 250px
-		width: 250px
+		max-width: 100%
 		-webkit-filter: grayscale(0.2)
 		filter: grayscale(0.2)
 
@@ -728,6 +767,7 @@ footer
 	#about 
 		p
 			text-align: center
+			padding-bottom: 24px
 
 		#verticals
 			margin-top: 64px 
@@ -743,6 +783,8 @@ footer
 				width: 90%
 			.process_image
 				display: none
+		#the_numbers
+			padding-bottom: 36px
 
 	#advisors .col-md-6
 		text-align: center
@@ -816,21 +858,33 @@ footer
 		font-size: 3.15em
 	#tagline
 		font-size: 1.4em
-	
+
 	.cover_links
 		margin-top: 20px
 		
 		.btn-lg
 			font-size: 0.8em
 			background: $pink
+	.divider
+		padding: 0
 
 	#the_hack #journey
 		padding: 40px 20px
 
-	#apply #the_process .process_copy
-		height: auto
+	#apply 
+		#the_process .process_copy
+			height: auto
+
 	.icon-sm
 		font-size: 28px
+
+	#partners 
+		padding-bottom: 36px
+		
+		h1
+			padding-top: 32px
+		#Partner_With_Us
+			border-bottom: none
 
 
 

@@ -51,7 +51,6 @@ header {
   100% {
     top: 0; } }
 body {
-  height: 500vh;
   background: white;
   z-index: 100; }
 
@@ -59,12 +58,12 @@ h1 {
   font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
   font-size: 4.725em;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 5px; }
 
-h2, #CTA #sign_up_form input[type="text"] {
+h2 {
   font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
   font-size: 2.1em;
@@ -78,7 +77,11 @@ p {
   margin: 0; }
 
 .section_padding {
-  padding: 96px 0 120px 0; }
+  padding: 96px 0 96px 0; }
+
+#about_border {
+  margin-bottom: 32px;
+  border-bottom: 2px solid #FF4081; }
 
 header.show {
   background: white;
@@ -155,7 +158,7 @@ header {
       right: 0;
       width: 40%;
       margin-top: 20vh; }
-  .diagonal_up h2, #passenger_divider .diagonal_down .diagonal_up h2, .diagonal_up #CTA #sign_up_form input[type="text"], #CTA #sign_up_form .diagonal_up input[type="text"] {
+  .diagonal_up h2, #passenger_divider .diagonal_down .diagonal_up h2 {
     padding: 0;
     margin-top: 6vh;
     margin-bottom: 8vh;
@@ -182,6 +185,7 @@ header {
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif;
     color: white;
+    background: #FF4081;
     font-size: 1.4em;
     border: 2px solid #FF4081;
     transition: all 0.3s ease;
@@ -189,16 +193,19 @@ header {
     -moz-transition: all 0.3s ease; }
   .cover_links .btn-lg:hover {
     border: 2px solid #FF4081 !important;
-    background: #FF4081; }
+    background: white;
+    color: #212121; }
 
 #about {
   padding-top: 96px;
   background: white; }
+  #about h1 {
+    margin-bottom: 64px; }
   #about #verticals {
     padding-left: 50px;
     padding-bottom: 96px;
     margin-left: 0; }
-  #about h2, #about #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #about input[type="text"] {
+  #about h2 {
     color: #FF4081;
     font-weight: 500;
     margin: -56px 0 64px 0; }
@@ -241,7 +248,7 @@ header {
     color: #212121; }
   #the_hack #journey {
     padding: 80px; }
-  #the_hack h2, #the_hack #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #the_hack input[type="text"] {
+  #the_hack h2 {
     font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
@@ -268,6 +275,10 @@ header {
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat; }
+  #apply h1 {
+    margin-bottom: 64px; }
+  #apply #about_border {
+    margin-bottom: 48px; }
   #apply #the_process .process_image, #apply #the_process .process_image_mobile {
     width: 77%;
     display: block;
@@ -276,7 +287,7 @@ header {
     display: none; }
   #apply #the_process .process_copy {
     padding-top: 50px; }
-    #apply #the_process .process_copy h2, #apply #the_process .process_copy #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #apply #the_process .process_copy input[type="text"] {
+    #apply #the_process .process_copy h2 {
       font-size: 2.1em;
       text-transform: uppercase;
       font-weight: 500;
@@ -290,7 +301,7 @@ header {
     text-align: center;
     height: auto;
     padding-top: 96px;
-    padding-bottom: 156px; }
+    padding-bottom: 196px; }
     #apply #the_numbers h1 {
       margin: 0;
       letter-spacing: -2px;
@@ -306,50 +317,54 @@ header {
 
 #CTA {
   background: #1DB9FF; }
+  #CTA #about_border {
+    padding-top: 36px; }
   #CTA h1 {
     color: white;
     margin-bottom: 0; }
     #CTA h1 span {
       font-size: 0.622em; }
   #CTA p {
-    color: white;
     padding-top: 12px;
-    font-size: 1.2em; }
+    color: white;
+    font-size: 1.7em; }
   #CTA #sign_up_form {
-    padding: 120px 0 8px 0; }
+    padding: 64px 0 0px 0; }
     #CTA #sign_up_form input[type="text"] {
-      width: 65%;
-      background: none;
-      color: white;
-      border-bottom: 2px solid white;
-      font-size: 1.4em; }
+      width: 60%;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      border: 2px solid #FF4081;
+      font-size: 20px;
+      background: white; }
     #CTA #sign_up_form input[type="text"]:focus {
       outline: none;
-      border-bottom: 2px solid #FF4081;
-      color: white;
-      background: none;
-      font-size: 1.4em; }
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      font-size: 20px; }
     #CTA #sign_up_form ::-webkit-input-placeholder {
       text-align: left;
       font-family: "Roboto", Helvetica, sans-serif;
-      color: white;
+      color: #212121;
       text-transform: uppercase;
-      font-size: 1.2em;
-      font-weight: normal; }
+      font-weight: 600;
+      font-size: 20px; }
     #CTA #sign_up_form button[type="submit"] {
-      width: 32%;
+      cursor: pointer;
+      width: 35%;
       margin-left: 2%;
       font-family: "Roboto", Helvetica, sans-serif;
-      font-weight: 500;
-      color: #212121;
-      background: white;
-      border: 2px solid white;
+      font-weight: 600;
+      color: white;
+      background: #FF4081;
+      border: 2px solid #FF4081;
       text-transform: uppercase;
-      font-size: 1.4em;
+      font-size: 20px;
       transition: all 0.3s ease; }
     #CTA #sign_up_form button[type="submit"]:hover {
-      background: #FF4081;
-      color: white;
+      color: #212121;
       border: 2px solid #FF4081; }
 
 #partners.arrow_down_reverse {
@@ -361,10 +376,12 @@ header {
 #partners {
   background: white;
   text-align: center;
-  padding-bottom: 120px; }
+  padding-bottom: 96px; }
   #partners h1 {
     text-align: center;
     padding-top: 182px; }
+  #partners p {
+    margin-bottom: 64px; }
   #partners .partner_logo {
     height: 150px;
     display: flex;
@@ -388,19 +405,29 @@ header {
     font-size: 12px; }
   #partners #Partner_With_Us {
     font-size: 24px;
-    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Roboto", Helvetica, sans-serif;
     padding-top: 9px;
+    padding-bottom: 6px;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #FF4081;
-    color: #212121;
+    border-bottom: 2px solid #212121;
+    color: #FF4081;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease; }
   #partners #Partner_With_Us:hover {
-    color: #FF4081;
-    border-bottom: 2px solid #212121; }
+    color: #212121;
+    border-bottom: 2px solid #FF4081; }
+  #partners #partner_plus {
+    font-size: 16px;
+    color: #212121;
+    font-weight: 600;
+    padding-top: 12px; }
 
-#community h2, #community #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #community input[type="text"] {
+#community h1 {
+  margin-bottom: 62px; }
+#community h2 {
   color: #FF4081;
   font-weight: 500;
   margin: -56px 0 64px 0; }
@@ -415,15 +442,17 @@ header {
   height: 50px;
   font-weight: 600;
   font-family: "Roboto", Helvetica, sans-serif;
-  color: #FF4081;
+  color: white;
+  background: #FF4081;
   font-size: 1.4em;
   border: 2px solid #FF4081;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease; }
 #community #ttt_button:hover {
-  background: #FF4081;
-  color: white; }
+  border: 2px solid #FF4081;
+  background: white;
+  color: #212121; }
 
 #airport {
   padding: 0; }
@@ -439,6 +468,10 @@ header {
 #team h4 {
   font-size: 2.1em;
   font-weight: 500; }
+#team p {
+  margin-bottom: 64px;
+  padding-left: 5%;
+  padding-right: 5%; }
 #team .TeamPhoto {
   width: 225px;
   height: 225px;
@@ -454,7 +487,7 @@ header {
 
 #advisors {
   background: white; }
-  #advisors h2, #advisors #CTA #sign_up_form input[type="text"], #CTA #sign_up_form #advisors input[type="text"] {
+  #advisors h2 {
     font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
@@ -464,8 +497,7 @@ header {
     margin: 36px auto 64px auto;
     border-bottom: 2px solid #FF4081; }
   #advisors img {
-    height: 250px;
-    width: 250px;
+    max-width: 100%;
     -webkit-filter: grayscale(0.2);
     filter: grayscale(0.2); }
   #advisors h4 {
@@ -528,7 +560,7 @@ footer {
   .foundry_modal img {
     width: 40%;
     padding-top: 32px; }
-  .foundry_modal h2, .foundry_modal #CTA #sign_up_form input[type="text"], #CTA #sign_up_form .foundry_modal input[type="text"] {
+  .foundry_modal h2 {
     font-size: 2.1em;
     text-transform: uppercase;
     font-weight: 500;
@@ -565,7 +597,8 @@ footer {
     border: none; }
 
   #about p {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 24px; }
   #about #verticals {
     margin-top: 64px; }
 
@@ -577,6 +610,8 @@ footer {
     width: 90%; }
   #apply #the_process .process_image {
     display: none; }
+  #apply #the_numbers {
+    padding-bottom: 36px; }
 
   #advisors .col-md-6 {
     text-align: center; }
@@ -645,6 +680,9 @@ footer {
       font-size: 0.8em;
       background: #FF4081; }
 
+  .divider {
+    padding: 0; }
+
   #the_hack #journey {
     padding: 40px 20px; }
 
@@ -652,6 +690,13 @@ footer {
     height: auto; }
 
   .icon-sm {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  #partners {
+    padding-bottom: 36px; }
+    #partners h1 {
+      padding-top: 32px; }
+    #partners #Partner_With_Us {
+      border-bottom: none; } }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,424 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ***** */
+body {
+  background: white;
+  z-index: 100; }
+
+h1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 4.725em;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px; }
+
+h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 2.1em;
+  margin: 0; }
+
+p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #616161;
+  font-size: 1.4em;
+  line-height: 1.7em;
+  margin: 0; }
+
+.cover {
+  overflow: hidden;
+  height: 70vh;
+  width: auto;
+  background-color: white;
+  background: url(../img/ttt/ttt.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: transform; }
+
+#top_cover .diagonal_up {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/diagonal_up.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+#ttt_nav_logo {
+  max-height: 40px;
+  line-height: 70px; }
+
+header {
+  height: auto;
+  position: fixed;
+  background: none;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 1s ease; }
+  header .nav-bar {
+    height: 70px;
+    max-height: 70px;
+    line-height: 70px;
+    border: none;
+    background: white;
+    box-shadow: 0px 0px 6px 0px #212121; }
+    header .nav-bar #plane_logo {
+      max-height: 45px;
+      display: none;
+      opacity: 0.7;
+      max-width: 85%; }
+    header .nav-bar .menu li a {
+      cursor: pointer;
+      color: #616161;
+      opacity: 1;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1.4em; }
+    header .nav-bar .menu li a:hover {
+      color: #FF4081;
+      border-bottom: 1px solid #FF4081; }
+    header .nav-bar .menu li a.link_to_grey {
+      color: #616161; }
+    header .nav-bar .menu li a.link_to_grey:hover {
+      color: #212121; }
+    header .nav-bar #social_nav {
+      display: none; }
+  header nav {
+    background: none; }
+
+#ttt_logo {
+  display: block;
+  margin: 20vh auto 0 auto;
+  width: 60%; }
+
+.city_image {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .city_image img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    transition: all 0.2s ease-in-out; }
+
+.city_image img:hover {
+  transform: scale(1.1); }
+
+#about h1 {
+  margin-bottom: 32px; }
+
+#about_border {
+  margin-bottom: 32px;
+  border-bottom: 2px solid #FF4081; }
+
+#cities.diagonal_down {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/diagonal_down.png);
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+#cities {
+  padding: 96px 0; }
+  #cities h1 {
+    margin-top: 120px;
+    margin-bottom: 32px; }
+  #cities #about_border {
+    margin-bottom: 46px; }
+  #cities .description {
+    padding-bottom: 32px; }
+  #cities h2 {
+    font-size: 2.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 24px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 24px; }
+  #cities h4 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 32px 0 24px 0; }
+  #cities p {
+    width: 90%;
+    margin: 0 auto; }
+  #cities a {
+    display: block;
+    width: 75%;
+    margin: 32px auto 0 auto;
+    cursor: pointer;
+    height: 50px;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: white;
+    background: #FF4081;
+    font-size: 1.4em;
+    border: 2px solid #FF4081;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease; }
+  #cities a:hover {
+    background: white;
+    color: #FF4081; }
+  #cities .descriptionTBC {
+    padding-bottom: 32px; }
+    #cities .descriptionTBC a {
+      border: 2px solid #616161;
+      color: #212121;
+      background: white; }
+    #cities .descriptionTBC a:hover {
+      background: white;
+      color: #FF4081; }
+
+#CTA.section_padding {
+  padding-bottom: 96px;
+  background: url(../img/footer2.jpg) no-repeat center bottom;
+  background-attachment: fixed;
+  background-size: cover; }
+
+#CTA {
+  padding: 96px 0;
+  background: white; }
+  #CTA h1 {
+    color: #FF4081;
+    margin-bottom: 32px; }
+  #CTA #about_border {
+    border-bottom: 2px solid #212121; }
+  #CTA h2 {
+    color: #212121; }
+    #CTA h2 span {
+      font-size: 0.622em; }
+  #CTA p {
+    color: #616161;
+    font-size: 1.7em; }
+  #CTA #sign_up_form {
+    padding: 64px 0 8px 0; }
+    #CTA #sign_up_form input[type="text"] {
+      width: 60%;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      border: 2px solid #FF4081;
+      font-size: 20px;
+      background: white; }
+    #CTA #sign_up_form input[type="text"]:focus {
+      outline: none;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      font-size: 20px; }
+    #CTA #sign_up_form ::-webkit-input-placeholder {
+      text-align: left;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px; }
+    #CTA #sign_up_form button[type="submit"] {
+      cursor: pointer;
+      width: 35%;
+      margin-left: 2%;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 600;
+      color: white;
+      background: #FF4081;
+      border: 2px solid #FF4081;
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all 0.3s ease; }
+    #CTA #sign_up_form button[type="submit"]:hover {
+      color: #212121;
+      border: 2px solid #FF4081; }
+
+#speakers {
+  padding-bottom: 96px; }
+  #speakers h1 {
+    margin: 64px 0 32px 0; }
+  #speakers h2 {
+    padding: 24px 0 12px 0;
+    line-height: 1.2em;
+    font-size: 1.8em; }
+  #speakers .speaker_image {
+    margin-top: 32px;
+    border-radius: 150px; }
+  #speakers #svg {
+    width: 300px;
+    max-width: 100%;
+    background: #F5F5F5;
+    border-radius: 150px;
+    margin-top: 32px;
+    fill: #FF4081; }
+  #speakers #speaker_contact {
+    color: #FF4081 !important;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, sans-serif; }
+  #speakers #speaker_contact:hover {
+    color: #212121; }
+
+#photos h1 {
+  margin-top: 64px;
+  margin-bottom: 32px; }
+#photos span {
+  color: #FF4081;
+  font-weight: 600; }
+#photos p {
+  margin-bottom: 48px; }
+
+#photo_media {
+  padding-bottom: 36px; }
+
+footer {
+  padding-bottom: 36px;
+  padding-top: 0;
+  text-align: center; }
+  footer img {
+    padding-top: 32px;
+    opacity: 0.5;
+    cursor: pointer; }
+  footer span {
+    opacity: 0.5; }
+  footer .social-list {
+    padding-top: 44px;
+    cursor: pointer; }
+    footer .social-list i {
+      color: white;
+      transition: all 0.3s ease; }
+    footer .social-list i:hover {
+      color: #FF4081; }
+  footer .image-xs {
+    width: 80%;
+    margin-bottom: 8px; }
+
+@media (max-width: 990px) {
+  .nav-bar {
+    background: white; }
+    .nav-bar .nav_bar_open {
+      padding: 0;
+      z-index: 1000; }
+    .nav-bar .menu li a {
+      width: 100%;
+      padding: 16px; }
+    .nav-bar #top_link {
+      border-top: 2px solid #FF4081; }
+    .nav-bar #social_nav {
+      display: block !important; }
+    .nav-bar #social_nav li {
+      padding: 24px 10px; }
+    .nav-bar #social_nav li i {
+      color: #616161; }
+
+  .mobile-toggle {
+    border: none; }
+
+  #HK_city {
+    margin-bottom: 96px; }
+
+  .module.widget-handle {
+    min-height: 70px;
+    padding: 10px 20px;
+    border: none; }
+
+  #about p {
+    text-align: center; }
+  #about #verticals {
+    margin-top: 64px; }
+
+  #the_numbers h5 {
+    padding-bottom: 24px; }
+
+  #apply #the_process .process_image_mobile {
+    display: block;
+    width: 90%; }
+  #apply #the_process .process_image {
+    display: none; }
+
+  #advisors .col-md-6 {
+    text-align: center; }
+    #advisors .col-md-6 .advisors_mobile {
+      display: block; }
+    #advisors .col-md-6 .advisors {
+      display: none; } }
+@media (max-width: 769px) {
+  #plane {
+    animation: plane 4s both; }
+  @keyframes plane {
+    0% {
+      margin-top: 100vh;
+      opacity: 0;
+      width: 150%; }
+    50% {
+      margin-top: 20vh;
+      opacity: 1;
+      width: 60%; }
+    100% {
+      margin-top: 20vh;
+      opacity: 0;
+      width: 60%; } }
+  .diagonal_up .logo_cover #title_logo {
+    width: 60%; }
+
+  #tagline {
+    padding: 0 15px; }
+
+  h1 {
+    line-height: 1.2em; }
+
+  #about p {
+    text-align: center; }
+  #about #verticals {
+    padding: 0 0 0 0; }
+
+  #CTA #sign_up_form {
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+    #CTA #sign_up_form input[type="text"] {
+      width: 80%; }
+    #CTA #sign_up_form ::-webkit-input-placeholder {
+      text-align: center; }
+    #CTA #sign_up_form button[type="submit"] {
+      width: 80%;
+      margin-left: 0;
+      margin-top: 20px;
+      background: #FF4081;
+      color: white;
+      border: 2px solid #FF4081; }
+
+  footer {
+    background-size: cover; } }
+@media (max-width: 415px) {
+  #ttt_logo {
+    margin: 30vh auto 0 auto;
+    width: 80%; }
+
+  h1 {
+    font-size: 3.15em; }
+
+  #tagline {
+    font-size: 1.4em; }
+
+  .cover_links {
+    margin-top: 20px; }
+    .cover_links .btn-lg {
+      font-size: 0.8em;
+      background: #FF4081; }
+
+  #the_hack #journey {
+    padding: 40px 20px; }
+
+  #apply #the_process .process_copy {
+    height: auto; }
+
+  .icon-sm {
+    font-size: 28px; } }
+
+/*# sourceMappingURL=customttt.css.map */

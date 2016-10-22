@@ -1,0 +1,1041 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+// sass --watch /Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css:/Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css
+
+$pink: #FF4081
+$blue: #1DB9FF
+$black: #212121
+$grey1: #616161
+$grey2: #DDDDDD
+$grey3: #F5F5F5
+
+$font: "Roboto", Helvetica, sans-serif
+$h1: 4.725em
+$h2: 3.15em
+$h3: 2.1em
+$p: 1.4em
+$p-mob: 0.933
+
+
+body
+	background: white
+	z-index: 100
+
+h1
+	font-family: $font
+	color: $black
+	font-size: $h1
+	margin-bottom: 32px
+	text-transform: uppercase
+	font-weight: 400
+	letter-spacing: 5px
+
+h2 
+	font-family: $font
+	color: $black
+	font-size: $h3
+	margin: 0
+
+p 
+	font-family: $font
+	color: $grey1
+	font-size: $p
+	line-height: 1.7em
+	margin: 0
+
+
+.cover 
+	overflow: hidden
+	height: 70vh
+	width: auto
+	background-color: white
+	background: url(../img/ttt/ttt.jpg) no-repeat center center
+	background-size: cover
+	background-attachment: fixed
+	will-change: transform 
+	
+
+#top_cover
+	.diagonal_up
+		position: relative
+		bottom: 0px
+		left: 0px
+		width: 100%
+		height: 70vh
+		background-image: url(../img/diagonal_up.png)
+		background-size: 100% auto
+		background-position: bottom
+		background-repeat: no-repeat
+
+#ttt_nav_logo
+	max-height: 40px
+	line-height: 70px
+
+header
+	height: auto
+	position: fixed
+	background: none
+	left: 0
+	width: 100%
+	z-index: 100
+	transition: all 1s ease
+	
+
+	.nav-bar
+		height: 70px
+		max-height: 70px
+		line-height: 70px
+		border: none
+		background: white
+		box-shadow: 0px 0px 6px 0px $black
+
+		#plane_logo
+			max-height: 45px
+			display: none
+			opacity: 0.7
+			max-width: 85%
+
+		.menu li a
+			cursor: pointer
+			color: $grey1
+			opacity: 1
+			font-family: $font
+			font-weight: 500
+			font-size: 1.4em
+
+		.menu li a:hover
+			color: $pink
+			border-bottom: 1px solid $pink
+
+		.menu li a.link_to_grey
+			color: $grey1
+		
+		.menu li a.link_to_grey:hover
+			color: $black
+
+		#social_nav
+			display: none
+
+
+	nav
+		background: none
+
+#ttt_logo
+	display: block
+	margin: 20vh auto 0 auto
+	width: 60%
+
+
+.city_image
+	overflow: hidden
+	position: relative
+	top: 0
+	left: 0
+
+	img
+		width: 100%
+		height: auto
+		display: inline-block
+		transition: all .2s ease-in-out
+
+.city_image img:hover
+	transform: scale(1.1)
+
+#about
+	h1
+		margin-bottom: 32px
+
+#about_border
+	margin-bottom: 32px
+	border-bottom: 2px solid $pink
+
+
+#cities.diagonal_down
+	position: relative
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background-image: url(../img/diagonal_down.png)
+	background-size: 100% auto
+	background-position: top
+	background-repeat: no-repeat
+
+#cities
+	padding: 96px 0
+	
+	h1
+		margin-top: 120px
+		margin-bottom: 32px
+	
+	#about_border
+		margin-bottom: 46px
+
+	.description    
+		padding-bottom: 32px
+
+	h2
+		font-size: 2.1em
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		padding-top: 24px
+		width: 95%
+		margin: 0 auto
+		// border-bottom: 2px solid #FF4081
+		margin-bottom: 24px
+	h4
+		width: 95%
+		margin: 0 auto
+		padding: 32px 0 24px 0
+
+	p
+		width: 90%
+		margin: 0 auto
+		
+	a
+		display: block
+		width: 75%
+		margin: 32px auto 0 auto
+		cursor: pointer
+		height: 50px
+		font-weight: 600
+		font-family: $font
+		color: white
+		background: $pink
+		font-size: 1.4em		
+		border: 2px solid $pink
+		transition: all 0.3s ease
+		-webkit-transition: all 0.3s ease
+		-moz-transition: all 0.3s ease
+
+	a:hover	
+		background: white
+		color: $pink
+
+	.descriptionTBC
+		padding-bottom: 32px
+
+		a 
+			border: 2px solid $grey1
+			color: $black
+			background: white
+		a:hover	
+			background: white
+			color: $pink
+
+
+#CTA.section_padding
+	padding-bottom: 96px
+	background: url(../img/footer2.jpg) no-repeat center bottom
+	background-attachment: fixed
+	background-size: cover
+
+#CTA
+	padding: 96px 0
+	background: white
+
+	h1 
+		color: $pink
+		margin-bottom: 32px
+	
+	#about_border
+		border-bottom: 2px solid $black
+
+	h2
+		color: $black
+
+		span
+			font-size: 0.622em
+
+	p
+		// font-weight: 600
+		color: $grey1
+		font-size: 1.7em
+	
+	#sign_up_form
+		padding: 64px 0 8px 0
+
+		input[type="text"]
+			width: 60%
+			font-family: $font
+			color: $black
+			font-weight: 600
+			border: 2px solid $pink
+			font-size: 20px
+			background: white
+
+		input[type="text"]:focus
+			outline: none
+			font-family: $font
+			color: $black
+			font-weight: 600
+			font-size: 20px
+
+		::-webkit-input-placeholder
+			text-align: left
+			font-family: $font
+			color: $black
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 20px
+
+		button[type="submit"]
+			cursor: pointer
+			width: 35%
+			margin-left: 2%
+			font-family: $font
+			font-weight: 600
+			color: white
+			background: $pink
+			border: 2px solid $pink
+			text-transform: uppercase
+			font-size: 20px
+			transition: all 0.3s ease
+
+
+		button[type="submit"]:hover
+			color: $black
+			border: 2px solid $pink
+
+#speakers
+	padding-bottom: 96px
+	h1
+		margin: 64px 0 32px 0
+
+	h2
+		padding: 24px 0 12px 0
+		line-height: 1.2em
+		font-size: 1.8em
+
+	.speaker_image
+		margin-top: 32px
+		border-radius: 150px
+
+	#svg
+		width: 300px
+		max-width: 100%
+		background: $grey3
+		border-radius: 150px
+		margin-top: 32px
+		
+		fill: $pink
+
+	#speaker_contact
+		color: $pink !important
+		font-weight: 600
+		font-family: $font
+		
+	#speaker_contact:hover	
+		color: $black
+
+
+#photos
+
+	h1
+		margin-top: 64px
+		margin-bottom: 32px
+
+	span
+		color: $pink
+		font-weight: 600
+
+	p
+		margin-bottom: 48px
+
+#photo_media
+	padding-bottom: 36px
+
+footer
+	padding-bottom: 36px
+	padding-top: 0
+	text-align: center
+
+	img
+		padding-top: 32px
+		opacity: 0.5
+		cursor: pointer
+	
+	span
+		opacity: 0.5
+
+	.social-list
+		padding-top: 44px
+		cursor: pointer
+
+		i
+			color: white
+			transition: all 0.3s ease
+
+		i:hover
+			color: $pink	
+
+	.image-xs
+		width: 80%
+		margin-bottom: 8px
+
+
+
+// ----------------------------------------------------------------
+// #plane
+// 	animation: plane 4s both
+
+// 	@keyframes plane
+// 		0% 
+// 			margin-top: 100vh
+// 			opacity: 0
+// 			width: 150%				
+// 		50%
+// 			margin-top: 20vh
+// 			opacity: 1
+// 			width: 40%
+// 		85%
+// 			margin-top: 20vh
+// 			opacity: 0
+// 			width: 40%
+// 		100%
+// 			margin-top: 20vh
+// 			opacity: 0
+// 			width: 40%
+			
+
+// #title_logo
+// 	animation: title_logo 1s 2s both
+
+// 	@keyframes title_logo
+// 		0% 
+// 			opacity: 0
+
+// 		100%
+// 			opacity: 1
+
+// #tagline
+// 	animation: tagline 1s 3s both
+
+// 	@keyframes tagline
+// 		0% 
+// 			opacity: 0
+// 			padding-top: 10px				
+// 		100%
+// 			opacity: 1
+// 			padding-top: 0
+
+// .cover_links
+// 	animation: cover_links 1s 5.5s both
+
+// 	@keyframes cover_links
+// 		0% 
+// 			opacity: 0
+// 			padding-top: 10px				
+// 		100%
+// 			opacity: 1
+// 			padding-top: 0
+
+// header
+// 	animation: header_transition 1s 6s both
+
+// 	@keyframes header_transition
+// 		0% 
+// 			top: -70px				
+// 		100%
+// 			top: 0
+
+// .section_padding
+// 	padding: 96px 0 120px 0
+
+
+
+// // .diagonal_up
+// // 	position: relative
+// // 	bottom: 0px
+// // 	left: 0px
+// // 	width: 100%
+// // 	height: 70vh
+// // 	background-image: url(../img/diagonal_up.png)
+// // 	background-size: 100% auto
+// // 	background-position: bottom
+// // 	background-repeat: no-repeat
+
+// 	.logo_cover 
+// 		text-align: center
+// 		position: relative
+// 		top: 0
+// 		left: 0
+// 		width: 100%
+
+
+// 		#title_logo
+// 			position: absolute
+// 			margin-left: auto
+// 			margin-right: auto
+// 			left: 0
+// 			right: 0
+
+// 			width: 40%
+// 			margin-top: 20vh
+
+// 	h2  
+// 		padding: 0
+// 		margin-top: 6vh
+// 		margin-bottom: 8vh
+// 		color: white
+// 		text-align: center
+// 		line-height: 1.3em
+
+// .cover_links
+// 	z-index: 100
+// 	text-align: center
+// 	margin-top: 15vh
+
+
+// 	.bg-primary button[type="submit"]
+// 		font-size: 20px
+// 		color: #fff
+// 		background: $pink
+// 		border: 2px solid $pink
+// 		transition: all 0.3s ease
+
+// 	.bg-primary button[type="submit"]:hover
+// 		color: #fff
+// 		background: $blue
+// 		border: 2px solid $blue
+
+
+// 	.btn-lg
+// 		height: 50px
+// 		font-weight: 600
+// 		font-family: $font
+// 		color: white
+// 		font-size: 1.4em		
+// 		border: 2px solid $pink
+// 		transition: all 0.3s ease
+// 		-webkit-transition: all 0.3s ease
+// 		-moz-transition: all 0.3s ease
+		
+
+// 	.btn-lg:hover			
+// 		border: 2px solid $pink !important
+// 		background: $pink
+
+// // #about
+// // 	padding-top: 96px
+// // 	background: white
+
+
+// 	#verticals
+// 		padding-left: 50px
+// 		padding-bottom: 96px
+// 		margin-left: 0
+// 	// h2
+// 	// 	color: $pink
+// 	// 	font-weight: 500
+// 	// 	margin: -56px 0 64px 0 
+
+
+// #wingtip_divider
+// 	display: block
+// 	height: 700px
+// 	width: 100%
+// 	background-image: url(../img/wingtip.jpg)
+// 	background-size: cover
+// 	background-position: center 
+// 	background-repeat: no-repeat
+
+// 	.diagonal_down
+// 		position: relative
+// 		top: 0px
+// 		left: 0px
+// 		width: 100%
+// 		height: 100%
+// 		background-image: url(../img/diagonal_down.png)
+// 		background-size: 100% auto
+// 		background-position: top
+// 		background-repeat: no-repeat
+
+// 	.diagonal_up
+// 		position: relative
+// 		bottom: 0px
+// 		left: 0px
+// 		width: 100%
+// 		height: 100%
+// 		background-image: url(../img/diagonal_up.png)
+// 		background-size: 100% auto
+// 		background-position: bottom
+// 		background-repeat: no-repeat
+
+// #the_hack
+// 	background: white
+
+// 	#HK_LDN
+// 		text-align: center
+// 		padding-top: 0
+// 		padding-bottom: 64px
+// 		color: $black
+
+// 	#journey 
+// 		padding: 80px
+// 	h2
+// 		font-size: 2.1em
+// 		text-align: center
+// 		text-transform: uppercase
+// 		font-weight: 500
+// 		padding-top: 24px
+// 		width: 55%
+// 		margin: 0 auto
+// 		border-bottom: 2px solid #FF4081
+
+
+// 	p 
+// 		text-align: center
+// 		padding-top: 20px
+// 		color: $grey1
+
+// #passenger_divider
+// 	@extend #wingtip_divider
+
+// 	background-image: url(../img/passenger.jpg)
+
+// 	.diagonal_down
+// 		@extend .diagonal_down
+
+// 		background-image: url(../img/diagonal_down_reverse.png)
+
+// 		.diagonal_up
+// 			@extend .diagonal_up
+
+// 			background-image: url(../img/diagonal_up_reverse.png)
+
+
+// #apply
+// 	background: white
+
+// 	background-image: url(../img/arrow_down.png)
+// 	background-size: 100% auto
+// 	background-position: bottom
+// 	background-repeat: no-repeat
+
+// 	#the_process
+
+// 		.process_image, .process_image_mobile
+// 			width: 77%
+// 			display: block
+// 			margin: 0 auto
+
+// 		.process_image_mobile
+// 			display: none
+
+// 		.process_copy
+
+// 			padding-top: 50px 
+
+// 			h2
+// 				font-size: 2.1em
+// 				text-transform: uppercase
+// 				font-weight: 500
+// 				width: 50%
+// 				margin: 0 auto
+// 				border-bottom: 2px solid #FF4081
+// 			p 
+// 				padding-top: 20px
+// 				color: $grey1			
+
+// 	#the_numbers
+// 		text-align: center
+// 		height: auto
+// 		padding-top: 96px
+// 		padding-bottom: 156px
+
+// 		h1 
+// 			margin: 0
+// 			letter-spacing: -2px
+// 			font-weight: 500
+// 			color: $pink
+// 		h5
+// 			color: $black
+// 			font-size: $h3
+// 			text-transform: lowercase
+
+
+// #partners.arrow_down_reverse
+// 	background-image: url(../img/arrow_down_reverse.png)
+// 	background-size: 100% auto
+// 	background-position: top
+// 	background-repeat: no-repeat
+
+// #partners
+// 	background: white
+// 	text-align: center
+// 	padding-bottom: 120px
+
+// 	h1
+// 		text-align: center
+// 		padding-top: 182px
+
+// 	.partner_logo
+// 		height: 150px
+// 		display: flex
+// 		justify-content: center
+// 		align-items: center
+
+
+// 	.partner_logo img
+// 		cursor: pointer
+// 		max-height: 120px
+// 		padding: 15px
+// 		-webkit-filter: grayscale(1)
+// 		filter: grayscale(1)
+
+
+// 	.partner_logo img:hover
+// 		-webkit-filter: grayscale(0)
+// 		filter: grayscale(0)
+
+
+// 	#startupshk
+// 		max-height: 100px
+
+// 	.inner-title .title h5.uppercase
+// 		color: $pink
+// 		font-weight: normal
+// 		letter-spacing: 1px
+// 		font-size: 12px
+
+// 	#Partner_With_Us
+// 		font-size: 24px
+// 		font-size: 32px
+// 		padding-top: 9px
+// 		width: 100%
+// 		height: 50px
+// 		border-bottom: 2px solid $pink
+// 		color: $black
+// 		-webkit-transition: all 0.3s ease
+// 		-moz-transition: all 0.3s ease
+	
+// 	#Partner_With_Us:hover
+// 		color: $pink	
+// 		border-bottom: 2px solid $black
+
+
+// #community
+// 	h2
+// 		color: $pink
+// 		font-weight: 500
+// 		margin: -56px 0 64px 0 
+	
+// 	// .col-md-4.col-xs-6
+// 	// 	padding-right: 5px
+// 	// 	padding-left: 5px
+
+// 	#ttt
+// 		padding: 50px 20px		
+		
+// 	#ttt_details 
+// 		text-align: center
+
+// 	#ttt_button
+// 		height: 50px
+// 		font-weight: 600
+// 		font-family: $font
+// 		color: $pink
+// 		font-size: 1.4em		
+// 		border: 2px solid $pink
+// 		transition: all 0.3s ease
+// 		-webkit-transition: all 0.3s ease
+// 		-moz-transition: all 0.3s ease
+
+// 	#ttt_button:hover
+// 		background: $pink
+// 		color: white
+
+// #airport
+// 	padding: 0
+
+// #airport_divider
+// 	@extend #wingtip_divider
+
+// 	height: 600px
+// 	background-image: url(../img/airport.jpg)
+
+// 	.diagonal_down
+// 		@extend .diagonal_down
+
+// 		background-image: url(../img/divider_arrow_up.png)		
+
+// #team
+// 	// background: white
+
+// 	h1
+// 		text-align: center
+
+// 	h4
+// 		font-size: 2.1em
+// 		font-weight: 500
+
+
+// 	.TeamPhoto
+// 		width: 225px
+// 		height: 225px
+// 		// border-radius: 200px
+// 		-webkit-filter: grayscale(0.2)
+// 		filter: grayscale(0.2)
+
+
+// 	.Team h4 span
+// 		text-transform: uppercase
+// 		font-size: 14px
+// 		color: $pink
+
+// 	.Team p
+// 		margin-bottom: 0px
+// 		color: $grey1
+
+// #advisors
+// 	background: white
+
+// 	h2 
+// 		font-size: 2.1em
+// 		text-align: center
+// 		text-transform: uppercase
+// 		font-weight: 500
+// 		line-height: inherit
+// 		width: 50%
+// 		margin: 36px auto 64px auto
+// 		border-bottom: 2px solid #FF4081
+
+// 	img
+// 		height: 250px
+// 		width: 250px
+// 		-webkit-filter: grayscale(0.2)
+// 		filter: grayscale(0.2)
+
+// 	h4
+// 		font-size: 2.1em
+// 		font-weight: 500
+// 		margin-bottom: 6px
+	
+// 	#advisors_description
+// 		padding-bottom: 64px	
+
+// 	p
+// 		line-height: 1.4em
+// 		color: $grey1	
+
+// 	h4 span
+// 		text-transform: uppercase
+// 		font-size: 14px
+// 		color: $pink
+
+// 	.advisors_social_links
+// 		padding-bottom: 32px 	
+		
+// 		a
+// 			font-size: 18px
+// 			color: $grey2
+// 			cursor: pointer
+		
+// 		a:hover
+// 			color: $pink
+
+// 	.advisors_img_HK
+// 		text-align: right
+
+// 	.LDN_Advisors
+// 		text-align: right
+
+// 	.advisors_mobile
+// 		display: none
+
+
+
+// .footer_cover
+// 	background: white
+
+
+
+
+// .foundry_modal
+// 	padding: 0px
+
+// 	.foundry_modal .close-modal
+// 		z-index: 10
+
+
+// 	.modal_description
+// 		padding-top: 48px
+// 		text-align: center
+
+
+// 	img
+// 		width: 40%
+// 		padding-top: 32px
+
+// 	h2
+// 		font-size: 2.1em
+// 		text-transform: uppercase
+// 		font-weight: 500
+// 		line-height: normal
+// 		width: 80%
+// 		margin: 0 auto
+// 		border-bottom: 2px solid #FF4081
+
+
+// 	p
+// 		padding: 30px 15px
+
+
+
+@media (max-width: 990px)
+	.nav-bar
+		background: white
+
+		.nav_bar_open
+			padding: 0
+			z-index: 1000
+
+		.menu li a
+			width: 100%
+			padding: 16px
+
+		#top_link
+			border-top: 2px solid $pink
+		
+		#social_nav
+			display: block !important
+
+		#social_nav	li
+			padding: 24px 10px
+
+		#social_nav li	i
+			color: $grey1
+
+	.mobile-toggle
+		border: none
+
+	#HK_city
+		margin-bottom: 96px
+	
+	.module.widget-handle
+		min-height: 70px
+		padding: 10px 20px
+		border: none
+
+	#about 
+		p
+			text-align: center
+
+		#verticals
+			margin-top: 64px 
+
+	#the_numbers
+		h5
+			padding-bottom: 24px
+
+	#apply 
+		#the_process 
+			.process_image_mobile
+				display: block
+				width: 90%
+			.process_image
+				display: none
+
+	#advisors .col-md-6
+		text-align: center
+
+		.advisors_mobile
+			display: block
+		
+		.advisors
+			display: none		
+
+@media (max-width: 769px)
+	
+	#plane
+		animation: plane 4s both
+
+		@keyframes plane
+			0% 
+				margin-top: 100vh
+				opacity: 0
+				width: 150%				
+			50%
+				margin-top: 20vh
+				opacity: 1
+				width: 60%
+			100%
+				margin-top: 20vh
+				opacity: 0
+				width: 60%
+
+	.diagonal_up .logo_cover #title_logo
+		width: 60%
+
+	#tagline
+		padding: 0 15px
+
+	h1 
+		line-height: 1.2em
+	
+	#about
+		p
+			text-align: center
+		
+		#verticals
+			padding: 0 0 0 0
+	
+
+	#CTA #sign_up_form 
+		text-align: center
+		display: block
+		margin: 0 auto
+
+		input[type="text"]
+			width: 80%
+
+		::-webkit-input-placeholder
+			text-align: center
+
+		button[type="submit"]
+			width: 80%
+			margin-left: 0
+			margin-top: 20px
+			background: $pink
+			color: white
+			border: 2px solid $pink
+	footer
+		background-size: cover
+
+
+@media (max-width: 415px)
+	#ttt_logo
+		margin: 30vh auto 0 auto
+		width: 80%
+
+	h1
+		font-size: 3.15em
+	#tagline
+		font-size: 1.4em
+	
+	.cover_links
+		margin-top: 20px
+		
+		.btn-lg
+			font-size: 0.8em
+			background: $pink
+
+	#the_hack #journey
+		padding: 40px 20px
+
+	#apply #the_process .process_copy
+		height: auto
+	.icon-sm
+		font-size: 28px
+
+
+
+
+
+
+
+
+
+
+

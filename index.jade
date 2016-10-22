@@ -1,16 +1,16 @@
 doctype html
 html(lang='en')
   head
-    title Hack Horizon - 80hr hackathon on a plane from Hong Kong to London.
+    title Hack Horizon - TravelTech hackathon on a plane from Hong Kong to London.
     meta(charset='utf-8')
     // Open Graph Meta-Tags
-    meta(property='og:title', content=' Hack Horizon - 80hr hackathon on a plane from Hong Kong to London.')
+    meta(property='og:title', content=' Hack Horizon - TravelTech hackathon on a plane from Hong Kong to London.')
     meta(property='og:site_name', content='Hack Horizon')
     meta(property='og:url', content='http://www.hackhorizon.com')
-    meta(property='og:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine travel tech.')
+    meta(property='og:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
     meta(property='og:type', content='website')
     meta(property='og:image', content='http://www.hackhorizon.com/img/plane_runway_meta.jpg')
-    meta(name='description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine travel tech.')
+    meta(name='description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
     meta(name='author', content='Kostadin Kolev')
     link(rel='canonical', href='http://www.hackhorizon.com')
 
@@ -18,7 +18,7 @@ html(lang='en')
     meta(name='twitter:card', content='summary')
     meta(name='twitter:url', content='http://www.hackhorizon.com')
     meta(name='twitter:title', content='Hack Horizon')
-    meta(name='twitter:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine travel tech.')
+    meta(name='twitter:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
     meta(name='twitter:image', content='http://www.hackhorizon.com/img/plane_runway_meta.jpg')
 
     // LinkedIn Fix
@@ -140,10 +140,11 @@ html(lang='en')
                     .col-md-7.col-sm-12 
                         p
                             | Hack Horizon will break down the barriers created between industries and countries to build opportunities and enable collaboration between two of the largest and most powerful startup ecosystems in the world.
+                        p
                             br
-                            br
+
                             | Design Thinking will unlock consumer facing innovation, as the teams are able to interview and empathise with real life, traveling customers during the event. While, strategic partnerships across 5 key pillars in international travel will give us the rich insights, data and technology we need to build innovative new products and services for the industry.
-                            br
+                        p
                             br
                             | Horizon will also bring on board a range of technology partners who will work with us across the entire travel industry to give the teams the software, data, API’s and insights they will need to build robust TravelTech prototypes.
                     .col-md-5.col-sm-12
@@ -157,9 +158,12 @@ html(lang='en')
         section#the_hack.in-page-link.section_padding
             .container
                 .row
-                    h1.col-md-12.text-center The Journey
+                    h1.col-md-8.col-md-offset-2.text-center The Journey
 
-                    p.col-md-10.col-md-offset-1#HK_LDN 
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+
+                    p.col-md-8.col-md-offset-2#HK_LDN 
                         | Horizon will help unite the Hong Kong and London startup ecosystems, while showcasing Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
                     .clearfix
                    
@@ -200,18 +204,11 @@ html(lang='en')
                     h1.col-md-12.text-center
                         | Jump On-board
 
-                    
+                .row 
                     #the_process
                         .col-md-12
                             img.process_image(alt="The Application Process" src="img/the_process.png")
-                            img.process_image_mobile(alt="The Application Process" src="img/the_process_mobile.png")
-
-                            //- .process_image
-                            //-     img(alt="hi" src="img/apply.png")
-                            //- .process_image
-                            //-     img(alt="hi" src="img/interview.png")
-                            //- .process_image
-                            //-     img(alt="hi" src="img/soar.png")    
+   
                         .col-md-12.text-center                            
                             .process_copy.col-md-4
                                 h2 Apply
@@ -226,7 +223,7 @@ html(lang='en')
                                 p 
                                     | Only the top 32 applicants will be selected to join this one of a kind journey and will form the heart of the Hack Horizon community.               
                     .clearfix
-
+                .row
                     #the_numbers
                         .col-md-3
                             h1
@@ -257,17 +254,22 @@ html(lang='en')
                             |Horizon Applications 
                             br
                             span
-                                | - Open This Autumn -
+                                | Open This Autumn
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                .row
+                    .col-md-8.col-md-offset-2.text-center        
+                        p
+                            | Join the 3000 strong community, receive industry digests on the latests trends in TravelTech and be the first to hear when applications open.
+
                 .row#sign_up_form
                     .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
                         form.form-newsletter(data-success='Thanks for signing up, we will be in touch shortly!', data-error='Please provide a valid email address.')
                             input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
                             button.btn-white.mb0(type='submit') Keep Me Posted
                             iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
-                .row
-                    .col-xs-8.col-xs-offset-2.text-center
-                        p
-                            | Leave us your email and we will make sure you're the first to know when applications open.
+
+
 
         section#partners.in-page-link.section_padding.arrow_down_reverse
             .container.partners
@@ -275,6 +277,13 @@ html(lang='en')
                     .col-sm-12.text-center
                         h1.uppercase
                             | Partners
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+
+                .row
+                    .col-md-8.col-md-offset-2.text-center
+                        p
+                            | We work with a wide range of partners across Asia and Europe who help us engage startup communities, connect with industry leaders in  travel  and promote the TravelTech movement.
                 .row
                     .col-sm-3.col-xs-6.partner_logo
                         .image-tile.inner-title.hover-reveal.text-center
@@ -396,10 +405,9 @@ html(lang='en')
                                     h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
                         .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='https://hackhorizon.typeform.com/to/BJ7Nus')
-                                i.fa.fa-plus.icon-sm#Partner_With_Us
+                            a#Partner_With_Us(target='_blank', href='https://hackhorizon.typeform.com/to/BJ7Nus') Partner With Us
                                 .title
-                                    h5.uppercase.mb0 - Partner With Us -
+                                    h5#partner_plus.uppercase.mb0 + + +
 
 
         section#community.in-page-link.section_padding.bg-secondary
@@ -412,29 +420,26 @@ html(lang='en')
                             | #TravelTechTuesdays
                 .row.masonry.masonryFlyIn
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt6.jpg')
+                        img(alt='Pic', src='img/ttt/TTT2/ttt6.jpg')
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt3.jpg')
+                        img(alt='Pic', src='img/ttt/TTT2/ttt3.jpg')
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt7.jpg')       
+                        img(alt='Pic', src='img/ttt/TTT2/ttt7.jpg')       
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt4.jpg')
+                        img(alt='Pic', src='img/ttt/TTT2/ttt4.jpg')
                     .col-md-4.col-xs-6.masonry-item.project
                         img(alt='Pic', src='img/ttt/ttt_logo.png') 
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt2.jpg')
+                        img(alt='Pic', src='img/ttt/TTT2/ttt2.jpg')
                     .col-md-4.col-xs-6.masonry-item.project
-                        img(alt='Pic', src='img/ttt/ttt1.jpg')
+                        img(alt='Pic', src='img/ttt/TTT2/ttt1.jpg')
 
                 .row.text-center#ttt
                      .col-md-10.col-md-offset-1.col-sm-12
                         p
                             | TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystem in Hong Kong and encourage new connections, opportunities and collaborations in the space.
-                            br
-                            br
-                            | In our forth event we will be exploring "Airline Industry in APAC, from LCCs to Private Jets" discussing how these new segments are developing in the region with guests from Metro Jet and Travelor.
                     .col-md-8.col-md-offset-2.col-sm-12#ttt_details
-                        a#ttt_button.btn.btn-lg.inner-link(href='https://www.eventbrite.co.uk/e/traveltech-tuesdays-4-airline-industry-in-apac-from-lccs-to-private-jets-tickets-27720291137' target='_blank') Join The Event
+                        a#ttt_button.btn.btn-lg.inner-link(href='traveltechtuesdays.html') Join The Community
                    
                     
 
@@ -569,11 +574,15 @@ html(lang='en')
                     .col-md-12.text-center
                         h1.uppercase
                             | Our Advisors
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                .row
+                    .col-md-8.col-md-offset-2.text-center
                         p#advisors_description
                             | We have brought together inspiring influencers across the start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Horizon.
 
                 .row.text-center                      
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-md-offset-1.col-xs-6
                             img.mb32(alt='Manav Gupta', src='img/manav.jpg')
                             h4
                                 | Manav Gupta
@@ -586,7 +595,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/manavg')
                                     i.ti-twitter-alt
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Will Ross', src='img/will.jpg')
                             h4
                                 | Will Ross
@@ -597,7 +606,8 @@ html(lang='en')
                             .advisors_social_links
                                 a(target='_blank', href='https://hk.linkedin.com/in/william-ross-a9923294')
                                     i.ti.ti-linkedin  
-                    .col-md-3.col-sm-6
+                    .clearfix.visible-xs-block
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Kristin Low', src='img/kristin.jpg')
                             h4
                                 | Kristin Low
@@ -611,7 +621,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/kristinlow')
                                     i.ti-twitter-alt
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
                             h4
                                 | Jeffrey Broer
@@ -624,7 +634,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/jebbery')
                                     i.ti-twitter-alt
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Karena Belin', src='img/karena.jpg')
                             h4
                                 | Karena Belin
@@ -637,7 +647,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/BelinKarena')
                                     i.ti-twitter-alt
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-md-offset-1.col-xs-6
                             img.mb32(alt='Bennett Chen', src='img/bennett.jpg')
                             h4
                                 | Bennett Chen
@@ -648,7 +658,7 @@ html(lang='en')
                             .advisors_social_links
                                 a(target='_blank', href='https://hk.linkedin.com/in/bennettchen')
                                     i.ti.ti-linkedin  
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Tim Barnes', src='img/tim.jpg')
                             h4
                                 | Tim Barnes
@@ -661,7 +671,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/timothy_barnes')
                                     i.ti-twitter-alt
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Mustafa Khanbhai', src='img/mustafa.jpg')
                             h4
                                 | Mustafa Khanbhai
@@ -672,7 +682,7 @@ html(lang='en')
                             .advisors_social_links
                                 a(target='_blank', href='https://uk.linkedin.com/in/mustafakhanbhai')
                                     i.ti.ti-linkedin                            
-                    .col-md-3.col-md-offset-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Paul Papadimitriou', src='img/paul.jpg')
                             h4
                                 | Paul Papadimitriou 
@@ -686,7 +696,7 @@ html(lang='en')
                                     i.ti.ti-linkedin  
                                 a(target='_blank', href='https://twitter.com/papadimitriou')
                                     i.ti-twitter-alt                                
-                    .col-md-3.col-sm-6
+                    .col-md-2.col-xs-6
                             img.mb32(alt='Reijo Pold', src='img/reijo.jpg')
                             h4
                                 | Reijo Pold
@@ -707,6 +717,12 @@ html(lang='en')
                     .col-md-12.text-center
                         h1.uppercase
                             | The Team
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row
+                        .col-md-8.col-md-offset-2.text-center
+                            p
+                                | We are a team well-travelled and entrepreneurial millennials who decided to come together, use our previous experience from 40+ hackathons to challenge and change the travel travel industry.
                     .row.Team.text-center
                         .col-md-4.col-sm-6
                             a(href='')

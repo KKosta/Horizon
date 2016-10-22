@@ -1,0 +1,448 @@
+doctype html
+html(lang='en')
+  head
+    title TravelTech Tuesdays - The Global TravelTech Community
+    meta(charset='utf-8')
+    // Open Graph Meta-Tags
+    meta(property='og:title', content=' TravelTech Tuesdays - The Global TravelTech Community')
+    meta(property='og:site_name', content='Hack Horizon')
+    meta(property='og:url', content='http://www.hackhorizon.com/traveltechtuesdays.html')
+    meta(property='og:description', content='TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystems across Hong Kong and London, to encourage new connections, opportunities and collaborations in the space.')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='http://www.hackhorizon.com/img/ttt/ttt_social.jpg')
+    meta(name='description', content='TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystems across Hong Kong and London, to encourage new connections, opportunities and collaborations in the space.')
+    meta(name='author', content='Kostadin Kolev')
+    link(rel='canonical', href='http://www.hackhorizon.com')
+
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:url', content='http://www.hackhorizon.com')
+    meta(name='twitter:title', content='Hack Horizon')
+    meta(name='twitter:description', content='TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystems across Hong Kong and London, to encourage new connections, opportunities and collaborations in the space.')
+    meta(name='twitter:image', content='http://www.hackhorizon.com/img/ttt/ttt_social.jpg')
+
+    // LinkedIn Fix
+    meta(prefix='og: http://ogp.me/ns#', property='og:title', content='Hack Horizon')
+    meta(prefix='og: http://ogp.me/ns#', property='og:type', content='website')
+    meta(prefix='og: http://ogp.me/ns#', property='og:image', content='http://www.hackhorizon.com/img/ttt/ttt_social.jpg')
+    meta(prefix='og: http://ogp.me/ns#', property='og:url', content='http://www.hackhorizon.com')    
+
+    // Google  
+    meta(name='google-site-verification', content='7b1NR2hkbM8tSikmIyOuY9KomX2mYdEgdR6punOeyzs')
+    meta(name='google-site-verification', content='Eo4c7vHQRKVE4sOLhfu-dsiCqSdJgf1WzOLA8rTqN9s')
+
+    link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='css/pe-icon-7-stroke.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/et-line-icons.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/themify-icons.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/flexslider.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/theme.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/customttt.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700', rel='stylesheet', type='text/css')
+    link(href='css/font-roboto.css', rel='stylesheet', type='text/css')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-43203720-4', 'auto');
+      ga('send', 'pageview');
+
+    body.scroll-assist
+        header
+            .nav_bar
+                .nav-container
+                      nav.scrolled
+                        .nav-bar.text-center
+                            .col-md-2.col-md-push-5
+                              .col-sm-12.text-center
+                                a.inner-link(href='#top_cover')
+                                    img#ttt_nav_logo(alt='TravelTech Tuesdays', src='img/ttt/ttt_cover_logo_dark.png')
+                            .col-sm-12.col-md-5.col-md-pull-2.overflow-hidden-xs.nav_bar_open
+                                ul.menu.inline-block.pull-right
+                                    li
+                                        a.inner-link#top_link(href='index.html') Home
+                                    li
+                                        a.inner-link(href='#cities') Join The Community
+                            .col-sm-12.col-md-5.pb-xs-24.nav_bar_open
+                                ul.menu
+                                    li 
+                                        a.inner-link(href='#speakers') Previous Speakers
+                                    li
+                                        a.inner-link(href='#photos') Photos
+                            .col-md-4.col-md-offset-4#social_nav
+                                ul.list-inline.social-list
+                                    li
+                                        a(href='mailto:team@hackhorizon.com')
+                                            i.ti.ti-email.icon-sm
+                                    li
+                                        a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                            i.ti-facebook.icon-sm
+                                    li
+                                        a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                            i.ti-twitter-alt.icon-sm
+                                    li
+                                        a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                            i.ti-linkedin.icon-sm
+                        .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs.absolute-xs
+                            i.ti-menu
+        .main-container
+            section#top_cover.cover.in-page-link
+                    .container.diagonal_up
+                        .row
+                            .col-md-8.col-md-offset-2.text-center
+                                img#ttt_logo(alt='TravelTech Tuesdays', src='img/ttt/ttt_cover_logo.png')
+                            //- h2#tagline.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+                            //-     | Join 32 of the best entrepreneurs, engineers and designers in a unique hackathon on a plane, as they journey from Hong Kong to London on a mission to redefine TravelTech and reframe the entire industry.
+                            //- .cover_links.modal-container
+                            //-     .col-md-6
+                            //-         a#apply_button.btn.btn-lg.inner-link.col-md-7.col-md-offset-4(href='#CTA') APPLY TO PARTICIPATE
+            section.in-page-link#about
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | The Global 
+                                br
+                                | TravelTech Community
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+
+                    .row    
+                        .col-md-8.col-md-offset-2.text-center
+                            p
+                                | TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystems across Hong Kong and London, to encourage new connections, opportunities and collaborations in the space.
+
+            section.in-page-link.bg-secondary#cities.diagonal_down
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | Join In Your City
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row
+                        .col-md-6.text-center#HK_city
+                            //- h2 Hong Kong
+                            .col-md-12
+                                .city_image
+                                    img(alt='Hong Kong', src='img/ttt/HK66.jpg')
+                                .bg-white.description                                
+                                    h2 Airline Industry in APAC, from LCCs to Private Jets
+                                    h6.uppercase
+                                        | Tuesday 11th October
+                                    p
+                                        | With fierce competition across both extremes of the market, what products, services, and disruptive technologies are low cost carriers and privthe jets using to stay ahead of the curve.
+                                    a.btn.btn-lg(href='#') Register
+                        .col-md-6.text-center
+                            //- h2 London
+                            .col-md-12
+                                .city_image
+                                    img(alt='London', src='img/ttt/LDN66.jpg')
+                                //- .bg-white.description                     
+                                //-     h2 Airline Industry in APAC, from LCCs to Private Jets
+                                //-     h6.uppercase
+                                //-         | Tuesday 11th October
+                                //-     p
+                                //-         | With fierce competition across both extremes of the market, what products, services, and disruptive technologies are low cost carriers and privthe jets using to stay ahead of the curve.
+                                //-     a.btn.btn-lg(href='#') Register
+                                .bg-white.descriptionTBC                     
+                                    h2 Coming Soon
+                                    p
+                                        | We are still in the process of confirming the details for our next TravelTech Tuesdays. Please subscribe to our newsletter below to the first to hear when we announce the event.
+                                    a.btn.btn-lg(href='#') To Be Announced
+
+            section#CTA.in-page-link.section_padding
+                .container
+                    .row
+                        .col-md-12.col-sm-12.text-center
+                            h1
+                                | Stay Up To Date
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row
+                        .col-md-8.col-md-offset-2.text-center        
+                            p
+                                | Join the 3000 strong community, connect with industry leaders,  learn about the latest trends and discover the hottest startups in TravelTech.
+                    .row#sign_up_form
+                        .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+                            form.form-newsletter(data-success='Thanks for signing up, we will be in touch shortly!', data-error='Please provide a valid email address.')
+                                input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
+                                button.btn-white.mb0(type='submit') Keep Me Posted
+                                iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
+                    .row
+                        .col-xs-8.col-xs-offset-2.text-center
+            section.in-page-link#speakers
+                .container
+                    .row
+                        .col-md-12.col-sm-12.text-center
+                            h1
+                                | Previous Speakers
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row    
+                        .col-md-8.col-md-offset-2.text-center
+                            p
+                                | From discussing innovation in private jets to millenials boking last minute hotel rooms, we bring the most current topics topics to the table with a inspirational set of speakers every month.
+                    .row
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Raphael Chohen', src='img/ttt/raph.jpg')
+                                    h2.uppercase 
+                                        | Raphael
+                                        br
+                                        | Cohen
+                                    p
+                                        | CSO at HotelQuickly
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Oliver Haas', src='img/ttt/oli.jpg')
+                                    h2.uppercase 
+                                        | Oliver
+                                        br 
+                                        | Haas
+                                    p
+                                        | Senior UX & Product Designer at Cathay Pacific
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Melissa Gecolea', src='img/ttt/mel.jpg')
+                                    h2.uppercase 
+                                        | Melissa
+                                        br 
+                                        | Gecolea
+                                    p
+                                        | Principal Producer at TVB Pearl
+                        .col-md-2.col-sm-4.col-xs-6                            
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Bart Tompkins', src='img/ttt/bart.jpg')
+                                    h2.uppercase 
+                                        | Bart
+                                        br
+                                        | Tompkins
+                                    p
+                                        | Managing Director for Greater China at Amadeus
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Steven Pang', src='img/ttt/steven.jpg')
+                                    h2.uppercase 
+                                        | Steven 
+                                        br
+                                        | Pang
+                                    p
+                                        | General Manager for Greater China at Skyscanner
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Brent Deverman', src='img/ttt/brent.jpg')
+                                    h2.uppercase 
+                                        | Brent
+                                        br
+                                        | Deverman
+                                    p
+                                        | Former Head of Product at CNN Travel
+                    .row
+                        .col-md-2.col-sm-4.col-xs-6.col-md-offset-2
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Bennett Chen', src='img/ttt/bennett.jpg')
+                                    h2.uppercase 
+                                        |Bennett 
+                                        br
+                                        | Chen
+                                    p
+                                        | CEO at Travolor
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Bjorn Naf', src='img/ttt/bjorn.jpg')
+                                    h2.uppercase 
+                                        | Bjorn 
+                                        br
+                                        | Naf
+                                    p
+                                        | CEO at MetroJet
+                        .clearfix.visible-xs-block
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img.speaker_image(alt='Pamela Abmler', src='img/ttt/pam.jpg')
+                                    h2.uppercase 
+                                        | Pamela 
+                                        br
+                                        | Abmler
+                                    p
+                                        | TV Presenter at Reuters
+                        .col-md-2.col-sm-4.col-xs-6
+                            .feature.feature-2.filled.text-center
+                                .text-center
+                                    img#svg(alt='speaker', src='img/ttt/speaker.svg')
+                                    h2.uppercase 
+                                        | Suggest 
+                                        br
+                                        | a speaker
+
+                                    p
+                                        | Get in touch 
+                                        br
+                                        span
+                                            a#speaker_contact(href='mailto:team@hackhorizon.com') here.                                    
+
+            section.bg-secondary.in-page-link#photos
+                .container
+                    .row
+                        .col-md-12.col-sm-12.text-center
+                            h1
+                                | Event Photos
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    
+                    .row    
+                        .col-md-8.col-md-offset-2.text-center
+                            p
+                                | Here are some photos and snapshots from the previous TravelTech Tuesdays events we have ran. Be sure to follow the conversaiton with 
+                                span
+                                    | #HackHorizon 
+                                | on social media for the latest.
+            section.projects.bg-secondary#photo_media
+                .row.masonry-loader.fixed-center
+                    .col-sm-12.text-center
+                        .spinner
+                .row.masonry.masonryFlyIn
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt1.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt2.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt3.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt4.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt5.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT2/ttt6.jpg')
+
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt1.jpg')
+
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/ttt_logo.png')
+
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt9.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt2.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt3.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt4.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt5.jpg')
+
+                    //- .col-md-4.col-xs-6.masonry-item.project
+                    //-     .image-tile.text-center
+                    //-         img.event_photo(alt='Pic', src='img/ttt/ttt_hh.png')
+
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt6.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt7.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt8.jpg')
+                                    
+                    .col-md-4.col-xs-6.masonry-item.project
+                        .image-tile.text-center
+                            img.event_photo(alt='Pic', src='img/ttt/TTT3/ttt10.jpg')
+                   
+                     
+
+
+            footer#footer.in-page-link.footer-2.bg-dark
+                .container
+                    .row
+                        .col-md-4.col-md-offset-4
+                            ul.list-inline.social-list
+                                li
+                                    a(href='mailto:team@hackhorizon.com')
+                                        i.ti.ti-email.icon-sm
+                                li
+                                    a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                        i.ti-facebook.icon-sm
+                                li
+                                    a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                        i.ti-twitter-alt.icon-sm
+                                li
+                                    a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                        i.ti-linkedin.icon-sm
+
+                    .row
+                        .col-md-6.col-md-offset-3
+                            a(href='#about')
+                                img.image-xs.in-page-link(alt='Horizon Logo', src='img/logo_white.png')
+                    .row
+                        .col-md-6.col-md-offset-3
+                            span
+                               | © Copyright 2016 Xpresso Labs Limited - All Rights Reserved
+
+
+
+
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/flexslider.min.js')
+    script(src='js/masonry.min.js')    
+    script(src='js/smooth-scroll.min.js')
+    script(src='js/parallax.min.js')
+    script(src='js/scripts.js')
+    //- script(src='js/custom.js')
