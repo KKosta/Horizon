@@ -168,7 +168,7 @@ header {
     -moz-transition: all 0.3s ease; }
   #cities a:hover {
     background: white;
-    color: #FF4081; }
+    color: #212121; }
   #cities .descriptionTBC {
     padding-bottom: 32px; }
     #cities .descriptionTBC a {
