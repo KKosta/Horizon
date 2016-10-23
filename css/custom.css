@@ -131,6 +131,9 @@ header {
   background-color: white;
   background: url(../img/plane_runway_dark.jpg) no-repeat center center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
   will-change: transform; }
 
@@ -216,6 +219,9 @@ header {
   width: 100%;
   background-image: url(../img/wingtip.jpg);
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
   #wingtip_divider .diagonal_down, #passenger_divider .diagonal_down, #airport_divider .diagonal_down {
@@ -666,7 +672,10 @@ footer {
       border: 2px solid #FF4081; }
 
   footer {
-    background-size: cover; } }
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
 @media (max-width: 415px) {
   h1 {
     font-size: 3.15em; }

@@ -32,6 +32,9 @@ p {
   background-color: white;
   background: url(../img/ttt/ttt.jpg) no-repeat center center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
   will-change: transform; }
 
@@ -183,7 +186,10 @@ header {
   padding-bottom: 96px;
   background: url(../img/footer2.jpg) no-repeat center bottom;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
 
 #CTA {
   padding: 96px 0;
@@ -419,10 +425,7 @@ footer {
       margin-top: 20px;
       background: #FF4081;
       color: white;
-      border: 2px solid #FF4081; }
-
-  footer {
-    background-size: cover; } }
+      border: 2px solid #FF4081; } }
 @media (max-width: 415px) {
   .cover {
     height: 60vh; }
