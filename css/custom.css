@@ -347,7 +347,7 @@ header {
     #CTA #sign_up_form ::-webkit-input-placeholder {
       text-align: left;
       font-family: "Roboto", Helvetica, sans-serif;
-      color: #212121;
+      color: #DDDDDD;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 20px; }

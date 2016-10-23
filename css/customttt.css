@@ -219,7 +219,7 @@ header {
     #CTA #sign_up_form ::-webkit-input-placeholder {
       text-align: left;
       font-family: "Roboto", Helvetica, sans-serif;
-      color: #212121;
+      color: #DDDDDD;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 20px; }
@@ -401,6 +401,10 @@ footer {
   #about #verticals {
     padding: 0 0 0 0; }
 
+  #speakers h2 {
+    font-size: 1.4em;
+    padding-bottom: 20px; }
+
   #CTA #sign_up_form {
     text-align: center;
     display: block;
@@ -420,9 +424,15 @@ footer {
   footer {
     background-size: cover; } }
 @media (max-width: 415px) {
+  .cover {
+    height: 60vh; }
+
   #ttt_logo {
-    margin: 30vh auto 0 auto;
-    width: 80%; }
+    margin: 25vh auto 0 auto;
+    width: 90%; }
+
+  #top_cover .diagonal_up {
+    height: 60vh; }
 
   h1 {
     font-size: 3.15em; }
