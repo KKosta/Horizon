@@ -49,7 +49,7 @@ p
 	height: 70vh
 	width: auto
 	background-color: white
-	background: url(../img/ttt/ttt.jpg) no-repeat center center
+	background: url(../img/press.jpg) no-repeat center center
 	background-size: cover
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -128,8 +128,7 @@ header
 	margin: 20vh auto 0 auto
 	width: 60%
 
-
-.city_image
+.community_image
 	overflow: hidden
 	position: relative
 	top: 0
@@ -141,19 +140,45 @@ header
 		display: inline-block
 		transition: all .2s ease-in-out
 
-.city_image img:hover
+.community_image img:hover
 	transform: scale(1.1)
 
 #about
 	h1
 		margin-bottom: 32px
 
+	.social-connect
+		text-align: center
+		
+		li
+			margin: 48px 10px 0 10px
+		i
+			cursor: pointer
+			font-size: 24px
+			color: white
+			background: $pink
+			padding: 15px
+			border-radius: 50px
+			border: 2px solid $pink
+			transition: all 0.3s ease
+			-webkit-transition: all 0.3s ease
+			-moz-transition: all 0.3s ease
+
+
+		i:hover
+			color: $black
+			background: white
+
+
 #about_border
 	margin-bottom: 32px
 	border-bottom: 2px solid $pink
 
 
-#cities.diagonal_down
+#our_story
+	padding: 196px 0 32px 0
+
+.diagonal_down
 	position: relative
 	top: 0px
 	left: 0px
@@ -164,42 +189,159 @@ header
 	background-position: top
 	background-repeat: no-repeat
 
-#cities
+#community.diagonal_down
+	background-image: url(../img/diagonal_down_reverse_grey.png)
+
+#community
 	padding: 96px 0
-	
+
 	h1
 		margin-top: 120px
 		margin-bottom: 32px
+
+	p
+		margin-bottom: 64px
 	
 	#about_border
 		margin-bottom: 46px
 
 	.description    
 		padding-bottom: 32px
+		background: $background
+
+		p
+			width: 90%
+			margin: 0 auto 
+			padding-top: 32px
+		
+		a
+			display: block
+			width: 75%
+			margin: 32px auto 0 auto
+			cursor: pointer
+			height: 50px
+			font-weight: 600
+			font-family: $font
+			color: white
+			background: $pink
+			font-size: 1.4em		
+			border: 2px solid $pink
+			transition: all 0.3s ease
+			-webkit-transition: all 0.3s ease
+			-moz-transition: all 0.3s ease
+
+		a:hover	
+			background: white
+			color: $black
+
+	.descriptionTBC
+		padding-bottom: 32px
+
+		a 
+			border: 2px solid $grey1
+			color: $black
+			background: white
+		a:hover	
+			background: white
+			color: $pink
+
+
+
+#team
+	// .m2020
+	// 	img
+	// 		float: left
+	// 		width: 50%
+	// 	p
+	// 		float: right
+	// 		width: 50%
+	// 		padding: 24px 0
+	// 		padding-left: 20px
+
+	// .itb
+	// 	p
+	// 		float: left
+	// 		width: 50%
+
+	// 	img
+	// 		float: right
+	// 		width: 50%
+
+	padding: 96px 0
+
+	.diagonal_down
+		position: relative
+		top: 0px
+		left: 0px
+		width: 100%
+		height: 100%
+		background-image: url(../img/diagonal_down_reverse_grey.png)
+		background-size: 100% auto
+		background-position: top
+		background-repeat: no-repeat
+
+	.TeamPhoto
+		height: 125px
+		border-radius: 100px
+		display: block
+		margin: 64px auto 0 auto
+
+	h4
+		text-align: center
+		font-family: $font
+		font-size: 1.8em
+		color: $grey1
+		padding-top: 24px
+		margin-bottom: 12px
+
+	.team_social_links
+		text-align: center
+
+		a
+			font-size: 20px
+			color: $grey2
+			cursor: pointer
+
+		a:hover
+			color: $pink	
+
+
+#media_assets
+	.diagonal_down
+		background: url(../img/diagonal_arrow_down.png)
+
+#media_assets
+	padding: 96px 0
+	background: url(../img/media.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-attachment: fixed
+	background-size: cover
+	// -webkit-background-size: cover
+	// -moz-background-size: cover
+	// -o-background-size: cover
+
+	h1 
+		color: white
+		margin-bottom: 32px
+
+	#about_border
+		border-bottom: 2px solid white
+		margin-bottom: 64px
 
 	h2
-		font-size: 2.1em
-		text-align: center
-		text-transform: uppercase
-		font-weight: 500
-		padding-top: 24px
-		width: 95%
-		margin: 0 auto
-		// border-bottom: 2px solid #FF4081
-		margin-bottom: 24px
-	h4
-		width: 95%
-		margin: 0 auto
-		padding: 32px 0 24px 0
+		color: $black
+
+		span
+			font-size: 0.622em
 
 	p
-		width: 90%
-		margin: 0 auto
-		
+		// font-weight: 600
+		color: $grey1
+		font-size: 1.7em
+
 	a
 		display: block
-		width: 75%
-		margin: 32px auto 0 auto
 		cursor: pointer
 		height: 50px
 		font-weight: 600
@@ -216,177 +358,27 @@ header
 		background: white
 		color: $black
 
-	.descriptionTBC
-		padding-bottom: 32px
+.tweets-slider
+
+	p
+		font-family: $font
+		font-size: 24px
+		color: $black
+
+	i
+		color: $black
+
+	.timePosted
+		font-size: 16px
+		font-weight: 400px
+		color: $grey2
 
 		a 
-			border: 2px solid $grey1
-			color: $black
-			background: white
-		a:hover	
-			background: white
-			color: $pink
+			color: $grey1
 
 
-#CTA.section_padding
-	padding-bottom: 96px
-	background: url(../img/footer2.jpg) no-repeat center bottom
-	background-attachment: fixed
-	background-size: cover
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
-
-#CTA
-	padding: 96px 0
-	background: white
-
-	h1 
+	a
 		color: $pink
-		margin-bottom: 32px
-	
-	#about_border
-		border-bottom: 2px solid $black
-
-	h2
-		color: $black
-
-		span
-			font-size: 0.622em
-
-	p
-		// font-weight: 600
-		color: $grey1
-		font-size: 1.7em
-	
-	#sign_up_form
-		padding: 64px 0 8px 0
-
-		input[type="text"]
-			width: 60%
-			font-family: $font
-			color: $black
-			font-weight: 600
-			border: 2px solid $pink
-			font-size: 20px
-			background: white
-
-		input[type="text"]:focus
-			outline: none
-			font-family: $font
-			color: $black
-			font-weight: 600
-			font-size: 20px
-
-		::-webkit-input-placeholder
-			text-align: left
-			font-family: $font
-			color: $grey2
-			// font-style: italic
-			text-transform: uppercase
-			font-weight: 600
-			font-size: 20px
-
-		button[type="submit"]
-			cursor: pointer
-			width: 35%
-			margin-left: 2%
-			font-family: $font
-			font-weight: 600
-			color: white
-			background: $pink
-			border: 2px solid $pink
-			text-transform: uppercase
-			font-size: 20px
-			transition: all 0.3s ease
-
-
-		button[type="submit"]:hover
-			color: $black
-			border: 2px solid $pink
-
-#speakers
-	padding-bottom: 96px
-	h1
-		margin: 64px 0 32px 0
-
-	h2
-		padding: 24px 0 12px 0
-		line-height: 1.2em
-		font-size: 1.8em
-
-	p
-		margin-bottom: 36px
-	
-	.feature	
-		p
-			line-height: 1.3em
-
-	.speaker_image
-		margin-top: 32px
-		border-radius: 150px
-
-	#svg
-		width: 300px
-		padding: 30px
-		max-width: 100%
-		background: $grey3
-		border-radius: 150px
-		margin-top: 32px
-		
-		fill: $pink
-
-	#speaker_contact
-		color: $pink !important
-		font-weight: 600
-		font-family: $font
-		
-	#speaker_contact:hover	
-		color: $black
-		text-decoration: underline
-
-
-#photos
-
-	h1
-		margin-top: 64px
-		margin-bottom: 32px
-
-	span a
-		color: $pink
-		font-weight: 600
-
-	span a:hover
-		text-decoration: underline
-
-	p
-		margin-bottom: 48px
-
-
-#photo_media
-	padding-bottom: 36px
-	margin: 0 10px
-
-	blockquote
-		font-family: $font		
-		font-style: italic
-
-		a
-			font-style: italic
-			color: white
-			display: none
-
-		a:hover
-			text-decoration: underline
-
-		p
-			color: white	
-
-			a
-				cursor: pointer
-				color: white
-				display: inline-block
-
 
 footer
 	padding-bottom: 24px
@@ -415,6 +407,7 @@ footer
 
 		i:hover
 			color: $pink
+
 
 @media (max-width: 990px)
 	.nav-bar
@@ -458,26 +451,9 @@ footer
 		#verticals
 			margin-top: 64px 
 
-	#the_numbers
-		h5
-			padding-bottom: 24px
-
-	#apply 
-		#the_process 
-			.process_image_mobile
-				display: block
-				width: 90%
-			.process_image
-				display: none
-
-	#advisors .col-md-6
-		text-align: center
-
-		.advisors_mobile
-			display: block
-		
-		.advisors
-			display: none		
+	#our_story
+		p
+			padding-bottom: 16px
 
 @media (max-width: 769px)
 	

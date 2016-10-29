@@ -438,7 +438,7 @@ a:hover {
   outline: none;
 }
 a {
-  font-weight: 600;
+  /*font-weight: 600;*/
   /*color: #47b475;*/
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -462,7 +462,7 @@ a {
   opacity: 1;
 }
 a:hover {
-  color: #398f5d;
+  /*color: #398f5d;*/
   text-decoration: none;
 }
 .label {
@@ -563,7 +563,7 @@ ul.lead li {
   color: #666;
 }
 .color-primary {
-  color: #47b475 !important;
+  color: #FF4081 !important;
 }
 .color-red {
   color: #e31d3b !important;
@@ -1747,7 +1747,7 @@ input.transparent,
 button.transparent {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  /*color: #fff !important	;*/
+  /*color: #fff !important  ;*/
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -2576,7 +2576,7 @@ button[type="submit"] .form-loading {
   .page-title-4 .breadcrumb,
   .page-title-2 .breadcrumb {
     float: left;
-    margin-top: 8	px;
+    margin-top: 8 px;
   }
 }
 /*!---------- 17. PAGINATION ----------*/
@@ -4787,24 +4787,18 @@ section + .portfolio-pullup {
     width: 100%;
   }
 }
-.tweets-slider.large p {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 32px;
-}
-.tweets-slider.large .timePosted {
-  font-size: 14px;
+
 }
 @media all and (max-width: 990px) {
-  .tweets-slider.large p {
+/*  .tweets-slider.large p {
     font-size: 18px;
     line-height: 24px;
-  }
+  }*/
 }
 @media all and (max-width: 767px) {
-  .tweets-slider.large p {
+/*  .tweets-slider.large p {
     font-size: 14px;
-  }
+  }*/
 }
 .sc-background-orange {
   background: #47b475 !important;

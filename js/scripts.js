@@ -12,20 +12,31 @@ $(document).ready(function() {
     "use strict";
 
     // Smooth scroll to inner links
-    
-    $('.inner-link').each(function(){
-        var href = $(this).attr('href');
-        if(href.charAt(0) !== "#"){
-            $(this).removeClass('inner-link');
-        }
-    });
+        var innerLinks = $('a.inner-link');
 
-	if($('.inner-link').length){
-		$('.inner-link').smoothScroll({
-			offset: -55,
-			speed: 800
-		});
-    }
+        if(innerLinks.length){
+            innerLinks.each(function(){
+                var link = $(this);
+                var href = link.attr('href');
+                if(href.charAt(0) !== "#"){
+                    link.removeClass('inner-link');
+                }
+            });
+
+            var offset = 0;
+            if($('body[data-smooth-scroll-offset]').length){
+                offset = $('body').attr('data-smooth-scroll-offset');
+                offset = offset*1;
+            }
+            
+            smoothScroll.init({
+                selector: '.inner-link',
+                selectorHeader: null,
+                speed: 750,
+                easing: 'easeInOutCubic',
+                offset: offset
+            });
+        }
 
     // Update scroll variable for scrolling functions
 
@@ -223,14 +234,13 @@ $(document).ready(function() {
     });
 
     // Twitter Feed
-       jQuery('.tweets-feed').each(function(index) {
+       $('.tweets-feed').each(function(index) {
            jQuery(this).attr('id', 'tweets-' + index);
        }).each(function(index) {
-           
+           var element = $('#tweets-' + index);
            var TweetConfig = {
-               "id": jQuery('#tweets-' + index).attr('data-widget-id'),
                "domId": '',
-               "maxTweets": jQuery('#tweets-' + index).attr('data-amount'),
+               "maxTweets": element.attr('data-amount'),
                "enableLinks": true,
                "showUser": true,
                "showTime": true,
@@ -238,6 +248,15 @@ $(document).ready(function() {
                "showRetweet": false,
                "customCallback": handleTweets
            };
+
+           if(typeof element.attr('data-widget-id') !== typeof undefined){
+                TweetConfig.id = element.attr('data-widget-id');
+            }else if(typeof element.attr('data-feed-name') !== typeof undefined && element.attr('data-feed-name') !== "" ){
+                TweetConfig.profile = {"screenName": element.attr('data-feed-name').replace('@', '')};
+            }else{
+                TweetConfig.profile = {"screenName": 'twitter'};
+            }
+
            function handleTweets(tweets) {
                var x = tweets.length;
                var n = 0;
@@ -249,10 +268,17 @@ $(document).ready(function() {
                }
                html += '</ul>';
                element.innerHTML = html;
+
+               if ($('.tweets-slider').length) {
+                    $('.tweets-slider').flexslider({
+                        directionNav: false,
+                        controlNav: false
+                    });
+                }       
                return html;
            }
            twitterFetcher.fetch(TweetConfig);
-       });
+      });
 
     // Instagram Feed
     
@@ -990,22 +1016,7 @@ $(window).load(function() {
     // Initialize Masonry
 
     setTimeout(initializeMasonry, 1000);
-
-    // Initialize twitter feed
-
-    var setUpTweets = setInterval(function() {
-        if ($('.tweets-slider').find('li.flex-active-slide').length) {
-            clearInterval(setUpTweets);
-            return;
-        } else {
-            if ($('.tweets-slider').length) {
-                $('.tweets-slider').flexslider({
-                    directionNav: false,
-                    controlNav: false
-                });
-            }
-        }
-    }, 500);
+   
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 

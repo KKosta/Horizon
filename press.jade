@@ -1,0 +1,358 @@
+doctype html
+html(lang='en')
+  head
+    title Hack Horizon - Press Page
+    meta(charset='utf-8')
+    // Open Graph Meta-Tags
+    meta(property='og:title', content=' Hack Horizon - TravelTech hackathon on a plane from Hong Kong to London.')
+    meta(property='og:site_name', content='Hack Horizon')
+    meta(property='og:url', content='http://www.hackhorizon.com')
+    meta(property='og:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='http://www.hackhorizon.com/img/plane_runway_meta.jpg')
+    meta(name='description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
+    meta(name='author', content='Kostadin Kolev')
+    link(rel='canonical', href='http://www.hackhorizon.com')
+
+    // Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:url', content='http://www.hackhorizon.com')
+    meta(name='twitter:title', content='Hack Horizon')
+    meta(name='twitter:description', content='A hackathon on an airplane taking 32 of best entrepreneurs, engineers and designers from Hong Kong to London, on a mission to redefine TravelTech.')
+    meta(name='twitter:image', content='http://www.hackhorizon.com/img/plane_runway_meta.jpg')
+
+    // LinkedIn Fix
+    meta(prefix='og: http://ogp.me/ns#', property='og:title', content='Hack Horizon')
+    meta(prefix='og: http://ogp.me/ns#', property='og:type', content='website')
+    meta(prefix='og: http://ogp.me/ns#', property='og:image', content='http://www.hackhorizon.com/img/plane_runway_meta.jpg')
+    meta(prefix='og: http://ogp.me/ns#', property='og:url', content='http://www.hackhorizon.com')
+
+    // Google  
+    meta(name='google-site-verification', content='7b1NR2hkbM8tSikmIyOuY9KomX2mYdEgdR6punOeyzs')
+    meta(name='google-site-verification', content='Eo4c7vHQRKVE4sOLhfu-dsiCqSdJgf1WzOLA8rTqN9s')
+
+    link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
+    link(rel='manifest', href='/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='css/pe-icon-7-stroke.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/et-line-icons.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/font-awesome.min.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/themify-icons.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/flexslider.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/theme.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/custompress.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700', rel='stylesheet', type='text/css')
+    link(href='css/font-roboto.css', rel='stylesheet', type='text/css')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-43203720-4', 'auto');
+      ga('send', 'pageview');
+
+    body.scroll-assist
+        header
+            .nav_bar
+                .nav-container
+                      nav.scrolled
+                        .nav-bar.text-center
+                            .col-md-2.col-md-push-5
+                              .col-sm-12.text-center
+                                a.inner-link(href='#top_cover')
+                                    img#ttt_nav_logo(alt='TravelTech Tuesdays', src='img/logo_dark.png')
+                            .col-sm-12.col-md-5.col-md-pull-2.overflow-hidden-xs.nav_bar_open
+                                ul.menu.inline-block.pull-right
+                                    li
+                                        a.inner-link#top_link(href='index.html') Home
+                                    li
+                                        a.inner-link(href='#cities') Join Our Community
+                            .col-sm-12.col-md-5.pb-xs-24.nav_bar_open
+                                ul.menu
+                                    li 
+                                        a.inner-link(href='#speakers') Previous Speakers
+                                    li
+                                        a.inner-link(href='#photos') Photos
+                            .col-md-4.col-md-offset-4#social_nav
+                                ul.list-inline.social-list
+                                    li
+                                        a(href='mailto:team@hackhorizon.com')
+                                            i.ti.ti-email.icon-sm
+                                    li
+                                        a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                            i.ti-facebook.icon-sm
+                                    li
+                                        a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                            i.ti-twitter-alt.icon-sm
+                                    li
+                                        a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                            i.ti-linkedin.icon-sm
+                        .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs.absolute-xs
+                            i.ti-menu
+        .main-container
+            section#top_cover.cover.in-page-link
+                    .container.diagonal_up
+                        .row
+                            .col-md-8.col-md-offset-2.text-center
+                                img#ttt_logo(alt='Hack Horizon Logo', src='img/logo_white.png')
+                            //- h2#tagline.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+                            //-     | Join 32 of the best entrepreneurs, engineers and designers in a unique hackathon on a plane, as they journey from Hong Kong to London on a mission to redefine TravelTech and reframe the entire industry.
+                            //- .cover_links.modal-container
+                            //-     .col-md-6
+                            //-         a#apply_button.btn.btn-lg.inner-link.col-md-7.col-md-offset-4(href='#CTA') APPLY TO PARTICIPATE
+            section.in-page-link#about
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | Press Pack
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+
+                    .row    
+                        .col-md-10.col-md-offset-1.text-center
+                            p
+                                | This page is dedicated the Hack Horizon team and story where you can find out why we have put this event together, what we hope to accomplish with it and relevant press media and resources.
+                    .row
+                        .col-md-8.col-md-offset-2
+                            ul.list-inline.social-connect
+                                li
+                                    a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                        i.ti-facebook.icon-sm
+                                li
+                                    a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                        i.ti-twitter-alt.icon-sm
+                                li
+                                    a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                        i.ti-linkedin.icon-sm
+
+
+            section.in-page-link.bg-secondary#our_story.diagonal_down
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | Our Story
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row
+                        .col-md-10.col-md-offset-1        
+                            p
+                                | Hack Horizon is a unique TravelTech hackathon taking place at 30,000 ft, on a public flight from Hong Kong to London.
+                                br
+                                br
+                            p.pb24-xs
+                                | Located within a 5-hour flight from 50% of world’s population, Hong Kong is at the heart of Asia and has the potential to benefit economically and socially from the growth of travel industry. Hack Horizon will bring the best innovators and key industry players together to galvanise Hong Kong and put it on the map as a TravelTech hub. 
+                                br
+                                br
+                            p
+                                | We will hand-pick and challenge 32 of the best entrepreneurs, engineers and designers to build unique products and services that focus on improving the end-to-end customer experience in international travel. Teams will focus work 6 key verticals: insurance, airports, transportation, accommodation, bookings and airlines, whilst iterating their products with traveling customers in real-time at HKIA and Heathrow airport.
+                                br
+                                br
+                            p
+                                | Unlike other hackathons, Hack Horizon has also created a sustainable framework for innovation beyond the main event by offering the best teams a platform to grow their ideas with the access to the current market leaders, investors, advisors and media.
+                                br
+                                br
+                            p
+                                | Hack Horizon, ready for departure March 2017.
+            
+            section.in-page-link#community.diagonal_down
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | Our Community
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .row    
+                        .col-md-8.col-md-offset-2.text-center
+                            p
+                                | We are passionate and dedicated to making TravelTech a recognised technology vertical in the startup world and getting the established travel industry to embrace technology better.
+
+                    .row
+                        .col-md-6.text-center#HK_city
+                            //- h2 Hong Kong
+                            .col-md-12
+                                .community_image
+                                    img(alt='Hong Kong', src='img/ttt.jpg')
+                                .bg-white.description                                
+                                    p
+                                        | To foster the local TravelTech ecosystems across Hong Kong and London, we are running monthly TravelTech Tuesdays panel discussions and meet-up events. We consistently attract 100+ attendees from across major travel companies, media, startups, students and the general public.
+                                     a.btn.btn-lg(href='traveltechtuesdays.html') Find Out More
+                        .col-md-6.text-center
+                            //- h2 London
+                            .col-md-12
+                                .community_image
+                                    img(alt='London', src='img/rr.jpg')
+                                .bg-white.description                     
+                                    p
+                                        | We curate the biggest stories and showcase the most disruptive startups in TravelTech through our bi-weekly newsletter, Runway Rundown, which now reaches 3,000+ people across the globe.       
+                                    a.btn.btn-lg(href='traveltechtuesdays.html') Find Out More           
+
+            section.in-page-link.bg-secondary#team
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            h1 
+                                | Our Team
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    
+                     .row    
+                        .col-md-10.col-md-offset-1.text-center
+                            p
+                                | As active members of the startup movement in Europe and Asia, three well-travelled and entrepreneurial millennials decided to come together and use their experience of participating in and building over 40 hackathons and challenge the least disrupted industry - travel.
+                                br
+                                br
+                                | Joined by  another two globetrotters with startup experience, they set out to redefine TravelTech in unique setting - at 30,000ft above the ground.
+                    .row
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='Kristiyana Hart', src='img/kristy.jpg')
+                            h4
+                                | Kristiyana
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt
+                                        
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='Johannes Jaeger', src='img/Johannes.jpg')
+                            h4
+                                | Johannes
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt 
+                        
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='Kostadin Kolev', src='img/kosta.jpg')
+                            h4
+                                | Kostadin
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt
+
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='George Robson', src='img/george.jpg')
+                            h4
+                                | George
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt                     
+  
+                        .clearfix.visible-sm-block
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='Evan Tate', src='img/evan.jpg')
+                            h4
+                                | Evan
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt
+
+                        .col-md-2.col-xs-6
+                            img.TeamPhoto(alt='Sandra Sobańska', src='img/sandra.jpg')
+                            h4
+                                | Sandra
+                            .team_social_links
+                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+                                    i.ti.ti-linkedin  
+                                a(target='_blank', href='https://twitter.com/jebbery')
+                                    i.ti-twitter-alt
+
+                    //- .row    
+                    //-     .col-md-8.col-md-offset-2.m2020
+                    //-         img(alt="Team at Millennial 20:20", src="img/m2020.jpg")
+
+                    //-         p
+                    //-             | As active members of the startup movement in Europe and Asia, three well-travelled and entrepreneurial millennials decided to come together and use their experience of participating in and building over 40 hackathons and challenge the least disrupted industry - travel.
+                                
+                    //- .row    
+                    //-     .col-md-8.col-md-offset-2.itb
+                    //-         p
+                    //-             | Joined by  another two globetrotters with startup experience, they set out to redefine TravelTech in unique setting - at 30,000ft above the ground.
+                    //-         img(alt="Team at Millennial 20:20", src="img/jjss.jpg")
+
+            section#media_assets.in-page-link
+                .diagonal_down
+                .container
+                    .row
+                        .col-md-12.col-sm-12.text-center
+                            h1
+                                | Media Assets
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    
+                    .row
+                        .col-md-6
+                            a#apply_button.btn.btn-lg.inner-link.col-md-7.col-md-offset-4(href='https://drive.google.com/drive/folders/0B9Xy_Vso-Cq3WUVmXzRweXhEX28?usp=sharing') IMAGES
+                        .col-md-6    
+                            a.btn.btn-lg.inner-link.col-md-7.col-md-offset-1.typeform-share.link(href='https://drive.google.com/drive/folders/0B9Xy_Vso-Cq3WmotNGctUE9wbjg?usp=sharing' target='_blank') LOGOS
+
+
+            section.pt64.pb64.pt-xs-40.pb-xs-40
+                .container
+                    .row
+                        .col-md-10.col-md-offset-1.text-center
+                            i.ti-twitter-alt.icon.icon-lg.mb40.mb-xs-24
+                            .twitter-feed.tweets-slider.large
+                                .tweets-feed(data-feed-name='hackhorizon')
+            
+
+            footer.footer-2.text-center-xs.bg-secondary
+              .container
+                .row
+                  .col-sm-6.text-center
+                    p
+                      | © Copyright 2016 Xpresso Labs Limited - All Rights Reserved
+                  .col-sm-6.text-right.text-center-xs
+                    ul.list-inline.social-list
+                        li
+                            a(href='mailto:team@hackhorizon.com')
+                                i.ti.ti-email.icon-sm
+                        li
+                            a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                i.ti-facebook.icon-sm
+                        li
+                            a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                i.ti-twitter-alt.icon-sm
+                        li
+                            a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                i.ti-linkedin.icon-sm
+
+
+
+
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/flexslider.min.js')
+    script(src='js/masonry.min.js')
+    script(src='js/twitterfetcher.min.js')    
+    script(src='js/smooth-scroll.min.js')
+    script(src='js/parallax.min.js')
+    script(src='js/scripts.js')
+    //- script(src='js/custom.js')
