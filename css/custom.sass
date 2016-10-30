@@ -119,6 +119,10 @@ header.show
 	background: white
 	box-shadow: 0px 0px 6px 0px $black
 
+.on_top
+	z-index: 10000
+	cursor: pointer
+
 header
 	height: auto
 	position: fixed
@@ -140,6 +144,9 @@ header
 			display: none
 			opacity: 0.7
 			max-width: 85%
+
+		.menu_list
+			z-index: 100
 
 		.menu li a
 			cursor: pointer
@@ -594,36 +601,54 @@ header
 		background-image: url(../img/divider_arrow_up.png)		
 
 #team
-	// background: white
-
-	h1
-		text-align: center
-
-	h4
-		font-size: 2.1em
-		font-weight: 500
-	p
-		margin-bottom: 64px
-		padding-left: 5%
-		padding-right: 5%
-
+	padding-bottom: 64px
 
 	.TeamPhoto
-		width: 225px
-		height: 225px
-		// border-radius: 200px
-		-webkit-filter: grayscale(0.2)
-		filter: grayscale(0.2)
+		height: 125px
+		border-radius: 100px
+		display: block
+		margin: 64px auto 0 auto
 
-
-	.Team h4 span
-		text-transform: uppercase
-		font-size: 14px
-		color: $pink
-
-	.Team p
-		margin-bottom: 0px
+	h4
+		text-align: center
+		font-family: $font
+		font-size: 1.8em
 		color: $grey1
+		padding-top: 24px
+		margin-bottom: 12px
+
+	#contact_button
+		display: block
+		width: 75%
+		margin: 48px auto 0 auto
+		cursor: pointer
+		height: 50px
+		font-weight: 600
+		font-family: $font
+		color: white
+		background: $pink
+		font-size: 1.4em		
+		border: 2px solid $pink
+		transition: all 0.3s ease
+		-webkit-transition: all 0.3s ease
+		-moz-transition: all 0.3s ease
+
+	#contact_button:hover	
+		background: white
+		color: $black
+
+	.team_social_links
+		text-align: center
+
+		a
+			font-size: 20px
+			color: $grey2
+			cursor: pointer
+
+		a:hover
+			color: $pink
+
+
 
 #advisors
 	background: white
@@ -895,6 +920,9 @@ footer
 			padding-top: 32px
 		#Partner_With_Us
 			border-bottom: none
+
+	#apply h1
+		margin-bottom: 12px
 
 
 

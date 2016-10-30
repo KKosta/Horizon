@@ -1486,8 +1486,8 @@ nav.absolute {
 }
 nav.fixed {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+/*  visibility: hidden;
+  opacity: 0;*/
 }
 nav.fixed .nav-utility {
   display: none;
