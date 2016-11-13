@@ -30,7 +30,7 @@ p {
   height: 70vh;
   width: auto;
   background-color: white;
-  background: url(../img/press.jpg) no-repeat center center;
+  background: url(../img/rr_cover.jpg) no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,8 +48,16 @@ p {
   background-size: 100% auto;
   background-position: bottom;
   background-repeat: no-repeat; }
+  #top_cover .diagonal_up #cover_border_top {
+    margin-top: 20vh;
+    border-bottom: 8px solid white; }
+  #top_cover .diagonal_up #cover_border_bottom {
+    border-bottom: 8px solid white; }
   #top_cover .diagonal_up h1 {
-    margin-top: 15vh;
+    font-size: 96px;
+    line-height: normal;
+    padding: 15px 0;
+    margin-bottom: 0;
     font-weight: 800; }
   #top_cover .diagonal_up .social-connect {
     text-align: center;
@@ -120,8 +128,57 @@ header {
   margin-bottom: 32px;
   border-bottom: 2px solid #FF4081; }
 
-#our_story {
-  padding: 48px 0 32px 0; }
+#reports {
+  padding: 196px 0 32px 0; }
+  #reports p {
+    padding-bottom: 64px; }
+
+.foundry_modal h2 {
+  font-weight: bold;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 3.15em;
+  text-transform: capitalize;
+  margin: 0 0 24px 0; }
+.foundry_modal #about_border {
+  margin-bottom: 0; }
+.foundry_modal p {
+  padding: 24px 0 64px 0; }
+.foundry_modal #sign_up_form input[type="text"] {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-weight: 600;
+  border-bottom: 2px solid #FF4081;
+  font-size: 20px;
+  background: white; }
+.foundry_modal #sign_up_form input[type="text"]:focus {
+  text-align: left;
+  outline: none;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-weight: 600;
+  font-size: 20px; }
+.foundry_modal #sign_up_form ::-webkit-input-placeholder {
+  text-align: left;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #DDDDDD;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px; }
+.foundry_modal #sign_up_form button[type="submit"] {
+  margin-top: 12px;
+  cursor: pointer;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  background: #FF4081;
+  border: 2px solid #FF4081;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 0.3s ease; }
+.foundry_modal #sign_up_form button[type="submit"]:hover {
+  color: #212121;
+  border: 2px solid #FF4081; }
 
 .diagonal_down {
   position: relative;
@@ -171,15 +228,6 @@ header {
     #community .description a:hover {
       background: white;
       color: #212121; }
-    #community .description .descriptionTBC {
-      padding-bottom: 32px; }
-      #community .description .descriptionTBC a {
-        border: 2px solid #616161;
-        color: #212121;
-        background: white; }
-      #community .description .descriptionTBC a:hover {
-        background: white;
-        color: #FF4081; }
 
 .community_image {
   overflow: hidden;
@@ -194,6 +242,15 @@ header {
 
 .community_image img:hover {
   transform: scale(1.1); }
+  .community_image img:hover .descriptionTBC {
+    padding-bottom: 32px; }
+    .community_image img:hover .descriptionTBC a {
+      border: 2px solid #616161;
+      color: #212121;
+      background: white; }
+    .community_image img:hover .descriptionTBC a:hover {
+      background: white;
+      color: #FF4081; }
 
 #team {
   padding: 196px 0 96px 0; }
@@ -384,6 +441,9 @@ footer {
   .diagonal_up .logo_cover #title_logo {
     width: 60%; }
 
+  #top_cover .diagonal_up h1 {
+    font-size: 48px; }
+
   #tagline {
     padding: 0 15px; }
 
@@ -454,4 +514,4 @@ footer {
   #community h1, #team h1 {
     margin-top: 32px; } }
 
-/*# sourceMappingURL=press.css.map */
+/*# sourceMappingURL=rr.css.map */

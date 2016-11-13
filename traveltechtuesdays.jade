@@ -112,7 +112,7 @@ html(lang='en')
                     .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs.absolute-xs.on_top
                         i.ti-menu
         .main-container
-            section#top_cover.cover.in-page-link
+            section#top_cover.cover
                     .container.diagonal_up
                         .row
                             .col-md-8.col-md-offset-2.text-center
@@ -122,7 +122,7 @@ html(lang='en')
                             //- .cover_links.modal-container
                             //-     .col-md-6
                             //-         a#apply_button.btn.btn-lg.inner-link.col-md-7.col-md-offset-4(href='#CTA') APPLY TO PARTICIPATE
-            section.in-page-link#about
+            section
                 .container
                     .row
                         .col-md-10.col-md-offset-1.text-center
@@ -138,7 +138,7 @@ html(lang='en')
                             p
                                 | TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystems across Hong Kong and London, to encourage new connections, opportunities and collaborations in the space.
 
-            section.in-page-link.bg-secondary#cities.diagonal_down
+            section.bg-secondary#cities.diagonal_down
                 .container
                     .row
                         .col-md-10.col-md-offset-1.text-center
@@ -147,11 +147,11 @@ html(lang='en')
                     .row
                         .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
                     .row
-                        .col-md-6.text-center#HK_city
-                            //- h2 Hong Kong
+                        .col-md-6.text-center
                             .col-md-12
                                 .city_image
-                                    img(alt='Hong Kong', src='img/ttt/HK66.jpg')
+                                    a(href='https://ttt5-hk.eventbrite.co.uk', target="_blank")
+                                        img(alt='Hong Kong', src='img/ttt/HK66.jpg')
                                 .bg-white.description                                
                                     h2 From Hotel to Home - The Modern Hospitality Experience
                                     h6.uppercase
@@ -160,24 +160,19 @@ html(lang='en')
                                         | The hotels and hospitaility industry is changing rapidly. How do modern brands innovate and levarage new digital platforms to reach new customers? How do they build effective loyalty programs to retaining their customers?
                                     a.btn.btn-lg(target="_blank", href='https://ttt5-hk.eventbrite.co.uk') Register
                         .col-md-6.text-center
-                            //- h2 London
                             .col-md-12
                                 .city_image
-                                    img(alt='London', src='img/ttt/LDN66.jpg')
+                                    a(href='https://ttt1-ldn.eventbrite.co.uk', target="_blank")
+                                        img(alt='London', src='img/ttt/LDN66.jpg')
                                 .bg-white.description                     
                                     h2 Evolving the London Hospitality Industry
                                     h6.uppercase
                                         | Tuesday 15th November
                                     p
                                         | In London's faced paced market, travelers have are overwhelmed with choice and different hospitality options. How do hospitality brands stand out in this crowded market and create memorable and enjoyable experiences for their guests?
-                                    a.btn.btn-lg(href='https://ttt1-ldn.eventbrite.co.uk') Register
-                                //- .bg-white.descriptionTBC                     
-                                //-     h2 Coming Soon
-                                //-     p
-                                //-         | We are still in the process of confirming the details for our next TravelTech Tuesdays in London. Please subscribe to our newsletter below to the first to hear when we announce the event.
-                                //-     a.btn.btn-lg(href='#') To Be Announced
+                                    a.btn.btn-lg(href='https://ttt1-ldn.eventbrite.co.uk' target="_blank") Register
 
-            section#CTA.in-page-link.section_padding
+            section#CTA.section_padding
                 .container
                     .row
                         .col-md-12.col-sm-12.text-center
@@ -197,7 +192,7 @@ html(lang='en')
                                 iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
                     .row
                         .col-xs-8.col-xs-offset-2.text-center
-            section.in-page-link#speakers
+            section#speakers
                 .container
                     .row
                         .col-md-12.col-sm-12.text-center
@@ -317,7 +312,7 @@ html(lang='en')
                                         span
                                             a#speaker_contact(href='mailto:team@hackhorizon.com') here                                    
 
-            section.bg-secondary.in-page-link#photos
+            section.bg-secondary#photos
                 .container
                     .row
                         .col-md-12.col-sm-12.text-center

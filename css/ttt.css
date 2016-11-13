@@ -96,19 +96,22 @@ header {
   margin: 20vh auto 0 auto;
   width: 60%; }
 
-.city_image {
+.city_image, .community_image {
   overflow: hidden;
   position: relative;
   top: 0;
   left: 0; }
-  .city_image img {
+  .city_image img, .community_image img {
     width: 100%;
     height: auto;
     display: inline-block;
     transition: all 0.2s ease-in-out; }
 
 .city_image img:hover {
-  transform: scale(1.1); }
+  transform: scale(1.15); }
+
+.community_image img:hover {
+  transform: scale(1.15); }
 
 #about h1 {
   margin-bottom: 32px; }
@@ -135,8 +138,6 @@ header {
     margin-bottom: 32px; }
   #cities #about_border {
     margin-bottom: 46px; }
-  #cities .description {
-    padding-bottom: 32px; }
   #cities h2 {
     font-size: 2.1em;
     text-align: center;
@@ -153,24 +154,23 @@ header {
   #cities p {
     width: 90%;
     margin: 0 auto; }
-  #cities a {
-    display: block;
-    width: 75%;
-    margin: 32px auto 0 auto;
-    cursor: pointer;
-    height: 50px;
-    font-weight: 600;
-    font-family: "Roboto", Helvetica, sans-serif;
-    color: white;
-    background: #FF4081;
-    font-size: 1.4em;
-    border: 2px solid #FF4081;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease; }
-  #cities a:hover {
-    background: white;
-    color: #212121; }
+  #cities .description {
+    padding-bottom: 32px; }
+    #cities .description a {
+      display: block;
+      width: 75%;
+      margin: 32px auto 0 auto;
+      cursor: pointer;
+      height: 50px;
+      font-weight: 600;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: white;
+      background: #FF4081;
+      font-size: 1.4em;
+      border: 2px solid #FF4081;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease; }
   #cities .descriptionTBC {
     padding-bottom: 32px; }
     #cities .descriptionTBC a {

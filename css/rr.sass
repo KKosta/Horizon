@@ -49,7 +49,7 @@ p
 	height: 70vh
 	width: auto
 	background-color: white
-	background: url(../img/press.jpg) no-repeat center center
+	background: url(../img/rr_cover.jpg) no-repeat center center
 	background-size: cover
 	-webkit-background-size: cover
 	-moz-background-size: cover
@@ -70,8 +70,18 @@ p
 		background-position: bottom
 		background-repeat: no-repeat
 
+		#cover_border_top
+			margin-top: 20vh
+			border-bottom: 8px solid white
+
+		#cover_border_bottom
+			border-bottom: 8px solid white
+
 		h1
-			margin-top: 15vh
+			font-size: 96px
+			line-height: normal
+			padding: 15px 0
+			margin-bottom: 0
 			font-weight: 800
 
 		.social-connect
@@ -159,8 +169,73 @@ header
 	border-bottom: 2px solid $pink
 
 
-#our_story
-	padding: 48px 0 32px 0
+#reports
+	padding: 196px 0 32px 0
+
+	p
+		padding-bottom: 64px
+
+.foundry_modal
+	h2
+		font-weight: bold
+		font-family: $font
+		color: $black
+		font-size: $h2
+		text-transform: capitalize
+		margin: 0 0 24px 0
+
+	#about_border
+		margin-bottom: 0
+
+	p
+		padding: 24px 0 64px 0
+
+	#sign_up_form
+		input[type="text"]
+			font-family: $font
+			color: $black
+			font-weight: 600
+			border-bottom: 2px solid $pink
+			font-size: 20px
+			background: white
+
+		input[type="text"]:focus
+			text-align: left
+			outline: none
+			font-family: $font
+			color: $black
+			font-weight: 600
+			font-size: 20px
+
+		::-webkit-input-placeholder
+			text-align: left
+			font-family: $font
+			color: $grey2
+			// font-style: italic
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 20px
+
+		button[type="submit"]
+			margin-top: 12px
+			cursor: pointer
+			font-family: $font
+			font-weight: 600
+			color: white
+			background: $pink
+			border: 2px solid $pink
+			text-transform: uppercase
+			font-size: 20px
+			transition: all 0.3s ease
+
+
+		button[type="submit"]:hover
+			color: $black
+			border: 2px solid $pink
+
+
+
+
 
 .diagonal_down
 	position: relative
@@ -218,19 +293,6 @@ header
 			background: white
 			color: $black
 
-		.descriptionTBC
-			padding-bottom: 32px
-
-			a 
-				border: 2px solid $grey1
-				color: $black
-				background: white
-			a:hover	
-				background: white
-				color: $pink
-
-
-
 .community_image
 	overflow: hidden
 	position: relative
@@ -246,7 +308,18 @@ header
 .community_image img:hover
 	transform: scale(1.1)
 
-	
+	.descriptionTBC
+		padding-bottom: 32px
+
+		a 
+			border: 2px solid $grey1
+			color: $black
+			background: white
+		a:hover	
+			background: white
+			color: $pink
+
+
 
 #team
 	padding: 196px 0 96px 0
@@ -488,6 +561,9 @@ footer
 
 	.diagonal_up .logo_cover #title_logo
 		width: 60%
+
+	#top_cover .diagonal_up h1
+		font-size: 48px
 
 	#tagline
 		padding: 0 15px

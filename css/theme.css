@@ -4807,8 +4807,8 @@ section + .portfolio-pullup {
 .foundry_modal {
   overflow-y: auto;
   max-height: 100%;
-  max-width: 50%;
-  width: 50%;
+  max-width: 80%;
+  width: 80%;
   position: fixed;
   padding: 80px 48px;
   transition: all 0.3s ease;
@@ -4877,8 +4877,8 @@ section + .portfolio-pullup {
 }
 @media all and (min-width: 1500px) {
   .foundry_modal {
-    max-width: 45%;
-    width: 45%;
+    max-width: 65%;
+    width: 65%;
   }
 }
 @media all and (max-width: 1190px) {
