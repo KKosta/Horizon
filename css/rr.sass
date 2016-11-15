@@ -1,6 +1,8 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 // sass --watch /Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css:/Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
+
 $pink: #FF4081
 $blue: #1DB9FF
 $black: #212121
@@ -173,9 +175,97 @@ header
 	padding: 196px 0 32px 0
 
 	p
-		padding-bottom: 64px
+		text-align: center
+		padding-bottom: 48px
+
+	h2
+		font-size: 2.1em
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		padding-bottom: 24px
+		margin: 0 auto
+
+	.report_item
+
+		img
+			display: block
+			margin: 0 auto
+			width: 100px
+			padding: 10px
+			background: white
+			border-radius: 250px
+
+		p
+			font-weight: 500
+			padding-top: 12px
+
+	.report
+		cursor: pointer
+		position: relative
+		max-height: 500px
+		width: 100%
+		border: 2px solid $pink
+		margin-top: 10px
+		background-size: cover
+		background-position: center
+		margin-bottom: 64px
+
+		h1
+			font-family: 'Montserrat', 'Roboto'
+			position: relative
+			line-height: 500px
+			color: white
+			text-align: center
+			font-size: 32px
+			letter-spacing: 1px
+			font-weight: bold
+			font-stretch: normal
+		
+		.report_logo
+			position: absolute
+			bottom: 25px
+			left: 30%
+			width: 40%
+
+	.accommodation .report, .accommodation .foundry_modal .report 
+		background-image: url(../img/accommodation.jpg)
+
+	.airports .report, .airport .foundry_modal .report 
+		background-image: url(../img/airports.jpg)
+
+	.bookings .report, .bookings.foundry_modal .report 
+		background-image: url(../img/bookings.jpg)
+	
+	.insurance .report, .insurance.foundry_modal .report 
+		background-image: url(../img/insurance.jpg)
+
+	.transportation .report, .transportation.foundry_modal .report 
+		background-image: url(../img/transportation.jpg)
+
+	#coming_soon .report, .foundry_modal .report 
+		background-color: $grey2
+
+	.report_cover
+		position: relative
+
+	.report_cover:before
+		position: absolute
+		content: " "
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: none
+		z-index: 0
+
+	.report_cover:hover:before
+		display: block
+		background: rgba(255, 64, 129,0.6)
+
 
 .foundry_modal
+
 	h2
 		font-weight: bold
 		font-family: $font
@@ -190,7 +280,52 @@ header
 	p
 		padding: 24px 0 64px 0
 
-	#sign_up_form
+	.report
+		position: relative
+		width: 100%
+		height: 500px
+		border: 2px solid $pink
+		margin-top: 10px
+		background-size: cover
+		background-position: center
+
+		h1
+			font-family: 'Montserrat', 'Roboto'
+			position: relative
+			line-height: 500px
+			color: white
+			text-align: center
+			font-size: 32px
+			letter-spacing: 1px
+			font-weight: bold
+			font-stretch: normal
+		
+		.report_logo
+			position: absolute
+			bottom: 25px
+			left: 30%
+			width: 40%
+
+	.report.accommodation_small 
+		background-image: url(../img/accommodation.jpg)
+
+	.report.airports_small
+		background-image: url(../img/airports.jpg)
+
+	.report.bookings_small
+		background-image: url(../img/bookings.jpg)
+	
+	.report.insurance_small
+		background-image: url(../img/insurance.jpg)
+
+	.report.transportation_small
+		background-image: url(../img/transportation.jpg)
+
+	#coming_soon .report, .foundry_modal .report 
+		background-color: $grey2
+
+
+	.sign_up_form
 		input[type="text"]
 			font-family: $font
 			color: $black
@@ -251,197 +386,6 @@ header
 #team.diagonal_down
 	background-image: url(../img/diagonal_down_reverse_grey.png)
 
-#community
-	padding: 96px 0 48px 0
-
-	h1
-		margin-top: 120px
-		margin-bottom: 32px
-
-	p
-		margin-bottom: 64px
-	
-	#about_border
-		margin-bottom: 46px
-
-	.description    
-		padding-bottom: 32px
-		background: white
-
-		p
-			width: 90%
-			margin: 0 auto 
-			padding-top: 32px
-		
-		a
-			display: block
-			width: 75%
-			margin: 32px auto 0 auto
-			cursor: pointer
-			height: 50px
-			font-weight: 600
-			font-family: $font
-			color: white
-			background: $pink
-			font-size: 1.4em		
-			border: 2px solid $pink
-			transition: all 0.3s ease
-			-webkit-transition: all 0.3s ease
-			-moz-transition: all 0.3s ease
-
-		a:hover	
-			background: white
-			color: $black
-
-.community_image
-	overflow: hidden
-	position: relative
-	top: 0
-	left: 0
-
-	img
-		width: 100%
-		height: auto
-		display: inline-block
-		transition: all .2s ease-in-out
-
-.community_image img:hover
-	transform: scale(1.1)
-
-	.descriptionTBC
-		padding-bottom: 32px
-
-		a 
-			border: 2px solid $grey1
-			color: $black
-			background: white
-		a:hover	
-			background: white
-			color: $pink
-
-
-
-#team
-	padding: 196px 0 96px 0
-
-	.diagonal_down
-		position: relative
-		top: 0px
-		left: 0px
-		width: 100%
-		height: 100%
-		background-image: url(../img/diagonal_down_reverse_grey.png)
-		background-size: 100% auto
-		background-position: top
-		background-repeat: no-repeat
-
-	h1
-		text-align: center
-
-	h4
-		font-size: 2.1em
-		font-weight: 500
-		margin-bottom: 6px
-	p
-		margin-bottom: 32px
-		padding-left: 5%
-		padding-right: 5%
-
-
-	.TeamPhoto
-		margin-top: 48px
-		width: 225px
-		height: 225px
-		border-radius: 150px
-		// border-radius: 200px
-		-webkit-filter: grayscale(0.2)
-		filter: grayscale(0.2)
-
-
-	.Team h4 span
-		text-transform: uppercase
-		font-size: 14px
-		color: $pink
-
-	.Team p
-		margin-bottom: 0px
-		color: $grey1
-
-	.team_social_links
-		text-align: center
-		padding-bottom: 12px
-
-		a
-			font-size: 20px
-			color: $grey2
-			cursor: pointer
-
-		a:hover
-			color: $pink
-
-
-#media_assets
-	.diagonal_up
-		position: relative
-		bottom: 0px
-		left: 0px
-		width: 100%
-		height: 100%
-		background-image: url(../img/divider_arrow_down.png)
-		background-size: 100% auto
-		background-position: bottom
-		background-repeat: no-repeat
-
-#media_assets
-	padding: 96px 0 0 0
-	background: url(../img/media.jpg)
-	background-repeat: no-repeat
-	background-position: center
-	background-attachment: fixed
-	background-size: cover
-	// -webkit-background-size: cover
-	// -moz-background-size: cover
-	// -o-background-size: cover
-
-	h1 
-		color: white
-		margin-bottom: 32px
-
-	#about_border
-		border-bottom: 2px solid white
-		margin-bottom: 64px
-
-	#media_links
-		padding-bottom: 196px
-
-	h2
-		color: $black
-
-		span
-			font-size: 0.622em
-
-	p
-		// font-weight: 600
-		color: $grey1
-		font-size: 1.7em
-
-	a
-		display: block
-		cursor: pointer
-		height: 50px
-		font-weight: 600
-		font-family: $font
-		color: white
-		background: $pink
-		font-size: 1.4em		
-		border: 2px solid $pink
-		transition: all 0.3s ease
-		-webkit-transition: all 0.3s ease
-		-moz-transition: all 0.3s ease
-
-	a:hover	
-		background: white
-		color: $black
 
 .tweets-slider
 
@@ -495,6 +439,7 @@ footer
 
 
 @media (max-width: 990px)
+
 	.nav-bar
 		background: white
 
@@ -536,9 +481,13 @@ footer
 		#verticals
 			margin-top: 64px 
 
-	#our_story
-		p
-			padding-bottom: 16px
+	.foundry_modal 
+		.report
+			display: none
+
+		h2
+			font-size: 2.1em
+
 
 @media (max-width: 769px)
 	
@@ -606,7 +555,7 @@ footer
 
 @media (max-width: 415px)
 	.cover
-		height: 100vh
+		height: 70vh
 
 		h2
 			font-size: 1.7em
@@ -618,7 +567,7 @@ footer
 	
 	#top_cover
 		.diagonal_up
-			height: 100vh
+			height: 70vh
 
 	h1
 		font-size: 3.15em

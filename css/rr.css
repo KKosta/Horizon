@@ -1,4 +1,5 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ***** */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 body {
   background: white;
   z-index: 100; }
@@ -131,7 +132,76 @@ header {
 #reports {
   padding: 196px 0 32px 0; }
   #reports p {
-    padding-bottom: 64px; }
+    text-align: center;
+    padding-bottom: 48px; }
+  #reports h2 {
+    font-size: 2.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 24px;
+    margin: 0 auto; }
+  #reports .report_item img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    background: white;
+    border-radius: 250px; }
+  #reports .report_item p {
+    font-weight: 500;
+    padding-top: 12px; }
+  #reports .report {
+    cursor: pointer;
+    position: relative;
+    max-height: 500px;
+    width: 100%;
+    border: 2px solid #FF4081;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 64px; }
+    #reports .report h1 {
+      font-family: "Montserrat", "Roboto";
+      position: relative;
+      line-height: 500px;
+      color: white;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-stretch: normal; }
+    #reports .report .report_logo {
+      position: absolute;
+      bottom: 25px;
+      left: 30%;
+      width: 40%; }
+  #reports .accommodation .report, #reports .accommodation .foundry_modal .report {
+    background-image: url(../img/accommodation.jpg); }
+  #reports .airports .report, #reports .airport .foundry_modal .report {
+    background-image: url(../img/airports.jpg); }
+  #reports .bookings .report, #reports .bookings.foundry_modal .report {
+    background-image: url(../img/bookings.jpg); }
+  #reports .insurance .report, #reports .insurance.foundry_modal .report {
+    background-image: url(../img/insurance.jpg); }
+  #reports .transportation .report, #reports .transportation.foundry_modal .report {
+    background-image: url(../img/transportation.jpg); }
+  #reports #coming_soon .report, #reports .foundry_modal .report {
+    background-color: #DDDDDD; }
+  #reports .report_cover {
+    position: relative; }
+  #reports .report_cover:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 0; }
+  #reports .report_cover:hover:before {
+    display: block;
+    background: rgba(255, 64, 129, 0.6); }
 
 .foundry_modal h2 {
   font-weight: bold;
@@ -144,28 +214,63 @@ header {
   margin-bottom: 0; }
 .foundry_modal p {
   padding: 24px 0 64px 0; }
-.foundry_modal #sign_up_form input[type="text"] {
+.foundry_modal .report {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 2px solid #FF4081;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center; }
+  .foundry_modal .report h1 {
+    font-family: "Montserrat", "Roboto";
+    position: relative;
+    line-height: 500px;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-stretch: normal; }
+  .foundry_modal .report .report_logo {
+    position: absolute;
+    bottom: 25px;
+    left: 30%;
+    width: 40%; }
+.foundry_modal .report.accommodation_small {
+  background-image: url(../img/accommodation.jpg); }
+.foundry_modal .report.airports_small {
+  background-image: url(../img/airports.jpg); }
+.foundry_modal .report.bookings_small {
+  background-image: url(../img/bookings.jpg); }
+.foundry_modal .report.insurance_small {
+  background-image: url(../img/insurance.jpg); }
+.foundry_modal .report.transportation_small {
+  background-image: url(../img/transportation.jpg); }
+.foundry_modal #coming_soon .report, .foundry_modal .foundry_modal .report {
+  background-color: #DDDDDD; }
+.foundry_modal .sign_up_form input[type="text"] {
   font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
   font-weight: 600;
   border-bottom: 2px solid #FF4081;
   font-size: 20px;
   background: white; }
-.foundry_modal #sign_up_form input[type="text"]:focus {
+.foundry_modal .sign_up_form input[type="text"]:focus {
   text-align: left;
   outline: none;
   font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
   font-weight: 600;
   font-size: 20px; }
-.foundry_modal #sign_up_form ::-webkit-input-placeholder {
+.foundry_modal .sign_up_form ::-webkit-input-placeholder {
   text-align: left;
   font-family: "Roboto", Helvetica, sans-serif;
   color: #DDDDDD;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px; }
-.foundry_modal #sign_up_form button[type="submit"] {
+.foundry_modal .sign_up_form button[type="submit"] {
   margin-top: 12px;
   cursor: pointer;
   font-family: "Roboto", Helvetica, sans-serif;
@@ -176,7 +281,7 @@ header {
   text-transform: uppercase;
   font-size: 20px;
   transition: all 0.3s ease; }
-.foundry_modal #sign_up_form button[type="submit"]:hover {
+.foundry_modal .sign_up_form button[type="submit"]:hover {
   color: #212121;
   border: 2px solid #FF4081; }
 
@@ -193,160 +298,6 @@ header {
 
 #team.diagonal_down {
   background-image: url(../img/diagonal_down_reverse_grey.png); }
-
-#community {
-  padding: 96px 0 48px 0; }
-  #community h1 {
-    margin-top: 120px;
-    margin-bottom: 32px; }
-  #community p {
-    margin-bottom: 64px; }
-  #community #about_border {
-    margin-bottom: 46px; }
-  #community .description {
-    padding-bottom: 32px;
-    background: white; }
-    #community .description p {
-      width: 90%;
-      margin: 0 auto;
-      padding-top: 32px; }
-    #community .description a {
-      display: block;
-      width: 75%;
-      margin: 32px auto 0 auto;
-      cursor: pointer;
-      height: 50px;
-      font-weight: 600;
-      font-family: "Roboto", Helvetica, sans-serif;
-      color: white;
-      background: #FF4081;
-      font-size: 1.4em;
-      border: 2px solid #FF4081;
-      transition: all 0.3s ease;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease; }
-    #community .description a:hover {
-      background: white;
-      color: #212121; }
-
-.community_image {
-  overflow: hidden;
-  position: relative;
-  top: 0;
-  left: 0; }
-  .community_image img {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    transition: all 0.2s ease-in-out; }
-
-.community_image img:hover {
-  transform: scale(1.1); }
-  .community_image img:hover .descriptionTBC {
-    padding-bottom: 32px; }
-    .community_image img:hover .descriptionTBC a {
-      border: 2px solid #616161;
-      color: #212121;
-      background: white; }
-    .community_image img:hover .descriptionTBC a:hover {
-      background: white;
-      color: #FF4081; }
-
-#team {
-  padding: 196px 0 96px 0; }
-  #team .diagonal_down {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/diagonal_down_reverse_grey.png);
-    background-size: 100% auto;
-    background-position: top;
-    background-repeat: no-repeat; }
-  #team h1 {
-    text-align: center; }
-  #team h4 {
-    font-size: 2.1em;
-    font-weight: 500;
-    margin-bottom: 6px; }
-  #team p {
-    margin-bottom: 32px;
-    padding-left: 5%;
-    padding-right: 5%; }
-  #team .TeamPhoto {
-    margin-top: 48px;
-    width: 225px;
-    height: 225px;
-    border-radius: 150px;
-    -webkit-filter: grayscale(0.2);
-    filter: grayscale(0.2); }
-  #team .Team h4 span {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #FF4081; }
-  #team .Team p {
-    margin-bottom: 0px;
-    color: #616161; }
-  #team .team_social_links {
-    text-align: center;
-    padding-bottom: 12px; }
-    #team .team_social_links a {
-      font-size: 20px;
-      color: #DDDDDD;
-      cursor: pointer; }
-    #team .team_social_links a:hover {
-      color: #FF4081; }
-
-#media_assets .diagonal_up {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/divider_arrow_down.png);
-  background-size: 100% auto;
-  background-position: bottom;
-  background-repeat: no-repeat; }
-
-#media_assets {
-  padding: 96px 0 0 0;
-  background: url(../img/media.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; }
-  #media_assets h1 {
-    color: white;
-    margin-bottom: 32px; }
-  #media_assets #about_border {
-    border-bottom: 2px solid white;
-    margin-bottom: 64px; }
-  #media_assets #media_links {
-    padding-bottom: 196px; }
-  #media_assets h2 {
-    color: #212121; }
-    #media_assets h2 span {
-      font-size: 0.622em; }
-  #media_assets p {
-    color: #616161;
-    font-size: 1.7em; }
-  #media_assets a {
-    display: block;
-    cursor: pointer;
-    height: 50px;
-    font-weight: 600;
-    font-family: "Roboto", Helvetica, sans-serif;
-    color: white;
-    background: #FF4081;
-    font-size: 1.4em;
-    border: 2px solid #FF4081;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease; }
-  #media_assets a:hover {
-    background: white;
-    color: #212121; }
 
 .tweets-slider p {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -420,8 +371,10 @@ footer {
   #about #verticals {
     margin-top: 64px; }
 
-  #our_story p {
-    padding-bottom: 16px; } }
+  .foundry_modal .report {
+    display: none; }
+  .foundry_modal h2 {
+    font-size: 2.1em; } }
 @media (max-width: 769px) {
   #plane {
     animation: plane 4s both; }
@@ -476,7 +429,7 @@ footer {
       border: 2px solid #FF4081; } }
 @media (max-width: 415px) {
   .cover {
-    height: 100vh; }
+    height: 70vh; }
     .cover h2 {
       font-size: 1.7em; }
 
@@ -485,7 +438,7 @@ footer {
     width: 90%; }
 
   #top_cover .diagonal_up {
-    height: 100vh; }
+    height: 70vh; }
 
   h1 {
     font-size: 3.15em; }

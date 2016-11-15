@@ -31,7 +31,7 @@
  27. Video
  28. Blog
  29. Image Blocks
- 30. Portfolio
+ 30. Portfolio©
  31. Testimonials
  32. Countdown
  33. Maps
@@ -512,8 +512,8 @@ blockquote .author {
   -webkit-column-count: 2;
 }
 @media all and (max-width: 767px) {
-  br {
-    display: none;
+  /*br {
+    display: none;*/
   }
   blockquote {
     font-size: 16px;
@@ -4810,7 +4810,7 @@ section + .portfolio-pullup {
   max-width: 80%;
   width: 80%;
   position: fixed;
-  padding: 80px 48px;
+  padding: 96px 96px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
