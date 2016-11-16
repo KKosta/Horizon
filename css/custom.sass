@@ -548,43 +548,110 @@ header
 		font-weight: 600
 		padding-top: 12px
 
-
-
 #community
+	padding: 96px 0 48px 0
+
 	h1
-		margin-bottom: 62px
+		margin-bottom: 32px
 
-	h2
-		color: $pink
-		font-weight: 500
-		margin: -56px 0 64px 0 
+	p
+		margin-bottom: 64px
 	
-	.col-md-4.col-xs-6
-		padding-right: 5px
-		padding-left: 5px
+	#about_border
+		margin-bottom: 46px
 
-	#ttt
-		padding: 50px 20px		
-		
-	#ttt_details 
-		text-align: center
-
-	#ttt_button
-		height: 50px
-		font-weight: 600
-		font-family: $font
-		color: white
-		background: $pink
-		font-size: 1.4em		
-		border: 2px solid $pink
-		transition: all 0.3s ease
-		-webkit-transition: all 0.3s ease
-		-moz-transition: all 0.3s ease
-
-	#ttt_button:hover
-		border: 2px solid $pink
+	.description    
+		padding-bottom: 32px
 		background: white
-		color: $black
+
+		p
+			width: 90%
+			margin: 0 auto 
+			padding-top: 32px
+		
+		a
+			display: block
+			width: 75%
+			margin: 32px auto 0 auto
+			cursor: pointer
+			height: 50px
+			font-weight: 600
+			font-family: $font
+			color: white
+			background: $pink
+			font-size: 1.4em		
+			border: 2px solid $pink
+			transition: all 0.3s ease
+			-webkit-transition: all 0.3s ease
+			-moz-transition: all 0.3s ease
+
+		a:hover	
+			background: white
+			color: $black
+
+		.descriptionTBC
+			padding-bottom: 32px
+
+			a 
+				border: 2px solid $grey1
+				color: $black
+				background: white
+			a:hover	
+				background: white
+				color: $pink
+
+
+
+.community_image
+	overflow: hidden
+	position: relative
+	top: 0
+	left: 0
+
+	img
+		width: 100%
+		height: auto
+		display: inline-block
+		transition: all .2s ease-in-out
+
+.community_image img:hover
+	transform: scale(1.1)
+
+// #community
+// 	h1
+// 		margin-bottom: 62px
+
+// 	h2
+// 		color: $pink
+// 		font-weight: 500
+// 		margin: -56px 0 64px 0 
+	
+// 	.col-md-4.col-xs-6
+// 		padding-right: 5px
+// 		padding-left: 5px
+
+// 	#ttt
+// 		padding: 50px 20px		
+		
+// 	#ttt_details 
+// 		text-align: center
+
+// 	#ttt_button
+// 		height: 50px
+// 		font-weight: 600
+// 		font-family: $font
+// 		color: white
+// 		background: $pink
+// 		font-size: 1.4em		
+// 		border: 2px solid $pink
+// 		transition: all 0.3s ease
+// 		-webkit-transition: all 0.3s ease
+// 		-moz-transition: all 0.3s ease
+
+// 	#ttt_button:hover
+// 		border: 2px solid $pink
+// 		background: white
+// 		color: $black
 
 #airport
 	padding: 0

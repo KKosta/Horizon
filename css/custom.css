@@ -89,7 +89,7 @@ header.show {
 
 .on_top {
   z-index: 10000;
-    z-index-cursor: pointer; }
+  cursor: pointer; }
 
 header {
   height: auto;
@@ -437,34 +437,62 @@ header {
     font-weight: 600;
     padding-top: 12px; }
 
-#community h1 {
-  margin-bottom: 62px; }
-#community h2 {
-  color: #FF4081;
-  font-weight: 500;
-  margin: -56px 0 64px 0; }
-#community .col-md-4.col-xs-6 {
-  padding-right: 5px;
-  padding-left: 5px; }
-#community #ttt {
-  padding: 50px 20px; }
-#community #ttt_details {
-  text-align: center; }
-#community #ttt_button {
-  height: 50px;
-  font-weight: 600;
-  font-family: "Roboto", Helvetica, sans-serif;
-  color: white;
-  background: #FF4081;
-  font-size: 1.4em;
-  border: 2px solid #FF4081;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease; }
-#community #ttt_button:hover {
-  border: 2px solid #FF4081;
-  background: white;
-  color: #212121; }
+#community {
+  padding: 96px 0 48px 0; }
+  #community h1 {
+    margin-bottom: 32px; }
+  #community p {
+    margin-bottom: 64px; }
+  #community #about_border {
+    margin-bottom: 46px; }
+  #community .description {
+    padding-bottom: 32px;
+    background: white; }
+    #community .description p {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 32px; }
+    #community .description a {
+      display: block;
+      width: 75%;
+      margin: 32px auto 0 auto;
+      cursor: pointer;
+      height: 50px;
+      font-weight: 600;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: white;
+      background: #FF4081;
+      font-size: 1.4em;
+      border: 2px solid #FF4081;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease; }
+    #community .description a:hover {
+      background: white;
+      color: #212121; }
+    #community .description .descriptionTBC {
+      padding-bottom: 32px; }
+      #community .description .descriptionTBC a {
+        border: 2px solid #616161;
+        color: #212121;
+        background: white; }
+      #community .description .descriptionTBC a:hover {
+        background: white;
+        color: #FF4081; }
+
+.community_image {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .community_image img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    transition: all 0.2s ease-in-out; }
+
+.community_image img:hover {
+  transform: scale(1.1); }
 
 #airport {
   padding: 0; }
