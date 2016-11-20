@@ -416,7 +416,8 @@ footer {
       border: 2px solid #FF4081; } }
 @media (max-width: 415px) {
   .cover {
-    height: 100vh; }
+    height: 100vh;
+    background-attachment: scroll; }
     .cover h2 {
       font-size: 1.7em; }
 

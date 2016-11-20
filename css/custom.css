@@ -730,6 +730,9 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover; } }
 @media (max-width: 415px) {
+  .cover {
+    background-attachment: scroll; }
+
   h1 {
     font-size: 3.15em; }
 

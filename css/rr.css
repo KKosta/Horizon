@@ -147,7 +147,8 @@ header {
     width: 100px;
     padding: 10px;
     background: white;
-    border-radius: 250px; }
+    border-radius: 250px;
+    border: 1px solid #dddddd; }
   #reports .report_item p {
     font-weight: 500;
     padding-top: 12px; }
@@ -429,7 +430,8 @@ footer {
       border: 2px solid #FF4081; } }
 @media (max-width: 415px) {
   .cover {
-    height: 70vh; }
+    height: 70vh;
+    background-attachment: scroll; }
     .cover h2 {
       font-size: 1.7em; }
 

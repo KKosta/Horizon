@@ -180,6 +180,26 @@ header {
     #cities .descriptionTBC a:hover {
       background: white;
       color: #FF4081; }
+  #cities #startup_shoutout {
+    padding-top: 64px; }
+    #cities #startup_shoutout .report_item img {
+      display: block;
+      margin: 32px auto 0 auto;
+      width: 200px;
+      padding: 10px;
+      background: white;
+      border-radius: 250px;
+      border: 1px solid #dddddd; }
+    #cities #startup_shoutout .report_item p {
+      font-weight: 500;
+      padding-top: 12px; }
+    #cities #startup_shoutout a {
+      color: #FF4081;
+      padding-bottom: 6px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #212121; }
+    #cities #startup_shoutout a:hover {
+      border-bottom: 2px solid #FF4081; }
 
 #CTA.section_padding {
   padding-bottom: 96px;
@@ -268,6 +288,7 @@ header {
     margin-top: 32px;
     fill: #FF4081; }
   #speakers #speaker_contact {
+    border-bottom: 2px solid #212121;
     color: #FF4081 !important;
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif; }
@@ -428,7 +449,8 @@ footer {
       border: 2px solid #FF4081; } }
 @media (max-width: 415px) {
   .cover {
-    height: 60vh; }
+    height: 60vh;
+    background-attachment: scroll; }
 
   #ttt_logo {
     margin: 25vh auto 0 auto;
