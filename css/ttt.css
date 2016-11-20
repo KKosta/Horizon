@@ -452,6 +452,9 @@ footer {
     height: 60vh;
     background-attachment: scroll; }
 
+  #CTA.section_padding {
+    background-attachment: scroll; }
+
   #ttt_logo {
     margin: 25vh auto 0 auto;
     width: 90%; }
