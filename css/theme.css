@@ -2011,8 +2011,11 @@ form.thirds span {
 }
 .form-error,
 .form-success {
-  background: #58ce38;
-  padding: 12px;
+  background: #4CAF50;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: italic;
+  padding: 16px;
   width: 80%;
   color: #fff;
   clear: both;
@@ -2024,7 +2027,7 @@ form.thirds span {
   word-break: break-word;
 }
 .form-error {
-  background: #ce3838;
+  background: #F44336;
 }
 .form-error a,
 .form-success a {
