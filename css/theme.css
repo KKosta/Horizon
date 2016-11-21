@@ -492,10 +492,10 @@ blockquote {
   font-weight: 300;
 }
 .bg-secondary blockquote {
- background: #FF4081; 
+ background: #f8f8f8; 
  border: 5px solid #f8f8f8;
  margin-bottom: 0px;
- color: white;
+ color: #616161;
 }
 
 blockquote .author {

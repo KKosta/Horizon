@@ -315,15 +315,15 @@ header {
     font-style: italic; }
     #photo_media blockquote a {
       font-style: italic;
-      color: white;
+      color: #FF4081;
       display: none; }
     #photo_media blockquote a:hover {
       text-decoration: underline; }
     #photo_media blockquote p {
-      color: white; }
+      color: #212121; }
       #photo_media blockquote p a {
         cursor: pointer;
-        color: white;
+        color: #FF4081;
         display: inline-block; }
 
 footer {
