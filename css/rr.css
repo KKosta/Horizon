@@ -187,8 +187,8 @@ header {
     background-image: url(../img/insurance.jpg); }
   #reports .transportation .report, #reports .transportation.foundry_modal .report {
     background-image: url(../img/transportation.jpg); }
-  #reports #coming_soon .report, #reports .foundry_modal .report {
-    background-color: #DDDDDD; }
+  #reports .airlines .report, #reports .airlines.foundry_modal .report {
+    background-image: url(../img/airlines.jpg); }
   #reports .report_cover {
     position: relative; }
   #reports .report_cover:before {
@@ -248,8 +248,8 @@ header {
   background-image: url(../img/insurance.jpg); }
 .foundry_modal .report.transportation_small {
   background-image: url(../img/transportation.jpg); }
-.foundry_modal #coming_soon .report, .foundry_modal .foundry_modal .report {
-  background-color: #DDDDDD; }
+.foundry_modal .report.airlines_small {
+  background-image: url(../img/airlines.jpg); }
 .foundry_modal .sign_up_form input[type="text"] {
   font-family: "Roboto", Helvetica, sans-serif;
   color: #212121;
