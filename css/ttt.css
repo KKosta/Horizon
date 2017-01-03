@@ -173,10 +173,23 @@ header {
       -moz-transition: all 0.3s ease; }
   #cities .descriptionTBC {
     padding-bottom: 32px; }
+    #cities .descriptionTBC p {
+      padding-bottom: 24px; }
     #cities .descriptionTBC a {
-      border: 2px solid #616161;
-      color: #212121;
-      background: white; }
+      display: block;
+      width: 75%;
+      margin: 12px auto 0 auto;
+      cursor: pointer;
+      height: 50px;
+      font-weight: 600;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: white;
+      background: #DDDDDD;
+      font-size: 1.4em;
+      border: 2px solid #DDDDDD;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease; }
     #cities .descriptionTBC a:hover {
       background: white;
       color: #FF4081; }
@@ -289,12 +302,27 @@ header {
     fill: #FF4081; }
   #speakers #speaker_contact {
     border-bottom: 2px solid #212121;
-    color: #FF4081 !important;
+    color: #FF4081;
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif; }
   #speakers #speaker_contact:hover {
     color: #212121;
-    text-decoration: underline; }
+    border-bottom: 2px solid #FF4081; }
+  #speakers h2.startups_header {
+    font-size: 2.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 24px;
+    width: 55%;
+    margin: 64px auto 64px auto;
+    border-bottom: 2px solid #FF4081; }
+  #speakers .startup_logo {
+    opacity: 0.5;
+    -webkit-filter: grayscale(1); }
+  #speakers .startup_logo:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0); }
 
 #photos h1 {
   margin-top: 64px;
