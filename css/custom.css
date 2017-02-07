@@ -612,26 +612,13 @@ footer {
     width: 80%;
     margin-bottom: 8px; }
 
-.foundry_modal {
-  padding: 0px; }
-  .foundry_modal .foundry_modal .close-modal {
-    z-index: 10; }
-  .foundry_modal .modal_description {
-    padding-top: 48px;
-    text-align: center; }
-  .foundry_modal img {
-    width: 40%;
-    padding-top: 32px; }
-  .foundry_modal h2 {
-    font-size: 2.1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: normal;
-    width: 80%;
-    margin: 0 auto;
-    border-bottom: 2px solid #FF4081; }
-  .foundry_modal p {
-    padding: 30px 15px; }
+.sign_up_popup {
+  background: red;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10; }
 
 @media (max-width: 990px) {
   .nav-bar {
