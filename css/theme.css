@@ -2146,7 +2146,8 @@ button[type="submit"] .form-loading {
   background: #ebebeb;
 }
 .bg-secondary .accordion-1 .title:hover {
-  background: #e4e4e4;
+  background: white;
+  font-weight: bold
 }
 .accordion-1 .title span {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;

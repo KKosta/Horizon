@@ -804,39 +804,53 @@ footer
 		margin-bottom: 8px
 
 
-.sign_up_popup
-	background: red
-	position: fixed
-	bottom: 0px
-	left: 0px
-	width: 100%
-	z-index: 10
 
-// 	.foundry_modal .close-modal
-// 		z-index: 10
+.foundry_modal
+	background-image: url(../img/popup.jpg)
+	background-size: cover
+	background-position: center middle
+
+	#sign_up_form
+		padding: 48px 0 0px 0
+
+		input[type="text"]
+			font-family: $font
+			color: $black
+			font-weight: 600
+			border: 2px solid $pink
+			font-size: 20px
+			background: white
+
+		input[type="text"]:focus
+			outline: none
+			font-family: $font
+			color: $black
+			font-weight: 600
+			font-size: 20px
+
+		::-webkit-input-placeholder
+			text-align: left
+			font-family: $font
+			color: $grey2
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 20px
+
+		button[type="submit"]
+			cursor: pointer
+			font-family: $font
+			font-weight: 600
+			color: white
+			background: $pink
+			border: 2px solid $pink
+			text-transform: uppercase
+			font-size: 20px
+			transition: all 0.3s ease
 
 
-// 	.modal_description
-// 		padding-top: 48px
-// 		text-align: center
-
-
-// 	img
-// 		width: 40%
-// 		padding-top: 32px
-
-// 	h2
-// 		font-size: 2.1em
-// 		text-transform: uppercase
-// 		font-weight: 500
-// 		line-height: normal
-// 		width: 80%
-// 		margin: 0 auto
-// 		border-bottom: 2px solid #FF4081
-
-
-// 	p
-// 		padding: 30px 15px
+		button[type="submit"]:hover
+			color: $black
+			border: 2px solid $pink
 
 
 
@@ -926,6 +940,10 @@ footer
 
 	#tagline
 		padding: 0 15px
+
+	.foundry_modal
+		h1
+			font-size: 2.1em
 
 	h1 
 		line-height: 1.2em

@@ -1,0 +1,349 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+// sass --watch /Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css:/Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css
+
+$pink: #FF4081
+$blue: #1DB9FF
+$black: #212121
+$grey1: #616161
+$grey2: #DDDDDD
+$grey3: #F5F5F5
+$background: #f8f8f8
+
+$font: "Roboto", Helvetica, sans-serif
+$h1: 4.725em
+$h2: 3.15em
+$h3: 2.1em
+$p: 1.4em
+$p-mob: 0.933
+
+body
+	background-image: linear-gradient(#082851, #708cb1 70%), url(../img/faqback.jpg)
+	background-size: 100% auto
+	background-position: center bottom
+	background-repeat: no-repeat
+	
+h1
+	font-family: $font
+	color: $black
+	font-size: $h1
+	margin-bottom: 32px
+	text-transform: uppercase
+	font-weight: 400
+	letter-spacing: 5px
+
+
+
+h2 
+	font-family: $font
+	color: white
+	font-size: $h3
+	text-transform: uppercase
+	font-weight: bold
+	margin: 0
+
+p 
+	font-family: $font
+	color: white
+	opacity: 0.75
+	font-size: $p
+	line-height: 1.7em
+	margin: 0
+
+.on_top
+	z-index: 10000
+	cursor: pointer
+
+header
+	height: auto
+	position: fixed
+	background: none
+	left: 0
+	width: 100%
+	z-index: 100
+	transition: all 1s ease
+
+	#plane_logo
+		max-height: 45px
+		opacity: 0.7
+		max-width: 85%
+
+	.nav-bar
+		height: 70px
+		max-height: 70px
+		line-height: 70px
+		border: none
+		background: white
+		box-shadow: 0px 0px 6px 0px $black
+
+		.menu li a
+			cursor: pointer
+			color: $grey1
+			opacity: 1
+			font-family: $font
+			font-weight: 500
+			font-size: 1.4em
+
+		.menu li a:hover
+			color: $pink
+			border-bottom: 1px solid $pink
+
+		.menu li a.link_to_grey
+			color: $grey1
+		
+		.menu li a.link_to_grey:hover
+			color: $black
+
+		#social_nav
+			display: none
+	nav
+		background: none
+
+#top_cover
+	#cover_border_top
+		margin-top: 20vh
+		border-bottom: 8px solid white
+
+	#cover_border_bottom
+		border-bottom: 8px solid white
+
+	h1
+		font-size: 3.15em
+		line-height: normal
+		padding: 15px 0
+		margin-bottom: 0
+		font-weight: 800
+
+.section_padding
+	padding: 96px 0
+
+// #questions
+// 	// height: 100vh
+// 	background: url(../img/faqback.jpg)
+// 	background-size: 100% auto
+// 	background-position: bottom center
+// 	background-repeat: no-repeat
+
+#questions
+	background-image: url(../img/faqback.jpg)
+	background-size: 100% auto
+	background-position: center bottom
+	background-repeat: no-repeat
+	padding-bottom: 75vh
+
+	h4
+		color: white 
+
+	h4:hover	
+		color: white
+
+	.accordion-2 .title:before
+		font-size: 18px
+		font-weight: bold
+		color: $pink
+	p
+		color: white
+		padding-bottom: 24px
+
+footer
+	padding-bottom: 24px
+	padding-top: 0
+	text-align: center
+
+	img
+		padding-top: 32px
+		opacity: 0.5
+		cursor: pointer
+	
+	p
+		font-size: 16px
+		color: $grey1
+		opacity: 0.5
+		padding-top: 24px
+
+	.social-list
+		padding-top: 24px
+
+		i			
+			font-size: 24px
+			cursor: pointer
+			color: $grey2
+			transition: all 0.3s ease
+
+		i:hover
+			color: $pink
+
+
+@media (max-width: 990px)
+	.nav-bar
+		background: white
+
+		.nav_bar_open
+			padding: 0
+
+		.menu li a
+			width: 100%
+			padding: 16px
+
+		#top_link
+			border-top: 2px solid $pink
+		
+		#social_nav
+			display: block !important
+
+		#social_nav	li
+			padding: 24px 10px
+
+		#social_nav li	i
+			color: $grey1
+
+	.mobile-toggle
+		border: none
+	
+	.module.widget-handle
+		min-height: 70px
+		padding: 10px 20px
+		border: none
+
+	#about 
+		p
+			text-align: center
+			padding-bottom: 24px
+
+		#verticals
+			margin-top: 64px 
+
+	#the_numbers
+		h5
+			padding-bottom: 24px
+
+	#apply 
+		#the_process 
+			.process_image_mobile
+				display: block
+				width: 90%
+			.process_image
+				display: none
+		#the_numbers
+			padding-bottom: 36px
+
+	#advisors .col-md-6
+		text-align: center
+
+		.advisors_mobile
+			display: block
+		
+		.advisors
+			display: none		
+
+@media (max-width: 769px)
+
+	#questions
+		padding-bottom: 30vh
+	
+	#plane
+		animation: plane 4s both
+
+		@keyframes plane
+			0% 
+				margin-top: 100vh
+				opacity: 0
+				width: 150%				
+			50%
+				margin-top: 20vh
+				opacity: 1
+				width: 60%
+			100%
+				margin-top: 20vh
+				opacity: 0
+				width: 60%
+
+	.diagonal_up .logo_cover #title_logo
+		width: 60%
+
+	#tagline
+		padding: 0 15px
+
+	h1 
+		line-height: 1.2em
+	
+	#about
+		p
+			text-align: center
+		
+		#verticals
+			padding: 0 0 0 0
+	
+
+	#CTA #sign_up_form 
+		text-align: center
+		display: block
+		margin: 0 auto
+
+		input[type="text"]
+			width: 80%
+
+		::-webkit-input-placeholder
+			text-align: center
+
+		button[type="submit"]
+			width: 80%
+			margin-left: 0
+			margin-top: 20px
+			background: $pink
+			color: white
+			border: 2px solid $pink
+	footer
+		background-size: cover
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+
+
+@media (max-width: 415px)
+	.cover, footer
+		background-attachment: scroll
+	h1
+		font-size: 3.15em
+	#tagline
+		font-size: 1.4em
+
+	.cover_links
+		margin-top: 20px
+		
+		.btn-lg
+			font-size: 0.8em
+			background: $pink
+	.divider
+		padding: 0
+
+	#the_hack #journey
+		padding: 40px 20px
+
+	#apply 
+		#the_process .process_copy
+			height: auto
+
+	.icon-sm
+		font-size: 28px
+
+	#partners 
+		padding-bottom: 36px
+		
+		h1
+			padding-top: 32px
+		#Partner_With_Us
+			border-bottom: none
+
+	#apply h1
+		margin-bottom: 12px
+
+
+
+
+
+
+
+
+
+
+

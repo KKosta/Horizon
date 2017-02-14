@@ -1,0 +1,271 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ***** */
+body {
+  background-image: linear-gradient(#082851, #708cb1 70%), url(../img/faqback.jpg);
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat; }
+
+h1 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #212121;
+  font-size: 4.725em;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px; }
+
+h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  font-size: 2.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0; }
+
+p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  opacity: 0.75;
+  font-size: 1.4em;
+  line-height: 1.7em;
+  margin: 0; }
+
+.on_top {
+  z-index: 10000;
+  cursor: pointer; }
+
+header {
+  height: auto;
+  position: fixed;
+  background: none;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 1s ease; }
+  header #plane_logo {
+    max-height: 45px;
+    opacity: 0.7;
+    max-width: 85%; }
+  header .nav-bar {
+    height: 70px;
+    max-height: 70px;
+    line-height: 70px;
+    border: none;
+    background: white;
+    box-shadow: 0px 0px 6px 0px #212121; }
+    header .nav-bar .menu li a {
+      cursor: pointer;
+      color: #616161;
+      opacity: 1;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 1.4em; }
+    header .nav-bar .menu li a:hover {
+      color: #FF4081;
+      border-bottom: 1px solid #FF4081; }
+    header .nav-bar .menu li a.link_to_grey {
+      color: #616161; }
+    header .nav-bar .menu li a.link_to_grey:hover {
+      color: #212121; }
+    header .nav-bar #social_nav {
+      display: none; }
+  header nav {
+    background: none; }
+
+#top_cover #cover_border_top {
+  margin-top: 20vh;
+  border-bottom: 8px solid white; }
+#top_cover #cover_border_bottom {
+  border-bottom: 8px solid white; }
+#top_cover h1 {
+  font-size: 3.15em;
+  line-height: normal;
+  padding: 15px 0;
+  margin-bottom: 0;
+  font-weight: 800; }
+
+.section_padding {
+  padding: 96px 0; }
+
+#questions {
+  background-image: url(../img/faqback.jpg);
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 75vh; }
+  #questions h4 {
+    color: white; }
+  #questions h4:hover {
+    color: white; }
+  #questions .accordion-2 .title:before {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF4081; }
+  #questions p {
+    color: white;
+    padding-bottom: 24px; }
+
+footer {
+  padding-bottom: 24px;
+  padding-top: 0;
+  text-align: center; }
+  footer img {
+    padding-top: 32px;
+    opacity: 0.5;
+    cursor: pointer; }
+  footer p {
+    font-size: 16px;
+    color: #616161;
+    opacity: 0.5;
+    padding-top: 24px; }
+  footer .social-list {
+    padding-top: 24px; }
+    footer .social-list i {
+      font-size: 24px;
+      cursor: pointer;
+      color: #DDDDDD;
+      transition: all 0.3s ease; }
+    footer .social-list i:hover {
+      color: #FF4081; }
+
+@media (max-width: 990px) {
+  .nav-bar {
+    background: white; }
+    .nav-bar .nav_bar_open {
+      padding: 0; }
+    .nav-bar .menu li a {
+      width: 100%;
+      padding: 16px; }
+    .nav-bar #top_link {
+      border-top: 2px solid #FF4081; }
+    .nav-bar #social_nav {
+      display: block !important; }
+    .nav-bar #social_nav li {
+      padding: 24px 10px; }
+    .nav-bar #social_nav li i {
+      color: #616161; }
+
+  .mobile-toggle {
+    border: none; }
+
+  .module.widget-handle {
+    min-height: 70px;
+    padding: 10px 20px;
+    border: none; }
+
+  #about p {
+    text-align: center;
+    padding-bottom: 24px; }
+  #about #verticals {
+    margin-top: 64px; }
+
+  #the_numbers h5 {
+    padding-bottom: 24px; }
+
+  #apply #the_process .process_image_mobile {
+    display: block;
+    width: 90%; }
+  #apply #the_process .process_image {
+    display: none; }
+  #apply #the_numbers {
+    padding-bottom: 36px; }
+
+  #advisors .col-md-6 {
+    text-align: center; }
+    #advisors .col-md-6 .advisors_mobile {
+      display: block; }
+    #advisors .col-md-6 .advisors {
+      display: none; } }
+@media (max-width: 769px) {
+  #questions {
+    padding-bottom: 30vh; }
+
+  #plane {
+    animation: plane 4s both; }
+  @keyframes plane {
+    0% {
+      margin-top: 100vh;
+      opacity: 0;
+      width: 150%; }
+    50% {
+      margin-top: 20vh;
+      opacity: 1;
+      width: 60%; }
+    100% {
+      margin-top: 20vh;
+      opacity: 0;
+      width: 60%; } }
+  .diagonal_up .logo_cover #title_logo {
+    width: 60%; }
+
+  #tagline {
+    padding: 0 15px; }
+
+  h1 {
+    line-height: 1.2em; }
+
+  #about p {
+    text-align: center; }
+  #about #verticals {
+    padding: 0 0 0 0; }
+
+  #CTA #sign_up_form {
+    text-align: center;
+    display: block;
+    margin: 0 auto; }
+    #CTA #sign_up_form input[type="text"] {
+      width: 80%; }
+    #CTA #sign_up_form ::-webkit-input-placeholder {
+      text-align: center; }
+    #CTA #sign_up_form button[type="submit"] {
+      width: 80%;
+      margin-left: 0;
+      margin-top: 20px;
+      background: #FF4081;
+      color: white;
+      border: 2px solid #FF4081; }
+
+  footer {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
+@media (max-width: 415px) {
+  .cover, footer {
+    background-attachment: scroll; }
+
+  h1 {
+    font-size: 3.15em; }
+
+  #tagline {
+    font-size: 1.4em; }
+
+  .cover_links {
+    margin-top: 20px; }
+    .cover_links .btn-lg {
+      font-size: 0.8em;
+      background: #FF4081; }
+
+  .divider {
+    padding: 0; }
+
+  #the_hack #journey {
+    padding: 40px 20px; }
+
+  #apply #the_process .process_copy {
+    height: auto; }
+
+  .icon-sm {
+    font-size: 28px; }
+
+  #partners {
+    padding-bottom: 36px; }
+    #partners h1 {
+      padding-top: 32px; }
+    #partners #Partner_With_Us {
+      border-bottom: none; }
+
+  #apply h1 {
+    margin-bottom: 12px; } }
+
+/*# sourceMappingURL=FAQs.css.map */

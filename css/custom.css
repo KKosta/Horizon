@@ -612,13 +612,45 @@ footer {
     width: 80%;
     margin-bottom: 8px; }
 
-.sign_up_popup {
-  background: red;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 10; }
+.foundry_modal {
+  background-image: url(../img/popup.jpg);
+  background-size: cover;
+  background-position: center middle; }
+  .foundry_modal #sign_up_form {
+    padding: 48px 0 0px 0; }
+    .foundry_modal #sign_up_form input[type="text"] {
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      border: 2px solid #FF4081;
+      font-size: 20px;
+      background: white; }
+    .foundry_modal #sign_up_form input[type="text"]:focus {
+      outline: none;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      font-size: 20px; }
+    .foundry_modal #sign_up_form ::-webkit-input-placeholder {
+      text-align: left;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #DDDDDD;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px; }
+    .foundry_modal #sign_up_form button[type="submit"] {
+      cursor: pointer;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 600;
+      color: white;
+      background: #FF4081;
+      border: 2px solid #FF4081;
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all 0.3s ease; }
+    .foundry_modal #sign_up_form button[type="submit"]:hover {
+      color: #212121;
+      border: 2px solid #FF4081; }
 
 @media (max-width: 990px) {
   .nav-bar {
@@ -689,6 +721,9 @@ footer {
 
   #tagline {
     padding: 0 15px; }
+
+  .foundry_modal h1 {
+    font-size: 2.1em; }
 
   h1 {
     line-height: 1.2em; }
