@@ -79,7 +79,7 @@ html(lang='en')
       ga('send', 'pageview');
   body.scroll-assist
 
-    .foundry_modal.image-bg.overlay.sign_up_popup.text-center(data-time-delay='10000')
+    .foundry_modal.image-bg.overlay.sign_up_popup.text-center(data-time-delay='10000', data-cookie="dismissed-mailchimp-signup-modal")
 
         h1 
             | Want to take part in 
@@ -384,6 +384,12 @@ html(lang='en')
                             a(target='_blank', href='http://www.startupshk.com/')
                                 img#startupshk(alt='Startups HK', src='img/logos/hkstartups.png')
                                 .title    
+                                    h5.uppercase.mb0 - Ecosystem Partner -
+                    .col-sm-3.col-xs-6.partner_logo
+                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='https://www.f6s.com/')
+                                img(alt='F6S', src='img/logos/F6s.png')
+                                .title
                                     h5.uppercase.mb0 - Ecosystem Partner -
                     .col-sm-3.col-xs-6.partner_logo
                         .image-tile.inner-title.hover-reveal.text-center
