@@ -60,7 +60,7 @@ $p-mob: 0.933
 			padding-top: 0
 
 .cover_links
-	animation: cover_links 1s 5.5s both
+	animation: cover_links 1s 4.5s both
 
 	@keyframes cover_links
 		0% 
@@ -71,7 +71,7 @@ $p-mob: 0.933
 			padding-top: 0
 
 header
-	animation: header_transition 1s 6s both
+	animation: header_transition 1s 5.5s both
 
 	@keyframes header_transition
 		0% 
@@ -111,7 +111,7 @@ p
 .section_padding
 	padding: 96px 0 96px 0
 
-#about_border
+.about_border
 	margin-bottom: 32px
 	border-bottom: 2px solid $pink
 
@@ -227,56 +227,67 @@ header
 .cover_links
 	z-index: 100
 	text-align: center
-	margin-top: 15vh
-
-
-	.bg-primary button[type="submit"]
-		font-size: 20px
-		color: #fff
-		background: $pink
-		border: 2px solid $pink
-		transition: all 0.3s ease
-
-	.bg-primary button[type="submit"]:hover
-		color: #fff
-		background: $blue
-		border: 2px solid $blue
-
+	margin-top: 10vh
 
 	.btn-lg
-		height: 50px
+		height: 64px
+		line-height: 60px
+		width: 35%
 		font-weight: 600
 		font-family: $font
 		color: white
 		background: $pink
-		font-size: 1.4em		
-		border: 2px solid $pink
+		font-size: 1.7em		
+		border: 3px solid $pink
 		transition: all 0.3s ease
 		-webkit-transition: all 0.3s ease
 		-moz-transition: all 0.3s ease
+		margin-bottom: 12px
 		
 
 	.btn-lg:hover			
-		border: 2px solid $pink !important
+		border: 3px solid $pink !important
 		background: white
 		color: $black
+
+	h3
+		font-size: 1.7em
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 12px
+
+		sup
+			font-size: 60%
+
+
 
 #about
 	padding-top: 96px
 	background: white
 
-	h1
-		margin-bottom: 64px
+	.about_border
+		margin-bottom: 96px
 
-
-	#verticals
-		padding-left: 50px
-		padding-bottom: 96px
-		margin-left: 0
 	h2
 		color: $pink
 		font-weight: 500
 		margin: -56px 0 64px 0 
+
+	#the_numbers
+		text-align: center
+		height: auto
+		margin-top: -48px
+
+
+		h1 
+			margin: 24px 0 0 0
+			letter-spacing: -2px
+			font-weight: 500
+			color: $pink
+		h5
+			color: $black
+			font-size: $h3
+			text-transform: lowercase
 
 
 #wingtip_divider
@@ -315,24 +326,44 @@ header
 
 #the_hack
 	background: white
+	// padding-top: 32px
+
+	.journey
+		margin-top: 32px
+
+	.left p, .left h3
+		text-align: left
+
+	.right p, .right h3
+		text-align: right
 
 	#HK_LDN
 		text-align: center
 		padding-top: 0
-		padding-bottom: 64px
+		// padding-bottom: 24px
 		color: $black
 
-	#journey 
-		padding: 80px
+	img
+		// border-radius: 5px
+		// -webkit-filter: brightness(0.9)
+		// filter: brightness(0.9)
+	
+	
 	h2
+		color: $pink
 		font-size: 2.1em
 		text-align: center
 		text-transform: uppercase
-		font-weight: 500
+		font-weight: 400
 		padding-top: 24px
-		width: 55%
+		margin: 64px auto 12px auto
+
+	h3
+		font-size: 2.1em
+		text-transform: uppercase
+		font-weight: 500
 		margin: 0 auto
-		border-bottom: 2px solid #FF4081
+		padding-top: 18px
 
 
 	p 
@@ -358,30 +389,28 @@ header
 
 #apply
 	background: white
-
 	background-image: url(../img/arrow_down.png)
 	background-size: 100% auto
 	background-position: bottom
 	background-repeat: no-repeat
+	padding-bottom: 124px
 
 	h1
-		margin-bottom: 64px
+		margin-bottom: 32px
 
 	#about_border
 		margin-bottom: 48px
 
 	#the_process
+		padding-top: 64px
 
-		.process_image, .process_image_mobile
+		.process_image,
 			width: 77%
 			display: block
 			margin: 0 auto
 
-		.process_image_mobile
-			display: none
 
 		.process_copy
-
 			padding-top: 50px 
 
 			h2
@@ -393,7 +422,14 @@ header
 				border-bottom: 2px solid #FF4081
 			p 
 				padding-top: 20px
-				color: $grey1			
+				color: $grey1	
+
+		.FAQS
+			padding-top: 48px
+			
+			a
+				color: $pink
+				cursor: pointer
 
 	#the_numbers
 		text-align: center
@@ -415,17 +451,20 @@ header
 	display: block
 
 #CTA.section_padding
-	padding-bottom: 36px
+	padding-bottom: 0px
 
 #CTA
 	background: $blue
 
-	#about_border
-		padding-top: 36px
+	.about_border
+		padding: 18px 0
+		margin-bottom: 48px
+		border-bottom: 2px solid white
 
 	h1 
 		color: white
 		margin-bottom: 0
+		line-height: 1.2
 
 		span
 			font-size: 0.622em
@@ -435,50 +474,81 @@ header
 		color: white
 		font-size: 1.7em
 	
-	#sign_up_form
-		padding: 64px 0 0px 0
+	.btn-lg
+		margin-bottom: 0
+		height: 64px
+		line-height: 60px
+		width: 45%
+		font-weight: 600
+		font-family: $font
+		color: white
+		background: $pink
+		font-size: 2.1em		
+		border: 3px solid $pink
+		transition: all 0.3s ease
+		-webkit-transition: all 0.3s ease
+		-moz-transition: all 0.3s ease
 
-		input[type="text"]
-			width: 60%
-			font-family: $font
-			color: $black
-			font-weight: 600
-			border: 2px solid $pink
-			font-size: 20px
-			background: white
+	h3
+		color: white
+		margin-top: 12px
+		font-size: 1.7em
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 0
 
-		input[type="text"]:focus
-			outline: none
-			font-family: $font
-			color: $black
-			font-weight: 600
-			font-size: 20px
+		sup
+			font-size: 60%
+		
 
-		::-webkit-input-placeholder
-			text-align: left
-			font-family: $font
-			color: $grey2
-			text-transform: uppercase
-			font-weight: 600
-			font-size: 20px
+	.btn-lg:hover			
+		border: 3px solid $pink !important
+		background: white
+		color: $black
+	// #sign_up_form
+	// 	padding: 64px 0 0px 0
 
-		button[type="submit"]
-			cursor: pointer
-			width: 35%
-			margin-left: 2%
-			font-family: $font
-			font-weight: 600
-			color: white
-			background: $pink
-			border: 2px solid $pink
-			text-transform: uppercase
-			font-size: 20px
-			transition: all 0.3s ease
+	// 	input[type="text"]
+	// 		width: 60%
+	// 		font-family: $font
+	// 		color: $black
+	// 		font-weight: 600
+	// 		border: 2px solid $pink
+	// 		font-size: 20px
+	// 		background: white
+
+	// 	input[type="text"]:focus
+	// 		outline: none
+	// 		font-family: $font
+	// 		color: $black
+	// 		font-weight: 600
+	// 		font-size: 20px
+
+	// 	::-webkit-input-placeholder
+	// 		text-align: left
+	// 		font-family: $font
+	// 		color: $grey2
+	// 		text-transform: uppercase
+	// 		font-weight: 600
+	// 		font-size: 20px
+
+	// 	button[type="submit"]
+	// 		cursor: pointer
+	// 		width: 35%
+	// 		margin-left: 2%
+	// 		font-family: $font
+	// 		font-weight: 600
+	// 		color: white
+	// 		background: $pink
+	// 		border: 2px solid $pink
+	// 		text-transform: uppercase
+	// 		font-size: 20px
+	// 		transition: all 0.3s ease
 
 
-		button[type="submit"]:hover
-			color: $black
-			border: 2px solid $pink
+	// 	button[type="submit"]:hover
+	// 		color: $black
+	// 		border: 2px solid $pink
 
 #partners.arrow_down_reverse
 	background-image: url(../img/arrow_down_reverse.png)
@@ -495,61 +565,76 @@ header
 		text-align: center
 		padding-top: 182px
 
+	h2
+		color: $pink
+		font-size: 2.1em
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		padding-top: 24px
+		// width: 55%
+		margin: 32px auto 12px auto
+		// border-bottom: 2px solid #616161
+
 	p
-		margin-bottom: 64px
+		margin-bottom: 16px
 
 	.partner_logo
-		height: 150px
 		display: flex
 		justify-content: center
 		align-items: center
 
-
 	.partner_logo img
 		cursor: pointer
-		max-height: 120px
 		padding: 15px
+		max-height: 120px
 		-webkit-filter: grayscale(1)
 		filter: grayscale(1)
-
 
 	.partner_logo img:hover
 		-webkit-filter: grayscale(0)
 		filter: grayscale(0)
 
+	.partner_logo.airline img
+		max-height: 250px
+	
+	.partner_logo.gold img
+		max-height: 200px
+		padding: 25px 0
 
-	#startupshk
+	.partner_logo.industry img
+		max-height: 180px
+		padding: 15px 10px
+
+	.partner_logo.education img
+		max-height: 130px
+		margin: 15px 5px
+
+
+
+	.partner_logo.partner img
+		max-height: 115px
+		margin: 15px 5px
+
+	#hkstartups
 		max-height: 100px
 
-	.inner-title .title h5.uppercase
-		color: $pink
-		font-weight: normal
-		letter-spacing: 1px
-		font-size: 12px
-
 	#Partner_With_Us
-		font-size: 24px
+		margin-top: 24px
+		font-size: 1.4em
 		text-transform: uppercase
 		font-weight: 500
 		font-family: $font
-		padding-top: 9px
-		padding-bottom: 6px
-		width: 100%
-		height: 50px
-		border-bottom: 2px solid $black
+		padding: 15px
+		border: 2px solid $black
 		color: $pink
 		-webkit-transition: all 0.3s ease
 		-moz-transition: all 0.3s ease
 	
 	#Partner_With_Us:hover
-		color: $black	
-		border-bottom: 2px solid $pink
-
-	#partner_plus
-		font-size: 16px
 		color: $black
-		font-weight: 600
-		padding-top: 12px
+		border: 2px solid $pink	
+
 
 #community
 	padding: 96px 0 48px 0
@@ -885,27 +970,59 @@ footer
 		padding: 10px 20px
 		border: none
 
+	.section_padding
+		padding: 64px 0
+	
 	#about 
 		p
 			text-align: center
 			padding-bottom: 24px
 
-		#verticals
-			margin-top: 64px 
+		.about_border
+			margin-bottom: 32px
 
-	#the_numbers
-		h5
-			padding-bottom: 24px
+		#the_numbers
+			margin-top: 32px
+			margin-bottom: 0
+
+			h5
+				padding-bottom: 24px
+
+	#the_hack
+		#HK_LDN
+			padding-bottom: 0
+		h2
+			margin: 48px 0 12px 0
+			padding: 0
+			text-align: left
+
+		h3
+			padding: 18px 0 6px 0
+
+		p 
+			padding: 0
+
+		.journey
+			margin-top: 0
+			margin-bottom: 0
+
+
+
+		.journey img
+			display: none
+
+		.left p, .left h3, .right p, .right h3
+			text-align: left
 
 	#apply 
 		#the_process 
-			.process_image_mobile
+			margin-bottom: 96px
+			.process_image
 				display: block
 				width: 90%
-			.process_image
-				display: none
-		#the_numbers
-			padding-bottom: 36px
+
+			.process_copy
+				padding-bottom: 0
 
 	#advisors .col-md-6
 		text-align: center
@@ -1013,8 +1130,8 @@ footer
 		
 		h1
 			padding-top: 32px
-		#Partner_With_Us
-			border-bottom: none
+		// #Partner_With_Us
+		// 	border-bottom: none
 
 	#apply h1
 		margin-bottom: 12px

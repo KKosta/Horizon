@@ -35,7 +35,7 @@
     opacity: 1;
     padding-top: 0; } }
 .cover_links {
-  animation: cover_links 1s 5.5s both; }
+  animation: cover_links 1s 4.5s both; }
 @keyframes cover_links {
   0% {
     opacity: 0;
@@ -44,7 +44,7 @@
     opacity: 1;
     padding-top: 0; } }
 header {
-  animation: header_transition 1s 6s both; }
+  animation: header_transition 1s 5.5s both; }
 @keyframes header_transition {
   0% {
     top: -70px; }
@@ -79,7 +79,7 @@ p {
 .section_padding {
   padding: 96px 0 96px 0; }
 
-#about_border {
+.about_border {
   margin-bottom: 32px;
   border-bottom: 2px solid #FF4081; }
 
@@ -178,46 +178,55 @@ header {
 .cover_links {
   z-index: 100;
   text-align: center;
-  margin-top: 15vh; }
-  .cover_links .bg-primary button[type="submit"] {
-    font-size: 20px;
-    color: #fff;
-    background: #FF4081;
-    border: 2px solid #FF4081;
-    transition: all 0.3s ease; }
-  .cover_links .bg-primary button[type="submit"]:hover {
-    color: #fff;
-    background: #1DB9FF;
-    border: 2px solid #1DB9FF; }
+  margin-top: 10vh; }
   .cover_links .btn-lg {
-    height: 50px;
+    height: 64px;
+    line-height: 60px;
+    width: 35%;
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif;
     color: white;
     background: #FF4081;
-    font-size: 1.4em;
-    border: 2px solid #FF4081;
+    font-size: 1.7em;
+    border: 3px solid #FF4081;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease; }
+    -moz-transition: all 0.3s ease;
+    margin-bottom: 12px; }
   .cover_links .btn-lg:hover {
-    border: 2px solid #FF4081 !important;
+    border: 3px solid #FF4081 !important;
     background: white;
     color: #212121; }
+  .cover_links h3 {
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px; }
+    .cover_links h3 sup {
+      font-size: 60%; }
 
 #about {
   padding-top: 96px;
   background: white; }
-  #about h1 {
-    margin-bottom: 64px; }
-  #about #verticals {
-    padding-left: 50px;
-    padding-bottom: 96px;
-    margin-left: 0; }
+  #about .about_border {
+    margin-bottom: 96px; }
   #about h2 {
     color: #FF4081;
     font-weight: 500;
     margin: -56px 0 64px 0; }
+  #about #the_numbers {
+    text-align: center;
+    height: auto;
+    margin-top: -48px; }
+    #about #the_numbers h1 {
+      margin: 24px 0 0 0;
+      letter-spacing: -2px;
+      font-weight: 500;
+      color: #FF4081; }
+    #about #the_numbers h5 {
+      color: #212121;
+      font-size: 2.1em;
+      text-transform: lowercase; }
 
 #wingtip_divider, #passenger_divider, #airport_divider {
   display: block;
@@ -253,22 +262,30 @@ header {
 
 #the_hack {
   background: white; }
+  #the_hack .journey {
+    margin-top: 32px; }
+  #the_hack .left p, #the_hack .left h3 {
+    text-align: left; }
+  #the_hack .right p, #the_hack .right h3 {
+    text-align: right; }
   #the_hack #HK_LDN {
     text-align: center;
     padding-top: 0;
-    padding-bottom: 64px;
     color: #212121; }
-  #the_hack #journey {
-    padding: 80px; }
   #the_hack h2 {
+    color: #FF4081;
     font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     padding-top: 24px;
-    width: 55%;
+    margin: 64px auto 12px auto; }
+  #the_hack h3 {
+    font-size: 2.1em;
+    text-transform: uppercase;
+    font-weight: 500;
     margin: 0 auto;
-    border-bottom: 2px solid #FF4081; }
+    padding-top: 18px; }
   #the_hack p {
     text-align: center;
     padding-top: 20px;
@@ -286,29 +303,35 @@ header {
   background-image: url(../img/arrow_down.png);
   background-size: 100% auto;
   background-position: bottom;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-bottom: 124px; }
   #apply h1 {
-    margin-bottom: 64px; }
+    margin-bottom: 32px; }
   #apply #about_border {
     margin-bottom: 48px; }
-  #apply #the_process .process_image, #apply #the_process .process_image_mobile {
-    width: 77%;
-    display: block;
-    margin: 0 auto; }
-  #apply #the_process .process_image_mobile {
-    display: none; }
-  #apply #the_process .process_copy {
-    padding-top: 50px; }
-    #apply #the_process .process_copy h2 {
-      font-size: 2.1em;
-      text-transform: uppercase;
-      font-weight: 500;
-      width: 50%;
-      margin: 0 auto;
-      border-bottom: 2px solid #FF4081; }
-    #apply #the_process .process_copy p {
-      padding-top: 20px;
-      color: #616161; }
+  #apply #the_process {
+    padding-top: 64px; }
+    #apply #the_process .process_image {
+      width: 77%;
+      display: block;
+      margin: 0 auto; }
+    #apply #the_process .process_copy {
+      padding-top: 50px; }
+      #apply #the_process .process_copy h2 {
+        font-size: 2.1em;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 50%;
+        margin: 0 auto;
+        border-bottom: 2px solid #FF4081; }
+      #apply #the_process .process_copy p {
+        padding-top: 20px;
+        color: #616161; }
+    #apply #the_process .FAQS {
+      padding-top: 48px; }
+      #apply #the_process .FAQS a {
+        color: #FF4081;
+        cursor: pointer; }
   #apply #the_numbers {
     text-align: center;
     height: auto;
@@ -328,59 +351,51 @@ header {
   display: block; }
 
 #CTA.section_padding {
-  padding-bottom: 36px; }
+  padding-bottom: 0px; }
 
 #CTA {
   background: #1DB9FF; }
-  #CTA #about_border {
-    padding-top: 36px; }
+  #CTA .about_border {
+    padding: 18px 0;
+    margin-bottom: 48px;
+    border-bottom: 2px solid white; }
   #CTA h1 {
     color: white;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.2; }
     #CTA h1 span {
       font-size: 0.622em; }
   #CTA p {
     padding-top: 12px;
     color: white;
     font-size: 1.7em; }
-  #CTA #sign_up_form {
-    padding: 64px 0 0px 0; }
-    #CTA #sign_up_form input[type="text"] {
-      width: 60%;
-      font-family: "Roboto", Helvetica, sans-serif;
-      color: #212121;
-      font-weight: 600;
-      border: 2px solid #FF4081;
-      font-size: 20px;
-      background: white; }
-    #CTA #sign_up_form input[type="text"]:focus {
-      outline: none;
-      font-family: "Roboto", Helvetica, sans-serif;
-      color: #212121;
-      font-weight: 600;
-      font-size: 20px; }
-    #CTA #sign_up_form ::-webkit-input-placeholder {
-      text-align: left;
-      font-family: "Roboto", Helvetica, sans-serif;
-      color: #DDDDDD;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 20px; }
-    #CTA #sign_up_form button[type="submit"] {
-      cursor: pointer;
-      width: 35%;
-      margin-left: 2%;
-      font-family: "Roboto", Helvetica, sans-serif;
-      font-weight: 600;
-      color: white;
-      background: #FF4081;
-      border: 2px solid #FF4081;
-      text-transform: uppercase;
-      font-size: 20px;
-      transition: all 0.3s ease; }
-    #CTA #sign_up_form button[type="submit"]:hover {
-      color: #212121;
-      border: 2px solid #FF4081; }
+  #CTA .btn-lg {
+    margin-bottom: 0;
+    height: 64px;
+    line-height: 60px;
+    width: 45%;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: white;
+    background: #FF4081;
+    font-size: 2.1em;
+    border: 3px solid #FF4081;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease; }
+  #CTA h3 {
+    color: white;
+    margin-top: 12px;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+    #CTA h3 sup {
+      font-size: 60%; }
+  #CTA .btn-lg:hover {
+    border: 3px solid #FF4081 !important;
+    background: white;
+    color: #212121; }
 
 #partners.arrow_down_reverse {
   background-image: url(../img/arrow_down_reverse.png);
@@ -395,50 +410,59 @@ header {
   #partners h1 {
     text-align: center;
     padding-top: 182px; }
+  #partners h2 {
+    color: #FF4081;
+    font-size: 2.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 24px;
+    margin: 32px auto 12px auto; }
   #partners p {
-    margin-bottom: 64px; }
+    margin-bottom: 16px; }
   #partners .partner_logo {
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center; }
   #partners .partner_logo img {
     cursor: pointer;
-    max-height: 120px;
     padding: 15px;
+    max-height: 120px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1); }
   #partners .partner_logo img:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
-  #partners #startupshk {
+  #partners .partner_logo.airline img {
+    max-height: 250px; }
+  #partners .partner_logo.gold img {
+    max-height: 200px;
+    padding: 25px 0; }
+  #partners .partner_logo.industry img {
+    max-height: 180px;
+    padding: 15px 10px; }
+  #partners .partner_logo.education img {
+    max-height: 130px;
+    margin: 15px 5px; }
+  #partners .partner_logo.partner img {
+    max-height: 115px;
+    margin: 15px 5px; }
+  #partners #hkstartups {
     max-height: 100px; }
-  #partners .inner-title .title h5.uppercase {
-    color: #FF4081;
-    font-weight: normal;
-    letter-spacing: 1px;
-    font-size: 12px; }
   #partners #Partner_With_Us {
-    font-size: 24px;
+    margin-top: 24px;
+    font-size: 1.4em;
     text-transform: uppercase;
     font-weight: 500;
     font-family: "Roboto", Helvetica, sans-serif;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #212121;
+    padding: 15px;
+    border: 2px solid #212121;
     color: #FF4081;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease; }
   #partners #Partner_With_Us:hover {
     color: #212121;
-    border-bottom: 2px solid #FF4081; }
-  #partners #partner_plus {
-    font-size: 16px;
-    color: #212121;
-    font-weight: 600;
-    padding-top: 12px; }
+    border: 2px solid #FF4081; }
 
 #community {
   padding: 96px 0 48px 0; }
@@ -677,22 +701,45 @@ footer {
     padding: 10px 20px;
     border: none; }
 
+  .section_padding {
+    padding: 64px 0; }
+
   #about p {
     text-align: center;
     padding-bottom: 24px; }
-  #about #verticals {
-    margin-top: 64px; }
+  #about .about_border {
+    margin-bottom: 32px; }
+  #about #the_numbers {
+    margin-top: 32px;
+    margin-bottom: 0; }
+    #about #the_numbers h5 {
+      padding-bottom: 24px; }
 
-  #the_numbers h5 {
-    padding-bottom: 24px; }
-
-  #apply #the_process .process_image_mobile {
-    display: block;
-    width: 90%; }
-  #apply #the_process .process_image {
+  #the_hack #HK_LDN {
+    padding-bottom: 0; }
+  #the_hack h2 {
+    margin: 48px 0 12px 0;
+    padding: 0;
+    text-align: left; }
+  #the_hack h3 {
+    padding: 18px 0 6px 0; }
+  #the_hack p {
+    padding: 0; }
+  #the_hack .journey {
+    margin-top: 0;
+    margin-bottom: 0; }
+  #the_hack .journey img {
     display: none; }
-  #apply #the_numbers {
-    padding-bottom: 36px; }
+  #the_hack .left p, #the_hack .left h3, #the_hack .right p, #the_hack .right h3 {
+    text-align: left; }
+
+  #apply #the_process {
+    margin-bottom: 96px; }
+    #apply #the_process .process_image {
+      display: block;
+      width: 90%; }
+    #apply #the_process .process_copy {
+      padding-bottom: 0; }
 
   #advisors .col-md-6 {
     text-align: center; }
@@ -786,8 +833,6 @@ footer {
     padding-bottom: 36px; }
     #partners h1 {
       padding-top: 32px; }
-    #partners #Partner_With_Us {
-      border-bottom: none; }
 
   #apply h1 {
     margin-bottom: 12px; } }

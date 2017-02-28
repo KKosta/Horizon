@@ -79,23 +79,22 @@ html(lang='en')
       ga('send', 'pageview');
   body.scroll-assist
 
-    .foundry_modal.image-bg.overlay.sign_up_popup.text-center(data-time-delay='10000', data-cookie="dismissed-mailchimp-signup-modal")
+    //- .foundry_modal.image-bg.overlay.sign_up_popup.text-center(data-time-delay='10000', data-cookie="dismissed-mailchimp-signup-modal")
 
-        h1 
-            | Want to take part in 
-            br
-            | Hack Horizon? 
-        p
-            | We are opening applications for this crazy hackathon later this month and if you want to receive a special early bird invitation to apply before we take everything public,  leave us your email below.
+    //-     h1 
+    //-         | Want to take part in 
+    //-         br
+    //-         | Hack Horizon? 
+    //-     p
+    //-         | We are opening applications for this crazy hackathon later this month and if you want to receive a special early bird invitation to apply before we take everything public,  leave us your email below.
 
-        #sign_up_form.col-sm-12
-                form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
-                    .col-md-7
-                        input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
-                    .col-md-5
-                        button.btn-white.mb0(type='submit') Sign Me Up
-                        iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=6afb21233c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
-
+    //-     #sign_up_form.col-sm-12
+    //-             form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
+    //-                 .col-md-7
+    //-                     input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
+    //-                 .col-md-5
+    //-                     button.btn-white.mb0(type='submit') Sign Me Up
+    //-                     iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=6afb21233c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
 
     .main_container
         header
@@ -147,13 +146,18 @@ html(lang='en')
                             img#plane(alt='Horizon Logo', src='img/plane.png')
                             img#title_logo(alt='Horizon - Discover. Build. Soar.', src='img/logo_white.png')
 
-                        h2#tagline.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
-                            | Join 32 of the best entrepreneurs, engineers and designers in a unique hackathon on a plane, as they journey from Hong Kong to London on a mission to redefine TravelTech and reframe the entire industry.
+                        h2#tagline.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+                            | Take to the skies and join 32 of the best entrepreneurs, engineers and designers for this unique hackathon on a plane, as you journey from Hong Kong to London on a mission to redefine TravelTech.
+
                         .cover_links
-                            .col-md-6
-                                a#apply_button.btn.btn-lg.inner-link.col-md-7.col-md-offset-4(href='#CTA') APPLY TO PARTICIPATE
-                            .col-md-6    
-                                a.btn.btn-lg.inner-link.col-md-7.col-md-offset-1.typeform-share.link(href='https://hackhorizon.typeform.com/to/BJ7Nus' target='_blank') PARTNER WITH US
+                            .col-md-6.col-md-offset-3                               
+                                a#apply_button.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply') APPLY NOW
+                                h3 
+                                    | Friday 5
+                                    sup th    
+                                    |   - 8
+                                    sup th 
+                                    | May                            
 
 
         section#about.in-page-link.section_padding
@@ -161,21 +165,49 @@ html(lang='en')
                 .row
                     .col-md-12.text-center
                         h1
-                            | The First of Its Kind
-                        h2
-                            | Build. Discover. Soar.
+                            | What is Hack Horizon
+                        //- h2
+                        //-     | Build. Discover. Soar.
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+
                 .row
                     .col-md-7.col-sm-12 
                         p
-                            | Hack Horizon will break down the barriers created between industries and countries to build opportunities and enable collaboration between two of the largest and most powerful startup ecosystems in the world.
+                            | Be one of the chosen 32 and join the best engineers, developers and designers from across APAC on an extraordinary journey.
                             br
                             br
-                            | Design Thinking will unlock consumer facing innovation, as the teams are able to interview and empathise with real life, traveling customers during the event. While, strategic partnerships across 5 key pillars in international travel will give us the rich insights, data and technology we need to build innovative new products and services for the industry.
+                            | Embark on a unique hackathon where we will give you 3 days and one flight from Hong Kong to London to build new products that can make travel simpler, safer, cheaper and way more fun.
                             br
                             br
-                            | Hack Horizon will also bring on board a range of technology partners who will work with us across the entire travel industry to give the teams the software, data, API’s and insights they will need to build robust TravelTech prototypes.
+                            | Unlike other hackathons, Hack Horizon will completely immerse you in the travel experience and give you access to real life customers to test your assumptions right off the bat. What’s more is, that you will be granted special access to some of the best travel technologies and APIs out there as well as have the support and mentorship of leading industry experts.
+                            br
+                            br
+                            | So jump on board and join us for this once in a lifetime, adrenaline-fueled travel experience.
+
                     .col-md-5.col-sm-12
-                        img#verticals(alt="The verticals in travel" src="img/verticals.png")
+                        #the_numbers
+                            .col-md-12.col-sm-6.col-xs-6
+                                .distance
+                                h1
+                                    | 10000
+                                h5
+                                    | KILOMETERS
+                            .col-md-12.col-sm-6.col-xs-6
+                                h1
+                                    | 80
+                                h5
+                                    | HOURS
+                            .col-md-12.col-sm-6.col-xs-6
+                                h1
+                                    | 32
+                                h5
+                                    | PARTICIPANTS 
+                            .col-md-12.col-sm-6.col-xs-6                      
+                              h1
+                                    | 2
+                                h5
+                                    | CONTINENTS
         
         section.divider
             #wingtip_divider
@@ -185,40 +217,119 @@ html(lang='en')
         section#the_hack.in-page-link.section_padding
             .container
                 .row
-                    h1.col-md-8.col-md-offset-2.text-center The Journey
+                    h1.col-md-8.col-md-offset-2.text-center The Hackathon
 
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
 
+                .row
                     p.col-md-8.col-md-offset-2#HK_LDN 
-                        | Horizon will help unite the Hong Kong and London startup ecosystems, while showcasing Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
-                    .clearfix
+                        | Hack Horizon Horizon will help unite the Hong Kong and London startup ecosystems, while showcasing Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
+                
+                h2 Day 1 | Hong Kong  
+                .row.journey    
+                    .col-md-4.col-md-offset-1
+                        img(alt='Hong Kong', src='img/thehack/HK.jpg')
+                    
+                    .col-md-5.left
+                        h3 Hackathon Kick Off
+                        p
+                            | We will kick the hackathon off in Hong Kong on the first evening with a warm welcome by the team and key partners and sponsors. You will pitch ideas, form teams and begin developing and building your prototypes with the support of expert mentors from across the travel industry.
+
+                .row.journey
+                    .col-md-4.col-md-offset-2
+                        img(alt='Hong Kong', src='img/thehack/hkexpress.jpg')
+
+                    .col-md-5.left
+                        h3 HK Airport Express
+                        p
+                            | We will close off the day speeding towards Hong Kong International Airport on the HK Airport Express and set up camp at an airport hotel to get some rest before the flight on Day 2.
+
+                h2 Day 2 | The Airport + Flight
+                .row.journey                    
+                    .col-md-5.col-md-offset-2.right
+                        h3 Hong Kong International
+                        p
+                            | On Day 2, we will head to Hong Kong International Airport, where we will get a behind the scenes tour of how the airport operates and a chance to do some customer testing and validation with real passengers.
+
+                    .col-md-4
+                        img(alt='Hong Kong', src='img/thehack/airport.jpg')
+
+                .row.journey                    
+                    .col-md-5.col-md-offset-1.right
+                        h3 The flight
+                        p
+                            | In the evening we will board the British Airways flight on an A380 from Hong Kong to London where you will consolidate everything you've learnt at the airport, as get some well deserved rest.
+
+
+                    .col-md-4
+                        img(alt='Hong Kong', src='img/thehack/flight.jpg')
+
+                h2 Day 3 | The Airport + London
+                .row.journey    
+                    .col-md-4.col-md-offset-1
+                        img(alt='Hong Kong', src='img/thehack/heathrow.jpg')
+                    
+                    .col-md-5.left
+                        h3 Heathrow Airport
+                        p
+                            | We land at London Heathrow Airport early in the morning where you will set up and have another opportunity to do customer validation with passengers. At lunchtime we will head into London on the Heathrow Express.
+
+                .row.journey
+                    .col-md-4.col-md-offset-2
+                        img(alt='Hong Kong', src='img/thehack/ttlab.jpg')
+
+                    .col-md-5.left
+                        h3 TravelTech Lab
+                        p
+                            | We will spend the afternoon and evening working from London's TravelTech Lab where a range of mentors will come down to give feedback and support you in the final stage of developing your prototypes. 
+                                    
+                h2 Day 4 | London + Transport Museum
+                .row.journey                    
+                    .col-md-5.col-md-offset-2.right
+                        h3 London
+                        p
+                            | On the last day we head back to the TravelTech Lab for a final day of hacking and you will have a chance to practice your pitch and demo.  
+                            
+                    .col-md-4
+                        img(alt='Hong Kong', src='img/thehack/london.jpg')
+
+                .row.journey                    
+                    .col-md-5.col-md-offset-1.right
+                        h3 Pitch Finals
+                        p
+                            | We end the hackathon at the iconic London Transport Museum where we will be joined by travel industry leaders, serial entrepreneurs, press, media and an expert panel of judges, whom you will be pitching in-front of.
+
+                    .col-md-4
+                        img(alt='Hong Kong', src='img/thehack/ltm.jpg')
+                .row.journey
+                    //- .clearfix
                    
-                    .col-md-4 
-                        h2 Ideation
-                        p 
-                            |  By bringing together leading industry experts, participants will have the exclusive opportunity to build a holistic understanding of the travel industry.
-                    .col-md-4 
-                        h2 Research
-                        p 
-                            | To truly understand the challenges they are trying to address, participants will be able to directly interact with their customers at the Hong Kong International Airport. 
-                    .col-md-4 
-                        h2 Prototyping
-                        p 
-                            | By experiencing the same journey and process as a typical traveler, participants will be able to empathise with and discover the problems at the heart of international travel.
+                    //- .col-md-4 
+                    //-     h2 Ideation
+                    //-     p 
+                    //-         |  By bringing together leading industry experts, participants will have the exclusive opportunity to build a holistic understanding of the travel industry.
+                    //- .col-md-4 
+                    //-     h2 Research
+                    //-     p 
+                    //-         | To truly understand the challenges they are trying to address, participants will be able to directly interact with their customers at the Hong Kong International Airport. 
+                    //- .col-md-4 
+                    //-     h2 Prototyping
+                    //-     p 
+                    //-         | By experiencing the same journey and process as a typical traveler, participants will be able to empathise with and discover the problems at the heart of international travel.
 
-                    img#journey.col-md-10.col-md-offset-1(alt="The Horizon Jounrey" src="img/journey.png")
+                    //- img#journey.col-md-10.col-md-offset-1(alt="The Horizon Jounrey" src="img/journey.png")
 
-                    .col-md-4.col-md-offset-2 
-                        h2 Validation
-                        p 
-                            | Unlike other hackathons where products are built in a vacuum, participants will get the chance to test and validate their prototypes with real potential customers at Heathrow Airport.
-                     .col-md-4 
-                        h2 Pitch
-                        p 
-                            | Participants will have the opportunity 
-                            br
-                            | to pitch in front of industry experts at London’s new TravelTech co-working space.
+                    //- .col-md-4.col-md-offset-2 
+                    //-     h2 Validation
+                    //-     p 
+                    //-         | Unlike other hackathons where products are built in a vacuum, participants will get the chance to test and validate their prototypes with real potential customers at Heathrow Airport.
+                    //-  .col-md-4 
+                    //-     h2 Pitch
+                    //-     p 
+                    //-         | Participants will have the opportunity 
+                    //-         br
+                    //-         | to pitch in front of industry experts at London’s new TravelTech co-working space.
         
         section.divider
             #passenger_divider
@@ -229,73 +340,91 @@ html(lang='en')
             .container
                 .row
                     h1.col-md-12.text-center
-                        | Jump On-board
+                        | Applications
+                .row
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+
+                .row
+                    p.col-md-8.col-md-offset-2.text-center
+                        | Every single Hack Horizon participant will be handpicked and will go through an extensive recruitment process to make sure we bring the right talent and skills on board to truly change the face of travel.
 
                 .row 
                     #the_process
                         .col-md-12
                             img.process_image(alt="The Application Process" src="img/the_process.png")
-   
                         .col-md-12.text-center                            
                             .process_copy.col-md-4
                                 h2 Apply
                                 p 
-                                    |  We are looking for the most creative, talented and driven individuals to join us on this experience. As such, applicants will be put through a rigorous multi-stage application process.
+                                    | All applicants will submit a short form where we can begin identifying the most talented, creative, passionate and driven individuals. 
+                            .process_copy.col-md-4
+                                h2 Video Pitch
+                                p 
+                                    | We will shortlist the top 250 applicants and ask them to submit a 60 second video elevator pitch on why they should be selected, so we can see how they look off paper.
+
+
                             .process_copy.col-md-4
                                 h2 Interview
                                 p 
-                                    | In an aim to build a genuine community, interviews will help us go beyond talent and select applicants with the motivation, passion and ambition that will be paramount in order to create our community and an enjoyable onboard experience.
-                            .process_copy.col-md-4
-                                h2 Fly 
+                                    | We will select the top 100 video pitches who will move to the final stage, where we will have a short interview with each applicant before selecting the final 32. 
+                            
+                            .col-md-6.col-md-offset-3.FAQS
                                 p 
-                                    | Only the top 32 applicants will be selected to join this one of a kind journey and will form the heart of the Hack Horizon community.               
-                    .clearfix
-                .row
-                    #the_numbers
-                        .col-md-3
-                            h1
-                                | 10000
-                            h5
-                                | KILOMETERS
-                        .col-md-3
-                            h1
-                                | 80
-                            h5
-                                | HOURS
-                        .col-md-3
-                            h1
-                                | 32
-                            h5
-                                | PARTICIPANTS 
-                        .col-md-3
+                                    | Have more questions about Hack Horizon? 
+                                    br
+                                    | Check out our FAQs 
+                                    a(target='_blank', href='FAQs.html') here
+                                    | .
+                //- .row
+                //-     #the_numbers
+                //-         .col-md-3
+                //-             h1
+                //-                 | 10000
+                //-             h5
+                //-                 | KILOMETERS
+                //-         .col-md-3
+                //-             h1
+                //-                 | 80
+                //-             h5
+                //-                 | HOURS
+                //-         .col-md-3
+                //-             h1
+                //-                 | 32
+                //-             h5
+                //-                 | PARTICIPANTS 
+                //-         .col-md-3
                   
-                          h1
-                                | 2
-                            h5
-                                | CONTINENTS
+                //-           h1
+                //-                 | 2
+                //-             h5
+                //-                 | CONTINENTS
 
         section#CTA.in-page-link.section_padding
             .container
                 .row
                     .col-md-12.col-sm-12.text-center
                         h1
-                            |Hack Horizon Applications
+                            |Join Hack Horizon and change the face of TravelTech
                             br
-                            span
-                                | Open Soon
+                            //- span
+                            //-     | NOW OPEN
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
                 .row
                     .col-md-8.col-md-offset-2.text-center        
-                        p
-                            | Join the 4000 strong community, receive industry digests on the latest trends in TravelTech and be the first to hear when applications open.
-
-                .row#sign_up_form
-                    .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
-                        form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
-                            input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
-                            button.btn-white.mb0(type='submit') Keep Me Posted
-                            iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
+                        a#apply_button.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply') APPLY NOW
+                        h3 
+                            | Friday 5
+                            sup th    
+                            |   - 8
+                            sup th 
+                            | May
+                //- .row#sign_up_form
+                //-     .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+                //-         form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
+                //-             input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
+                //-             button.btn-white.mb0(type='submit') Keep Me Posted
+                //-             iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
 
 
 
@@ -306,156 +435,172 @@ html(lang='en')
                         h1.uppercase
                             | Partners
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
 
                 .row
                     .col-md-8.col-md-offset-2.text-center
                         p
                             | We work with a wide range of partners across Asia and Europe who help us engage startup communities, connect with industry leaders in  travel  and promote the TravelTech movement.
-                .row                    
-                    .col-sm-3.col-xs-6.partner_logo
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        h2 Airline Partner
+                .row
+                    .col-sm-6.col-sm-offset-3.partner_logo.airline
+                        a(target='_blank', href='https://www.britishairways.com/')
+                            img(alt='British Airways', src='img/logos/BA.png')
+
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        h2 Gold Sponsors
+                .row
+                    //- .col-sm-4.partner_logo.gold
+                    //-     a(target='_blank', href='https://www.travelport.com/')
+                    //-         img(alt='Travelport', src='img/logos/travelport.png')
+                    .col-sm-4.col-sm-offset-4.partner_logo.gold
+                        a(target='_blank', href='http://www.heathrow.com/')
+                            img(alt='Heathrow Airport', src='img/logos/heathrow.png')
+                    //- .col-sm-4.partner_logo.gold
+                    //-     a(target='_blank', href='https://www.accenture.com')
+                    //-         img(alt='Accenture', src='img/logos/accenture.png')
+
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        h2 Industry Partners
+                .row
+                    .col-sm-3.col-xs-6.partner_logo.industry
                         .image-tile.inner-title.hover-reveal.text-center
                             a(target='_blank', href='http://www.mtr.com.hk/en/customer/tourist/index.php')
                                 img(alt='MTR', src='img/logos/MTR.png')
-                                .title
-                                    h5.uppercase.mb0 - Industry Partner -                   
-                    .col-sm-3.col-xs-6.partner_logo
+
+                    .col-sm-3.col-xs-6.partner_logo.industry
                         .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.sita.aero/')
-                                img(alt='SITA', src='img/logos/sita.png')
-                                .title
-                                    h5.uppercase.mb0 - Industry Partner -
-                    .col-sm-3.col-xs-6.partner_logo
+                            a(target='_blank', href='https://tfl.gov.uk/')
+                                img(alt='Transport for London', src='img/logos/tfl.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.industry
                         .image-tile.inner-title.hover-reveal.text-center
                             a(target='_blank', href='http://www.hongkongairport.com/eng/index.html')
                                 img(alt='HKAA', src='img/logos/HKAA.jpg')
-                                .title
-                                    h5.uppercase.mb0 - Industry Partner -
-                    .col-sm-3.col-xs-6.partner_logo
+
+                    .col-sm-3.col-xs-6.partner_logo.industry
                         .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.bm.ust.hk/')
-                                img(alt='HKUST', src='img/logos/hkust.png')
-                                .title
-                                    h5.uppercase.mb0 - University Sponsor -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.eyeprogram.org/')
-                                img(alt='Reaktor', src='img/logos/geye.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.hkcocoon.org/en/space.aspx')
-                                img(alt='CoCoon', src='img/logos/cocoon.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://nest.vc/')
-                                img(alt='Nest VC', src='img/logos/nest.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='https://generalassemb.ly/hong-kong')
-                                img(alt='GA', src='img/logos/ga.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://brinc.io')
-                                img(alt='Brinc', src='img/logos/brinc.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='https://www.whub.io/')
-                                img(alt='WHub', src='img/logos/whub.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.meetup.com/IxDAHK/')
-                                img(alt='IxDA Hong Kong', src='img/logos/IxDA.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.startupshk.com/')
-                                img#startupshk(alt='Startups HK', src='img/logos/hkstartups.png')
-                                .title    
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='https://www.f6s.com/')
-                                img(alt='F6S', src='img/logos/F6S.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://paceventures.co/')
-                                img(alt='Pace Ventures', src='img/logos/pace.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://ventriscapital.com/')
-                                img(alt='Ventris', src='img/logos/ventris.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.traveltechlab.london/')
-                                img(alt='Travel Tech Lab', src='img/logos/traveltechlab.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://metta.co/')
-                                img(alt='Metta', src='img/logos/metta.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.londonandpartners.com/')
-                                img(alt='London & Partners', src='img/logos/lnp.jpg')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.design-thinking.asia/')
-                                img(alt='Design Thinking Asia', src='img/logos/dta.jpg')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://hk.bsdacademy.com/')
-                                img(alt='BSD Academy', src='img/logos/bsd.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -                    
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://www.thewave.com.hk/')
-                                img(alt='The Wave', src='img/logos/wave.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='http://frescocapital.com/')
-                                img(alt='Fresco Capital', src='img/logos/fresco.png')
-                                .title
-                                    h5.uppercase.mb0 - Ecosystem Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
-                            a(target='_blank', href='https://www.traveldatadaily.com/')
-                                img(alt='Travel Data Daily', src='img/logos/tdd.png')
-                                .title
-                                    h5.uppercase.mb0 - Media Partner -
-                    .col-sm-3.col-xs-6.partner_logo
-                        .image-tile.inner-title.hover-reveal.text-center
+                            a(target='_blank', href='http://www.sita.aero/')
+                                img(alt='SITA', src='img/logos/sita.png')
+                    
+
+
+                //- .row
+                //-     .col-sm-6.col-sm-offset-3
+                //-         h2 Media Partners
+                //- .row
+                //-     .col-sm-3.col-xs-6.partner_logo.partner
+                //-         .image-tile.inner-title.hover-reveal.text-center
+                //-             a(target='_blank', href='https://www.traveldatadaily.com/')
+                //-                 img(alt='Travel Data Daily', src='img/logos/tdd.png')
+                //- 
+                    //- .col-sm-3.col-xs-6.partner_logo.industry
+                    //-     .image-tile.inner-title.hover-reveal.text-center
+                    //-         a(target='_blank', href='http://www.sita.aero/')
+                    //-             img(alt='SITA', src='img/logos/sita.png')
+
+                    //- .col-sm-3.col-xs-6.partner_logo.industry
+                    //-     .image-tile.inner-title.hover-reveal.text-center
+                    //-         a(target='_blank', href='http://www.hongkongairport.com/eng/index.html')
+                    //-             img(alt='HKAA', src='img/logos/HKAA.jpg')
+                    //- .col-sm-3.col-xs-6.partner_logo.industry
+                    //-     .image-tile.inner-title.hover-reveal.text-center
+                    //-         a(target='_blank', href='https://tfl.gov.uk/')
+                    //-             img(alt='Transport for London', src='img/logos/tfl.png')
+
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        h2 Education Partners
+                .row
+                    .col-md-10.col-sm-offset-1                     
+                        .col-sm-4.col-xs-6.partner_logo.education
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank', href='http://www.bm.ust.hk/')
+                                    img(alt='HKUST', src='img/logos/hkust.png')
+                        
+                        .col-sm-4.col-xs-6.partner_logo.education
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank', href='http://www.design-thinking.asia/')
+                                    img(alt='Design Thinking Asia', src='img/logos/dta.png')
+
+                        .col-sm-4.col-xs-6.partner_logo.education
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank', href='http://frescocapital.com/')
+                                    img(alt='Fresco Capital', src='img/logos/fresco.png')
+                
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        h2 Ecosystem Partners
+                .row                      
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.londonandpartners.com/')
+                            img(alt='London & Partners', src='img/logos/lnp.jpg')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.traveltechlab.london/')
+                            img(alt='Travel Tech Lab', src='img/logos/traveltechlab.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.eyeprogram.org/')
+                            img(alt='Google EYE Program', src='img/logos/geye.png')
+                    
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='https://www.f6s.com/')
+                            img(alt='F6S', src='img/logos/F6S.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.hkcocoon.org/en/space.aspx')
+                            img(alt='CoCoon', src='img/logos/cocoon.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://nest.vc/')
+                            img(alt='Nest VC', src='img/logos/nest.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='https://generalassemb.ly/hong-kong')
+                            img(alt='GA', src='img/logos/ga.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://brinc.io')
+                            img(alt='Brinc', src='img/logos/brinc.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='https://www.whub.io/')
+                            img(alt='WHub', src='img/logos/whub.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.meetup.com/IxDAHK/')
+                            img(alt='IxDA Hong Kong', src='img/logos/IxDA.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.startupshk.com/')
+                            img#hkstartups(alt='Startups HK', src='img/logos/hkstartups.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://paceventures.co/')
+                            img(alt='Pace Ventures', src='img/logos/pace.png')
+                    
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://ventriscapital.com/')
+                            img(alt='Ventris', src='img/logos/ventris.png')
+
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://metta.co/')
+                            img(alt='Metta', src='img/logos/metta.png')
+                    
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://hk.bsdacademy.com/')
+                            img(alt='BSD Academy', src='img/logos/bsd.png')
+                    .col-sm-3.col-xs-6.partner_logo.partner
+                        a(target='_blank', href='http://www.thewave.com.hk/')
+                            img(alt='The Wave', src='img/logos/wave.png')
+
+                    .col-sm-4.col-sm-offset-4.col-xs-6.partner_logo.partner
                             a#Partner_With_Us(target='_blank', href='https://hackhorizon.typeform.com/to/BJ7Nus') Partner With Us
-                                .title
-                                    h5#partner_plus.uppercase.mb0 + + +
 
 
         section.in-page-link#community.bg-secondary.diagonal_down
@@ -465,7 +610,7 @@ html(lang='en')
                         h1 
                             | Our Community
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
                 .row    
                     .col-md-8.col-md-offset-2.text-center
                         p
@@ -490,37 +635,6 @@ html(lang='en')
                                 p
                                     | We curate the biggest stories in Travel, showcase the most disruptive startups and discuss the latest trends in the space through our bi-weekly newsletter. Our Runway Rundown Reports now reaches 3,000+ people across the globe.       
                                 a.btn.btn-lg(href='runwayrundown.html') Find Out More
-
-        //- section#community.in-page-link.section_padding.bg-secondary
-        //-     .container
-        //-         .row
-        //-             .col-sm-12.text-center
-        //-                 h1.uppercase
-        //-                     | Discover Our Community
-        //-                 h2
-        //-                     | #TravelTechTuesdays
-        //-         .row.masonry.masonryFlyIn
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt6.jpg')
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt3.jpg')
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt7.jpg')       
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt4.jpg')
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/ttt_logo.png') 
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt2.jpg')
-        //-             .col-md-4.col-xs-6.masonry-item.project
-        //-                 img(alt='Pic', src='img/ttt/TTT2/ttt1.jpg')
-
-        //-         .row.text-center#ttt
-        //-              .col-md-10.col-md-offset-1.col-sm-12
-        //-                 p
-        //-                     | TravelTech Tuesdays is a monthly meet-up to connect the rapidly growing TravelTech ecosystem in Hong Kong and encourage new connections, opportunities and collaborations in the space.
-        //-             .col-md-8.col-md-offset-2.col-sm-12#ttt_details
-        //-                 a#ttt_button.btn.btn-lg.inner-link(href='traveltechtuesdays.html') Find Out More
                    
                     
 
@@ -536,7 +650,7 @@ html(lang='en')
                         h1.uppercase
                             | Our Advisors
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
                 .row
                     .col-md-8.col-md-offset-2.text-center
                         p#advisors_description
@@ -682,7 +796,7 @@ html(lang='en')
                         h1.uppercase
                             | The Team
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2#about_border
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
                 .row
                     .col-md-8.col-md-offset-2.text-center
                         p
