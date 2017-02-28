@@ -227,12 +227,11 @@ header
 .cover_links
 	z-index: 100
 	text-align: center
-	margin-top: 10vh
 
 	.btn-lg
 		height: 64px
 		line-height: 60px
-		width: 35%
+		width: 100%
 		font-weight: 600
 		font-family: $font
 		color: white
@@ -408,6 +407,9 @@ header
 			width: 77%
 			display: block
 			margin: 0 auto
+		
+		.process_image_mobile 
+			display: none
 
 
 		.process_copy
@@ -1023,6 +1025,8 @@ footer
 
 			.process_copy
 				padding-bottom: 0
+	#CTA .btn-lg 
+		margin-bottom: 48px
 
 	#advisors .col-md-6
 		text-align: center
@@ -1057,6 +1061,12 @@ footer
 
 	#tagline
 		padding: 0 15px
+
+	#wingtip_divider, #passenger_divider
+		height: 350px
+
+	.divider
+		padding: 0 0 24px 0
 
 	.foundry_modal
 		h1
@@ -1107,11 +1117,14 @@ footer
 		font-size: 1.4em
 
 	.cover_links
-		margin-top: 20px
 		
 		.btn-lg
-			font-size: 0.8em
+			font-size: 1.7em
 			background: $pink
+
+		h3
+			font-size: 1.4em
+
 	.divider
 		padding: 0
 
@@ -1119,8 +1132,21 @@ footer
 		padding: 40px 20px
 
 	#apply 
-		#the_process .process_copy
-			height: auto
+		#the_process 
+			.process_image
+				display: none
+			.process_image_mobile 
+				display: block
+
+			.process_copy
+				height: auto
+
+				h2
+					width: 80%
+		.FAQS
+			p
+				br
+					display: none
 
 	.icon-sm
 		font-size: 28px

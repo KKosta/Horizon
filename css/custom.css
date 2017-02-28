@@ -177,12 +177,11 @@ header {
 
 .cover_links {
   z-index: 100;
-  text-align: center;
-  margin-top: 10vh; }
+  text-align: center; }
   .cover_links .btn-lg {
     height: 64px;
     line-height: 60px;
-    width: 35%;
+    width: 100%;
     font-weight: 600;
     font-family: "Roboto", Helvetica, sans-serif;
     color: white;
@@ -315,6 +314,8 @@ header {
       width: 77%;
       display: block;
       margin: 0 auto; }
+    #apply #the_process .process_image_mobile {
+      display: none; }
     #apply #the_process .process_copy {
       padding-top: 50px; }
       #apply #the_process .process_copy h2 {
@@ -741,6 +742,9 @@ footer {
     #apply #the_process .process_copy {
       padding-bottom: 0; }
 
+  #CTA .btn-lg {
+    margin-bottom: 48px; }
+
   #advisors .col-md-6 {
     text-align: center; }
     #advisors .col-md-6 .advisors_mobile {
@@ -768,6 +772,12 @@ footer {
 
   #tagline {
     padding: 0 15px; }
+
+  #wingtip_divider, #passenger_divider, #airport_divider, #passenger_divider {
+    height: 350px; }
+
+  .divider {
+    padding: 0 0 24px 0; }
 
   .foundry_modal h1 {
     font-size: 2.1em; }
@@ -811,11 +821,11 @@ footer {
   #tagline {
     font-size: 1.4em; }
 
-  .cover_links {
-    margin-top: 20px; }
-    .cover_links .btn-lg {
-      font-size: 0.8em;
-      background: #FF4081; }
+  .cover_links .btn-lg {
+    font-size: 1.7em;
+    background: #FF4081; }
+  .cover_links h3 {
+    font-size: 1.4em; }
 
   .divider {
     padding: 0; }
@@ -823,8 +833,16 @@ footer {
   #the_hack #journey {
     padding: 40px 20px; }
 
+  #apply #the_process .process_image {
+    display: none; }
+  #apply #the_process .process_image_mobile {
+    display: block; }
   #apply #the_process .process_copy {
     height: auto; }
+    #apply #the_process .process_copy h2 {
+      width: 80%; }
+  #apply .FAQS p br {
+    display: none; }
 
   .icon-sm {
     font-size: 28px; }
