@@ -61,6 +61,22 @@ html(lang='en')
         link(href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700', rel='stylesheet', type='text/css')
         link(href='css/font-roboto.css', rel='stylesheet', type='text/css')
         
+        // Facebook Pixel Code
+        script.
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '219601215181154', {
+            em: 'insert_email_variable,'
+            });
+            fbq('track', 'PageView');
+        noscript
+            img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=219601215181154&ev=PageView&noscript=1')
+        // DO NOT MODIFY
+        // End Facebook Pixel Code
+        
         // Google Tag Manager
         script.
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -77,6 +93,7 @@ html(lang='en')
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
           ga('create', 'UA-43203720-4', 'auto');
           ga('send', 'pageview');
+
     
 body.scroll-assist
     .main-container
@@ -148,40 +165,42 @@ body.scroll-assist
                         ul.accordion.accordion-2.multi-open
                             li
                                 .title
-                                    h4.inline-block.mb0 Where can I find the dates and schedule for Hack Horizon?
+                                    h4.inline-block.mb0 What are the dates for Hack Horizon?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Hack Horizon will take place between Friday 5th - Monday 8th May 2017, then we will spend a day in London and fly back to Hong Kong on Wednesday 10th May.
+                                        br
+                                        br
+                                        | If selected to participate you will need to be avaliable for these dates.
+
                             li
                                 .title
                                     h4.inline-block.mb0 What are the participation costs? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | The main costs of the hackathon are covered by us (your flights, accommodation and mail meals during the hackathon). The only cost for the 32 finalists will be the participation fee of HKD1,000 and any costs associated with visas if you do not have them. 
+
                             li
                                 .title
-                                    h4.inline-block.mb0 Would I need to get time off work/school?
+                                    h4.inline-block.mb0 What if I can no longer attend?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | If you are unable to attend once your have made it to the final 32, your application fee will become non-refundable after Friday 21st April.
+                        
                             li
                                 .title
-                                    h4.inline-block.mb0 How will my data after I apply?
+                                    h4.inline-block.mb0 How much time will we spend in London after the hackathon?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            li
-                                .title
-                                    h4.inline-block.mb0 How long will the hackathon last?
-                                .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | After the Pitch Finals on the 8th of May, you will also get an extra day in London to engage with local media around the event, explore London, and get some much needed rest before heading back to Hong Kong on the 10th.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Am I expected to work throughout the whole hackathon?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Although the hackathon will last 80 hours, we certainly do not expect you to work non-stop for the entire time. There will be time for sleep, food, hackathon talks and activities to make your experience full and exciting.
+
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Rules
@@ -190,14 +209,18 @@ body.scroll-assist
                                 .title
                                     h4.inline-block.mb0 What is the Code of Conduct?
                                 .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    ul
+                                        li No discrimination, sexism, racism. 
+                                        li Abide by the rules of the plane i.e. no smoking, seat-belts when the sign comes on etc. 
+                                        li User research only at the airport - no disturbances to the passengers on the flight unless they voluntarily want to see what we are doing ask to give real-time feedback.
+
                             li
                                 .title
                                     h4.inline-block.mb0 What are the rules? 
                                 .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    ul
+                                        li No coding before the hackathon
+                                        li No team formation before the hackathon
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Travel
@@ -208,37 +231,50 @@ body.scroll-assist
 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | If you are not based in Hong Kong and will be travelling here for the start of the event, you need to make sure that you have a valid visa for Hong Kong. You can find more information on Hong Kong’s Immigration Department 
+                                        a(target="_blank" href="http://www.immd.gov.hk/eng/services/index.html") here.                        
+                                        br
+                                        br
+                                        | If you require a visa to travel to the UK for the London part of the hackathon, you will have to arrange for it yourself, and you can find out more information 
+                                        a(target="_blank" href="https://www.gov.uk/check-uk-visa") here.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Do you sponsor/reimburse my visa?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Unfortuantely we cannot sponsor any visas for Hack Horizon.
                             li
                                 .title
                                     h4.inline-block.mb0 Do I need travel insurance?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We recommend you to get your own travel insurance for the duration of the hackathon and any travel to and from the hackathon. We are not be liable for any injuries or losses incurred during the hackathon.
+
                             li
                                 .title
-                                    h4.inline-block.mb0 What are the accommodations for the event? 
+                                    h4.inline-block.mb0 Where will I sleep?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | During the flight, a seat in the premium economy section of the plane will have to make do for a shut-eye! And we have made arrangements for suitable accomodation in Hong Kong and London for the rest of the hackathon.
+
                             li
                                 .title
                                     h4.inline-block.mb0 What do I need to bring?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Just like any other hackathon you will need to bring your own computer to hack on, but as we will be traveling out of Hong Kong, you will also need a valid passport and a visa. Once we select the final 32, we will send out a more detailed itinerary with items to bring. 
+
                             li
                                 .title
                                     h4.inline-block.mb0 Is catering provided? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We will be providing you with food to keep your energy up throughout the hackathon. You will only be required to cover the cost of the dinner at Hong Kong International Airport (6th May), breakfast at Heathrow when we land (7th May). 
+                                        br
+                                        br
+                                        | Also you will have to find your own food in London after the Hackathon on the 9th and 10th before you fly back to the Hong Kong - but don't worry London has plenty to offer! 
+
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Applications
@@ -248,50 +284,62 @@ body.scroll-assist
                                     h4.inline-block.mb0 How will my application be judged?
 
                                 .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    p We will judge applications on five key criteria: Talent, Experience, Passion, Cultural Fit & Travel Industry Knowledge.
                             li
                                 .title
                                     h4.inline-block.mb0 Who can apply?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Applications are open to everyone over 18 years old, whether you’re a passionate student looking to build a new technology startup, an industry veteran seeing an opportunity for improvement in your field of expertise, or someone looking to enter the travel industry and build something new in this booming market.
+                                        br
+                                        br
+                                        | Within these groups we are looking for applicants with the following backgrounds: coding/engineering, business and design. Though you do not need to be an expert in all three, we will certainly like applicants who have an appreciation or level of knowledge in areas other than their key skill.
                             li
                                 .title
                                     h4.inline-block.mb0 When do applications open?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Applications open on Tuesday 28 February.
                             li
                                 .title
                                     h4.inline-block.mb0 When do applications close?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Applications close on Sunday 19 March 23:59 HKT. We will select applicants on a rolling basis so be sure you don’t miss out by waiting until the last moment to apply! 
                             li
                                 .title
                                     h4.inline-block.mb0 When will I know if I have been selected?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We will announce the final 32 participants by 12 April 2017.
+
                             li
                                 .title
-                                    h4.inline-block.mb0 How does the application process work? 
+                                    h4.inline-block.mb0 How will you select the final 32?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We will be selecting our final 32 participants through a 3 stage application process starting with an application on F6S, then a video elevator pitcha and finally an interview.
                             li
                                 .title
                                     h4.inline-block.mb0 Can I still apply if this is my first hackathon?  
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | You don't need to be a hackathon veteran in order to apply! If you are selected and you haven't had previous hackathon experience, there are many resources available online for you to help you familiarise yourself with the hackathon format, and there will be plenty of support provided throughout the hackathon as well.
+
+                            li
+                                .title
+                                    h4.inline-block.mb0 Can I apply if I am not based in Hong Kong? 
+                                .content
+                                    p
+                                        | Yes, you can apply, but you will have to be able to cover your travel expenses to get here for the start of the hackathon, as well as your way back home.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Can I apply as part of a team? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.         
+                                        | We will be selecting participants on an individual basis and teams will be formed around the ideas pitched on the first day of the hackathon. You can, however, encourage your friends and teammates to apply as well, but we cannot guarantee that you will all get in.
+         
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Teams
@@ -301,59 +349,74 @@ body.scroll-assist
                                     h4.inline-block.mb0 Can I participate remotely/have remote participants in my team?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Unfortunately, we will not accept remote participation, because we want to create a vibrant, collaborative and exciting in-person experience for the groups of finalists.
+
                             li
                                 .title
                                     h4.inline-block.mb0 How will teams be formed? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | During the first day of the hackathon in Hong Kong, all participants will present 60 second pitches of the ideas they would like to work on. We will vote on the 10 best pitches and form the final teams around the those ideas. We recommend a well balanced team which in our experience consists of around 3-4 individuals: a front end developer, a back end developer, a designer, and a business guru.
+                            li
+                                .title
+                                    h4.inline-block.mb0 Is there a limit on the team size? 
+                                .content
+                                    p
+                                        | We will not allow teams larger than 5, as it will be very difficult to manage operationally, due to the space limitations on the plane. 
+
                             li
                                 .title
                                     h4.inline-block.mb0 Can I form my team before the hackathon?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Although you will get to meet your fellow participants before the hackathon officially starts, we do not recommend forming a team at that stage. We will have the official team formation at the Launch on the 5th of May.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Can I work on my own? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Hackathons are a collaborative experience and the best way to learn and build great prototypes is by working with people who complement your skills, are able to challenge your thinking and support the development your initial idea. We strongly encourage you to form a team and interact with other participants during the hackathon. No man is an island, entire of himself. 
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Ideas & Projects
                         ul.accordion.accordion-2.multi-open
                             li
                                 .title
-                                    h4.inline-block.mb0 What kind of ideas can I build? 
+                                    h4.inline-block.mb0 What can I build during the hackathon? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | The challenge is to build any new digital product or service that can improve the end to end customer experience in travel. You are free to build whatever you can conceive within that brief!
+
                             li
                                 .title
                                     h4.inline-block.mb0 Can I work on a pre-existing idea?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | No, you will have to work on a new idea during the hackathon. We want to keep things fair and have everyone start from the same point.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Can I participate if I don’t have an idea? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We encourage everyone to apply even if they don’t yet have an idea. You can start thinking about your idea during the application process and use our pre-hackathon workshops as inspiration! 
+
                             li
                                 .title
                                     h4.inline-block.mb0 When can I start developing my idea?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | You cannot start coding until the start of the hackathon but you can definitely start your research beforehand. Having a look at our 
+                                        a(target="_blank" href="runwayrundown.html")
+                                        | Runway Rundown reports might be a good place to start!
                             li
                                 .title
                                     h4.inline-block.mb0 Can I pitch more than one idea? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                                        | You can only pitch one idea at the start of the hackathon during the 60 second pitches so pick your best one! You will only be able to work on one idea during the hackathon itself, although we expect teams to pivot and change that idea along the way.
+
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Intellectual Property
@@ -363,13 +426,14 @@ body.scroll-assist
                                     h4.inline-block.mb0 How do teams address the issue of intellectual property/ownership?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | As with any startup, it is up to the teams themselves to decide how to tackle this. Hack Horizon will not own or take part in the signing of any legal documents during the hackathon. While it doesn’t hurt to be clear about your individual expectations from the start, teams who don’t spend time addressing this issue until it actually matters (i.e. when there is a tangible product to have ownership of) are much more productive and successful during the hackathon.
                             li
                                 .title
                                     h4.inline-block.mb0 How do I protect against people stealing my idea? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.        
+                                        | The short answer is that you can’t - but this doesn’t mean you should hoard it away. It is worth remembering that what truly matters is how well you and your team execute the idea and the passion with which you pitch, rather than the idea itself. Great ideas are cheap, great execution takes time and skill.
+     
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Resources
@@ -379,49 +443,49 @@ body.scroll-assist
                                     h4.inline-block.mb0 How do I prepare for the hackathon?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            li
-                                .title
-                                    h4.inline-block.mb0 Are the pre-hackathon workshop compulsory? 
-                                .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            li
-                                .title
-                                    h4.inline-block.mb0 Who will deliver the workshops?
-                                .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | There is not much you can do to prepare for the hackathon other than being well rested and being well read on what is happening in the travel industry so that you have good grasp of what are the leading trends in travel before you begin the hackathon (this will help you in the application process as well!)
+                            //- li
+                            //-     .title
+                            //-         h4.inline-block.mb0 Are the pre-hackathon workshop compulsory? 
+                            //-     .content
+                            //-         p
+                            //-             | LThe workshops will be made compulsory as we believe they form an integral part of the preparation process that will subsequently allow you to use your time during the hackathon in the most efficient way possible. 
+                            //-             br
+                            //-             br
+                            //-             | There is a possibility that we will consider making an exception in circumstances for applicants based outside of Hong Kong, however this will be unlikely in all other circumstances and you should not rely it. 
+                            //- li
+                            //-     .title
+                            //-         h4.inline-block.mb0 Who will deliver the workshops?
+                            //-     .content
+                            //-         p
+                            //-             | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             li
                                 .title
                                     h4.inline-block.mb0 What resources will I have during the hackathon? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | It’s a hackathon, so you are free to use any tools, resources, boilerplates, gems or hacks you know to build your prototype as quickly and effectively as possible. Our mentors and organisers will be at hand to help and support you as much as possible and our sponsors will be opening up some special APIs just for this hackathon as well.
                             li
                                 .title
                                     h4.inline-block.mb0 Do I have to use sponsor APIs?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            li
-                                .title
-                                    h4.inline-block.mb0 Can I use an UI Kit? 
-                                .content
-                                    p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We are working closely with our sponsors to open up brand new APIs especially for Hack Horizon. Of course you are not obliged to use those APIs (but if you would like to collaborate on your idea with the given sponsor after the hack, this could be a good way to start the conversation!)
                             li
                                 .title
                                     h4.inline-block.mb0 Will there be WiFi on the plane? 
+
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | No. Unfortunately there will be no connectivity on the plane meaning you have to prepare  as best as you can and download everything you will need before the flight. We will brief the finalists in more depth before the flight to help you to prepare! 
+
                             li
                                 .title
                                     h4.inline-block.mb0 Who will be mentoring? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We will be announcing all the mentors for the hackathon around mid April. 
+
                 .row
                     .col-sm-10.col-sm-offset-1
                         h2 Pitches
@@ -431,31 +495,38 @@ body.scroll-assist
                                     h4.inline-block.mb0 What is the format of the pitches?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | The pitches will run as follows: 5 Minutes Presentation & Live Demo + 3 minutes Q&A 
+                                        br
+                                        br
+                                        | The format may slightly altered depending on how many teams are formed during the hackathon but this is the format you should be preparing for.
+
                             li
                                 .title
                                     h4.inline-block.mb0 Who will be judging my pitch?
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We will announce the official judges line up mid April but the panel will be made up of leading travel industry experts, serial entrepreneurs and investors.
+
                             li
                                 .title
                                     h4.inline-block.mb0 What is the judging criteria? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | Much like any other hackathon, the judges will be evaluating the pitches on the business model, customer validation, design, demo and pitch. We will release the final judging criteria for participants during the hackathon.
+
                             li
                                 .title
                                     h4.inline-block.mb0 What are the prizes? 
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        | We are still finalising the full list of prizes that will be up for grabs for the top teams at the end of Hack Horizon so they will be announced mid April, but get ready for a lot of travel goodies!
+
                             li
                                 .title
                                     h4.inline-block.mb0 What happens after the pitches?  
                                 .content
                                     p
-                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                                
+                                        | There will be drinks and networking to celebrate the end of the event, as well as an opportunity to speak with press and journalists.                                  
 
 
         footer.footer-2.text-center-xs.bg-secondary

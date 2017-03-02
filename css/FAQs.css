@@ -104,6 +104,17 @@ header {
   #questions p {
     color: white;
     padding-bottom: 24px; }
+    #questions p a {
+      color: #FF4081;
+      font-weight: bold; }
+  #questions .content ul li {
+    color: white;
+    font-family: "Roboto", Helvetica, sans-serif;
+    padding-left: 6%;
+    opacity: 0.75;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    margin: 0; }
 
 footer {
   padding-bottom: 24px;
