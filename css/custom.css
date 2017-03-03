@@ -512,11 +512,14 @@ header {
 
 .tweet_feed {
   background: #f8f8f8; }
+  .tweet_feed .icon {
+    color: #212121;
+    cursor: pointer; }
+  .tweet_feed .icon:hover {
+    color: #FF4081; }
   .tweet_feed .tweets-slider p {
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 24px;
-    color: #212121; }
-  .tweet_feed .tweets-slider i {
     color: #212121; }
   .tweet_feed .tweets-slider .timePosted {
     font-size: 16px;
@@ -552,6 +555,8 @@ header {
 
 #team {
   padding-bottom: 64px; }
+  #team #contact_team_FB {
+    padding-top: 24px; }
   #team .TeamPhoto {
     height: 125px;
     border-radius: 100px;
@@ -769,7 +774,10 @@ footer {
     #advisors .col-md-6 .advisors_mobile {
       display: block; }
     #advisors .col-md-6 .advisors {
-      display: none; } }
+      display: none; }
+
+  #team .TeamPhoto {
+    height: 175px; } }
 @media (max-width: 769px) {
   #plane {
     animation: plane 4s both; }

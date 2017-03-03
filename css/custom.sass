@@ -696,14 +696,19 @@ header
 
 .tweet_feed
 	background: $grey3
+
+	.icon
+		color: $black
+		cursor: pointer
+
+	.icon:hover
+		color: $pink
+
 	.tweets-slider
 
 		p
 			font-family: $font
 			font-size: 24px
-			color: $black
-
-		i
 			color: $black
 
 		.timePosted
@@ -785,6 +790,9 @@ header
 
 #team
 	padding-bottom: 64px
+
+	#contact_team_FB
+		padding-top: 24px
 
 	.TeamPhoto
 		height: 125px
@@ -1061,7 +1069,10 @@ footer
 			display: block
 		
 		.advisors
-			display: none		
+			display: none	
+
+	#team .TeamPhoto
+		height: 175px	
 
 @media (max-width: 769px)
 	
