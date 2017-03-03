@@ -466,7 +466,9 @@ header {
     border: 2px solid #FF4081; }
 
 #community {
-  padding: 96px 0 48px 0; }
+  padding: 96px 0 24px 0; }
+  #community .col-md-4 {
+    padding: 0; }
   #community h1 {
     margin-bottom: 32px; }
   #community p {
@@ -508,6 +510,23 @@ header {
         background: white;
         color: #FF4081; }
 
+.tweet_feed {
+  background: #f8f8f8; }
+  .tweet_feed .tweets-slider p {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 24px;
+    color: #212121; }
+  .tweet_feed .tweets-slider i {
+    color: #212121; }
+  .tweet_feed .tweets-slider .timePosted {
+    font-size: 16px;
+    font-weight: 400px;
+    color: #DDDDDD; }
+    .tweet_feed .tweets-slider .timePosted a {
+      color: #616161; }
+  .tweet_feed .tweets-slider a {
+    color: #FF4081; }
+
 .community_image {
   overflow: hidden;
   position: relative;
@@ -515,7 +534,7 @@ header {
   left: 0; }
   .community_image img {
     width: 100%;
-    height: auto;
+    height: 296px;
     display: inline-block;
     transition: all 0.2s ease-in-out; }
 

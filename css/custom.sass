@@ -6,7 +6,7 @@ $blue: #1DB9FF
 $black: #212121
 $grey1: #616161
 $grey2: #DDDDDD
-$grey3: #F5F5F5
+$grey3: #f8f8f8
 $background: #f8f8f8
 
 $font: "Roboto", Helvetica, sans-serif
@@ -639,7 +639,10 @@ header
 
 
 #community
-	padding: 96px 0 48px 0
+	padding: 96px 0 24px 0
+
+	.col-md-4
+		padding: 0
 
 	h1
 		margin-bottom: 32px
@@ -691,6 +694,29 @@ header
 				color: $pink
 
 
+.tweet_feed
+	background: $grey3
+	.tweets-slider
+
+		p
+			font-family: $font
+			font-size: 24px
+			color: $black
+
+		i
+			color: $black
+
+		.timePosted
+			font-size: 16px
+			font-weight: 400px
+			color: $grey2
+
+			a 
+				color: $grey1
+
+
+		a
+			color: $pink
 
 .community_image
 	overflow: hidden
@@ -700,7 +726,7 @@ header
 
 	img
 		width: 100%
-		height: auto
+		height: 296px
 		display: inline-block
 		transition: all .2s ease-in-out
 
