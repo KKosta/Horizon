@@ -84,6 +84,8 @@ html(lang='en')
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5M864QM');
+    // End Google Tag Manager
+
     
     // Google Analytics
     script.
@@ -95,6 +97,11 @@ html(lang='en')
       ga('send', 'pageview');
 
     body.scroll-assist
+        // Google Tag Manager (noscript)
+        noscript
+          iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5M864QM', height='0', width='0', style='display:none;visibility:hidden')
+        // End Google Tag Manager (noscript)
+
         header
            .nav_bar
                .nav-container
@@ -626,10 +633,6 @@ html(lang='en')
                                     a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
                                         i.ti-linkedin.icon-sm
 
-    // Google Tag Manager (noscript)
-    noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5M864QM', height='0', width='0', style='display:none;visibility:hidden')
-    // End Google Tag Manager (noscript)
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
     script(src='js/flexslider.min.js')
