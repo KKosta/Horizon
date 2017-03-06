@@ -72,7 +72,6 @@ html(lang='en')
         em: 'insert_email_variable,'
         });
         fbq('track', 'PageView');
-        fbq('track', 'Lead');
     noscript
         img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=219601215181154&ev=PageView&noscript=1')
     // DO NOT MODIFY
@@ -202,7 +201,10 @@ html(lang='en')
 
                                 script(type='text/javascript').
                                     $( '#apply_button_cover' ).click(function() {
-                                    fbq('track', 'Lead');
+                                        fbq('track', 'Lead' {
+                                            value: 1.00,
+                                            currency: 'USD'
+                                        });
                                     });
 
         section#about.in-page-link.section_padding
@@ -468,7 +470,10 @@ html(lang='en')
 
                         script(type='text/javascript').
                             $( '#apply_button_body' ).click(function() {
-                            fbq('track', 'Lead');
+                                fbq('track', 'Lead' {
+                                    value: 1.00,
+                                    currency: 'USD'
+                                });
                             });
                 //- .row#sign_up_form
                 //-     .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1

@@ -67,7 +67,6 @@
       em: 'insert_email_variable,'
       });
       fbq('track', 'PageView');
-      fbq('track', 'Lead');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=219601215181154&amp;ev=PageView&amp;noscript=1"></noscript>
     <!-- DO NOT MODIFY-->
@@ -169,7 +168,10 @@
               <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2"><a id="apply_button_cover" target="_blank" href="https://www.f6s.com/hackhorizonround1/apply" class="btn btn-lg">APPLY NOW</a>
                 <script type="text/javascript">
                   $( '#apply_button_cover' ).click(function() {
-                  fbq('track', 'Lead');
+                      fbq('track', 'Lead' {
+                          value: 1.00,
+                          currency: 'USD'
+                      });
                   });
                   
                 </script>
@@ -374,7 +376,10 @@
               </h3>
               <script type="text/javascript">
                 $( '#apply_button_body' ).click(function() {
-                fbq('track', 'Lead');
+                    fbq('track', 'Lead' {
+                        value: 1.00,
+                        currency: 'USD'
+                    });
                 });
               </script>
             </div>
