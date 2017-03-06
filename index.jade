@@ -72,7 +72,6 @@ html(lang='en')
         em: 'insert_email_variable,'
         });
         fbq('track', 'PageView');
-        fbq('track', 'Leads');
     noscript
         img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=219601215181154&ev=PageView&noscript=1')
     // DO NOT MODIFY
@@ -200,13 +199,13 @@ html(lang='en')
                         
                                 a#apply_button_cover.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply') APPLY NOW
 
-                                script(type='text/javascript').
-                                    $( '#apply_button_cover' ).click(function() {
-                                        fbq('track', 'Lead' {
-                                            value: 1.00,
-                                            currency: 'USD'
+                                    script(type='text/javascript').
+                                        $( '#apply_button_cover' ).click(function() {
+                                            fbq('track', 'Lead' {
+                                                value: 1.00,
+                                                currency: 'USD'
+                                            });
                                         });
-                                    });
 
         section#about.in-page-link.section_padding
             .container
@@ -462,6 +461,13 @@ html(lang='en')
                 .row
                     .col-md-8.col-md-offset-2.text-center        
                         a#apply_button_body.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply') APPLY NOW
+                            script(type='text/javascript').
+                                $( '#apply_button_body' ).click(function() {
+                                    fbq('track', 'Lead' {
+                                        value: 1.00,
+                                        currency: 'USD'
+                                    });
+                                });
                         h3 
                             | May 5
                             sup th    
@@ -469,13 +475,6 @@ html(lang='en')
                             sup th 
                             | 2017 
 
-                        script(type='text/javascript').
-                            $( '#apply_button_body' ).click(function() {
-                                fbq('track', 'Lead' {
-                                    value: 1.00,
-                                    currency: 'USD'
-                                });
-                            });
                 //- .row#sign_up_form
                 //-     .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
                 //-         form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
