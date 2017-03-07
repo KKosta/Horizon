@@ -5243,9 +5243,9 @@ a.thumbnail.active {
 .media {
   margin-top: 15px;
 }
-.media:first-child {
+/*.media:first-child {
   margin-top: 0;
-}
+}*/
 .media,
 .media-body {
   overflow: hidden;
