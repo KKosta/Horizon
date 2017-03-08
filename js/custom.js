@@ -12,21 +12,6 @@ $(document).ready(function () {
 	// 	$("#mm_open_button").removeClass("opened");
 	// });
 
-	
-    $('#apply_button_body').click(function() {
-        fbq('track', 'Lead' {
-            value: 1.00,
-            currency: 'USD'
-        });
-    });
-    
-    $('#apply_button_cover').click(function() {
-        fbq('track', 'Lead' {
-            value: 1.00,
-            currency: 'USD'
-        });
-    });
-
 	$(document).on("scroll", function () {
 
 		var h = $(window).height();
