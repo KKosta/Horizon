@@ -767,6 +767,12 @@ footer {
   #the_hack .left p, #the_hack .left h3, #the_hack .right p, #the_hack .right h3 {
     text-align: left; }
 
+  #community .description p {
+    text-align: center; }
+
+  .community_image img {
+    height: auto; }
+
   #apply #the_process {
     margin-bottom: 96px; }
     #apply #the_process .process_image {
