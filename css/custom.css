@@ -443,11 +443,11 @@ header {
   #partners .partner_logo.airline img {
     max-height: 250px; }
   #partners .partner_logo.gold img {
-    max-height: 200px;
-    padding: 25px 0; }
+    max-height: 150px;
+    padding: 15px 0; }
   #partners .partner_logo.industry img {
-    max-height: 180px;
-    padding: 15px 10px; }
+    max-height: 140px;
+    padding: 25px 10px; }
   #partners .partner_logo.media img {
     max-height: 130px;
     padding: 10px 30px; }
