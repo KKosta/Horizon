@@ -460,7 +460,7 @@ header {
   #partners #hkstartups {
     max-height: 100px; }
   #partners #Partner_With_Us {
-    margin-top: 24px;
+    margin-top: 45px;
     font-size: 1.4em;
     text-transform: uppercase;
     font-weight: 500;
@@ -895,6 +895,8 @@ footer {
     padding-bottom: 36px; }
     #partners h1 {
       padding-top: 32px; }
+    #partners #Partner_With_Us {
+      margin-top: 20px; }
 
   #apply h1 {
     margin-bottom: 12px; } }
