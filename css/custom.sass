@@ -235,17 +235,20 @@ header
 		font-weight: 600
 		font-family: $font
 		color: white
-		background: $pink
+		background: $grey1
 		font-size: 1.7em		
-		border: 3px solid $pink
+		border: 3px solid $grey1
 		transition: all 0.3s ease
 		-webkit-transition: all 0.3s ease
 		-moz-transition: all 0.3s ease
 		margin-bottom: 12px
+
+		br 
+			display: none
 		
 
 	.btn-lg:hover			
-		border: 3px solid $pink !important
+		border: 3px solid $grey1 !important
 		background: white
 		color: $black
 
@@ -508,13 +511,12 @@ header
 		margin-bottom: 0
 		height: 64px
 		line-height: 60px
-		width: 45%
 		font-weight: 600
 		font-family: $font
 		color: white
-		background: $pink
+		background: $grey1
 		font-size: 2.1em		
-		border: 3px solid $pink
+		border: 3px solid $grey1
 		transition: all 0.3s ease
 		-webkit-transition: all 0.3s ease
 		-moz-transition: all 0.3s ease
@@ -532,9 +534,10 @@ header
 		
 
 	.btn-lg:hover			
-		border: 3px solid $pink !important
+		border: 3px solid $grey1 !important
 		background: white
 		color: $black
+
 	// #sign_up_form
 	// 	padding: 64px 0 0px 0
 
@@ -1199,10 +1202,22 @@ footer
 		
 		.btn-lg
 			font-size: 1.7em
-			background: $pink
+			line-height: 1.2
+			padding: 15px 0
+			height: auto
+
+			br
+				display: block
 
 		h3
 			font-size: 1.4em
+
+	#CTA 
+		.btn-lg
+			font-size: 1.7em
+			line-height: 1
+			padding: 25px 0
+			height: auto
 
 	.divider
 		padding: 0
