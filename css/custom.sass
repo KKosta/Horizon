@@ -49,7 +49,7 @@ $p-mob: 0.933
 			opacity: 1
 
 #tagline
-	animation: tagline 1s 3s both
+	animation: tagline 1s 4s both
 
 	@keyframes tagline
 		0% 
@@ -60,7 +60,7 @@ $p-mob: 0.933
 			padding-top: 0
 
 .cover_links
-	animation: cover_links 1s 4.5s both
+	animation: cover_links 1s 3s both
 
 	@keyframes cover_links
 		0% 
@@ -114,6 +114,10 @@ p
 .about_border
 	margin-bottom: 32px
 	border-bottom: 2px solid $pink
+
+
+// HEADER -------------------------------------------------------------------------
+
 
 header.show
 	background: white
@@ -173,6 +177,9 @@ header
 	nav
 		background: none
 
+
+// COVER -------------------------------------------------------------------------
+
 .cover 
 	overflow: hidden
 	height: 100vh
@@ -218,7 +225,7 @@ header
 
 	h2  
 		padding: 0
-		margin-top: 6vh
+		// margin-top: 6vh
 		margin-bottom: 8vh
 		color: white
 		text-align: center
@@ -227,6 +234,8 @@ header
 .cover_links
 	z-index: 100
 	text-align: center
+	margin-top: 96px
+	// margin-bottom: 24px
 
 	.btn-lg
 		height: 64px
@@ -253,7 +262,8 @@ header
 		color: $black
 
 	h3
-		font-size: 1.7em
+		font-family: $font
+		font-size: 2.1em
 		font-weight: 600
 		text-transform: uppercase
 		margin-bottom: 12px
@@ -262,6 +272,7 @@ header
 			font-size: 60%
 
 
+// ABOUT -------------------------------------------------------------------------
 
 #about
 	padding-top: 96px
@@ -304,6 +315,23 @@ header
 		// .continents
 		// 	display: none
 
+	h3
+		text-align: center
+		margin: 48px 0 32px 0
+		font-size: 1.7em
+		text-transform: uppercase
+		font-weight: 500
+		color: $black
+
+	#press_coverage img
+		text-align: center
+		cursor: pointer
+		width: 150px
+		-webkit-filter: grayscale(1)
+		filter: grayscale(1)
+
+
+// WINGTIP DIVIDER -------------------------------------------------------------------------
 
 #wingtip_divider
 	display: block
@@ -339,9 +367,15 @@ header
 		background-position: bottom
 		background-repeat: no-repeat
 
+// THE HACK -------------------------------------------------------------------------
+
 #the_hack
 	background: white
-	// padding-top: 32px
+	// background-image: url(../img/arrow_down.png)
+	// background-size: 100% auto
+	// background-position: bottom
+	// background-repeat: no-repeat
+	padding-bottom: 96px
 
 	.journey
 		margin-top: 32px
@@ -386,6 +420,93 @@ header
 		padding-top: 20px
 		color: $grey1
 
+
+// THE JUDGES -------------------------------------------------------------------------
+
+#judges.black_arrow_top
+	background-image: url(../img/black_arrow_top.png)
+	background-size: 100% auto
+	background-position: bottom
+	background-repeat: no-repeat
+
+#judges
+	padding-bottom: 196px
+
+	.JudgePhoto
+		height: 200px
+		border-radius: 110px
+		display: block
+		margin: 64px auto 0 auto
+
+	h4
+		letter-spacing: 1px
+		padding: 24px 0 12px 0
+		font-size: $h3
+		margin-bottom: 0
+		font-weight: 500
+		text-align: center
+		text-transform: uppercase
+		color: $black
+
+		span
+			a
+				font-size: 20px
+				color: $grey2
+				cursor: pointer
+
+			a:hover
+				color: $pink
+
+	h5 
+		text-align: center
+		color: $grey1
+		margin-bottom: 8px
+		font-size: $p
+
+	.team_social_links
+		text-align: center
+
+		a
+			font-size: 20px
+			color: $grey2
+			cursor: pointer
+
+		a:hover
+			color: $pink
+
+	#prizes
+		// margin-top: 24px
+		margin-bottom: 48px
+
+	.PrizePhoto
+		text-align: center
+		width: 150px
+
+	h6
+		text-align: center
+		letter-spacing: 1px
+		font-size: 1.7em
+		font-weight: 400
+
+	.uppercase_prizes
+		margin: 24px 0 32px 0
+		font-size: 1.7em
+		text-transform: uppercase
+		font-weight: 500
+	p
+		padding: 0 5px
+
+		span a
+			color: $grey1
+			font-weight: 500
+
+
+
+
+
+
+// Passanger Divider -------------------------------------------------------------------------
+
 #passenger_divider
 	@extend #wingtip_divider
 
@@ -402,82 +523,81 @@ header
 			background-image: url(../img/diagonal_up_reverse.png)
 
 
-#apply
-	background: white
-	background-image: url(../img/arrow_down.png)
-	background-size: 100% auto
-	background-position: bottom
-	background-repeat: no-repeat
-	padding-bottom: 124px
+// #apply
+// 	background: white
+// 	background-image: url(../img/arrow_down.png)
+// 	background-size: 100% auto
+// 	background-position: bottom
+// 	background-repeat: no-repeat
+// 	padding-bottom: 124px
+// 	height: 10000px
 
-	h1
-		margin-bottom: 32px
+// 	h1
+// 		margin-bottom: 32px
 
-	#about_border
-		margin-bottom: 48px
+// 	#about_border
+// 		margin-bottom: 48px
 
-	#the_process
-		padding-top: 64px
+// 	#the_process
+// 		padding-top: 64px
 
-		.process_image,
-			width: 77%
-			display: block
-			margin: 0 auto
+// 		.process_image,
+// 			width: 77%
+// 			display: block
+// 			margin: 0 auto
 		
-		.process_image_mobile 
-			display: none
+// 		.process_image_mobile 
+// 			display: none
 
 
-		.process_copy
-			padding-top: 50px 
+// 		.process_copy
+// 			padding-top: 50px 
 
-			h2
-				font-size: 2.1em
-				text-transform: uppercase
-				font-weight: 500
-				width: 50%
-				margin: 0 auto
-				border-bottom: 2px solid #FF4081
-			p 
-				padding-top: 20px
-				color: $grey1	
+// 			h2
+// 				font-size: 2.1em
+// 				text-transform: uppercase
+// 				font-weight: 500
+// 				width: 50%
+// 				margin: 0 auto
+// 				border-bottom: 2px solid #FF4081
+// 			p 
+// 				padding-top: 20px
+// 				color: $grey1	
 
-		.FAQS
-			padding-top: 48px
+// 		.FAQS
+// 			padding-top: 48px
 			
-			a
-				color: $pink
-				cursor: pointer
+// 			a
+// 				color: $pink
+// 				cursor: pointer
 
-	#the_numbers
-		text-align: center
-		height: auto
-		padding-top: 96px
-		padding-bottom: 196px
+// 	#the_numbers
+// 		text-align: center
+// 		height: auto
+// 		padding-top: 96px
+// 		padding-bottom: 196px
 
-		h1 
-			margin: 0
-			letter-spacing: -2px
-			font-weight: 500
-			color: $pink
-		h5
-			color: $black
-			font-size: $h3
-			text-transform: lowercase
+// 		h1 
+// 			margin: 0
+// 			letter-spacing: -2px
+// 			font-weight: 500
+// 			color: $pink
+// 		h5
+// 			color: $black
+// 			font-size: $h3
+// 			text-transform: lowercase
 
-.form-error
-	display: block
 
-#CTA.section_padding
-	padding-bottom: 0px
+// THE PARTICIPANTS -----------------------------------------------------------------
 
-#CTA
-	background: $blue
+#Final32
+	background-color: $black
+	padding-bottom: 32px
 
 	.about_border
 		padding: 18px 0
 		margin-bottom: 48px
-		border-bottom: 2px solid white
+		border-bottom: 2px solid $pink
 
 	h1 
 		color: white
@@ -492,20 +612,7 @@ header
 		color: white
 		font-size: 1.7em
 
-	.countdown_timer
-		text-align: center
-		
-		h2
-			color: white
-			text-transform: capitalize
-			font-weight: 500
-
-
-		.countdown
-			font-family: $font
-			font-weight: 300
-			color: white
-			padding-bottom: 48px
+	
 	
 	.btn-lg
 		margin-bottom: 0
@@ -538,56 +645,49 @@ header
 		background: white
 		color: $black
 
-	// #sign_up_form
-	// 	padding: 64px 0 0px 0
+// #participants
+// 	margin-top: -124px
 
-	// 	input[type="text"]
-	// 		width: 60%
-	// 		font-family: $font
-	// 		color: $black
-	// 		font-weight: 600
-	// 		border: 2px solid $pink
-	// 		font-size: 20px
-	// 		background: white
+// .masonry_buffer
+// 	margin-top: 124px
 
-	// 	input[type="text"]:focus
-	// 		outline: none
-	// 		font-family: $font
-	// 		color: $black
-	// 		font-weight: 600
-	// 		font-size: 20px
+#participants.arrow_down_reverse
+	background-color: #212121
+	// background-image: url(../img/arrow_down_reverse.png)
+	// background-size: 100% auto
+	// background-position: top
+	// background-repeat: no-repeat
 
-	// 	::-webkit-input-placeholder
-	// 		text-align: left
-	// 		font-family: $font
-	// 		color: $grey2
-	// 		text-transform: uppercase
-	// 		font-weight: 600
-	// 		font-size: 20px
+.image-tile
+	z-index: 200
+	cursor: pointer
 
-	// 	button[type="submit"]
-	// 		cursor: pointer
-	// 		width: 35%
-	// 		margin-left: 2%
-	// 		font-family: $font
-	// 		font-weight: 600
-	// 		color: white
-	// 		background: $pink
-	// 		border: 2px solid $pink
-	// 		text-transform: uppercase
-	// 		font-size: 20px
-	// 		transition: all 0.3s ease
+.image-tile img
+	-webkit-filter: grayscale(1)
+	filter: grayscale(1)
 
+// .image-tile img:hover
+// 	-webkit-filter: grayscale(0)
+// 	filter: grayscale(0)
 
-	// 	button[type="submit"]:hover
-	// 		color: $black
-	// 		border: 2px solid $pink
+.inner-title .title h5, .inner-title .title span
+	color: white
+	font-family: $font
+	font-size: $p
+	padding: 8px 
+	letter-spacing: 0px
 
-#partners.arrow_down_reverse
-	background-image: url(../img/arrow_down_reverse.png)
+.form-error
+	display: block
+
+// PARTNERS -------------------------------------------------------------------
+
+#partners.black_arrow_bottom
+	background-image: url(../img/black_arrow_bottom.png)
 	background-size: 100% auto
 	background-position: top
 	background-repeat: no-repeat
+	margin-top: -96px
 
 #partners
 	background: white
@@ -730,10 +830,12 @@ header
 
 
 .tweet_feed
-	background: $grey3
+	// margin-top: -360px
+	// padding-bottom: 196px
+	background: #212121
 
 	.icon
-		color: $black
+		color: white
 		cursor: pointer
 
 	.icon:hover
@@ -743,11 +845,11 @@ header
 
 		p
 			font-family: $font
-			font-size: 24px
-			color: $black
+			font-size: 1.7em
+			color: white
 
 		.timePosted
-			font-size: 16px
+			font-size: 1.4em
 			font-weight: 400px
 			color: $grey2
 
@@ -931,6 +1033,122 @@ header
 	.advisors_mobile
 		display: none
 
+// TAKE OFF ---------------------------------------------------------------------
+
+
+#take_off
+	margin-top: -64px
+	background: url(../img/take_off.jpg) no-repeat center bottom
+	background-attachment: fixed
+	background-size: cover
+
+	.white_arrow_up
+		display: block
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-image: url(../img/white_arrow_up.png)
+		background-size: 100% auto
+		background-position: top
+		background-repeat: no-repeat
+
+	.container
+		top: 0
+		left: 0
+
+	h3
+		padding-top: 196px
+		color: white
+		font-size: $h1
+		font-weight: 600
+		line-height: normal	
+		letter-spacing: 1px
+
+	.countdown
+		font-family: $font
+		color: $pink
+		font-weight: 500
+
+	p
+		color: white
+		font-size: 1.7em
+
+	#sign_up_form
+		margin-bottom: 96px
+		padding: 48px 0 0 0
+
+		input[type="text"]
+			text-align: center
+			font-family: $font
+			color: $black
+			font-weight: 600
+			border: 2px solid $grey3
+			font-size: 20px
+			background: white
+
+		input[type="text"]:focus
+			outline: none
+			font-family: $font
+			color: $black
+			font-weight: 600
+			font-size: 20px
+
+		::-webkit-input-placeholder
+			text-align: center
+			font-family: $font
+			color: $grey2
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 20px
+
+		button[type="submit"]
+			cursor: pointer
+			font-family: $font
+			font-weight: 600
+			color: white
+			background: $pink
+			border: 2px solid $pink
+			text-transform: uppercase
+			font-size: 20px
+			transition: all 0.3s ease
+
+
+		button[type="submit"]:hover
+			color: $black
+			border: 2px solid $pink
+
+// FOOTER --------------------------------------------------------------------------
+
+#footer_take_off
+	padding-bottom: 24px
+	padding-top: 0
+	text-align: center
+
+	img
+		padding-top: 32px
+		opacity: 0.5
+		cursor: pointer
+
+	p
+		font-size: 18px
+		color: $grey2
+		// opacity: 0.5
+		padding-top: 24px
+
+	.social-list
+		padding-top: 24px
+
+		i			
+			font-size: 24px
+			cursor: pointer
+			color: $grey2
+			transition: all 0.3s ease
+
+		i:hover
+			color: $pink
+
+
 
 
 .footer_cover
@@ -1113,7 +1331,10 @@ footer
 			display: none	
 
 	#team .TeamPhoto
-		height: 175px	
+		height: 175px
+
+	#take_off
+		margin-top: 0	
 
 @media (max-width: 769px)
 	
@@ -1241,6 +1462,9 @@ footer
 			p
 				br
 					display: none
+
+	#judges .JudgePhoto
+		height: 150px
 
 	.icon-sm
 		font-size: 28px

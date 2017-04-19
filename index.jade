@@ -149,11 +149,11 @@ html(lang='en')
                             .col-sm-12.col-md-5.col-md-pull-2.overflow-hidden-xs.nav_bar_open.menu_list
                                 ul.menu.inline-block.pull-right
                                     li
-                                        a.inner-link#top_link(href='#about') ABOUT
+                                        a.inner-link#top_link(href='#about') THE HACKATHON
                                     li
-                                        a.inner-link(href='#the_hack') THE HACKATHON
+                                        a.inner-link(href='#participants') Participants
                                     li
-                                        a.inner-link(href='#apply') APPLICATIONS
+                                        a.inner-link(href='#partners') PARNTERS
 
                             .col-sm-12.col-md-5.pb-xs-24.nav_bar_open.menu_list
                                 ul.menu
@@ -182,27 +182,31 @@ html(lang='en')
         section#top_cover.cover.in-page-link
                 .container.diagonal_up
                     .row
-                        .logo_cover.col-md-8
+                        .col-md-8.logo_cover
                             img#plane(alt='Horizon Logo', src='img/plane.png')
                             img#title_logo(alt='Horizon - Discover. Build. Soar.', src='img/logo_white.png')
-
-                        h2#tagline.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
-                            | Take to the skies and join 32 of the best entrepreneurs, engineers and designers for this unique hackathon on a plane, as you journey from Hong Kong to London on a mission to redefine TravelTech.
                     .row
-                        .cover_links
-                            .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
+                        .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
+                            .cover_links                            
                                 h3 
                                     | May 5
                                     sup th    
                                     |   - 8
                                     sup th 
-                                    | 2017                            
-                            .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
+                                    | 2017    
+                    .row
+                        .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+                            h2#tagline
+                                | 32 of the best entrepreneurs, engineers and designers will take to the skies on a mission to redefine TravelTech, in a unique hackathon on a plane from Hong Kong to London.
+
+
+                                                
+                            //- .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
                         
-                                a#apply_button_cover.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply')
-                                    | Applications 
-                                    br
-                                    | Closed
+                            //-     a#apply_button_cover.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply')
+                            //-         | Applications 
+                            //-         br
+                            //-         | Closed
 
         section#about.in-page-link.section_padding
             .container
@@ -219,16 +223,14 @@ html(lang='en')
                     .col-md-6
                         //- h3 Design that looks less 'theme' and more you.
                         p
-                           | Be one of the chosen 32 and join the best entrepreneurs, developers and designers from across APAC on an extraordinary journey.
+                           | On 5th May, 32 talented entrepreneurs, engineers and designers will embark on a unique hackathon with only 3 days and one flight from Hong Kong to London to build new products that can make travel simpler, safer, cheaper and way more fun.
                            br
                            br
-                           | Embark on a unique hackathon where we will give you 3 days and one flight from Hong Kong to London to build new products that can make travel simpler, safer, cheaper and way more fun.
+                           | Unlike other hackathons, Hack Horizon will completely immerse them in the travel experience and give them access to real life customers to test their assumptions right off the bat. What’s more is, that they will be granted special access to some of the best travel technologies and APIs out there as well as have the support and mentorship of leading industry experts.
                            br
                            br
-                           | Unlike other hackathons, Hack Horizon will completely immerse you in the travel experience and give you access to real life customers to test your assumptions right off the bat. What’s more is, that you will be granted special access to some of the best travel technologies and APIs out there as well as have the support and mentorship of leading industry experts.
-                           br
-                           br
-                           | So jump on board and join us for this once in a lifetime, adrenaline-fueled travel experience.
+                           | So jump on board and follow them on this once in a lifetime, adrenaline-fueled travel experience.
+
                     .col-md-6.text-center.mb-xs-24.FB_video
                         iframe(src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackhorizon%2Fvideos%2F420542861624820%2F&show_text=0&width=560', width='560', height='315', style='border:none;overflow:hidden', scrolling='no', frameborder='0', allowtransparency='true', allowfullscreen='true')
             
@@ -254,6 +256,23 @@ html(lang='en')
                                         | 2
                                     h5
                                         | CONTINENTS
+                .row
+                    .col-md-12
+                        h3.uppercase_prizes
+                            | As Featured In
+                .row#press_coverage.text-center
+                    .col-md-3.col-xs-3
+                         a(target='_blank' href='https://www.forbes.com/sites/joeescobedo/2017/03/17/this-23-year-old-created-the-worlds-first-hackathon-40000-feet-in-the-sky/#493f0d5720b4')
+                                    img(alt='Forbes Article', src='img/logos/forbes.jpg')                
+                    .col-md-3.col-xs-3
+                         a(target='_blank' href='http://www.webintravel.com/hack-horizon-applications-hackathon-plane/')
+                                    img(alt='WIT Article', src='img/logos/wit.png')
+                    .col-md-3.col-xs-3
+                         a(target='_blank' href='https://www.travhq.com/industry/spotlight/apply-hack-horizon-change-future-travel-tech/')
+                                    img(alt='TravHQ Article', src='img/logos/travhq.jpg')
+                    .col-md-3.col-xs-3
+                         a(target='_blank' href='http://www.travolution.com/articles/102135/big-interview-hack-horizon-will-highlight-how-innovation-is-coming-from-the-east')
+                                    img(alt='Travolution Article', src='img/logos/travolution.png')
         
         section.divider
             #wingtip_divider
@@ -280,7 +299,7 @@ html(lang='en')
                     .col-md-5.left
                         h3 Hackathon Kick Off
                         p
-                            | We will kick the hackathon off in Hong Kong on the first evening with a warm welcome by the team and key partners and sponsors. You will pitch ideas, form teams and begin developing and building your prototypes with the support of expert mentors from across the travel industry.
+                            | We will kick the hackathon off in Hong Kong on the first evening with a warm welcome by the team and key partners and sponsors. The participants will pitch ideas, form teams and begin developing and building their prototypes with the support of expert mentors from across the travel industry.
 
                 .row.journey
                     .col-md-4.col-md-offset-2
@@ -289,14 +308,14 @@ html(lang='en')
                     .col-md-5.left
                         h3 HK Airport Express
                         p
-                            | We will close off the day speeding towards Hong Kong International Airport on the HK Airport Express and set up camp at an airport hotel to get some rest before the flight on Day 2.
+                            | We will close off the day speeding towards Hong Kong International Airport on the Hong Kong Airport Express and set up camp at an airport hotel to get some rest before the flight on Day 2.
 
                 h2 Day 2 | The Airport + Flight
                 .row.journey                    
                     .col-md-5.col-md-offset-2.right
                         h3 Hong Kong International
                         p
-                            | On Day 2, we will head to Hong Kong International Airport, where we will get a behind the scenes tour of how the airport operates and a chance to do some customer testing and validation with real passengers.
+                            | On Day 2, we will head to Hong Kong International Airport, where we will get a behind the scenes tour of how the airport operates and participants will have the chance to do some customer testing and validation with real passengers.
 
                     .col-md-4
                         img(alt='Hong Kong', src='img/thehack/airport.jpg')
@@ -305,13 +324,12 @@ html(lang='en')
                     .col-md-5.col-md-offset-1.right
                         h3 The flight
                         p
-                            | In the evening we will board the British Airways flight on an A380 from Hong Kong to London where you will consolidate everything you've learnt at the airport, and get some well deserved rest.
-
+                            | In the evening we will board the British Airways flight on an A380 from Hong Kong to London where the participants will consolidate everything they've learned at the airport, and get some well deserved rest.
 
                     .col-md-4
                         img(alt='Hong Kong', src='img/thehack/flight.jpg')
 
-                h2 Day 3 | The Airport + London
+                h2 Day 3 & 4| The Airport + London
                 .row.journey    
                     .col-md-4.col-md-offset-1
                         img(alt='Hong Kong', src='img/thehack/heathrow.jpg')
@@ -319,7 +337,7 @@ html(lang='en')
                     .col-md-5.left
                         h3 Heathrow Airport
                         p
-                            | We land at London Heathrow Airport early in the morning where you will set up and have another opportunity to do customer validation with passengers. At lunchtime we will head into London on the Heathrow Express.
+                            | We land at London Heathrow Airport early in the morning where the participants will set up and have another opportunity to do customer validation with passengers. At lunchtime we will head into London on the Heathrow Express.
 
                 .row.journey
                     .col-md-4.col-md-offset-2
@@ -328,160 +346,387 @@ html(lang='en')
                     .col-md-5.left
                         h3 TravelTech Lab
                         p
-                            | We will spend the afternoon and evening working from London's TravelTech Lab where a range of mentors will come down to give feedback and support you in the final stage of developing your prototypes. 
+                            | We will spend the afternoon and evening working from London's TravelTech Lab where a range of mentors will come down to give feedback and support participants in the final stage of developing their prototypes.
                                     
-                h2 Day 4 | London + Transport Museum
-                .row.journey                    
-                    .col-md-5.col-md-offset-2.right
-                        h3 London
-                        p
-                            | On the last day we head back to the TravelTech Lab for a final day of hacking and you will have a chance to practice your pitch and demo.  
-                            
-                    .col-md-4
-                        img(alt='Hong Kong', src='img/thehack/london.jpg')
 
-                .row.journey                    
-                    .col-md-5.col-md-offset-1.right
-                        h3 Pitch Finals
-                        p
-                            | We end the hackathon at the iconic London Transport Museum where we will be joined by travel industry leaders, serial entrepreneurs, press, media and an expert panel of judges, whom you will be pitching in-front of.
-
-                    .col-md-4
-                        img(alt='Hong Kong', src='img/thehack/ltm.jpg')
-                .row.journey
-                    //- .clearfix
-                   
-                    //- .col-md-4 
-                    //-     h2 Ideation
-                    //-     p 
-                    //-         |  By bringing together leading industry experts, participants will have the exclusive opportunity to build a holistic understanding of the travel industry.
-                    //- .col-md-4 
-                    //-     h2 Research
-                    //-     p 
-                    //-         | To truly understand the challenges they are trying to address, participants will be able to directly interact with their customers at the Hong Kong International Airport. 
-                    //- .col-md-4 
-                    //-     h2 Prototyping
-                    //-     p 
-                    //-         | By experiencing the same journey and process as a typical traveler, participants will be able to empathise with and discover the problems at the heart of international travel.
-
-                    //- img#journey.col-md-10.col-md-offset-1(alt="The Horizon Jounrey" src="img/journey.png")
-
-                    //- .col-md-4.col-md-offset-2 
-                    //-     h2 Validation
-                    //-     p 
-                    //-         | Unlike other hackathons where products are built in a vacuum, participants will get the chance to test and validate their prototypes with real potential customers at Heathrow Airport.
-                    //-  .col-md-4 
-                    //-     h2 Pitch
-                    //-     p 
-                    //-         | Participants will have the opportunity 
-                    //-         br
-                    //-         | to pitch in front of industry experts at London’s new TravelTech co-working space.
-        
-        section.divider
-            #passenger_divider
-                .diagonal_down
-                    .diagonal_up
-
-        section#apply.in-page-link.section_padding
+        section#judges.in-page-link.section_padding.bg-secondary.black_arrow_top
             .container
                 .row
-                    h1.col-md-12.text-center
-                        | JUmp on Board
+                    .col-md-12.text-center
+                        h1.uppercase
+                            | The Pitch
                 .row
                     .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+                .row
+                    .col-md-8.col-md-offset-2.text-center
+                        p
+                            | We will end the hackathon at the iconic London Transport Museum in Covent Garden where we will be joined by a room of key decision makers and influencers in the travel industry, investors and media.
+                            br
+                            br
+                            | The participants will have the incredible opportunity to present the prototypes and ideas they have developed and built over the 80-hour hackathon in front of an esteemed panel of judges.
 
                 .row
-                    p.col-md-8.col-md-offset-2.text-center
-                        | Every single Hack Horizon participant will be handpicked and will go through an extensive recruitment process to make sure we bring the right talent and skills on board to truly change the face of travel.
+                    .col-md-3.col-xs-6
+                        a(target='_blank', href='https://twitter.com/airportretail')
+                            img.JudgePhoto(alt='Brian Collie', src='img/judges/brian.jpg')
+                        h4
+                            | Brian Collie
+                        h5
+                            | Angel Investor & Chairman of Flio
 
-                .row 
-                    #the_process
-                        .col-md-12
-                            img.process_image(alt="The Application Process" src="img/the_process.png")
-                            img.process_image_mobile(alt="The Application Process" src="img/the_process_mobile.png")
-                        .col-md-12.text-center                            
-                            .process_copy.col-md-4
-                                h2 Apply
-                                p 
-                                    | All applicants will submit a short form where we can begin identifying the most talented, creative, passionate and driven individuals. 
-                            .process_copy.col-md-4
-                                h2 Video Pitch
-                                p 
-                                    | We will shortlist the top 250 applicants and ask them to submit a 60 second video elevator pitch on why they should be selected, so we can see how they look off paper.
+                    .col-md-3.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/chris-annetts-7629805/')
+                            img.JudgePhoto(alt='Chris Annetts', src='img/judges/chris.jpg')
+                        h4
+                            | Chris Annetts
+                        h5 
+                            | Retail and Service Proposition Director at Heathrow Airport
+                    
+                    .col-md-3.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/glennmorgan/')
+                            img.JudgePhoto(alt='Glenn Morgan', src='img/judges/glenn.jpg')
+                        h4
+                            | Glenn Morgan
+                        h5 
+                            | Head of Digital Business Transformation at IAG
+                       
+                    .col-md-3.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/henry-lane-fox-80ab2315/')
+                            img.JudgePhoto(alt='Henry Lane Fox', src='img/judges/henry.jpg')
+                        h4
+                            | Henry Lane Fox
+                        h5 
+                            | CEO at Founders Factory
 
+                    .clearfix.visible-xs-block.visible-sm-block.visible-md-block                      
+                    .col-md-4.col-md-push-1.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/hkanji/')
+                            img.JudgePhoto(alt='Hussein Kanji', src='img/judges/hussein.jpg')
+                        h4
+                            | Hussein Kanji
+                        h5
+                            | Principal Investor at Hoxton Ventures
 
-                            .process_copy.col-md-4
-                                h2 Interview
-                                p 
-                                    | We will select the top 100 video pitches who will move to the final stage, where we will have a short interview with each applicant before selecting the final 32. 
-                            
-                            .col-md-6.col-md-offset-3.FAQS
-                                p 
-                                    | Have more questions about Hack Horizon? 
-                                    br
-                                    | Check out our FAQs 
-                                    a(target='_blank', href='FAQs.html') here
-                                    | .
-                //- .row
-                    //- #the_numbers
-                    //-     .col-md-3
-                    //-         h1
-                    //-             | 10000
-                    //-         h5
-                    //-             | KILOMETERS
-                    //-     .col-md-3
-                    //-         h1
-                    //-             | 80
-                    //-         h5
-                    //-             | HOURS
-                    //-     .col-md-3
-                    //-         h1
-                    //-             | 32
-                    //-         h5
-                    //-             | PARTICIPANTS 
-                    //-     .col-md-3
-                  
-                    //-       h1
-                    //-             | 2
-                    //-         h5
-                    //-             | CONTINENTS
+                    .col-md-4.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/pipjamieson/')
+                            img.JudgePhoto(alt='Pip Jamieson', src='img/judges/pip.jpg')
+                        h4
+                            | Pip Jamieson
+                        h5
+                            | CEO at The Dots Global
 
-        section#CTA.in-page-link.section_padding
+                    .clearfix.visible-xs-block
+                    .col-md-4.col-md-pull-1.col-xs-6
+                        a(target='_blank', href='https://www.linkedin.com/in/phildonathy/')
+                            img.JudgePhoto(alt='Phil Donathy', src='img/judges/phil.jpg')
+                        h4
+                            | Phil Donathy
+                        h5 
+                            | Senior Product Director at Travelport
+
+                .row.mt64.mb-xs-24
+                    .col-sm-12.col-md-10.col-md-offset-1.text-center
+                        h6.uppercase_prizes
+                            | Ohh and there will be some great prizes too
+                    .row
+                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+               
+                .row#prizes.text-center
+                    .col-md-3.col-sm-6.mb-xs-24
+                        img.PrizePhoto(alt='BA Tickets', src='img/tickets.png')
+                        h6.uppercase Round Trip Tickets
+                        p
+                            | The winning hackathon team will receive a set of round tickets to any British Airways destination, and continue their traveling and exploring. 
+
+                    .col-md-3.col-sm-6.mb-xs-24
+                        img.PrizePhoto(alt='Travel Tech', src='img/tech.png')
+                        h6.uppercase Travel Gadgets
+                        p
+                            | The runners up of the hackathon will receive a selection of travel themed gadgets and accessories to help make their future adventures more fun and entertaining. 
+
+                    .col-md-3.col-sm-6.mb-xs-24
+                        img.PrizePhoto(alt='Pacsafe Luggage', src='img/lugage.png')
+                        h6.uppercase Travel Luggage
+                        p
+                            | To keep all of our participants' tech safe and secure throughout the event, our friends at 
+                            span 
+                                a(target='_blank' href='http://www.pacsafe.com/') Pacsafe 
+                            | are kitting us out with a selection of their smart travel gear.
+
+                    .col-md-3.col-sm-6.mb-xs-24
+                        img.PrizePhoto(alt='Startup Tools', src='img/tools.png')
+                        h6.uppercase Startup Tools
+                        p
+                            | Courtesy of our friends at 
+                            span 
+                                a(target='_blank' href='https://www.wework.com/l/hong-kong') WeWork
+                            |, 
+                            span  
+                                a(target='_blank' href='http://bit.ly/2oiKLD8') Voyager 
+                            | and 
+                            span 
+                                a(target='_blank' href='https://aws.amazon.com/') AWS
+                            |, all of our participants will receive tools and resources to help them continue to build out their products after the hackathon.             
+
+        section#Final32.in-page-link.section_padding
             .container
                 .row
                     .col-md-12.col-sm-12.text-center
                         h1
-                            |Applications have  officially closed
+                            |The FINAL 32
                             br
                             //- span
                             //-     | NOW OPEN
                 .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
-                .row.countdown_timer
-                    //- h2
-                    //-     | APPLICATIONS CLOSE IN... 
-                    //-     .countdown(data-date='2017/03/25')
-                .row
-                    .col-md-6.col-md-offset-3.text-center        
-                        a#apply_button_body.btn.btn-lg(target="_blank" href='https://www.f6s.com/hackhorizonround1/apply') APPLICATIONS CLOSED
+                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border                
 
-                        //- h3 
-                        //-     | May 5
-                        //-     sup th    
-                        //-     |   - 8
-                        //-     sup th 
-                        //-     | 2017 
+        section#participants.arrow_down_reverse.bg-dark
+                .row.masonry-loader
+                        .col-sm-12.text-center
+                            .spinner
 
-                //- .row#sign_up_form
-                //-     .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
-                //-         form.form-newsletter(data-success='Thanks for signing up! We will send you an email to confirm shortly.', data-error='Please provide a valid email address.')
-                //-             input.mb0.transparent.validate-email.validate-required.signup-email-field(type='text', name='email', placeholder='Email Address')
-                //-             button.btn-white.mb0(type='submit') Keep Me Posted
-                //-             iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
+                    .row.masonry.masonryFlyIn.masonry_buffer
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/alexmlevin/')
+                                    img(alt='Alex Levin', src='img/participants/alex.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Alex Levin 
+                                        //- span Design
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/alexchia ')
+                                    img(alt='Alexander Chia', src='img/participants/alexander.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Alexander Chia
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/ben-williamson-84b1694 ')
+                                    img(alt='Pic', src='img/participants/ben.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Ben Williamson
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/catalina-leung-2b33a41a')
+                                    img(alt='Catalina Leung', src='img/participants/catalina.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Catalina Leung
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/lamcedric')
+                                    img(alt='Cedric Lam', src='img/participants/cedric.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Cedric Lam
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/daphneelaforest/')
+                                    img(alt='Daphnee Laforest Sabourin', src='img/participants/daphnee.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Daphnee LS
+                                        //- span Business
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/davidrhoades')
+                                    img(alt='David Rhoades', src='img/participants/david.jpg')
+                                    .title
+                                        h5.uppercase.mb0 David Rhoades
+                                        //- span Business
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/duaneharrison')
+                                    img(alt='Duane Harrison', src='img/participants/duane.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Duane Harrison
+                                        //- span Design
+                        
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/edmundto/ ')
+                                    img(alt='Edmund To', src='img/participants/edmund.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Edmund To
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/felipeschmitt')
+                                    img(alt='Felipe Schmitt', src='img/participants/felipe.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Felipe Schmitt
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/francis-pang-5569569b')
+                                    img(alt='Francis Pang', src='img/participants/francis.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Francis Pang
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/genehong78 ')
+                                    img(alt='Gene Hong', src='img/participants/gene.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Gene Hong
+                                        //- span Design
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/irraariellakhi')
+                                    img(alt='Irra Ariella Khi', src='img/participants/irra.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Irra Ariella Khi
+                                        //- span Business
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/jeff-pan-baa61365')
+                                    img(alt='Jeff Pan', src='img/participants/jeff.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Jeff Pan
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/jennyshen1')
+                                    img(alt='Jenny Shen', src='img/participants/jenny.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Jenny Shen
+                                        //- span Design
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/jessica-pang/')
+                                    img(alt='Jessica Pang', src='img/participants/jessica.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Jessica Pang
+                                        //- span Design
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='')
+                                    img(alt='Kevin Coleman', src='img/participants/kevin.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Kevin Coleman
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/liamgilligan')
+                                    img(alt='Liam Gilligan', src='img/participants/liam.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Liam Gilligan
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/norman-kk-ng-38346127/ ')
+                                    img(alt='Norman Ng', src='img/participants/kk.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Norman Ng
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/pub/krzysztof-machowski/2b/896/1b8')
+                                    img(alt='Kris Machowski ', src='img/participants/kris.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Kris Machowski 
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/marcin-bury-057a6656/ ')
+                                    img(alt='Marcin Bury', src='img/participants/marcin.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Marcin Bury
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/navidnathoo ')
+                                    img(alt='Navid Nathoo', src='img/participants/navid.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Navid Nathoo
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/nyceane ')
+                                    img(alt='Peter Ma', src='img/participants/peter.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Peter Ma
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://linkedin.com/in/phillipchao ')
+                                    img(alt='Phillip Chao', src='img/participants/phillip.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Phillip Chao
+                                        //- span Design
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/riccardovittoria')
+                                    img(alt='Riccardo Vittoria', src='img/participants/riccardo.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Riccardo Vittoria
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://hk.linkedin.com/in/romainaubert ')
+                                    img(alt='Romain Aubert', src='img/participants/romain.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Romain Aubert
+                                        //- span Business
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/savco/')
+                                    img(alt='Savalas Colbert', src='img/participants/savalas.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Savalas Colbert
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/shin-chong/ ')
+                                    img(alt='Shin Chong', src='img/participants/shin.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Shin Chong
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/timwr')
+                                    img(alt='Tim Wright', src='img/participants/tim.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Tim Wright
+                                        //- span Software Development
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/weiningg ')
+                                    img(alt='Weining Guan', src='img/participants/weining.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Weining Guan
+                                        //- span Design
+                        .col-md-2.col-md-offset-4.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://linkedin.com/in/yannick-silva-09a8a51 ')
+                                    img(alt='Yannick Silva', src='img/participants/yannick.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Yannick Silva
+                                        //- span Software Development
+
+                        .col-md-2.col-xs-3.masonry-item.project
+                            .image-tile.inner-title.hover-reveal.text-center
+                                a(target='_blank' href='https://www.linkedin.com/in/zyrianchung/')
+                                    img(alt='Zyrian Chung', src='img/participants/zyrian.jpg')
+                                    .title
+                                        h5.uppercase.mb0 Zyrian Chung
+                                        //- span Software Development
+
+        
+        section.pt64.pb64.pt-xs-40.pb-xs-40.tweet_feed
+           .container
+               .row
+                   .col-md-10.col-md-offset-1.text-center
+                        a#tweet_bird(target="_blank" href='https://twitter.com/hackhorizon')
+                            i.ti-twitter-alt.icon.icon-lg.mb40.mb-xs-24
+                        .twitter-feed.tweets-slider.large
+                            .tweets-feed(data-feed-name='hackhorizon')
 
 
 
-        section#partners.in-page-link.section_padding.arrow_down_reverse
+
+        section#partners.in-page-link.section_padding.black_arrow_bottom
             .container.partners
                 .row
                     .col-sm-12.text-center
@@ -505,24 +750,37 @@ html(lang='en')
                 .row
                     .col-sm-6.col-sm-offset-3
                         h2 Gold Sponsors
-                .row                 
-                    .col-sm-4.partner_logo.gold
+                .row               
+                    .col-md-4.col-xs-6.partner_logo.gold
                         a(target='_blank', href='http://www.heathrow.com/')
                             img(alt='Heathrow Airport', src='img/logos/Heathrow.png')
-                    .col-sm-4.partner_logo.gold
+                    .col-md-4.col-xs-6.partner_logo.gold
                         a(target='_blank', href='http://www.hongkongairport.com/eng/index.html')
                             img(alt='HKAA', src='img/logos/HKAA.png')
-                    .col-sm-4.partner_logo.gold
+                    .col-md-4.col-xs-6.partner_logo.gold
                         a(target='_blank', href='https://www.travelport.com/labs')
                             img(alt='Travelport', src='img/logos/travelport.png')
                 
                 .row
-                    .col-sm-6.col-sm-offset-3
+                    .col-sm-6.col-xs-12
                         h2 Bronze Sponsors
-                .row
-                    .col-sm-4.col-sm-offset-4.partner_logo.industry
-                        a(target='_blank', href='https://www.wework.com/')
-                            img(alt='We Work', src='img/logos/wework.png')
+                        .col-sm-6.col-xs-6.partner_logo.industry
+                            a(target='_blank', href='https://www.wework.com/')
+                                img(alt='We Work', src='img/logos/wework.png')
+                        .col-sm-6.col-xs-6.partner_logo.industry
+                            a(target='_blank', href='https://www.skyscanner.net/')
+                                img(alt='Skyscanner', src='img/logos/skyscanner.png')
+
+                    .col-sm-6.col-xs-12
+                        h2 Prize Sponsors
+
+                        .col-sm-6.col-xs-6.partner_logo.education
+                            a(target='_blank', href='http://www.pacsafe.com/')
+                                img(alt='Pacsafe', src='img/logos/pacsafe.png')
+                        .col-sm-6.col-xs-6.partner_logo.education
+                            a(target='_blank', href='https://www.voyagerhq.com/')
+                                img(alt='Voyager', src='img/logos/voyager.png')
+
 
                 .row
                     .col-sm-6.col-sm-offset-3
@@ -540,6 +798,20 @@ html(lang='en')
                         .col-sm-4.col-xs-6.partner_logo.industry
                             a(target='_blank', href='http://www.sita.aero/')
                                 img(alt='SITA', src='img/logos/sita.png')
+
+                .row
+                    .col-sm-6.col-xs-12
+                        h2 Education Partner
+
+                        .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2.partner_logo.education
+                            a(target='_blank', href='http://www.bm.ust.hk/')
+                                img(alt='HKUST', src='img/logos/hkust.png')
+                    .col-sm-6.col-xs-12
+                        h2 Accommodation Partner                  
+
+                        .col-sm-6.col-sm-offset-3.col-xs-8.col-xs-offset-2.partner_logo.education
+                            a(target='_blank', href='http://www.bm.ust.hk/')
+                                img(alt='Regal Hotels', src='img/logos/regal.png')
 
                 .row
                     .col-sm-6.col-sm-offset-3
@@ -562,431 +834,452 @@ html(lang='en')
 
                     .col-sm-4.col-xs-6.partner_logo.media
                         a(target='_blank', href='https://www.travhq.com/')
-                            img(alt='TravHQ', src='img/logos/travhq.jpg')                                    
-
-                .row
-                    .col-sm-6.col-sm-offset-3
-                        h2 Education Partners
-                .row
-                    .col-md-10.col-sm-offset-1                     
-                        .col-sm-4.col-xs-6.partner_logo.education
-                            a(target='_blank', href='http://www.bm.ust.hk/')
-                                img(alt='HKUST', src='img/logos/hkust.png')
-                    
-                        .col-sm-4.col-xs-6.partner_logo.education
-                            a(target='_blank', href='http://frescocapital.com/')
-                                img(alt='Fresco Capital', src='img/logos/fresco.png')
-
-                        .col-sm-4.col-xs-6.partner_logo.education
-                            a(target='_blank', href='http://www.design-thinking.asia/')
-                                img(alt='Design Thinking Asia', src='img/logos/dta.png')
-                
+                            img(alt='TravHQ', src='img/logos/travhq.jpg')                   
                 .row
                     .col-sm-6.col-sm-offset-3
                         h2 Ecosystem Partners
                 .row                      
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.londonandpartners.com/')
                             img(alt='London & Partners', src='img/logos/lnp.jpg')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.traveltechlab.london/')
                             img(alt='Travel Tech Lab', src='img/logos/traveltechlab.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.eyeprogram.org/')
                             img(alt='Google EYE Program', src='img/logos/geye.png')
                     
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.f6s.com/')
                             img(alt='F6S', src='img/logos/F6S.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.hkcocoon.org/en/space.aspx')
                             img(alt='CoCoon', src='img/logos/cocoon.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://nest.vc/')
                             img(alt='Nest VC', src='img/logos/nest.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://generalassemb.ly/hong-kong')
                             img(alt='GA', src='img/logos/ga.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://brinc.io')
                             img(alt='Brinc', src='img/logos/brinc.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.whub.io/')
                             img(alt='WHub', src='img/logos/whub.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.meetup.com/IxDAHK/')
                             img(alt='IxDA Hong Kong', src='img/logos/IxDA.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.startupshk.com/')
                             img#hkstartups(alt='Startups HK', src='img/logos/hkstartups.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://paceventures.co/')
                             img(alt='Pace Ventures', src='img/logos/pace.png')
                     
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://ventriscapital.com/')
                             img(alt='Ventris', src='img/logos/ventris.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://metta.co/')
                             img(alt='Metta', src='img/logos/metta.png')
                     
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://hk.bsdacademy.com/')
                             img(alt='BSD Academy', src='img/logos/bsd.png')
                     
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.thewave.com.hk/')
                             img(alt='The Wave', src='img/logos/wave.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://travelmassive.com/')
                             img(alt='Travel Massive', src='img/logos/travelmassive.png')
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.hktdc.com/en-buyer/')
                             img(alt='HKTDC', src='img/logos/hktdc.jpg')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.traveltechcon.com/')
                             img(alt='TravelTechCon', src='img/logos/TTC.jpg')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.papercliphk.com/')
                             img(alt='Paperclip HK', src='img/logos/paperclip.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.tgnglobal.com/')
                             img(alt='Tuspark Global Network', src='img/logos/tgn.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://twfhk.org/')
                             img(alt='The Womens Foundation', src='img/logos/twf.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.startus.cc/')
                             img(alt='Startus', src='img/logos/startus.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://flyspaces.com')
                             img(alt='Fly Spaces', src='img/logos/flyspaces.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.hangar51.com/')
                             img(alt='Hangar 51', src='img/logos/hangar51.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.picentre.cuhk.edu.hk/')
                             img(alt='PI Centre', src='img/logos/pi.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://www.hkstp.org/en/index.aspx')
                             img(alt='HKSTP', src='img/logos/hkstp.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://www.investhk.gov.hk/index.html')
                             img(alt='InvestHK', src='img/logos/investhk.jpg')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='http://whatscall.cmcm.com/sho/promo?utm_source=6101')
                             img(alt='Whats Call', src='img/logos/whatscall.jpg')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
                         a(target='_blank', href='https://huel.com/')
                             img(alt='Huel', src='img/logos/huel.png')
 
-                    .col-sm-3.col-xs-6.partner_logo.partner
+                    .col-sm-3.col-xs-4.partner_logo.partner
+                        a(target='_blank', href='http://frescocapital.com/')
+                            img(alt='Fresco Capital', src='img/logos/fresco.png')
+
+                    .col-sm-3.col-xs-4.partner_logo.partner
+                        a(target='_blank', href='http://www.design-thinking.asia/')
+                            img(alt='Design Thinking Asia', src='img/logos/dta.png')
+
+                    .col-sm-3.col-sm-offset-3.col-xs-4.partner_logo.partner
+                        a(target='_blank', href='http://locuslabs.com/')
+                            img(alt='Locus Labs', src='img/logos/locus.png')
+
+                    .col-sm-3.col-xs-12.partner_logo.partner
                             a#Partner_With_Us(target='_blank', href='https://hackhorizon.typeform.com/to/BJ7Nus') Partner With Us
 
 
-        section.in-page-link#community.bg-secondary.diagonal_down
-            .container
-                .row
-                    .col-md-10.col-md-offset-1.text-center
-                        h1 
-                            | Industry Insights
-                .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
-                .row    
-                    .col-md-8.col-md-offset-2.text-center
-                        p
-                            | We are passionate and dedicated to making TravelTech a recognised technology vertical in the startup world and getting the established travel industry to embrace technology better.
+        //- section.in-page-link#community.bg-secondary.diagonal_down
+        //-     .container
+        //-         .row
+        //-             .col-md-10.col-md-offset-1.text-center
+        //-                 h1 
+        //-                     | Industry Insights
+        //-         .row
+        //-             .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+        //-         .row    
+        //-             .col-md-8.col-md-offset-2.text-center
+        //-                 p
+        //-                     | We are passionate and dedicated to making TravelTech a recognised technology vertical in the startup world and getting the established travel industry to embrace technology better.
 
-                .row
-                    //- .col-md-6.text-center
-                    //-     .col-md-12
-                    //-         .community_image
-                    //-             a(href='traveltechtuesdays.html')
-                    //-                 img(alt='TravelTech Tuesdays', src='img/ttt.jpg')
-                    //-         .bg-white.description                                
-                    //-             p
-                    //-                 | To foster the local TravelTech ecosystems across Hong Kong and London, we are running monthly TravelTech Tuesdays panel discussions and meet-up events. We consistently attract 100+ attendees from across major travel companies, media, startups, students and the general public.
-                    //-              a.btn.btn-lg(href='traveltechtuesdays.html') Find Out More
-                    .col-md-4.col-md-offset-2.text-center
-                        .community_image
-                            a(href='runwayrundown.html')
-                              img(alt='Runway Rundown', src='img/rr.jpg')
-                    .col-md-4
-                        .bg-white.description                     
-                            p
-                                | We have curated the biggest stories in Travel, showcased the most disruptive startups and discussed the latest trends in the travel industry through our 6 Runway Rundown Reports.       
-                            a.btn.btn-lg(href='runwayrundown.html') Find Out More
+        //-         .row
+        //-             //- .col-md-6.text-center
+        //-             //-     .col-md-12
+        //-             //-         .community_image
+        //-             //-             a(href='traveltechtuesdays.html')
+        //-             //-                 img(alt='TravelTech Tuesdays', src='img/ttt.jpg')
+        //-             //-         .bg-white.description                                
+        //-             //-             p
+        //-             //-                 | To foster the local TravelTech ecosystems across Hong Kong and London, we are running monthly TravelTech Tuesdays panel discussions and meet-up events. We consistently attract 100+ attendees from across major travel companies, media, startups, students and the general public.
+        //-             //-              a.btn.btn-lg(href='traveltechtuesdays.html') Find Out More
+        //-             .col-md-4.col-md-offset-2.text-center
+        //-                 .community_image
+        //-                     a(href='runwayrundown.html')
+        //-                       img(alt='Runway Rundown', src='img/rr.jpg')
+        //-             .col-md-4
+        //-                 .bg-white.description                     
+        //-                     p
+        //-                         | We have curated the biggest stories in Travel, showcased the most disruptive startups and discussed the latest trends in the travel industry through our 6 Runway Rundown Reports.       
+        //-                     a.btn.btn-lg(href='runwayrundown.html') Find Out More
 
+        //- section#advisors.in-page-link.section_padding.bg-secondary
+        //-     .container
+        //-         .row
+        //-             .col-md-12.text-center
+        //-                 h1.uppercase
+        //-                     | Our Advisors
+        //-         .row
+        //-             .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+        //-         .row
+        //-             .col-md-8.col-md-offset-2.text-center
+        //-                 p#advisors_description
+        //-                     | We have brought together inspiring influencers across the travel, start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Hack Horizon even better.
 
-        section.pt64.pb64.pt-xs-40.pb-xs-40.tweet_feed
-           .container
-               .row
-                   .col-md-10.col-md-offset-1.text-center
-                        a#tweet_bird(target="_blank" href='https://twitter.com/hackhorizon')
-                            i.ti-twitter-alt.icon.icon-lg.mb40.mb-xs-24
-                        .twitter-feed.tweets-slider.large
-                            .tweets-feed(data-feed-name='hackhorizon')
-
-        section#advisors.in-page-link.section_padding.bg-secondary
-            .container
-                .row
-                    .col-md-12.text-center
-                        h1.uppercase
-                            | Our Advisors
-                .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
-                .row
-                    .col-md-8.col-md-offset-2.text-center
-                        p#advisors_description
-                            | We have brought together inspiring influencers across the travel, start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Hack Horizon even better.
-
-                .row.text-center                                          
-                    .col-md-2.col-md-offset-1.col-xs-6
-                            img.mb32(alt='Will Ross', src='img/will.jpg')
-                            h4
-                                | Will Ross
-                            p
-                                | Partner at Nest VC
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/william-ross-a9923294')
-                                    i.ti.ti-linkedin  
+        //-         .row.text-center                                          
+        //-             .col-md-2.col-md-offset-1.col-xs-6
+        //-                     img.mb32(alt='Will Ross', src='img/will.jpg')
+        //-                     h4
+        //-                         | Will Ross
+        //-                     p
+        //-                         | Partner at Nest VC
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/william-ross-a9923294')
+        //-                             i.ti.ti-linkedin  
                     
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Kristin Low', src='img/kristin.jpg')
-                            h4
-                                | Kristin Low
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Kristin Low', src='img/kristin.jpg')
+        //-                     h4
+        //-                         | Kristin Low
 
-                            p
-                                | Founder at Design Thinking Asia
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/kristindlow')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/kristinlow')
-                                    i.ti-twitter-alt
-                    .clearfix.visible-xs-block
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
-                            h4
-                                | Jeffrey Broer
-                            p
-                                | Co-Director at Founders Institute
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/jebbery')
-                                    i.ti-twitter-alt                    
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Karena Belin', src='img/karena.jpg')
-                            h4
-                                | Karena Belin
-                            p
-                                | Co-Founder at WHub
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/karenabelin')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/BelinKarena')
-                                    i.ti-twitter-alt                    
-                    .clearfix.visible-xs-block
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Bennett Chen', src='img/bennett.jpg')
-                            h4
-                                | Bennett Chen
-                            p
-                                | Co-Founder at Travolor
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/bennettchen')
-                                    i.ti.ti-linkedin  
-                    .col-md-2.col-md-offset-1.col-xs-6
-                            img.mb32(alt='Mark Ross-Smith', src='img/mark.jpg')
-                            h4
-                                | Mark Ross- Smith
-                            p
-                                | Airline & Hotel Big Data Specialist
-                            h4
-                                span - Hong Kong -
-                            .advisors_social_links
-                                a(target='_blank', href='https://hk.linkedin.com/in/markrosssmith')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/drdoot')
-                                    i.ti-twitter-alt
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Tim Barnes', src='img/tim.jpg')
-                            h4
-                                | Tim Barnes
-                            p
-                                | Founder and Senior Deity at The Rain Gods
-                            h4
-                                span - London -
-                            .advisors_social_links
-                                a(target='_blank', href='https://uk.linkedin.com/in/timothyplbarnes')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/timothy_barnes')
-                                    i.ti-twitter-alt
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='John Strickland', src='img/jls.jpg')
-                            h4
-                                | John Strickland
-                            p
-                                | Director JLS Consulting
-                            h4
-                                span - London -
-                            .advisors_social_links
-                                a(target='_blank', href='https://www.linkedin.com/in/jostrickland/')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/JohnLStrickland')
-                                    i.ti-twitter-alt                            
-                    .clearfix.visible-xs-block
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Paul Papadimitriou', src='img/paul.jpg')
-                            h4
-                                | Paul Papadimitriou 
-                            p
-                                | Founder & Innovation Strategy at Intelligencr
+        //-                     p
+        //-                         | Founder at Design Thinking Asia
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/kristindlow')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/kristinlow')
+        //-                             i.ti-twitter-alt
+        //-             .clearfix.visible-xs-block
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
+        //-                     h4
+        //-                         | Jeffrey Broer
+        //-                     p
+        //-                         | Co-Director at Founders Institute
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/jebbery')
+        //-                             i.ti-twitter-alt                    
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Karena Belin', src='img/karena.jpg')
+        //-                     h4
+        //-                         | Karena Belin
+        //-                     p
+        //-                         | Co-Founder at WHub
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/karenabelin')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/BelinKarena')
+        //-                             i.ti-twitter-alt                    
+        //-             .clearfix.visible-xs-block
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Bennett Chen', src='img/bennett.jpg')
+        //-                     h4
+        //-                         | Bennett Chen
+        //-                     p
+        //-                         | Co-Founder at Travolor
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/bennettchen')
+        //-                             i.ti.ti-linkedin  
+        //-             .col-md-2.col-md-offset-1.col-xs-6
+        //-                     img.mb32(alt='Mark Ross-Smith', src='img/mark.jpg')
+        //-                     h4
+        //-                         | Mark Ross- Smith
+        //-                     p
+        //-                         | Airline & Hotel Big Data Specialist
+        //-                     h4
+        //-                         span - Hong Kong -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://hk.linkedin.com/in/markrosssmith')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/drdoot')
+        //-                             i.ti-twitter-alt
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Tim Barnes', src='img/tim.jpg')
+        //-                     h4
+        //-                         | Tim Barnes
+        //-                     p
+        //-                         | Founder and Senior Deity at The Rain Gods
+        //-                     h4
+        //-                         span - London -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://uk.linkedin.com/in/timothyplbarnes')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/timothy_barnes')
+        //-                             i.ti-twitter-alt
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='John Strickland', src='img/jls.jpg')
+        //-                     h4
+        //-                         | John Strickland
+        //-                     p
+        //-                         | Director JLS Consulting
+        //-                     h4
+        //-                         span - London -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://www.linkedin.com/in/jostrickland/')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/JohnLStrickland')
+        //-                             i.ti-twitter-alt                            
+        //-             .clearfix.visible-xs-block
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Paul Papadimitriou', src='img/paul.jpg')
+        //-                     h4
+        //-                         | Paul Papadimitriou 
+        //-                     p
+        //-                         | Founder & Innovation Strategy at Intelligencr
 
-                            h4
-                                span - London -
-                            .advisors_social_links
-                                a(target='_blank', href='https://uk.linkedin.com/in/paulpapadimitriou')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/papadimitriou')
-                                    i.ti-twitter-alt                                
-                    .col-md-2.col-xs-6
-                            img.mb32(alt='Reijo Pold', src='img/reijo.jpg')
-                            h4
-                                | Reijo Pold
-                            p
-                                | Partner & Innovation Architect at Silk Ventures
-                            h4
-                                span - London -
-                            .advisors_social_links
-                                a(target='_blank', href='https://uk.linkedin.com/in/reijo-pold-彭-瑞-3b342b15')
-                                    i.ti.ti-linkedin  
-                                a(target='_blank', href='https://twitter.com/reiopold')
-                                    i.ti-twitter-alt
+        //-                     h4
+        //-                         span - London -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://uk.linkedin.com/in/paulpapadimitriou')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/papadimitriou')
+        //-                             i.ti-twitter-alt                                
+        //-             .col-md-2.col-xs-6
+        //-                     img.mb32(alt='Reijo Pold', src='img/reijo.jpg')
+        //-                     h4
+        //-                         | Reijo Pold
+        //-                     p
+        //-                         | Partner & Innovation Architect at Silk Ventures
+        //-                     h4
+        //-                         span - London -
+        //-                     .advisors_social_links
+        //-                         a(target='_blank', href='https://uk.linkedin.com/in/reijo-pold-彭-瑞-3b342b15')
+        //-                             i.ti.ti-linkedin  
+        //-                         a(target='_blank', href='https://twitter.com/reiopold')
+        //-                             i.ti-twitter-alt
 
 
-        section#team.in-page-link.section_padding.bg-secondary
-            .container
-                .row
-                    .col-md-12.text-center
-                        h1.uppercase
-                            | The Team
-                .row
-                    .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
-                .row
-                    .col-md-8.col-md-offset-2.text-center
-                        p
-                            | We are a well-travelled team of entrepreneurial millennials who have decided to come together to use our previous experience from 40+ hackathons to challenge and change the travel industry.
+        //- section#team.in-page-link.section_padding.bg-secondary
+        //-     .container
+        //-         .row
+        //-             .col-md-12.text-center
+        //-                 h1.uppercase
+        //-                     | The Team
+        //-         .row
+        //-             .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+        //-         .row
+        //-             .col-md-8.col-md-offset-2.text-center
+        //-                 p
+        //-                     | We are a well-travelled team of entrepreneurial millennials who have decided to come together to use our previous experience from 40+ hackathons to challenge and change the travel industry.
                 
-                .row
-                    .col-md-2.col-md-offset-2.col-xs-6
-                        img.TeamPhoto(alt='Kristiyana Hart', src='img/kristy.jpg')
-                        h4
-                            | Kristy
-                        .team_social_links
-                            a(target='_blank', href='https://uk.linkedin.com/in/kristiyana-hart-803347a6')
-                                i.ti.ti-linkedin  
-                            a(target='_blank', href='https://twitter.com/kristiyana_hart')
-                                i.ti-twitter-alt
+        //-         .row
+        //-             .col-md-2.col-md-offset-2.col-xs-6
+        //-                 img.TeamPhoto(alt='Kristiyana Hart', src='img/kristy.jpg')
+        //-                 h4
+        //-                     | Kristy
+        //-                 .team_social_links
+        //-                     a(target='_blank', href='https://uk.linkedin.com/in/kristiyana-hart-803347a6')
+        //-                         i.ti.ti-linkedin  
+        //-                     a(target='_blank', href='https://twitter.com/kristiyana_hart')
+        //-                         i.ti-twitter-alt
 
-                    .col-md-2.col-xs-6
-                        img.TeamPhoto(alt='Johannes Jaeger', src='img/Johannes.jpg')
-                        h4
-                            | Johannes
-                        .team_social_links
-                            a(target='_blank', href='https://hk.linkedin.com/in/jaegerjohannes')
-                                i.ti.ti-linkedin
+        //-             .col-md-2.col-xs-6
+        //-                 img.TeamPhoto(alt='Johannes Jaeger', src='img/Johannes.jpg')
+        //-                 h4
+        //-                     | Johannes
+        //-                 .team_social_links
+        //-                     a(target='_blank', href='https://hk.linkedin.com/in/jaegerjohannes')
+        //-                         i.ti.ti-linkedin
                     
-                    .col-md-2.col-xs-6
-                        img.TeamPhoto(alt='Kostadin Kolev', src='img/kosta.jpg')
-                        h4
-                            | Kosta
-                        .team_social_links
-                            a(target='_blank', href='https://uk.linkedin.com/in/kostadinkolev')
-                                i.ti.ti-linkedin  
-                            a(target='_blank', href='https://twitter.com/Kosta_kolev')
-                                i.ti-twitter-alt
+        //-             .col-md-2.col-xs-6
+        //-                 img.TeamPhoto(alt='Kostadin Kolev', src='img/kosta.jpg')
+        //-                 h4
+        //-                     | Kosta
+        //-                 .team_social_links
+        //-                     a(target='_blank', href='https://uk.linkedin.com/in/kostadinkolev')
+        //-                         i.ti.ti-linkedin  
+        //-                     a(target='_blank', href='https://twitter.com/Kosta_kolev')
+        //-                         i.ti-twitter-alt
 
-                    .col-md-2.col-xs-6
-                        img.TeamPhoto(alt='Sandra Sobańska', src='img/sandra.jpg')
-                        h4
-                            | Sandra
-                        .team_social_links
-                            a(target='_blank', href='https://sg.linkedin.com/in/sasobanska/en')
-                                i.ti.ti-linkedin  
-                            a(target='_blank', href='https://twitter.com/sandra_sobanska')
-                                i.ti-twitter-alt
+        //-             .col-md-2.col-xs-6
+        //-                 img.TeamPhoto(alt='Sandra Sobańska', src='img/sandra.jpg')
+        //-                 h4
+        //-                     | Sandra
+        //-                 .team_social_links
+        //-                     a(target='_blank', href='https://sg.linkedin.com/in/sasobanska/en')
+        //-                         i.ti.ti-linkedin  
+        //-                     a(target='_blank', href='https://twitter.com/sandra_sobanska')
+        //-                         i.ti-twitter-alt
 
-                .row#contact_team_FB
-                    //- .col-md-4.col-md-offset-4.text-center    
-                    //-         a#contact_button.btn.btn-lg(href='mailto:team@hackhorizon.com' target='_blank') CONTACT US
+        //-         .row#contact_team_FB
+        //-             //- .col-md-4.col-md-offset-4.text-center    
+        //-             //-         a#contact_button.btn.btn-lg(href='mailto:team@hackhorizon.com' target='_blank') CONTACT US
 
-                    .col-md-2.col-md-offset-5.text-center
-                        .fb-messengermessageus(messenger_app_id='113011915893233', page_id='256332318045876', color='blue', size='xlarge')
+        //-             .col-md-2.col-md-offset-5.text-center
+        //-                 .fb-messengermessageus(messenger_app_id='113011915893233', page_id='256332318045876', color='blue', size='xlarge')
+
+        section#take_off
+            .white_arrow_up
+                .container
+                    .row
+                        .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.text-center
+                            h3.uppercase 
+                                | Getting Ready 
+                                br
+                                | Take-Off In
+                            .countdown.mb48(data-date='2017/05/05')
+                            p
+                                | We are now just under 2 weeks away from take-off with Hack Horizon and if you want to get exclusive behind the scenes content and stories from the hackathon, sign up to our mailing list below.
+
+                        .col-md-6.col-md-offset-3
+                            form#sign_up_form.form-newsletter(data-success='Thanks for your submission, we will be in touch shortly.', data-error='Please fill all fields correctly.')
+                                input.mb16.validate-required.validate-email.signup-email-field(type='text', placeholder='Email Address', name='email')
+                                button.mb16(type='submit') SIGN ME UP
+                                span  
+                                iframe.mail-list-form(srcdoc='<!-- Begin MailChimp Signup Form --> <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> <style type="text/css">     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */ </style> <div id="mc_embed_signup"> <form action="//hackhorizon.us14.list-manage.com/subscribe/post?u=dc998c584ca693456aadfab40&amp;id=c1cfe0b8c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>     <div id="mc_embed_signup_scroll">    <h2>Subscribe to our mailing list</h2> <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> <div class="mc-field-group">    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> </label>  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"> </div> <div class="mc-field-group">    <label for="mce-FNAME">First Name </label>  <input type="text" value="" name="FNAME" class="" id="mce-FNAME"> </div> <div class="mc-field-group">   <label for="mce-LNAME">Last Name </label>   <input type="text" value="" name="LNAME" class="" id="mce-LNAME"> </div> <div class="mc-field-group">   <label for="mce-MMERGE3">Location </label>  <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3"> </div>    <div id="mce-responses" class="clear">      <div class="response" id="mce-error-response" style="display:none"></div>       <div class="response" id="mce-success-response" style="display:none"></div>     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dc998c584ca693456aadfab40_c1cfe0b8c3" tabindex="-1" value=""></div>     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>     </div> </form> </div> <script type=\'text/javascript\' src=\'//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js\'></script><script type=\'text/javascript\'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=\'EMAIL\';ftypes[0]=\'email\';fnames[1]=\'FNAME\';ftypes[1]=\'text\';fnames[2]=\'LNAME\';ftypes[2]=\'text\';fnames[3]=\'MMERGE3\';ftypes[3]=\'text\';}(jQuery));var $mcj = jQuery.noConflict(true);</script> <!--End mc_embed_signup-->')
 
 
+                    .row#footer_take_off
+                        .col-sm-6.text-center
+                            p
+                                | © Copyright 2016 Xpresso Labs Limited - All Rights Reserved
+                        .col-sm-6.text-center
+                            ul.list-inline.social-list
+                                li
+                                    a(href='mailto:team@hackhorizon.com')
+                                        i.ti.ti-email.icon-sm
+                                li
+                                    a(href='https://www.facebook.com/hackhorizon', target='_blank')
+                                        i.ti-facebook.icon-sm
+                                li
+                                    a(href='https://www.twitter.com/hackhorizon', target='_blank')
+                                        i.ti-twitter-alt.icon-sm
+                                li
+                                    a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+                                        i.ti-linkedin.icon-sm
 
+        //- footer#footer.in-page-link.footer-2
+        //-     .container
+        //-         .row
+        //-             .col-md-4.col-md-offset-4
+        //-                 ul.list-inline.social-list
+        //-                     li
+        //-                         a(href='mailto:team@hackhorizon.com')
+        //-                             i.ti.ti-email.icon-sm
+        //-                     li
+        //-                         a(href='https://www.facebook.com/hackhorizon', target='_blank')
+        //-                             i.ti-facebook.icon-sm
+        //-                     li
+        //-                         a(href='https://www.twitter.com/hackhorizon', target='_blank')
+        //-                             i.ti-twitter-alt.icon-sm
+        //-                     li
+        //-                         a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
+        //-                             i.ti-linkedin.icon-sm
 
-        footer#footer.in-page-link.footer-2
-            .container
-                .row
-                    .col-md-4.col-md-offset-4
-                        ul.list-inline.social-list
-                            li
-                                a(href='mailto:team@hackhorizon.com')
-                                    i.ti.ti-email.icon-sm
-                            li
-                                a(href='https://www.facebook.com/hackhorizon', target='_blank')
-                                    i.ti-facebook.icon-sm
-                            li
-                                a(href='https://www.twitter.com/hackhorizon', target='_blank')
-                                    i.ti-twitter-alt.icon-sm
-                            li
-                                a(href='https://www.linkedin.com/company/hack-horizon', target='_blank')
-                                    i.ti-linkedin.icon-sm
-
-                .row
-                    .col-md-6.col-md-offset-3
-                        a(href='#about')
-                            img.image-xs.in-page-link(alt='Horizon Logo', src='img/logo_dark.png')
-                .row
-                    .col-md-6.col-md-offset-3
-                        span
-                           | © Copyright 2016 Xpresso Labs Limited - All Rights Reserved                
+        //-         .row
+        //-             .col-md-6.col-md-offset-3
+        //-                 a(href='#about')
+        //-                     img.image-xs.in-page-link(alt='Horizon Logo', src='img/logo_dark.png')
+        //-         .row
+        //-             .col-md-6.col-md-offset-3
+        //-                 span
+        //-                    | © Copyright 2016 Xpresso Labs Limited - All Rights Reserved                
 
     script(src='js/jquery.min.js')
     script(src='js/countdown.min.js')

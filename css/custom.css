@@ -26,7 +26,7 @@
   100% {
     opacity: 1; } }
 #tagline {
-  animation: tagline 1s 3s both; }
+  animation: tagline 1s 4s both; }
 @keyframes tagline {
   0% {
     opacity: 0;
@@ -35,7 +35,7 @@
     opacity: 1;
     padding-top: 0; } }
 .cover_links {
-  animation: cover_links 1s 4.5s both; }
+  animation: cover_links 1s 3s both; }
 @keyframes cover_links {
   0% {
     opacity: 0;
@@ -169,7 +169,6 @@ header {
       margin-top: 20vh; }
   .diagonal_up h2, #passenger_divider .diagonal_down .diagonal_up h2 {
     padding: 0;
-    margin-top: 6vh;
     margin-bottom: 8vh;
     color: white;
     text-align: center;
@@ -177,7 +176,8 @@ header {
 
 .cover_links {
   z-index: 100;
-  text-align: center; }
+  text-align: center;
+  margin-top: 96px; }
   .cover_links .btn-lg {
     height: 64px;
     line-height: 60px;
@@ -199,7 +199,8 @@ header {
     background: white;
     color: #212121; }
   .cover_links h3 {
-    font-size: 1.7em;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 2.1em;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 12px; }
@@ -234,6 +235,19 @@ header {
       color: #212121;
       font-size: 2.1em;
       text-transform: lowercase; }
+  #about h3 {
+    text-align: center;
+    margin: 48px 0 32px 0;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #212121; }
+  #about #press_coverage img {
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
 
 #wingtip_divider, #passenger_divider, #airport_divider {
   display: block;
@@ -268,7 +282,8 @@ header {
     background-repeat: no-repeat; }
 
 #the_hack {
-  background: white; }
+  background: white;
+  padding-bottom: 96px; }
   #the_hack .journey {
     margin-top: 32px; }
   #the_hack .left p, #the_hack .left h3 {
@@ -298,6 +313,68 @@ header {
     padding-top: 20px;
     color: #616161; }
 
+#judges.black_arrow_top {
+  background-image: url(../img/black_arrow_top.png);
+  background-size: 100% auto;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+#judges {
+  padding-bottom: 196px; }
+  #judges .JudgePhoto {
+    height: 200px;
+    border-radius: 110px;
+    display: block;
+    margin: 64px auto 0 auto; }
+  #judges h4 {
+    letter-spacing: 1px;
+    padding: 24px 0 12px 0;
+    font-size: 2.1em;
+    margin-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121; }
+    #judges h4 span a {
+      font-size: 20px;
+      color: #DDDDDD;
+      cursor: pointer; }
+    #judges h4 span a:hover {
+      color: #FF4081; }
+  #judges h5 {
+    text-align: center;
+    color: #616161;
+    margin-bottom: 8px;
+    font-size: 1.4em; }
+  #judges .team_social_links {
+    text-align: center; }
+    #judges .team_social_links a {
+      font-size: 20px;
+      color: #DDDDDD;
+      cursor: pointer; }
+    #judges .team_social_links a:hover {
+      color: #FF4081; }
+  #judges #prizes {
+    margin-bottom: 48px; }
+  #judges .PrizePhoto {
+    text-align: center;
+    width: 150px; }
+  #judges h6 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.7em;
+    font-weight: 400; }
+  #judges .uppercase_prizes {
+    margin: 24px 0 32px 0;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 500; }
+  #judges p {
+    padding: 0 5px; }
+    #judges p span a {
+      color: #616161;
+      font-weight: 500; }
+
 #passenger_divider {
   background-image: url(../img/passenger_2.jpg); }
   #passenger_divider .diagonal_down {
@@ -305,91 +382,24 @@ header {
     #passenger_divider .diagonal_down .diagonal_up {
       background-image: url(../img/diagonal_up_reverse.png); }
 
-#apply {
-  background: white;
-  background-image: url(../img/arrow_down.png);
-  background-size: 100% auto;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  padding-bottom: 124px; }
-  #apply h1 {
-    margin-bottom: 32px; }
-  #apply #about_border {
-    margin-bottom: 48px; }
-  #apply #the_process {
-    padding-top: 64px; }
-    #apply #the_process .process_image {
-      width: 77%;
-      display: block;
-      margin: 0 auto; }
-    #apply #the_process .process_image_mobile {
-      display: none; }
-    #apply #the_process .process_copy {
-      padding-top: 50px; }
-      #apply #the_process .process_copy h2 {
-        font-size: 2.1em;
-        text-transform: uppercase;
-        font-weight: 500;
-        width: 50%;
-        margin: 0 auto;
-        border-bottom: 2px solid #FF4081; }
-      #apply #the_process .process_copy p {
-        padding-top: 20px;
-        color: #616161; }
-    #apply #the_process .FAQS {
-      padding-top: 48px; }
-      #apply #the_process .FAQS a {
-        color: #FF4081;
-        cursor: pointer; }
-  #apply #the_numbers {
-    text-align: center;
-    height: auto;
-    padding-top: 96px;
-    padding-bottom: 196px; }
-    #apply #the_numbers h1 {
-      margin: 0;
-      letter-spacing: -2px;
-      font-weight: 500;
-      color: #FF4081; }
-    #apply #the_numbers h5 {
-      color: #212121;
-      font-size: 2.1em;
-      text-transform: lowercase; }
-
-.form-error {
-  display: block; }
-
-#CTA.section_padding {
-  padding-bottom: 0px; }
-
-#CTA {
-  background: #1DB9FF; }
-  #CTA .about_border {
+#Final32 {
+  background-color: #212121;
+  padding-bottom: 32px; }
+  #Final32 .about_border {
     padding: 18px 0;
     margin-bottom: 48px;
-    border-bottom: 2px solid white; }
-  #CTA h1 {
+    border-bottom: 2px solid #FF4081; }
+  #Final32 h1 {
     color: white;
     margin-bottom: 0;
     line-height: 1.2; }
-    #CTA h1 span {
+    #Final32 h1 span {
       font-size: 0.622em; }
-  #CTA p {
+  #Final32 p {
     padding-top: 12px;
     color: white;
     font-size: 1.7em; }
-  #CTA .countdown_timer {
-    text-align: center; }
-    #CTA .countdown_timer h2 {
-      color: white;
-      text-transform: capitalize;
-      font-weight: 500; }
-    #CTA .countdown_timer .countdown {
-      font-family: "Roboto", Helvetica, sans-serif;
-      font-weight: 300;
-      color: white;
-      padding-bottom: 48px; }
-  #CTA .btn-lg {
+  #Final32 .btn-lg {
     margin-bottom: 0;
     height: 64px;
     line-height: 60px;
@@ -402,25 +412,47 @@ header {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease; }
-  #CTA h3 {
+  #Final32 h3 {
     color: white;
     margin-top: 12px;
     font-size: 1.7em;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0; }
-    #CTA h3 sup {
+    #Final32 h3 sup {
       font-size: 60%; }
-  #CTA .btn-lg:hover {
+  #Final32 .btn-lg:hover {
     border: 3px solid #616161 !important;
     background: white;
     color: #212121; }
 
-#partners.arrow_down_reverse {
-  background-image: url(../img/arrow_down_reverse.png);
+#participants.arrow_down_reverse {
+  background-color: #212121; }
+
+.image-tile {
+  z-index: 200;
+  cursor: pointer; }
+
+.image-tile img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+
+.inner-title .title h5, .inner-title .title span {
+  color: white;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.4em;
+  padding: 8px;
+  letter-spacing: 0px; }
+
+.form-error {
+  display: block; }
+
+#partners.black_arrow_bottom {
+  background-image: url(../img/black_arrow_bottom.png);
   background-size: 100% auto;
   background-position: top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: -96px; }
 
 #partners {
   background: white;
@@ -532,18 +564,18 @@ header {
         color: #FF4081; }
 
 .tweet_feed {
-  background: #f8f8f8; }
+  background: #212121; }
   .tweet_feed .icon {
-    color: #212121;
+    color: white;
     cursor: pointer; }
   .tweet_feed .icon:hover {
     color: #FF4081; }
   .tweet_feed .tweets-slider p {
     font-family: "Roboto", Helvetica, sans-serif;
-    font-size: 24px;
-    color: #212121; }
+    font-size: 1.7em;
+    color: white; }
   .tweet_feed .tweets-slider .timePosted {
-    font-size: 16px;
+    font-size: 1.4em;
     font-weight: 400px;
     color: #DDDDDD; }
     .tweet_feed .tweets-slider .timePosted a {
@@ -659,6 +691,98 @@ header {
     text-align: right; }
   #advisors .advisors_mobile {
     display: none; }
+
+#take_off {
+  margin-top: -64px;
+  background: url(../img/take_off.jpg) no-repeat center bottom;
+  background-attachment: fixed;
+  background-size: cover; }
+  #take_off .white_arrow_up {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/white_arrow_up.png);
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat; }
+  #take_off .container {
+    top: 0;
+    left: 0; }
+  #take_off h3 {
+    padding-top: 196px;
+    color: white;
+    font-size: 4.725em;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px; }
+  #take_off .countdown {
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: #FF4081;
+    font-weight: 500; }
+  #take_off p {
+    color: white;
+    font-size: 1.7em; }
+  #take_off #sign_up_form {
+    margin-bottom: 96px;
+    padding: 48px 0 0 0; }
+    #take_off #sign_up_form input[type="text"] {
+      text-align: center;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      border: 2px solid #f8f8f8;
+      font-size: 20px;
+      background: white; }
+    #take_off #sign_up_form input[type="text"]:focus {
+      outline: none;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #212121;
+      font-weight: 600;
+      font-size: 20px; }
+    #take_off #sign_up_form ::-webkit-input-placeholder {
+      text-align: center;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: #DDDDDD;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px; }
+    #take_off #sign_up_form button[type="submit"] {
+      cursor: pointer;
+      font-family: "Roboto", Helvetica, sans-serif;
+      font-weight: 600;
+      color: white;
+      background: #FF4081;
+      border: 2px solid #FF4081;
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all 0.3s ease; }
+    #take_off #sign_up_form button[type="submit"]:hover {
+      color: #212121;
+      border: 2px solid #FF4081; }
+
+#footer_take_off {
+  padding-bottom: 24px;
+  padding-top: 0;
+  text-align: center; }
+  #footer_take_off img {
+    padding-top: 32px;
+    opacity: 0.5;
+    cursor: pointer; }
+  #footer_take_off p {
+    font-size: 18px;
+    color: #DDDDDD;
+    padding-top: 24px; }
+  #footer_take_off .social-list {
+    padding-top: 24px; }
+    #footer_take_off .social-list i {
+      font-size: 24px;
+      cursor: pointer;
+      color: #DDDDDD;
+      transition: all 0.3s ease; }
+    #footer_take_off .social-list i:hover {
+      color: #FF4081; }
 
 .footer_cover {
   background: white; }
@@ -804,7 +928,10 @@ footer {
       display: none; }
 
   #team .TeamPhoto {
-    height: 175px; } }
+    height: 175px; }
+
+  #take_off {
+    margin-top: 0; } }
 @media (max-width: 769px) {
   #plane {
     animation: plane 4s both; }
@@ -909,6 +1036,9 @@ footer {
       width: 80%; }
   #apply .FAQS p br {
     display: none; }
+
+  #judges .JudgePhoto {
+    height: 150px; }
 
   .icon-sm {
     font-size: 28px; }
