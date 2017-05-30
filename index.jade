@@ -149,20 +149,21 @@ html(lang='en')
                             .col-sm-12.col-md-5.col-md-pull-2.overflow-hidden-xs.nav_bar_open.menu_list
                                 ul.menu.inline-block.pull-right
                                     li
-                                        a.inner-link#top_link(href='#about') THE HACKATHON
+                                        a.inner-link(href='#about') THE HACKATHON
                                     li
-                                        a.inner-link(href='#Final32') Participants
+                                        a.inner-link(href='#Final32') THe Final 32
                                     li
                                         a.inner-link(href='#partners') PARTNERS
 
                             .col-sm-12.col-md-5.pb-xs-24.nav_bar_open.menu_list
                                 ul.menu
-                                    li 
-                                        a(href='FAQs.html') FAQS
                                     li
-                                        a(href='runwayrundown.html') Industry INSIGHTS
+                                        a(href='traveltechtuesdays.html') Community
                                     li
-                                        a.inner-link(href='mailto:team@hackhorizon.com') CONTACT US
+                                        a(href='runwayrundown.html') Insights
+                                    li
+                                        a(href='about.html') About
+                                        
                             .col-md-4.col-md-offset-4#social_nav
                                 ul.list-inline.social-list
                                     li
@@ -179,25 +180,70 @@ html(lang='en')
                                             i.ti-linkedin.icon-sm
                         .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs.absolute-xs.on_top
                             i.ti-menu
-        section#top_cover.cover.in-page-link
-                .container.diagonal_up
-                    .row
-                        .col-md-8.logo_cover
-                            img#plane(alt='Horizon Logo', src='img/plane.png')
-                            img#title_logo(alt='Horizon - Discover. Build. Soar.', src='img/logo_white.png')
-                    .row
-                        .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
-                            .cover_links                            
-                                h3 
-                                    | May 5
-                                    sup th    
-                                    |   - 8
-                                    sup th 
-                                    | 2017    
-                    .row
-                        .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
-                            h2#tagline
-                                | 32 of the best entrepreneurs, engineers and designers will take to the skies on a mission to redefine TravelTech, in a unique hackathon on a plane from Hong Kong to London.
+        //- section#top_cover.cover.in-page-link
+        //-         .container.diagonal_up
+        //-             .row
+        //-                 .col-md-8.logo_cover
+        //-                     img#plane(alt='Horizon Logo', src='img/plane.png')
+        //-                     img#title_logo(alt='Horizon - Discover. Build. Soar.', src='img/logo_white.png')
+        //-             .row
+        //-                 .col-md-4.col-md-offset-4.col-xs-8.col-xs-offset-2
+        //-                     .cover_links                            
+        //-                         h3 
+        //-                             | May 5
+        //-                             sup th    
+        //-                             |   - 8
+        //-                             sup th 
+        //-                             | 2017    
+        //-             .row
+        //-                 .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+        //-                     h2#tagline
+        //-                         | 32 of the best entrepreneurs, engineers and designers will take to the skies on a mission to redefine TravelTech, in a unique hackathon on a plane from Hong Kong to London.
+
+
+        //- section.fullscreen.cover.parallax.image-bg.overlay
+        //-     .background-image-holder
+        //-         img.background-image(alt='Plane Background Image', src='img/plane_runway.jpg')
+        //-     .container.v-align-transform
+        //-         .row
+        //-             .col-sm-12.text-center
+        //-                 h1.mb16
+        //-                     | Foundry is a complete design
+        //-                     br.hidden-sm
+        //-                     |  toolkit, perfect for your next project
+        //-                 h6.uppercase.mb32 Modular Design For Absolute Freedom.
+        //-                 .modal-container
+        //-                     .play-button.btn-modal.inline.large
+        //-                     .foundry_modal.no-bg
+        //-                         iframe(data-provider='youtube', data-video-id='ebFBEdyZ1i4', data-autoplay='1', allowfullscreen='allowfullscreen')
+
+
+        section.cover.fullscreen.image-slider.slider-all-controls#top_cover
+            ul.slides
+                li.vid-bg.image-bg.overlay
+                    .background-image-holder
+                        img.background-image(alt='Plane on a Runway', src='img/plane_runway.jpg')
+                    .fs-vid-background
+                        video(muted='', loop='')
+                            source(src='video/hh_preview.webm', type='video/webm')
+                            source(src='video/hh_preview.mp4', type='video/mp4')
+                            source(src='video/hh_preview.ogv', type='video/ogg')
+                    .container.v-align-transform
+                        .row
+                            .col-sm-12.text-center
+                                img#title_logo(alt='Horizon - Discover. Build. Soar.', src='img/logo_white.png')
+                            .col-sm-10.col-sm-offset-1.text-center
+                                h2#tagline
+                                   | On 5th May, 32 of the best entrepreneurs, engineers and designers took to the skies on a mission to redefine TravelTech, in a unique hackathon on a plane from Hong Kong to London.
+                                .modal-container#play_video
+                                    .col-md-5.col-sm-12
+                                        i.fa.fa-youtube-play.play_icon.btn-modal.inline.large#play_video_button_pulse
+                                        .foundry_modal.no-bg
+                                            iframe(data-provider='youtube', data-video-id='ebFBEdyZ1i4', data-autoplay='1', allowfullscreen='allowfullscreen')
+                                    .col-md-7.col-sm-12
+                                        p
+                                            | See the full video of what happened here.
+                                   
 
 
                                                 
@@ -219,43 +265,21 @@ html(lang='en')
                 .row
                     .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
 
-                .row.v-align-children                
-                    .col-md-6
-                        //- h3 Design that looks less 'theme' and more you.
-                        p
-                           | On 5th May, 32 talented entrepreneurs, engineers and designers will embark on a unique hackathon with only 3 days and one flight from Hong Kong to London to build new products that can make travel simpler, safer, cheaper and way more fun.
-                           br
-                           br
-                           | Unlike other hackathons, Hack Horizon will completely immerse them in the travel experience and give them access to real life customers to test their assumptions right off the bat. What’s more is, that they will be granted special access to some of the best travel technologies and APIs out there as well as have the support and mentorship of leading industry experts.
-                           br
-                           br
-                           | So jump on board and follow them on this once in a lifetime, adrenaline-fueled travel experience.
+            .image-edge
+                .col-md-6.col-sm-4.p0.col-md-push-6.col-sm-push-8
+                    img.cast-shadow.mb-xs-24(alt='Hack Horizon Team Photo', src='img/hh_group.png')
 
-                    .col-md-6.text-center.mb-xs-24.FB_video
-                        iframe(src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackhorizon%2Fvideos%2F420542861624820%2F&show_text=0&width=560', width='560', height='315', style='border:none;overflow:hidden', scrolling='no', frameborder='0', allowtransparency='true', allowfullscreen='true')
-            
-                        .col-md-12.col-sm-12
-                            #the_numbers
-                                .col-md-6.col-sm-6.col-xs-6
-                                    h1
-                                        | 10000
-                                    h5
-                                        | KILOMETERS
-                                .col-md-6.col-sm-6.col-xs-6
-                                    h1
-                                        | 80
-                                    h5
-                                        | HOURS
-                                .col-md-6.col-sm-6.col-xs-6
-                                    h1
-                                        | 32
-                                    h5
-                                        | PARTICIPANTS 
-                                .col-md-6.col-sm-6.col-xs-6              
-                                    h1
-                                        | 2
-                                    h5
-                                        | CONTINENTS
+                .container
+                    .col-md-5.col-md-pull-0.col-sm-7.col-sm-pull-4.v-align-transform
+                        p
+                            | On 5th May, 32 talented entrepreneurs, engineers and designers embarked on a unique hackathon with only 3 days and one flight from Hong Kong to London to build new products that can make travel simpler, safer, cheaper and way more fun.
+                            br
+                            br
+                            | Unlike other hackathons, Hack Horizon will completely immerse them in the travel experience and give them access to real life customers to test their assumptions right off the bat. What’s more is, that they will be granted special access to some of the best travel technologies and APIs out there as well as have the support and mentorship of leading industry experts.
+                            br
+                            br
+                            | So jump on board and follow them on this once in a lifetime, adrenaline-fueled travel experience.
+            .container.pt32
                 .row
                     .col-md-12
                         h3.uppercase_prizes
@@ -279,7 +303,7 @@ html(lang='en')
                 .diagonal_down
                     .diagonal_up
         
-        section#the_hack.in-page-link.section_padding
+        section#the_hack.in-page-link.pt64
             .container
                 .row
                     h1.col-md-8.col-md-offset-2.text-center The Hackathon
@@ -288,68 +312,184 @@ html(lang='en')
                     .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
 
                 .row
-                    p.col-md-8.col-md-offset-2#HK_LDN 
-                        | Hack Horizon will help unite the Hong Kong and London startup ecosystems, while showcasing Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
+                    p.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1#HK_LDN 
+                        | Hack Horizon helped unite the Hong Kong and London startup ecosystems, showcased Hong Kong as a worthy home of innovation, talent and tech in the global landscape.
+
+                .row.text-center.pt48
+                    .col-md-6
+                        img.winning_team(alt="Hack Horizon Winners" src="img/winners.png")
+                        h2 Destination
+                        h3 Winners
+                        p
+                            | An In Flight Entertainment to mobile solution where you can buy inflight and destination experiences.
+
+                    .col-md-6
+                        img.runners_up(alt="Runners Up" src="img/runners_up.png")
+                        h2 Lux EXpress
+                        h3 Runners Up
+                        p
+                            | Buy airport luxury duty free at the best prices via a global traveller network
+
+                .row.text-center
+                    h3.pt64.other_teams Other Teams
+                    
+                    .col-md-4.col-xs-6
+                        h4 TripFlow
+                        p 
+                            | An end-to-end security luggage transfer platform powered by blockchain
+
+                    .col-md-4.col-xs-6
+                        h4 Happi
+                        p 
+                            | Predictive AI to manage and enhance passenger experience across all airline-hub touch points. 
+
+                    .col-md-4.col-xs-6
+                        h4 Lounge
+                        p 
+                            | Free Lounge Access Sharing App turning missed connections into human connections.
+
+                    .col-md-4.col-xs-6
+                        h4 KidFly
+                        p 
+                            | A trusted premium service for parents to fly their kids alone safely.
+                    
+                    .clearfix.visible-xs-block.visible-sm-block.visible-md-block
+                    
+
+                    .col-md-4.col-xs-6
+                        h4 Kollabo
+                        p 
+                            | A chatbot for collaborative group destination discovery and trip booking. 
+
+                    .col-md-4.col-xs-6
+                        h4 Abo
+                        p 
+                            | Smartwatch that uses deep learning to personalise passenger experience for connecting flights at Heathrow.
                 
-                h2 Day 1 | Hong Kong  
-                .row.journey    
-                    .col-md-4.col-md-offset-1
-                        img(alt='Hong Kong', src='img/thehack/hk.jpg')
+                //- h2 Day 1 | Hong Kong  
+                //- .row.journey    
+                //-     .col-md-4.col-md-offset-1
+                //-         img(alt='Hong Kong', src='img/thehack/hk.jpg')
                     
-                    .col-md-5.left
-                        h3 Hackathon Kick Off
-                        p
-                            | We kick the hackathon off in Hong Kong at WeWork's Tower 535. The participants will pitch their ideas, form teams and begin developing and building their prototypes with the support of expert mentors from across the travel industry.
+                //-     .col-md-5.left
+                //-         h3 Hackathon Kick Off
+                //-         p
+                //-             | We kick the hackathon off in Hong Kong at WeWork's Tower 535. The participants will pitch their ideas, form teams and begin developing and building their prototypes with the support of expert mentors from across the travel industry.
 
-                .row.journey
-                    .col-md-4.col-md-offset-2
-                        img(alt='Hong Kong', src='img/thehack/hkexpress.jpg')
+                //- .row.journey
+                //-     .col-md-4.col-md-offset-2
+                //-         img(alt='Hong Kong', src='img/thehack/hkexpress.jpg')
 
-                    .col-md-5.left
-                        h3 Regal Oriental Hotel 
-                        p
-                            | We will jump on a bus and head out of Hong Kong Island to close off the day at the Regal Oriental Hotel in Kowloon City. Here the teams will get a chance to rest up and experience one of Hong Kong's premeir hotels.
+                //-     .col-md-5.left
+                //-         h3 Regal Oriental Hotel 
+                //-         p
+                //-             | We will jump on a bus and head out of Hong Kong Island to close off the day at the Regal Oriental Hotel in Kowloon City. Here the teams will get a chance to rest up and experience one of Hong Kong's premeir hotels.
 
-                h2 Day 2 | The Airport + Flight
-                .row.journey                    
-                    .col-md-5.col-md-offset-2.right
-                        h3 Hong Kong International
-                        p
-                            | On Day 2, we will head to Hong Kong International Airport on the MTR Airport Express, where we will get a behind the scenes tour of how the airport operates and participants will have the chance to do some customer testing and validation with real passengers.
+                //- h2 Day 2 | The Airport + Flight
+                //- .row.journey                    
+                //-     .col-md-5.col-md-offset-2.right
+                //-         h3 Hong Kong International
+                //-         p
+                //-             | On Day 2, we will head to Hong Kong International Airport on the MTR Airport Express, where we will get a behind the scenes tour of how the airport operates and participants will have the chance to do some customer testing and validation with real passengers.
 
-                    .col-md-4
-                        img(alt='Hong Kong', src='img/thehack/airport.jpg')
+                //-     .col-md-4
+                //-         img(alt='Hong Kong', src='img/thehack/airport.jpg')
 
-                .row.journey                    
-                    .col-md-5.col-md-offset-1.right
-                        h3 The flight
-                        p
-                            | In the evening we will board the British Airways flight on an A380 from Hong Kong to London where the participants will consolidate everything they've learned at the airport, and get some well deserved rest.
+                //- .row.journey                    
+                //-     .col-md-5.col-md-offset-1.right
+                //-         h3 The flight
+                //-         p
+                //-             | In the evening we will board the British Airways flight on an A380 from Hong Kong to London where the participants will consolidate everything they've learned at the airport, and get some well deserved rest.
 
-                    .col-md-4
-                        img(alt='Hong Kong', src='img/thehack/flight.jpg')
+                //-     .col-md-4
+                //-         img(alt='Hong Kong', src='img/thehack/flight.jpg')
 
-                h2 Day 3 & 4 | The Airport + London
-                .row.journey    
-                    .col-md-4.col-md-offset-1
-                        img(alt='Hong Kong', src='img/thehack/heathrow.jpg')
+                //- h2 Day 3 & 4 | The Airport + London
+                //- .row.journey    
+                //-     .col-md-4.col-md-offset-1
+                //-         img(alt='Hong Kong', src='img/thehack/heathrow.jpg')
                     
-                    .col-md-5.left
-                        h3 Heathrow Airport
-                        p
-                            | We land at London Heathrow Airport early in the morning where the participants will set up and have another opportunity to do customer validation with passengers. At lunchtime we will head into London on the Heathrow Express.
+                //-     .col-md-5.left
+                //-         h3 Heathrow Airport
+                //-         p
+                //-             | We land at London Heathrow Airport early in the morning where the participants will set up and have another opportunity to do customer validation with passengers. At lunchtime we will head into London on the Heathrow Express.
 
-                .row.journey
-                    .col-md-4.col-md-offset-2
-                        img(alt='Hong Kong', src='img/thehack/ttlab.jpg')
+                //- .row.journey
+                //-     .col-md-4.col-md-offset-2
+                //-         img(alt='Hong Kong', src='img/thehack/ttlab.jpg')
 
-                    .col-md-5.left
-                        h3 TravelTech Lab
-                        p
-                            | We will spend the afternoon and evening working from London's TravelTech Lab where a range of mentors will come down to give feedback and support participants in the final stage of developing their prototypes.
+                //-     .col-md-5.left
+                //-         h3 TravelTech Lab
+                //-         p
+                //-             | We will spend the afternoon and evening working from London's TravelTech Lab where a range of mentors will come down to give feedback and support participants in the final stage of developing their prototypes.
+
+
+        section#photos.bg-secondary
+                .row
+                    .col-sm-12.text-center
+                        h2.uppercase.pt64 Hackathon Photos
+                        p.mb48 
+                            | For more event photos please check out our 
+                            a(alt="Hack Horizon Facebook Page", target='_blank', href="https://www.facebook.com/hackhorizon/")
+                                | Facebook Page
+                            |.
+                .row
+                    .logo-carousel.event_photos
+                        ul.slides
+                            li
+                                img(alt='Paul Papadimitriou at the Hack Horizon Kick-Off Event', src='img/thehack/launch.jpg')
+                            li
+                                img(alt='WeWork Kick Off Event', src='img/thehack/launch3.jpg')
+                            li
+                                img(alt='Charles NG at the Hack Horizon Kick Off Event', src='img/thehack/launch2.jpg')
+                            li
+                                img(alt='Hack Horizon on the MTR', src='img/thehack/MTR.jpg')
+                            li
+                                img(alt='HKIA', src='img/thehack/HKIA.jpg')
+                            li
+                                img(alt='Chris AuYoung speaking at HKIA', src='img/thehack/HKIA2.jpg')
+                            li
+                                img(alt='Hack Horizon Team Photo at HKIA', src='img/thehack/HKIA3.jpg')
+                            li
+                                img(alt='Hack Horizon boarding BAs A380', src='img/thehack/boarding.jpg')
+                            li
+                                img(alt='Hack Horizon on board BAs A380', src='img/thehack/flight.jpg')
+                            li
+                                img(alt='Hakc Horizon on board BAs A380', src='img/thehack/flight2.jpg')
+                            li
+                                img(alt='Richards Tams speaking at Heathrow Airport', src='img/thehack/BA.jpg')
+                            li
+                                img(alt='Heathrow and HKIA', src='img/thehack/Heathrow.jpg')
+                            li
+                                img(alt='Hack Horizon at the TravelTech Lab', src='img/thehack/TTL.jpg')
+                            li
+                                img(alt='Hack Horizon Finals at the London Transport Museum', src='img/thehack/finals.jpg')
+                .container    
+                    .row
+                        .col-md-12.col-sm-12#the_numbers
+                                .col-md-3.col-sm-6.col-xs-6
+                                    h1
+                                        | 10000
+                                    h5
+                                        | KILOMETERS
+                                .col-md-3.col-sm-6.col-xs-6
+                                    h1
+                                        | 80
+                                    h5
+                                        | HOURS
+                                .col-md-3.col-sm-6.col-xs-6
+                                    h1
+                                        | 8
+                                    h5
+                                        | Teams
+                                .col-md-3.col-sm-6.col-xs-6              
+                                    h1
+                                        | 2
+                                    h5
+                                        | Cities
                                     
 
-        section#judges.in-page-link.section_padding.bg-secondary.black_arrow_top
+        section#judges.in-page-link.section_padding.black_arrow_top
             .container
                 .row
                     .col-md-12.text-center
@@ -360,10 +500,10 @@ html(lang='en')
                 .row
                     .col-md-8.col-md-offset-2.text-center
                         p
-                            | We will end the hackathon at the iconic London Transport Museum in Covent Garden where we will be joined by a room of key decision makers and influencers in the travel industry, investors and media.
+                            | The participants came together with key decision makers, influences in the travel industry, investors and media for the Pitch Event at the iconic London Transport Museum in Covent Garden. 
                             br
                             br
-                            | The participants will have the incredible opportunity to present the prototypes and ideas they have developed and built over the 80-hour hackathon in front of an esteemed panel of judges.
+                            | They the incredible opportunity to present the prototypes and ideas they had developed and built over the 80-hour hackathon in front of an esteemed panel of judges.
 
                 .row
                     .col-md-3.col-xs-6
@@ -424,49 +564,49 @@ html(lang='en')
                         h5 
                             | VP of Product Management at Travelport
 
-                .row.mt64.mb-xs-24
-                    .col-sm-12.col-md-10.col-md-offset-1.text-center
-                        h6.uppercase_prizes
-                            | Ohh and there will be some great prizes too
-                    .row
-                        .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
+                //- .row.mt64.mb-xs-24
+                //-     .col-sm-12.col-md-10.col-md-offset-1.text-center
+                //-         h6.uppercase_prizes
+                //-             | Ohh and there will be some great prizes too
+                //-     .row
+                //-         .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
                
-                .row#prizes.text-center
-                    .col-md-3.col-sm-6.mb-xs-24
-                        img.PrizePhoto(alt='BA Tickets', src='img/tickets.png')
-                        h6.uppercase Round Trip Tickets
-                        p
-                            | The winning hackathon team will receive a set of round tickets to any British Airways destination, and continue their traveling and exploring. 
+                //- .row#prizes.text-center
+                //-     .col-md-3.col-sm-6.mb-xs-24
+                //-         img.PrizePhoto(alt='BA Tickets', src='img/tickets.png')
+                //-         h6.uppercase Round Trip Tickets
+                //-         p
+                //-             | The winning hackathon team will receive a set of round tickets to any British Airways destination, and continue their traveling and exploring. 
 
-                    .col-md-3.col-sm-6.mb-xs-24
-                        img.PrizePhoto(alt='Travel Tech', src='img/tech.png')
-                        h6.uppercase Travel Gadgets
-                        p
-                            | The runners up of the hackathon will receive a selection of travel themed gadgets and accessories to help make their future adventures more fun and entertaining. 
+                //-     .col-md-3.col-sm-6.mb-xs-24
+                //-         img.PrizePhoto(alt='Travel Tech', src='img/tech.png')
+                //-         h6.uppercase Travel Gadgets
+                //-         p
+                //-             | The runners up of the hackathon will receive a selection of travel themed gadgets and accessories to help make their future adventures more fun and entertaining. 
 
-                    .col-md-3.col-sm-6.mb-xs-24
-                        img.PrizePhoto(alt='Pacsafe Luggage', src='img/lugage.png')
-                        h6.uppercase Travel Luggage
-                        p
-                            | To keep all of our participants' tech safe and secure throughout the event, our friends at 
-                            span 
-                                a(target='_blank' href='http://www.pacsafe.com/') Pacsafe 
-                            | are kitting us out with a selection of their smart travel gear.
+                //-     .col-md-3.col-sm-6.mb-xs-24
+                //-         img.PrizePhoto(alt='Pacsafe Luggage', src='img/lugage.png')
+                //-         h6.uppercase Travel Luggage
+                //-         p
+                //-             | To keep all of our participants' tech safe and secure throughout the event, our friends at 
+                //-             span 
+                //-                 a(target='_blank' href='http://www.pacsafe.com/') Pacsafe 
+                //-             | are kitting us out with a selection of their smart travel gear.
 
-                    .col-md-3.col-sm-6.mb-xs-24
-                        img.PrizePhoto(alt='Startup Tools', src='img/tools.png')
-                        h6.uppercase Startup Tools
-                        p
-                            | Courtesy of our friends at 
-                            span 
-                                a(target='_blank' href='https://www.wework.com/l/hong-kong') WeWork
-                            |, 
-                            span  
-                                a(target='_blank' href='http://bit.ly/2oiKLD8') Voyager 
-                            | and 
-                            span 
-                                a(target='_blank' href='https://aws.amazon.com/') AWS
-                            |, all of our participants will receive tools and resources to help them continue to build out their products after the hackathon.             
+                //-     .col-md-3.col-sm-6.mb-xs-24
+                //-         img.PrizePhoto(alt='Startup Tools', src='img/tools.png')
+                //-         h6.uppercase Startup Tools
+                //-         p
+                //-             | Courtesy of our friends at 
+                //-             span 
+                //-                 a(target='_blank' href='https://www.wework.com/l/hong-kong') WeWork
+                //-             |, 
+                //-             span  
+                //-                 a(target='_blank' href='http://bit.ly/2oiKLD8') Voyager 
+                //-             | and 
+                //-             span 
+                //-                 a(target='_blank' href='https://aws.amazon.com/') AWS
+                //-             |, all of our participants will receive tools and resources to help them continue to build out their products after the hackathon.             
 
         section#Final32.in-page-link.section_padding
             .container
@@ -1022,152 +1162,7 @@ html(lang='en')
         //-                         | We have curated the biggest stories in Travel, showcased the most disruptive startups and discussed the latest trends in the travel industry through our 6 Runway Rundown Reports.       
         //-                     a.btn.btn-lg(href='runwayrundown.html') Find Out More
 
-        //- section#advisors.in-page-link.section_padding.bg-secondary
-        //-     .container
-        //-         .row
-        //-             .col-md-12.text-center
-        //-                 h1.uppercase
-        //-                     | Our Advisors
-        //-         .row
-        //-             .col-md-2.col-md-offset-5.col-xs-8.col-xs-offset-2.about_border
-        //-         .row
-        //-             .col-md-8.col-md-offset-2.text-center
-        //-                 p#advisors_description
-        //-                     | We have brought together inspiring influencers across the travel, start-up and technology spaces in both London and Hong Kong to provide us with the specialised knowledge and insights that will make Hack Horizon even better.
-
-        //-         .row.text-center                                          
-        //-             .col-md-2.col-md-offset-1.col-xs-6
-        //-                     img.mb32(alt='Will Ross', src='img/will.jpg')
-        //-                     h4
-        //-                         | Will Ross
-        //-                     p
-        //-                         | Partner at Nest VC
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/william-ross-a9923294')
-        //-                             i.ti.ti-linkedin  
-                    
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Kristin Low', src='img/kristin.jpg')
-        //-                     h4
-        //-                         | Kristin Low
-
-        //-                     p
-        //-                         | Founder at Design Thinking Asia
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/kristindlow')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/kristinlow')
-        //-                             i.ti-twitter-alt
-        //-             .clearfix.visible-xs-block
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Jeffrey Broer', src='img/jeffrey.jpg')
-        //-                     h4
-        //-                         | Jeffrey Broer
-        //-                     p
-        //-                         | Co-Director at Founders Institute
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/jeffreybroer')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/jebbery')
-        //-                             i.ti-twitter-alt                    
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Karena Belin', src='img/karena.jpg')
-        //-                     h4
-        //-                         | Karena Belin
-        //-                     p
-        //-                         | Co-Founder at WHub
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/karenabelin')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/BelinKarena')
-        //-                             i.ti-twitter-alt                    
-        //-             .clearfix.visible-xs-block
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Bennett Chen', src='img/bennett.jpg')
-        //-                     h4
-        //-                         | Bennett Chen
-        //-                     p
-        //-                         | Co-Founder at Travolor
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/bennettchen')
-        //-                             i.ti.ti-linkedin  
-        //-             .col-md-2.col-md-offset-1.col-xs-6
-        //-                     img.mb32(alt='Mark Ross-Smith', src='img/mark.jpg')
-        //-                     h4
-        //-                         | Mark Ross- Smith
-        //-                     p
-        //-                         | Airline & Hotel Big Data Specialist
-        //-                     h4
-        //-                         span - Hong Kong -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://hk.linkedin.com/in/markrosssmith')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/drdoot')
-        //-                             i.ti-twitter-alt
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Tim Barnes', src='img/tim.jpg')
-        //-                     h4
-        //-                         | Tim Barnes
-        //-                     p
-        //-                         | Founder and Senior Deity at The Rain Gods
-        //-                     h4
-        //-                         span - London -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://uk.linkedin.com/in/timothyplbarnes')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/timothy_barnes')
-        //-                             i.ti-twitter-alt
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='John Strickland', src='img/jls.jpg')
-        //-                     h4
-        //-                         | John Strickland
-        //-                     p
-        //-                         | Director JLS Consulting
-        //-                     h4
-        //-                         span - London -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://www.linkedin.com/in/jostrickland/')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/JohnLStrickland')
-        //-                             i.ti-twitter-alt                            
-        //-             .clearfix.visible-xs-block
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Paul Papadimitriou', src='img/paul.jpg')
-        //-                     h4
-        //-                         | Paul Papadimitriou 
-        //-                     p
-        //-                         | Founder & Innovation Strategy at Intelligencr
-
-        //-                     h4
-        //-                         span - London -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://uk.linkedin.com/in/paulpapadimitriou')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/papadimitriou')
-        //-                             i.ti-twitter-alt                                
-        //-             .col-md-2.col-xs-6
-        //-                     img.mb32(alt='Reijo Pold', src='img/reijo.jpg')
-        //-                     h4
-        //-                         | Reijo Pold
-        //-                     p
-        //-                         | Partner & Innovation Architect at Silk Ventures
-        //-                     h4
-        //-                         span - London -
-        //-                     .advisors_social_links
-        //-                         a(target='_blank', href='https://uk.linkedin.com/in/reijo-pold-彭-瑞-3b342b15')
-        //-                             i.ti.ti-linkedin  
-        //-                         a(target='_blank', href='https://twitter.com/reiopold')
-        //-                             i.ti-twitter-alt
+       
 
 
         //- section#team.in-page-link.section_padding.bg-secondary
@@ -1222,12 +1217,10 @@ html(lang='en')
         //-                     a(target='_blank', href='https://twitter.com/sandra_sobanska')
         //-                         i.ti-twitter-alt
 
-        //-         .row#contact_team_FB
-        //-             //- .col-md-4.col-md-offset-4.text-center    
-        //-             //-         a#contact_button.btn.btn-lg(href='mailto:team@hackhorizon.com' target='_blank') CONTACT US
+                //- .row#contact_team_FB
+                //-     //- .col-md-4.col-md-offset-4.text-center    
+                //-     //-         a#contact_button.btn.btn-lg(href='mailto:team@hackhorizon.com' target='_blank') CONTACT US
 
-        //-             .col-md-2.col-md-offset-5.text-center
-        //-                 .fb-messengermessageus(messenger_app_id='113011915893233', page_id='256332318045876', color='blue', size='xlarge')
 
         section#take_off
             .white_arrow_up

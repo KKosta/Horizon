@@ -1,50 +1,31 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ***** */
-#plane {
-  animation: plane 4s both; }
-@keyframes plane {
-  0% {
-    margin-top: 100vh;
-    opacity: 0;
-    width: 150%; }
-  50% {
-    margin-top: 20vh;
-    opacity: 1;
-    width: 40%; }
-  85% {
-    margin-top: 20vh;
-    opacity: 0;
-    width: 40%; }
-  100% {
-    margin-top: 20vh;
-    opacity: 0;
-    width: 40%; } }
 #title_logo {
-  animation: title_logo 1s 2s both; }
+  animation: title_logo 1s 1s both; }
 @keyframes title_logo {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 #tagline {
-  animation: tagline 1s 4s both; }
+  animation: tagline 1s 2s both; }
 @keyframes tagline {
   0% {
     opacity: 0;
-    padding-top: 10px; }
+    padding-top: -10px; }
   100% {
     opacity: 1;
     padding-top: 0; } }
-.cover_links {
-  animation: cover_links 1s 3s both; }
-@keyframes cover_links {
+#play_video {
+  animation: play_video 1s 3s both; }
+@keyframes play_video {
   0% {
     opacity: 0;
-    padding-top: 10px; }
+    padding-top: -10px; }
   100% {
     opacity: 1;
     padding-top: 0; } }
 header {
-  animation: header_transition 1s 5.5s both; }
+  animation: header_transition 1s 4.5s both; }
 @keyframes header_transition {
   0% {
     top: -70px; }
@@ -95,11 +76,15 @@ header {
   height: auto;
   position: fixed;
   background: none;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   transition: all 1s ease; }
   header .nav-bar {
+    position: relative;
+    top: 0;
+    left: 0;
     height: 70px;
     max-height: 70px;
     line-height: 70px;
@@ -127,85 +112,59 @@ header {
       color: #212121; }
     header .nav-bar #social_nav {
       display: none; }
+    header .nav-bar .has-dropdown li ul {
+      color: #616161; }
+    header .nav-bar .menu li.has-dropdown ul li a {
+      color: #616161; }
   header nav {
     background: none; }
 
 .cover {
-  overflow: hidden;
-  height: 100vh;
-  width: auto;
-  background-color: white;
-  background: url(../img/plane_runway.jpg) no-repeat center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  will-change: transform; }
+  height: 100vh !important; }
 
-.diagonal_up, #passenger_divider .diagonal_down .diagonal_up {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../img/diagonal_up.png);
-  background-size: 100% auto;
-  background-position: bottom;
-  background-repeat: no-repeat; }
-  .diagonal_up .logo_cover, #passenger_divider .diagonal_down .diagonal_up .logo_cover {
-    text-align: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%; }
-    .diagonal_up .logo_cover #title_logo {
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      width: 40%;
-      margin-top: 20vh; }
-  .diagonal_up h2, #passenger_divider .diagonal_down .diagonal_up h2 {
-    padding: 0;
-    margin-bottom: 8vh;
-    color: white;
-    text-align: center;
-    line-height: 1.3em; }
+.fs-vid-background {
+  height: 115vh;
+  margin-top: -7vh; }
 
-.cover_links {
-  z-index: 100;
+#title_logo {
+  margin-top: 20vh;
+  width: 60%; }
+
+h2 {
+  padding: 0;
+  margin-top: 64px;
+  color: white;
   text-align: center;
-  margin-top: 96px; }
-  .cover_links .btn-lg {
-    height: 64px;
-    line-height: 60px;
-    width: 100%;
-    font-weight: 600;
+  line-height: 1.3em; }
+
+.modal-container {
+  margin-top: 25vh; }
+  .modal-container p {
+    padding-top: 18px;
+    text-align: left;
     font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1.4em;
+    opacity: 0.8; }
+  .modal-container .play_icon {
+    text-align: right;
+    display: block;
+    cursor: pointer;
     color: white;
-    background: #616161;
-    font-size: 1.7em;
-    border: 3px solid #616161;
+    font-size: 64px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    margin-bottom: 12px; }
-    .cover_links .btn-lg br {
-      display: none; }
-  .cover_links .btn-lg:hover {
-    border: 3px solid #616161 !important;
-    background: white;
-    color: #212121; }
-  .cover_links h3 {
-    font-family: "Roboto", Helvetica, sans-serif;
-    font-size: 2.1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 12px; }
-    .cover_links h3 sup {
-      font-size: 60%; }
+    -moz-transition: all 0.3s ease; }
+  .modal-container .play_icon:hover {
+    color: #FF4081; }
+
+.foundry_modal.reveal-modal {
+  padding: 64px; }
+
+.foundry_modal iframe {
+  height: 60vh; }
+
+.foundry_modal .close-modal {
+  font-size: 24px; }
 
 #about {
   padding-top: 96px;
@@ -222,19 +181,6 @@ header {
   #about iframe {
     width: 80%;
     margin: 0 auto; }
-  #about #the_numbers {
-    text-align: center;
-    height: auto;
-    margin-top: -48px; }
-    #about #the_numbers h1 {
-      margin: 24px 0 0 0;
-      letter-spacing: -2px;
-      font-weight: 500;
-      color: #FF4081; }
-    #about #the_numbers h5 {
-      color: #212121;
-      font-size: 2.1em;
-      text-transform: lowercase; }
   #about h3 {
     text-align: center;
     margin: 48px 0 32px 0;
@@ -294,24 +240,70 @@ header {
     text-align: center;
     padding-top: 0;
     color: #212121; }
+  #the_hack .winning_team {
+    height: 180px;
+    border: 2px solid #DDDDDD;
+    border-radius: 100px;
+    padding: 24px; }
+  #the_hack .runners_up {
+    height: 140px;
+    border: 2px solid #DDDDDD;
+    border-radius: 100px;
+    padding: 24px;
+    margin: 20px 0; }
   #the_hack h2 {
-    color: #FF4081;
-    font-size: 2.1em;
+    color: #212121;
+    font-size: 3.15em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    padding-top: 24px;
-    margin: 64px auto 12px auto; }
+    margin: 32px auto 0px auto; }
   #the_hack h3 {
+    color: #FF4081;
     font-size: 2.1em;
     text-transform: uppercase;
     font-weight: 500;
-    margin: 0 auto;
-    padding-top: 18px; }
+    margin: 0 auto; }
+  #the_hack h4 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 48px auto 0 auto; }
   #the_hack p {
     text-align: center;
-    padding-top: 20px;
+    padding: 18px 16px;
     color: #616161; }
+
+#photos h2 {
+  color: #212121;
+  font-size: 3.15em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0px auto 12px auto; }
+#photos p a {
+  color: #FF4081;
+  font-weight: medium; }
+#photos p a:hover {
+  text-decoration: underline; }
+
+.event_photos .slides li img {
+  width: 360px;
+  height: auto; }
+
+#the_numbers {
+  text-align: center;
+  height: auto;
+  margin: 32px auto 48px auto; }
+  #the_numbers h1 {
+    margin: 24px 0 0 0;
+    letter-spacing: -2px;
+    font-weight: 500;
+    color: #FF4081; }
+  #the_numbers h5 {
+    color: #212121;
+    font-size: 2.1em;
+    text-transform: uppercase; }
 
 #judges.black_arrow_top {
   background-image: url(../img/black_arrow_top.png);
@@ -874,6 +866,9 @@ footer {
   .section_padding {
     padding: 64px 0; }
 
+  #play_video p, .modal-container .play_icon {
+    text-align: center; }
+
   #about p {
     text-align: center;
     padding-bottom: 24px; }
@@ -888,11 +883,12 @@ footer {
   #the_hack #HK_LDN {
     padding-bottom: 0; }
   #the_hack h2 {
-    margin: 48px 0 12px 0;
-    padding: 0;
-    text-align: left; }
+    margin: 24px 0 0 0;
+    padding: 0; }
   #the_hack h3 {
-    padding: 18px 0 6px 0; }
+    padding: 0 0 12px 0; }
+  #the_hack h3.other_teams {
+    padding-top: 48px; }
   #the_hack p {
     padding: 0; }
   #the_hack .journey {
@@ -933,26 +929,17 @@ footer {
   #take_off {
     margin-top: 0; } }
 @media (max-width: 769px) {
-  #plane {
-    animation: plane 4s both; }
-  @keyframes plane {
-    0% {
-      margin-top: 100vh;
-      opacity: 0;
-      width: 150%; }
-    50% {
-      margin-top: 20vh;
-      opacity: 1;
-      width: 60%; }
-    100% {
-      margin-top: 20vh;
-      opacity: 0;
-      width: 60%; } }
   .diagonal_up .logo_cover #title_logo {
     width: 60%; }
 
   #tagline {
     padding: 0 15px; }
+
+  #title_logo {
+    margin-top: 10vh; }
+
+  .modal-container {
+    margin-top: 10vh; }
 
   #wingtip_divider, #passenger_divider, #airport_divider, #passenger_divider {
     height: 350px; }

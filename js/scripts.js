@@ -351,7 +351,7 @@ $(document).ready(function() {
         });
         $('.logo-carousel').flexslider({
             minItems: 1,
-            maxItems: 4,
+            maxItems: 5,
             move: 1,
             itemWidth: 200,
             itemMargin: 0,
