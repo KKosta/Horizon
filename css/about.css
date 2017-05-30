@@ -200,6 +200,7 @@ header {
     margin: 36px auto 64px auto;
     border-bottom: 2px solid #FF4081; }
   #advisors img {
+    border-radius: 150px;
     max-width: 100%;
     -webkit-filter: grayscale(0.2);
     filter: grayscale(0.2); }

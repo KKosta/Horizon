@@ -169,6 +169,10 @@ h2 {
 #about {
   padding-top: 96px;
   background: white; }
+  #about .image-edge .container {
+    height: 680px; }
+  #about #team_photo {
+    margin-left: 64px; }
   #about .about_border {
     margin-bottom: 96px; }
   #about h2 {
@@ -181,14 +185,17 @@ h2 {
   #about iframe {
     width: 80%;
     margin: 0 auto; }
-  #about h3 {
+
+#featured_in {
+  padding-bottom: 64px; }
+  #featured_in h3 {
     text-align: center;
     margin: 48px 0 32px 0;
     font-size: 1.7em;
     text-transform: uppercase;
     font-weight: 500;
     color: #212121; }
-  #about #press_coverage img {
+  #featured_in #press_coverage img {
     text-align: center;
     cursor: pointer;
     width: 150px;
@@ -871,7 +878,10 @@ footer {
 
   #about p {
     text-align: center;
-    padding-bottom: 24px; }
+    padding-top: 24px; }
+  #about #team_photo {
+    margin-left: 0px;
+    width: 100%; }
   #about .about_border {
     margin-bottom: 32px; }
   #about #the_numbers {
