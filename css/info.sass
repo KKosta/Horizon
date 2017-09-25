@@ -1,0 +1,239 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+// sass --watch /Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css:/Users/Kostadin/Google\ Drive/Horizon/Website/Horizon\ GitHub\ Website/css
+
+$pink: #FF4081
+$blue: #1DB9FF
+$black: #212121
+$grey1: #616161
+$grey2: #DDDDDD
+$grey3: #F5F5F5
+$background: #f8f8f8
+
+$font: "Roboto", Helvetica, sans-serif
+$h1: 4.725em
+$h2: 3.15em
+$h3: 2.1em
+$p: 1.4em
+$p-mob: 0.933
+
+
+body
+	background: white
+	z-index: 100
+
+h1
+	font-family: $font
+	color: $black
+	font-size: $h1
+	margin-bottom: 32px
+	text-transform: uppercase
+	font-weight: 400
+	letter-spacing: 5px
+
+h2 
+	font-family: $font
+	color: $black
+	font-size: $h3
+	margin: 0
+
+p 
+	font-family: $font
+	color: $grey1
+	font-size: $p
+	line-height: 1.7em
+	margin: 0
+
+.about_border
+	margin-bottom: 32px
+	border-bottom: 2px solid $pink
+
+
+.cover 
+	overflow: hidden
+	height: 70vh
+	width: auto
+	background-color: white
+	background: url(../img/info_cover.jpg) no-repeat center center
+	background-size: cover
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-attachment: fixed
+	will-change: transform 
+	
+
+.on_top
+	z-index: 10000
+	cursor: pointer
+
+header
+	height: auto
+	position: fixed
+	background: none
+	left: 0
+	width: 100%
+	z-index: 100
+	transition: all 1s ease
+	
+
+	.nav-bar
+		height: 70px
+		max-height: 70px
+		line-height: 70px
+		border: none
+		background: white
+		box-shadow: 0px 0px 6px 0px $black
+
+		#plane_logo
+			max-height: 45px
+			opacity: 0.7
+			max-width: 85%
+
+		.menu li a
+			cursor: pointer
+			color: $grey1
+			opacity: 1
+			font-family: $font
+			font-weight: 500
+			font-size: 1.4em
+
+		.menu li a:hover
+			color: $pink
+			border-bottom: 1px solid $pink
+
+		.menu li a.link_to_grey
+			color: $grey1
+		
+		.menu li a.link_to_grey:hover
+			color: $black
+
+		#social_nav
+			display: none
+
+
+	nav
+		background: none
+
+
+h1
+	margin-top: 60vh
+	line-height: 2.4em
+	font-size: 2.1em
+	font-family: $font
+	font-weight: 600
+	background: $pink
+	border: 3px solid white
+	transition: all 0.3s ease
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	cursor: pointer
+	letter-spacing: 1px
+
+h1:hover
+	background: #fff
+	color: $pink
+	border: 3px solid $pink
+
+
+#infographic
+	width: 100%
+	height: auto
+
+
+
+footer
+	padding-bottom: 24px
+	padding-top: 0
+	text-align: center
+
+	img
+		padding-top: 32px
+		opacity: 0.5
+		cursor: pointer
+	
+	p
+		font-size: 16px
+		color: $grey1
+		opacity: 0.5
+		padding-top: 24px
+
+	.social-list
+		padding-top: 24px
+
+		i			
+			font-size: 24px
+			cursor: pointer
+			color: $grey2
+			transition: all 0.3s ease
+
+		i:hover
+			color: $pink
+
+
+@media (max-width: 990px)
+	.nav-bar
+		background: white
+
+		.nav_bar_open
+			padding: 0
+			z-index: 1000
+
+		.menu li a
+			width: 100%
+			padding: 16px
+
+		#top_link
+			border-top: 2px solid $pink
+		
+		#social_nav
+			display: block !important
+
+		#social_nav	li
+			padding: 24px 10px
+
+		#social_nav li	i
+			color: $grey1
+
+	.mobile-toggle
+		border: none
+
+	#HK_city
+		margin-bottom: 96px
+	
+	.module.widget-handle
+		min-height: 70px
+		padding: 10px 20px
+		border: none
+
+	#about 
+		p
+			text-align: center
+
+		#verticals
+			margin-top: 64px 
+
+	#our_story
+		p
+			padding-bottom: 16px
+
+
+@media (max-width: 768px)
+	.cover
+		height: 40vh
+
+	h1
+		margin-top: 30vh
+		font-size: 1.4em
+		line-height: 1.7em
+
+
+
+
+
+
+
+
+
+
+
+
