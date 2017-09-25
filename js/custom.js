@@ -36,11 +36,11 @@ $(document).ready(function () {
 
 	});
 
-	$("#scroll_down").click(function() {
-	    $('html,body').animate({
-	        scrollTop: $("#infographic").offset().top},
-	        'slow');
-	});
+	// $("#scroll_down").click(function() {
+	//     $('html,body').animate({
+	//         scrollTop: $("#infographic").offset().top},
+	//         'slow');
+	// });
 
 	// $(".agenda_bigger").on("click", function () {
 	// 	$("#bigger").fadeIn(500);
